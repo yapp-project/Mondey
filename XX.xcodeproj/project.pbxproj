@@ -19,40 +19,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		BBB91F3287BDE20F24DBB9BDB0610FB2 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 4F2C60F400BF82F112C5F82215335EFA /* Preprocessor.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = A2951CA168D6185073B2DAC6AA20B023;
-			remoteInfo = Preprocessor;
-		};
-		EA012DFD951DDD2998CB8E7257486D0A /* PBXContainerItemProxy */ = {
+		15142F3D9A47DA1653C6E6EAAB614097 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BA35A66E689F5ABC501C25A8EB3CFCE9 /* Rx.xcodeproj */;
 			proxyType = 2;
-			remoteGlobalIDString = C4D7DDA1C97F952367E040BD62A655B2;
-			remoteInfo = RxSwift;
-		};
-		5C63CA5F8ECAE2206BFAD5FDF2AE60DC /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BA35A66E689F5ABC501C25A8EB3CFCE9 /* Rx.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 451B7FF02CF82856EB56A2AB2E4126DB;
-			remoteInfo = RxCocoa;
-		};
-		48C9978E4F99E088A578982BD0668262 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BA35A66E689F5ABC501C25A8EB3CFCE9 /* Rx.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = F2ADC6F6EB5576A9842C2E4B6DCB4D8E;
-			remoteInfo = RxRelay;
-		};
-		6202C87689C31492B1451F1181B4BE35 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BA35A66E689F5ABC501C25A8EB3CFCE9 /* Rx.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 3D762E7E1BCBF38BB88D4AE16CC2E45C;
-			remoteInfo = RxBlocking;
+			remoteGlobalIDString = 01DC3150F814F835AA6817F365FC18D5;
+			remoteInfo = "AllTests-tvOS";
 		};
 		1BA0F0DDA6B9DFF88819B90525C9C233 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -61,41 +33,6 @@
 			remoteGlobalIDString = 188520E16174E2C7DD292BFB0A8C45AE;
 			remoteInfo = RxTest;
 		};
-		30B3F297899413C49913AD9BA6271825 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BA35A66E689F5ABC501C25A8EB3CFCE9 /* Rx.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = C79BDFBE445718AD7CBC4CA4F9A177AB;
-			remoteInfo = "AllTests-iOS";
-		};
-		15142F3D9A47DA1653C6E6EAAB614097 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BA35A66E689F5ABC501C25A8EB3CFCE9 /* Rx.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 01DC3150F814F835AA6817F365FC18D5;
-			remoteInfo = "AllTests-tvOS";
-		};
-		B1A33B104E296B03390BEBCFE80AB535 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BA35A66E689F5ABC501C25A8EB3CFCE9 /* Rx.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = E4EBC23631AD3D459F1E88DBA5461FE5;
-			remoteInfo = "AllTests-macOS";
-		};
-		FE8A5BCE4692BC6DC1BB2D1252C6BB97 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BA35A66E689F5ABC501C25A8EB3CFCE9 /* Rx.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = A1D9AA84A51E601AD9B07FD6200D3986;
-			remoteInfo = Microoptimizations;
-		};
-		849CC3D448A3CEA50B461FC8C2E4FE92 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BA35A66E689F5ABC501C25A8EB3CFCE9 /* Rx.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 80FB8055881DF00272D7CC881507EB27;
-			remoteInfo = Benchmarks;
-		};
 		2D5468DF55AE22C34ADE026C6E6AA21A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = ABA42CE0503F8B130CBF4E443476FFB5 /* RxExample.xcodeproj */;
@@ -103,19 +40,12 @@
 			remoteGlobalIDString = E1ACC5648B1CE4D0D976358078953DD7;
 			remoteInfo = "RxExample-iOS";
 		};
-		4B1F8A6952C0CE5251798B832C8BEAFB /* PBXContainerItemProxy */ = {
+		30B3F297899413C49913AD9BA6271825 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = ABA42CE0503F8B130CBF4E443476FFB5 /* RxExample.xcodeproj */;
+			containerPortal = BA35A66E689F5ABC501C25A8EB3CFCE9 /* Rx.xcodeproj */;
 			proxyType = 2;
-			remoteGlobalIDString = 16D24205CD4B8ED3A5B985B95B7017AA;
-			remoteInfo = "RxExample-OSX";
-		};
-		99CEC12B8DD8E998B25EA6A749ED16CD /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = ABA42CE0503F8B130CBF4E443476FFB5 /* RxExample.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = E1DA9E80CF4489EEDDEE449F712E2463;
-			remoteInfo = "RxExample-iOSTests";
+			remoteGlobalIDString = C79BDFBE445718AD7CBC4CA4F9A177AB;
+			remoteInfo = "AllTests-iOS";
 		};
 		467D067816F34C07817E32E6124FFB90 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -124,12 +54,82 @@
 			remoteGlobalIDString = F12D5EAE67DBBF7B84D398E5AB976965;
 			remoteInfo = "RxExample-iOSUITests";
 		};
+		48C9978E4F99E088A578982BD0668262 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BA35A66E689F5ABC501C25A8EB3CFCE9 /* Rx.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F2ADC6F6EB5576A9842C2E4B6DCB4D8E;
+			remoteInfo = RxRelay;
+		};
+		4B1F8A6952C0CE5251798B832C8BEAFB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ABA42CE0503F8B130CBF4E443476FFB5 /* RxExample.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 16D24205CD4B8ED3A5B985B95B7017AA;
+			remoteInfo = "RxExample-OSX";
+		};
+		5C63CA5F8ECAE2206BFAD5FDF2AE60DC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BA35A66E689F5ABC501C25A8EB3CFCE9 /* Rx.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 451B7FF02CF82856EB56A2AB2E4126DB;
+			remoteInfo = RxCocoa;
+		};
+		6202C87689C31492B1451F1181B4BE35 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BA35A66E689F5ABC501C25A8EB3CFCE9 /* Rx.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 3D762E7E1BCBF38BB88D4AE16CC2E45C;
+			remoteInfo = RxBlocking;
+		};
+		849CC3D448A3CEA50B461FC8C2E4FE92 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BA35A66E689F5ABC501C25A8EB3CFCE9 /* Rx.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 80FB8055881DF00272D7CC881507EB27;
+			remoteInfo = Benchmarks;
+		};
+		99CEC12B8DD8E998B25EA6A749ED16CD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ABA42CE0503F8B130CBF4E443476FFB5 /* RxExample.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = E1DA9E80CF4489EEDDEE449F712E2463;
+			remoteInfo = "RxExample-iOSTests";
+		};
+		B1A33B104E296B03390BEBCFE80AB535 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BA35A66E689F5ABC501C25A8EB3CFCE9 /* Rx.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = E4EBC23631AD3D459F1E88DBA5461FE5;
+			remoteInfo = "AllTests-macOS";
+		};
+		BBB91F3287BDE20F24DBB9BDB0610FB2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4F2C60F400BF82F112C5F82215335EFA /* Preprocessor.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = A2951CA168D6185073B2DAC6AA20B023;
+			remoteInfo = Preprocessor;
+		};
 		C719EADC9DFEC55B30FC5B04549056AA /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = ABA42CE0503F8B130CBF4E443476FFB5 /* RxExample.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = FCABB453ED0987092A49F3EFC4640B02;
 			remoteInfo = "RxExample-macOSUITests";
+		};
+		EA012DFD951DDD2998CB8E7257486D0A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BA35A66E689F5ABC501C25A8EB3CFCE9 /* Rx.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = C4D7DDA1C97F952367E040BD62A655B2;
+			remoteInfo = RxSwift;
+		};
+		FE8A5BCE4692BC6DC1BB2D1252C6BB97 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BA35A66E689F5ABC501C25A8EB3CFCE9 /* Rx.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = A1D9AA84A51E601AD9B07FD6200D3986;
+			remoteInfo = Microoptimizations;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -1273,189 +1273,128 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		A26EE190954C8C3D043A04B9E4F92133 = {
+		04091465C4B142AAC64CE70F6147EBFE /* RxBlocking */ = {
 			isa = PBXGroup;
 			children = (
-				5C3C1883F8D8F1CC65DBF6184EAA3FE0 /* Frameworks */,
-				5F8E61A9C5FA70CFA449B04E4732D262 /* Products */,
-				D47A22E91452765DDFD3690BE996AB31 /* XX */,
+				7DD2EA115AC1BC151E265F728BE12D5C /* Platform */,
+				87CC5403E50890D70D8BCF803E917BAB /* BlockingObservable+Operators.swift */,
+				6E7B65747B8375D67897AA480E7E5B21 /* BlockingObservable.swift */,
+				9028FFEE982B4591AA952BA6EFB57B6C /* Info.plist */,
+				57A80B832B56318F0F3252C1FA6A7785 /* ObservableConvertibleType+Blocking.swift */,
+				0B522D8CE79BAA21FCDC573996DCCB32 /* README.md */,
+				5EA7D3A807331615FA49A1A6EC5A48BA /* Resources.swift */,
+				1D4232DA38F1A94FA52BB2667089871A /* RunLoopLock.swift */,
 			);
+			path = RxBlocking;
 			sourceTree = "<group>";
 		};
-		5F8E61A9C5FA70CFA449B04E4732D262 /* Products */ = {
+		0530C1709AD918FD901EBF02259B7E9A /* GitHubSearchRepositories */ = {
 			isa = PBXGroup;
 			children = (
-				6308B3F9D437690B09D2F3527DA9C697 /* XX.app */,
+				E8FF5693CB1D61E54ACEF24A1733A047 /* GitHubSearchRepositories.storyboard */,
+				07BEFFA67B30D79ACFD36C7F1A370C0A /* GitHubSearchRepositories.swift */,
+				12C6B1D8D781DEACB691206960C16410 /* GitHubSearchRepositoriesAPI.swift */,
+				51E0BC31998C6FB8B2F4F354D8CED923 /* GitHubSearchRepositoriesViewController.swift */,
+				20AF5CB3539D625DF5FFB6C1C0278FE1 /* UINavigationController+Extensions.swift */,
 			);
-			name = Products;
+			path = GitHubSearchRepositories;
 			sourceTree = "<group>";
 		};
-		D47A22E91452765DDFD3690BE996AB31 /* XX */ = {
+		0D331FB8BD24E95ABE6C3C6D73AEE02B /* Platform */ = {
 			isa = PBXGroup;
 			children = (
-				B4BC5246FCB604F6A3BB58BA5B780127 /* AppDelegate.swift */,
-				1804DD43026500CA6D81A05C9BDDF4CD /* Assets.xcassets */,
-				B77587401D77975FA2FD7C1F98CC1FD8 /* Info.plist */,
-				1D701E25B9E0F2B7A4655B8CA13A21DB /* LaunchScreen.storyboard */,
-				449397A9CFD6B7F12E9CCB48B424B12F /* Main.storyboard */,
-				C10C9814577D19BB15C1A0F78536882F /* ViewController.swift */,
-				16E7DA482CA5A9A9C5EF137063A8DD4B /* XX-Bridging-Header.h */,
-			);
-			path = XX;
-			sourceTree = "<group>";
-		};
-		5C3C1883F8D8F1CC65DBF6184EAA3FE0 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				2BB90C83E9DCD9C09FF21CFC37E6FE6A /* RxSwift */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		2BB90C83E9DCD9C09FF21CFC37E6FE6A /* RxSwift */ = {
-			isa = PBXGroup;
-			children = (
-				C42FA4B0F49BF5B390861BA5B09E4B04 /* Dangerfile */,
-				B57D846CEEC7323F22B7E4B64843B697 /* Documentation */,
-				2E6ED1F623BE14A711C9D6E52A243108 /* Gemfile */,
-				4F64ADADF5E186D9F09530FDB1926E9F /* Platform */,
-				ED1D48D7C844C60BB2C115BA34F0285F /* Preprocessor */,
-				04091465C4B142AAC64CE70F6147EBFE /* RxBlocking */,
-				FC0BFAACAE853B8C76447938EB4E93B2 /* RxCocoa */,
-				31F975FB2DADDD51B3B65E147EA64A7D /* RxExample */,
-				94AC9130EFE30CF9329D77A1B09011A2 /* RxRelay */,
-				128D4570C79B7ABE2729401501CA6C01 /* RxSwift */,
-				9F74FE4CDB580409788B7B1FE373C8A3 /* RxTest */,
-				11B5C95128DE93D428AD0763782FA1F4 /* Sources */,
-				15B32872EA8A9D1DB9524426DF33A1B0 /* Tests */,
-				934B333319CA0EBDE1581D08A46E5A5C /* assets */,
-				753F42A66C4C0189E92503183AA44086 /* scripts */,
-				98D28E49B4BE9745565B99FFE40932A5 /* .github */,
-				01127FC4178A3ACFB1766CFD0314A22C /* .gitignore */,
-				A00DE0FF545CFE7206B0B541104F93B9 /* .jazzy.yml */,
-				AE393B65249A1F5EEFEA545B1E1D4123 /* .swiftlint.yml */,
-				9D8DCE23B1556DCBD7B2CC481FD5605D /* .travis.yml */,
-				6F77FD23C87133F2C92005E8A678077D /* CHANGELOG.md */,
-				309FE1AECE431ED1D0A11015A0EE2182 /* CODE_OF_CONDUCT.md */,
-				350B4A0F58050F9207F84A5D302F5E88 /* CONTRIBUTING.md */,
-				37DF835AE03EDD22092A0D4CC7C7865C /* Gemfile.lock */,
-				A531D8A1A67692B70C64E512E548CD7D /* LICENSE.md */,
-				7A97E4DB018D8117F8B5BE32898B91FD /* Package.swift */,
-				46FCBD197081D2C9EA3D4060391560D0 /* README.md */,
-				030967B1DCE0AEA5461F14DD7FCA4722 /* Rx.playground */,
-				BA35A66E689F5ABC501C25A8EB3CFCE9 /* Rx.xcodeproj */,
-				1AB47998DCA37E4389E017B1D224BCEC /* Rx.xcworkspace */,
-				34031BE3E293A252474AF476FADCCDF9 /* RxBlocking.podspec */,
-				D589B617D4374521038E58EB6BC613BA /* RxCocoa.podspec */,
-				51139C9A636D1B8E7450367D411F77BB /* RxRelay.podspec */,
-				0F60FEE212A410F9DADE807746484E1E /* RxSwift.podspec */,
-				0AA3E7BFE350171A7A55ED4B95531F72 /* RxTest.podspec */,
-				C24E0AB232807FF4F5F996BA0F322A0F /* default.profraw */,
-			);
-			name = RxSwift;
-			path = Carthage/Checkouts/RxSwift;
-			sourceTree = "<group>";
-		};
-		FC0BFAACAE853B8C76447938EB4E93B2 /* RxCocoa */ = {
-			isa = PBXGroup;
-			children = (
-				86AF4B3D6B7FDE1CD39E8EBAE76A4746 /* Common */,
-				8377BB0E0F2C508F7324EA8A76CECA79 /* Foundation */,
-				B016617E856E25DEF6C6782473F913C3 /* Platform */,
-				51EC350B50A11C07EB737DA08D42242C /* Runtime */,
-				44DE07BF00E6E345F00874D8D1958612 /* Traits */,
-				2AB971ACB01D8EF09913FEA8F6BBEFDD /* iOS */,
-				8D02A5C57CBAB9C13AEF8823AA5FFBEB /* macOS */,
-				79005E39ECD2F95E0136F74135062F49 /* Deprecated.swift */,
-				7001DB16F8C83CBA6ACFD5D564AD6B1F /* Info.plist */,
-				87992ABB2010CE25EF935E635271F117 /* RxCocoa.h */,
-				0BAF06828709041A39DBE145F11C8FA6 /* RxCocoa.swift */,
-			);
-			path = RxCocoa;
-			sourceTree = "<group>";
-		};
-		8D02A5C57CBAB9C13AEF8823AA5FFBEB /* macOS */ = {
-			isa = PBXGroup;
-			children = (
-				AC4EB41ED3E697EC7E8DB6298D5CDB87 /* NSButton+Rx.swift */,
-				4596886EC044BE4378DBDC5F00538A01 /* NSControl+Rx.swift */,
-				86F50562782F032F5BA0E106ADB6250E /* NSImageView+Rx.swift */,
-				FA533A3806C2618A0E57F748F0C75947 /* NSSlider+Rx.swift */,
-				098436664C02BE92348DC1DF8116DE56 /* NSTextField+Rx.swift */,
-				1490CB0E04F30AC3D1381E2132C592CA /* NSTextView+Rx.swift */,
-				23FCD0E81D18DB0B5A8D461B72449B1F /* NSView+Rx.swift */,
-			);
-			path = macOS;
-			sourceTree = "<group>";
-		};
-		44DE07BF00E6E345F00874D8D1958612 /* Traits */ = {
-			isa = PBXGroup;
-			children = (
-				8F4B0EBD96549B5FE19CC11B29C41422 /* Driver */,
-				9EF3030BB8719CE066FA2CB07A6E32A0 /* SharedSequence */,
-				1C9A52762BE2ED8F32A2D648EB3E53B0 /* Signal */,
-				3920D1E6C357B2D9251BCE3CD28A97C7 /* ControlEvent.swift */,
-				8C3B589BCD193CC09AFF3E7A4959460D /* ControlProperty.swift */,
-			);
-			path = Traits;
-			sourceTree = "<group>";
-		};
-		8F4B0EBD96549B5FE19CC11B29C41422 /* Driver */ = {
-			isa = PBXGroup;
-			children = (
-				679FA76FDACFA304D0332DFA89E83172 /* BehaviorRelay+Driver.swift */,
-				6209F58C031D3B0B438EC270EE3D0090 /* ControlEvent+Driver.swift */,
-				ADB4E25DACD28FCC40B308BAB6567EF5 /* ControlProperty+Driver.swift */,
-				06D5886BD1891A4E5E14BE510408389B /* Driver+Subscription.swift */,
-				50F250B573C53536ED58947362BDA1AD /* Driver.swift */,
-				6C368D4088E7026DE6F359CFD929948E /* ObservableConvertibleType+Driver.swift */,
-			);
-			path = Driver;
-			sourceTree = "<group>";
-		};
-		9EF3030BB8719CE066FA2CB07A6E32A0 /* SharedSequence */ = {
-			isa = PBXGroup;
-			children = (
-				EFE76A715B5FD14F97377802E0E5D083 /* ObservableConvertibleType+SharedSequence.swift */,
-				0771FC4C23959F77F942463B33B27965 /* SchedulerType+SharedSequence.swift */,
-				7A02C9046D84D96BF689E9ED852899D5 /* SharedSequence+Operators+arity.swift */,
-				CEF2CD822EFB80EB230424C5ED01A61A /* SharedSequence+Operators+arity.tt */,
-				2EAE4BF748236947E91064EC1C97D050 /* SharedSequence+Operators.swift */,
-				D0D40B6CEA3666D097A032F5338495CB /* SharedSequence.swift */,
-			);
-			path = SharedSequence;
-			sourceTree = "<group>";
-		};
-		1C9A52762BE2ED8F32A2D648EB3E53B0 /* Signal */ = {
-			isa = PBXGroup;
-			children = (
-				F794C809D63D8208E2BC16CED2270C45 /* ControlEvent+Signal.swift */,
-				7807372515FBB36F020B890DEA072050 /* ObservableConvertibleType+Signal.swift */,
-				83D9DC31F15AB84B0BDC8636A498C8C0 /* PublishRelay+Signal.swift */,
-				6ACAA31DB7D41F35353AB3128DA56F71 /* Signal+Subscription.swift */,
-				37690C3BF395008D1EBE7E3EC10CA522 /* Signal.swift */,
-			);
-			path = Signal;
-			sourceTree = "<group>";
-		};
-		B016617E856E25DEF6C6782473F913C3 /* Platform */ = {
-			isa = PBXGroup;
-			children = (
-				4CB24F62640B8EDD2D6126C0AE29CA5D /* DispatchQueue+Extensions.swift */,
+				B7F0B7B89D16D5D294091E9B70522274 /* DataStructures */,
 			);
 			path = Platform;
 			sourceTree = "<group>";
 		};
-		51EC350B50A11C07EB737DA08D42242C /* Runtime */ = {
+		11B5C95128DE93D428AD0763782FA1F4 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				177DD5148F8EA2C1B48654FD4982DEB7 /* include */,
-				7B03BC906D73B13A474181419CFACC45 /* _RX.m */,
-				509ABDDEAA3DCE6E46C6918F408867CA /* _RXDelegateProxy.m */,
-				3943C6297F0AE5B93F3383B08E325EDB /* _RXKVOObserver.m */,
-				5AD3710580AF0BE09EB4F3E77485A52B /* _RXObjCRuntime.m */,
+				DA28CE465E01C9BDB5977766877932CB /* AllTestz */,
+				8115BE58BD8312B13E66FD32ADF36ED6 /* RxBlocking */,
+				DEC8A376113C7127FA1B9E8D720CE9AB /* RxCocoa */,
+				E14BFBCDE3C3C76603E1C87F0B4A17A7 /* RxCocoaRuntime */,
+				534B64813BE5CEA9DEC8BEDB5263F682 /* RxRelay */,
+				759341CB0A8CEB56B296554C30835984 /* RxSwift */,
+				2679DD05EA41FF2AEE24C943C99DD987 /* RxTest */,
 			);
-			path = Runtime;
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		128D4570C79B7ABE2729401501CA6C01 /* RxSwift */ = {
+			isa = PBXGroup;
+			children = (
+				CA0FF07B1E8DC7C146B29285E1DF7DC1 /* Concurrency */,
+				AF31AB4C9C90F8059D4FF3B75F5D0503 /* Disposables */,
+				5AA0330EF88E57BB0929DE5CA03B3EE3 /* Extensions */,
+				311869C874A6BB1A6BD2F6872BE81DAC /* Observables */,
+				A7412D144C8223A052A6C41409A5BADA /* Observers */,
+				C002E521B22A6D016907480AEABE209D /* Platform */,
+				EF6683A2E8B22D21AA170C231A78289A /* Schedulers */,
+				A63D02A2E26666BAC3BDF528E4CCD915 /* Subjects */,
+				C1DFA34A816E13CC3342ACC0BEA13DFE /* SwiftSupport */,
+				1E1F4C1EC3435AD2484F82FFE2A79F3E /* Traits */,
+				0F748DD6A95B5DD576D49A2F954E0592 /* AnyObserver.swift */,
+				FB83B50FA91804AA7D4E66F6ACC761E4 /* Cancelable.swift */,
+				D1DC50F9C711C1D42F5DBDC795F22DF6 /* ConnectableObservableType.swift */,
+				13E5F6D085A23AE147F84DC31AF62697 /* Date+Dispatch.swift */,
+				6AB3478A23A36749D10510FA60333C31 /* Deprecated.swift */,
+				2B0F48BF0BD0BA990B2ACF62C7803199 /* Disposable.swift */,
+				5378467FAB45C860FA0B11187E230C66 /* Errors.swift */,
+				9B21F373D411572EBE73856B50AFB5F9 /* Event.swift */,
+				43CF55A8B09CB81F84A618E050C875A5 /* GroupedObservable.swift */,
+				B043F251BEE0159C34359FDDE49D2276 /* ImmediateSchedulerType.swift */,
+				78451D06C1E39B499773B16AF2B44EA7 /* Info.plist */,
+				C6838F4A6E51C284B4F0B89EF5E6931F /* Observable.swift */,
+				0985F95C51FB6D28B55E3C3250A792C8 /* ObservableConvertibleType.swift */,
+				2D0691C9562454303E17B8364E637E45 /* ObservableType+Extensions.swift */,
+				F91D43995ECA2464FF4D734341DFD01E /* ObservableType.swift */,
+				501D561691F1037504269BBB3508FEA2 /* ObserverType.swift */,
+				4702711EE67D54DA36576BD197A55847 /* Reactive.swift */,
+				296A8DBA7DC4BB332E7AC658C3AB8192 /* Rx.swift */,
+				825030FF3B7A3B400163F801C79A2CFA /* RxMutableBox.swift */,
+				729692365FB0000A475FEA4E6E9596CC /* SchedulerType.swift */,
+			);
+			path = RxSwift;
+			sourceTree = "<group>";
+		};
+		15B32872EA8A9D1DB9524426DF33A1B0 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				49EA6C8307EAC9A55EEBCA2BFD9CEBC0 /* Benchmarks */,
+				B3834785A7E04BA74E9B4B99DBF290DC /* Microoptimizations */,
+				8A2DA1CF4FC1ECDABD3EF4BC2F0942BA /* Platform */,
+				91CF0033C168F922AA153466F24349C0 /* RxBlockingTests */,
+				7C0D7CF70FD68C15AF9C3E1543820539 /* RxCocoaTests */,
+				99720C425DDE864D65A98A9AA62116EB /* RxRelayTests */,
+				7ABE026BB3B02B50331348E2D5AE0761 /* RxSwiftTests */,
+				C1B60F15945AFEC9AF458EBED7202687 /* Info.plist */,
+				E61F3D5C0538C7E80C57A6B40B8F1B4F /* MessageProcessingStage.swift */,
+				BEAFEE0F79C1B7F71C00C25A8B6740C2 /* Recorded+Timeless.swift */,
+				A9B95AF6D01F383E1891A7FF3C541909 /* Resources.swift */,
+				974170C6D98CD36D99D490FFE49E304C /* RxTest.swift */,
+				5B8BDB292489B5F85BB2D07C94112639 /* TestErrors.swift */,
+				DAB63C1EE8993CB75C89FB85770EFF3A /* XCTest+AllTests.swift */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		1777BB0D9B4224DAF3E7C13A25086988 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1F5CA7A19E2621E207FFCCF109B94EC9 /* AllTests-iOS.xctest */,
+				B443F6FDDF3C9B7271F270AFAF0A89A6 /* AllTests-macOS.xctest */,
+				A17477E2D7CDF65FF683502AD61F9DD4 /* AllTests-tvOS.xctest */,
+				3CBBA4FE5F3BEBB9DD44007CA412B2A4 /* Benchmarks.xctest */,
+				8C0291D31F29D711EB2765BB1BEE3A31 /* PerformanceTests.app */,
+				32B05EBDDDC6FD6647D708DD35D439A3 /* RxBlocking.framework */,
+				8A15AA55D85FCC7A1C18544E175FB562 /* RxCocoa.framework */,
+				3B9E160314B58C0288B5B611EC4D2C4C /* RxRelay.framework */,
+				B0E45E70B5819BB0BCF8DB935B722689 /* RxSwift.framework */,
+				31069BF7A2B3F652850FC76E88DE41AB /* RxTest.framework */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 		177DD5148F8EA2C1B48654FD4982DEB7 /* include */ = {
@@ -1470,20 +1409,90 @@
 			path = include;
 			sourceTree = "<group>";
 		};
-		8377BB0E0F2C508F7324EA8A76CECA79 /* Foundation */ = {
+		1C9A52762BE2ED8F32A2D648EB3E53B0 /* Signal */ = {
 			isa = PBXGroup;
 			children = (
-				DB5408449143A24DA7A7FE96100CA19C /* KVORepresentable+CoreGraphics.swift */,
-				1731CBA57EC780457E5E04EA1379F4DE /* KVORepresentable+Swift.swift */,
-				D5B2B1298658D97888D90005ADCB9044 /* KVORepresentable.swift */,
-				F405DB4CB9DAB4041A770C481B9286B4 /* Logging.swift */,
-				0CC869858DAC37D97B7112D5816A68C8 /* NSObject+Rx+KVORepresentable.swift */,
-				321ABE13B22B574FDA7A27A242039B26 /* NSObject+Rx+RawRepresentable.swift */,
-				F585B9AFCD289FE65C29AA751E7D77B6 /* NSObject+Rx.swift */,
-				E581D29C4495E74FC56CFB1468CF9E1A /* NotificationCenter+Rx.swift */,
-				C86D9EF7E53DA69E78DD5B7012792C84 /* URLSession+Rx.swift */,
+				F794C809D63D8208E2BC16CED2270C45 /* ControlEvent+Signal.swift */,
+				7807372515FBB36F020B890DEA072050 /* ObservableConvertibleType+Signal.swift */,
+				83D9DC31F15AB84B0BDC8636A498C8C0 /* PublishRelay+Signal.swift */,
+				6ACAA31DB7D41F35353AB3128DA56F71 /* Signal+Subscription.swift */,
+				37690C3BF395008D1EBE7E3EC10CA522 /* Signal.swift */,
 			);
-			path = Foundation;
+			path = Signal;
+			sourceTree = "<group>";
+		};
+		1CB5A22EFFE00256DBDAF9A017F41F1C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9EC8DCED5D7E25639B1C2087E56295EF /* Preprocessor */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1E1F4C1EC3435AD2484F82FFE2A79F3E /* Traits */ = {
+			isa = PBXGroup;
+			children = (
+				2E0A3EC7860B93C80E17932690527EB6 /* Completable+AndThen.swift */,
+				8236415AFEB4E53F1CACCFFA6B8865D3 /* Completable.swift */,
+				B33BC936FCDD063C2DC2C15F0FF98A34 /* Maybe.swift */,
+				0C0F611E6CBB7E641D7716EFFDE0EB4E /* ObservableType+PrimitiveSequence.swift */,
+				B70626D710669115F779E892A21E0D5E /* PrimitiveSequence+Zip+arity.swift */,
+				5FC2932F5E71D6BF8B97AF0771E11345 /* PrimitiveSequence+Zip+arity.tt */,
+				1BECECB10413DCB200DFE2712C67D091 /* PrimitiveSequence.swift */,
+				E1C54C4C503BE7312641AC46E72479F6 /* Single.swift */,
+			);
+			path = Traits;
+			sourceTree = "<group>";
+		};
+		1FC3F19F7E2F340B1A116C6FA2AC3CF2 /* UsingVanillaObservables */ = {
+			isa = PBXGroup;
+			children = (
+				0EAEA0AEEEC8740D9A52CC7282A6C2D4 /* GitHubSignupViewController1.swift */,
+				691D61DDA2157829746E270E5815D59D /* GithubSignupViewModel1.swift */,
+			);
+			path = UsingVanillaObservables;
+			sourceTree = "<group>";
+		};
+		208D194A875D8EE33A321170E7A098A4 /* TestImplementations */ = {
+			isa = PBXGroup;
+			children = (
+				90612C718724B2BEB25C0B0B055CE557 /* SectionedViewDataSourceMock.swift */,
+			);
+			path = TestImplementations;
+			sourceTree = "<group>";
+		};
+		2679DD05EA41FF2AEE24C943C99DD987 /* RxTest */ = {
+			isa = PBXGroup;
+			children = (
+				375842F986E5F198E79FFC7B7ABD02C2 /* Any+Equatable.swift */,
+				0D151A2746BF9DADB3E1B44DD0814B6A /* Bag.swift */,
+				824D5C81E4437F0E8D3E323F6B2484ED /* ColdObservable.swift */,
+				ED08650CEFA81450E70E2E00C78776A0 /* Deprecated.swift */,
+				12FE3A765EAC45BDC12F4006A06657D5 /* Event+Equatable.swift */,
+				A7D3F978508FA62CE25853C91DFDB35D /* HotObservable.swift */,
+				17D575B889F6109D76E3290FA482307E /* Recorded+Event.swift */,
+				C066403924BC25A272A99E0F9DDBF507 /* Recorded.swift */,
+				92DF141027CBEE13BFB33A3C0C83F1D8 /* RxTest.swift */,
+				B6C5A8FDAD780C3AD60EFF555CFFFC83 /* Subscription.swift */,
+				7929D8F7743BB09A75CA747BD3666DAA /* TestScheduler.swift */,
+				985D69F325C21E9074F0406AEA5CE690 /* TestSchedulerVirtualTimeConverter.swift */,
+				1063A2EC699ADFE6BB900825419D8284 /* TestableObservable.swift */,
+				BE1564DAA2A601102AD0DA940E6C4725 /* TestableObserver.swift */,
+				2BFEFD6A0900A283B94627AA4D4E242D /* XCTest+Rx.swift */,
+			);
+			path = RxTest;
+			sourceTree = "<group>";
+		};
+		295CBE68DC38ABA2899FB4BC6454B62E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F50D20EC127E2D8B740D03B45C2BFEA2 /* CollectionViewImageCell.swift */,
+				AA481107EEFA8CE4EE0B4153571D6D8D /* WikipediaImageCell.xib */,
+				A099290F8BE11506EFE5B81E9D48B1B3 /* WikipediaSearchCell.swift */,
+				8A775281CE556E4AC0C836A26C22107A /* WikipediaSearchCell.xib */,
+				93E24F534ED631944CB5BE01AAB01A53 /* WikipediaSearchViewController.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		2AB971ACB01D8EF09913FEA8F6BBEFDD /* iOS */ = {
@@ -1531,193 +1540,74 @@
 			path = iOS;
 			sourceTree = "<group>";
 		};
-		78E5D90263DBA6C617E2B4A071100306 /* DataSources */ = {
+		2BB90C83E9DCD9C09FF21CFC37E6FE6A /* RxSwift */ = {
 			isa = PBXGroup;
 			children = (
-				FE5433E8760269BCB33E7D00DB8A22AE /* RxCollectionViewReactiveArrayDataSource.swift */,
-				9103DC60443E57783003BBCE1D4BDB41 /* RxPickerViewAdapter.swift */,
-				41783546B17D2284423CF939DE0EB101 /* RxTableViewReactiveArrayDataSource.swift */,
+				C42FA4B0F49BF5B390861BA5B09E4B04 /* Dangerfile */,
+				B57D846CEEC7323F22B7E4B64843B697 /* Documentation */,
+				2E6ED1F623BE14A711C9D6E52A243108 /* Gemfile */,
+				4F64ADADF5E186D9F09530FDB1926E9F /* Platform */,
+				ED1D48D7C844C60BB2C115BA34F0285F /* Preprocessor */,
+				04091465C4B142AAC64CE70F6147EBFE /* RxBlocking */,
+				FC0BFAACAE853B8C76447938EB4E93B2 /* RxCocoa */,
+				31F975FB2DADDD51B3B65E147EA64A7D /* RxExample */,
+				94AC9130EFE30CF9329D77A1B09011A2 /* RxRelay */,
+				128D4570C79B7ABE2729401501CA6C01 /* RxSwift */,
+				9F74FE4CDB580409788B7B1FE373C8A3 /* RxTest */,
+				11B5C95128DE93D428AD0763782FA1F4 /* Sources */,
+				15B32872EA8A9D1DB9524426DF33A1B0 /* Tests */,
+				934B333319CA0EBDE1581D08A46E5A5C /* assets */,
+				753F42A66C4C0189E92503183AA44086 /* scripts */,
+				98D28E49B4BE9745565B99FFE40932A5 /* .github */,
+				01127FC4178A3ACFB1766CFD0314A22C /* .gitignore */,
+				A00DE0FF545CFE7206B0B541104F93B9 /* .jazzy.yml */,
+				AE393B65249A1F5EEFEA545B1E1D4123 /* .swiftlint.yml */,
+				9D8DCE23B1556DCBD7B2CC481FD5605D /* .travis.yml */,
+				6F77FD23C87133F2C92005E8A678077D /* CHANGELOG.md */,
+				309FE1AECE431ED1D0A11015A0EE2182 /* CODE_OF_CONDUCT.md */,
+				350B4A0F58050F9207F84A5D302F5E88 /* CONTRIBUTING.md */,
+				37DF835AE03EDD22092A0D4CC7C7865C /* Gemfile.lock */,
+				A531D8A1A67692B70C64E512E548CD7D /* LICENSE.md */,
+				7A97E4DB018D8117F8B5BE32898B91FD /* Package.swift */,
+				46FCBD197081D2C9EA3D4060391560D0 /* README.md */,
+				030967B1DCE0AEA5461F14DD7FCA4722 /* Rx.playground */,
+				BA35A66E689F5ABC501C25A8EB3CFCE9 /* Rx.xcodeproj */,
+				1AB47998DCA37E4389E017B1D224BCEC /* Rx.xcworkspace */,
+				34031BE3E293A252474AF476FADCCDF9 /* RxBlocking.podspec */,
+				D589B617D4374521038E58EB6BC613BA /* RxCocoa.podspec */,
+				51139C9A636D1B8E7450367D411F77BB /* RxRelay.podspec */,
+				0F60FEE212A410F9DADE807746484E1E /* RxSwift.podspec */,
+				0AA3E7BFE350171A7A55ED4B95531F72 /* RxTest.podspec */,
+				C24E0AB232807FF4F5F996BA0F322A0F /* default.profraw */,
 			);
-			path = DataSources;
+			name = RxSwift;
+			path = Carthage/Checkouts/RxSwift;
 			sourceTree = "<group>";
 		};
-		A36A3CF6B86ADF9EAD8B1734853A1587 /* Proxies */ = {
+		2CAB394BC8526D371826A92570E0C316 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				513AAE3D05BDA4C066449EDEA2BCCB5C /* RxCollectionViewDataSourcePrefetchingProxy.swift */,
-				519D1922F3DCA477409D9C351A6657C2 /* RxCollectionViewDataSourceProxy.swift */,
-				FD9AD7CC1573E59C60B1102AE8A03C27 /* RxCollectionViewDelegateProxy.swift */,
-				696A6126E984214CF680CE80D9937054 /* RxNavigationControllerDelegateProxy.swift */,
-				F509249179180AF513BF63ECF663DEA9 /* RxPickerViewDataSourceProxy.swift */,
-				9480C126A7EDE4C28FFD703C1E544ABA /* RxPickerViewDelegateProxy.swift */,
-				182A21FCB76E096A9D7FEDBEF76AA694 /* RxScrollViewDelegateProxy.swift */,
-				A75E520EFC7FB5FCD37A68B574C70A09 /* RxSearchBarDelegateProxy.swift */,
-				B150312C9CDFA0F7E715FB4D2303E4DD /* RxSearchControllerDelegateProxy.swift */,
-				B2CCE6082CF016773E3F0E29411B0840 /* RxTabBarControllerDelegateProxy.swift */,
-				ADACF5F64B8BB946BCF315E5EFDFBBD5 /* RxTabBarDelegateProxy.swift */,
-				E19C9CE80A938658DB42E90B9C5795F1 /* RxTableViewDataSourcePrefetchingProxy.swift */,
-				E6986BC370B8E9341C15A9EE09C430AF /* RxTableViewDataSourceProxy.swift */,
-				EECA7FD78A4EAC70AFA24D8436316ED4 /* RxTableViewDelegateProxy.swift */,
-				181824E1FAF010776A40CD02AECABC32 /* RxTextStorageDelegateProxy.swift */,
-				F28AE0DEE50B305C8FDED0B9DE84742D /* RxTextViewDelegateProxy.swift */,
-				7BE85CAD23F9865830FEB2F38D263DFB /* RxWebViewDelegateProxy.swift */,
+				7FA8A25FC235DAF711749571F45C9544 /* RxExample-iOS.app */,
+				49FDFB3739C657170242D3EB633A11A5 /* RxExample-iOSTests.xctest */,
+				AFBCF3A87277A2242527F23ED7EC22EF /* RxExample-iOSUITests.xctest */,
+				6DC6A0BC2B53D4296BF9CA39B860D5F8 /* RxExample-macOSUITests.xctest */,
+				EEE326A24AC925E4CE451DE3D014B844 /* RxExample.app */,
 			);
-			path = Proxies;
+			name = Products;
 			sourceTree = "<group>";
 		};
-		38FF76192B7AA03ACA814C7E86CDD639 /* Events */ = {
+		2CE1C2B636E827014679A2EF8FEAD44C /* GitHubSignup */ = {
 			isa = PBXGroup;
 			children = (
-				0157100395E707C5BFBF069BF9B1AF58 /* ItemEvents.swift */,
+				42AAD8595808478845EAE78A1F717AE2 /* UsingDriver */,
+				1FC3F19F7E2F340B1A116C6FA2AC3CF2 /* UsingVanillaObservables */,
+				3BE32312D2AFA2EAEEF092F192272D3F /* BindingExtensions.swift */,
+				828EB8D5DF1CE8EB347A980C3856DED5 /* DefaultImplementations.swift */,
+				CB60415DFA50B168166C7C4BFB2E299B /* GitHubSignup1.storyboard */,
+				AF22E29E524F95A129B8993CECDDEA61 /* GitHubSignup2.storyboard */,
+				5844160F6FC5A928CF576AC030751CBC /* Protocols.swift */,
 			);
-			path = Events;
-			sourceTree = "<group>";
-		};
-		8A1890842C1ACF94FC870C304125A7CD /* Protocols */ = {
-			isa = PBXGroup;
-			children = (
-				BA5417BB986D7392D2193397025E35E0 /* RxCollectionViewDataSourceType.swift */,
-				4390CA6C314C4F589E5F7BBF204AC571 /* RxPickerViewDataSourceType.swift */,
-				1EF0458A2B6385CEF31AC5D5C89F593A /* RxTableViewDataSourceType.swift */,
-			);
-			path = Protocols;
-			sourceTree = "<group>";
-		};
-		86AF4B3D6B7FDE1CD39E8EBAE76A4746 /* Common */ = {
-			isa = PBXGroup;
-			children = (
-				304631139A7011DB8F45106226F2AF46 /* Binder.swift */,
-				C87C87E443CD953BD60DC9B5E299AC46 /* ControlTarget.swift */,
-				82C00CFBE81EBF5FE224D402A7B36C2D /* DelegateProxy.swift */,
-				29A6350E9DBBB97DD1F44C39D502BD16 /* DelegateProxyType.swift */,
-				DC8A54E1CF90C7BD292129AA084A1607 /* KeyPathBinder.swift */,
-				68265F843F1B9A8E0B496E002E7E21EB /* NSLayoutConstraint+Rx.swift */,
-				67CB0471E9BBC94952AE0EB8EBD0E41C /* Observable+Bind.swift */,
-				C20C352E61A5C57B04617930D6FC49DF /* RxCocoaObjCRuntimeError+Extensions.swift */,
-				6A1CA71992965C462770E2A910BBB561 /* RxTarget.swift */,
-				97AFDC4E55F564F68B428585281ADB7D /* SectionedViewDataSourceType.swift */,
-				157645EB038CB105139CBAD2A0893093 /* TextInput.swift */,
-			);
-			path = Common;
-			sourceTree = "<group>";
-		};
-		B57D846CEEC7323F22B7E4B64843B697 /* Documentation */ = {
-			isa = PBXGroup;
-			children = (
-				E2F8EBBCD6166431B57B7D059DC87DFF /* ComparisonWithOtherLibraries.md */,
-				39E4EDBE38CF8F38CD8A48C6A4E915C9 /* DesignRationale.md */,
-				2203101F3E650D944A6CA02AD57D125A /* ExampleApp.md */,
-				CD5CC77E032C961414D034FB9CBC6B81 /* Examples.md */,
-				E8DE77FC1609401EB16E561738F9A780 /* GettingStarted.md */,
-				62EE72E061780554B1ADD0C7D00A1446 /* HotAndColdObservables.md */,
-				CB4C030BCAEEDE4C912DF729FA13E71C /* MathBehindRx.md */,
-				142908E0F17C1543F1054D9E68EC4ED6 /* NewFeatureRequestTemplate.md */,
-				3A1C398668DA27A155BB60E03072DD70 /* Playgrounds.md */,
-				FEE8B7EC65E28A1A69BFFF7961291E62 /* Schedulers.md */,
-				220071E4E9D88B7C3466BD08E4B73FA9 /* Subjects.md */,
-				9EBC6F9F460CE1D34E89388B0FD9C1E8 /* Tips.md */,
-				D16899E6A8341571C3D8C0704A5FD3CD /* Traits.md */,
-				6C403C8FE0AE4C813688868EC8D080D0 /* UnitTests.md */,
-				F9DE1F1A8A5B3C11A555919CE4F69475 /* Warnings.md */,
-				C408A3FF2CEA2DA08A325BDD19168A75 /* Why.md */,
-			);
-			path = Documentation;
-			sourceTree = "<group>";
-		};
-		128D4570C79B7ABE2729401501CA6C01 /* RxSwift */ = {
-			isa = PBXGroup;
-			children = (
-				CA0FF07B1E8DC7C146B29285E1DF7DC1 /* Concurrency */,
-				AF31AB4C9C90F8059D4FF3B75F5D0503 /* Disposables */,
-				5AA0330EF88E57BB0929DE5CA03B3EE3 /* Extensions */,
-				311869C874A6BB1A6BD2F6872BE81DAC /* Observables */,
-				A7412D144C8223A052A6C41409A5BADA /* Observers */,
-				C002E521B22A6D016907480AEABE209D /* Platform */,
-				EF6683A2E8B22D21AA170C231A78289A /* Schedulers */,
-				A63D02A2E26666BAC3BDF528E4CCD915 /* Subjects */,
-				C1DFA34A816E13CC3342ACC0BEA13DFE /* SwiftSupport */,
-				1E1F4C1EC3435AD2484F82FFE2A79F3E /* Traits */,
-				0F748DD6A95B5DD576D49A2F954E0592 /* AnyObserver.swift */,
-				FB83B50FA91804AA7D4E66F6ACC761E4 /* Cancelable.swift */,
-				D1DC50F9C711C1D42F5DBDC795F22DF6 /* ConnectableObservableType.swift */,
-				13E5F6D085A23AE147F84DC31AF62697 /* Date+Dispatch.swift */,
-				6AB3478A23A36749D10510FA60333C31 /* Deprecated.swift */,
-				2B0F48BF0BD0BA990B2ACF62C7803199 /* Disposable.swift */,
-				5378467FAB45C860FA0B11187E230C66 /* Errors.swift */,
-				9B21F373D411572EBE73856B50AFB5F9 /* Event.swift */,
-				43CF55A8B09CB81F84A618E050C875A5 /* GroupedObservable.swift */,
-				B043F251BEE0159C34359FDDE49D2276 /* ImmediateSchedulerType.swift */,
-				78451D06C1E39B499773B16AF2B44EA7 /* Info.plist */,
-				C6838F4A6E51C284B4F0B89EF5E6931F /* Observable.swift */,
-				0985F95C51FB6D28B55E3C3250A792C8 /* ObservableConvertibleType.swift */,
-				2D0691C9562454303E17B8364E637E45 /* ObservableType+Extensions.swift */,
-				F91D43995ECA2464FF4D734341DFD01E /* ObservableType.swift */,
-				501D561691F1037504269BBB3508FEA2 /* ObserverType.swift */,
-				4702711EE67D54DA36576BD197A55847 /* Reactive.swift */,
-				296A8DBA7DC4BB332E7AC658C3AB8192 /* Rx.swift */,
-				825030FF3B7A3B400163F801C79A2CFA /* RxMutableBox.swift */,
-				729692365FB0000A475FEA4E6E9596CC /* SchedulerType.swift */,
-			);
-			path = RxSwift;
-			sourceTree = "<group>";
-		};
-		1E1F4C1EC3435AD2484F82FFE2A79F3E /* Traits */ = {
-			isa = PBXGroup;
-			children = (
-				2E0A3EC7860B93C80E17932690527EB6 /* Completable+AndThen.swift */,
-				8236415AFEB4E53F1CACCFFA6B8865D3 /* Completable.swift */,
-				B33BC936FCDD063C2DC2C15F0FF98A34 /* Maybe.swift */,
-				0C0F611E6CBB7E641D7716EFFDE0EB4E /* ObservableType+PrimitiveSequence.swift */,
-				B70626D710669115F779E892A21E0D5E /* PrimitiveSequence+Zip+arity.swift */,
-				5FC2932F5E71D6BF8B97AF0771E11345 /* PrimitiveSequence+Zip+arity.tt */,
-				1BECECB10413DCB200DFE2712C67D091 /* PrimitiveSequence.swift */,
-				E1C54C4C503BE7312641AC46E72479F6 /* Single.swift */,
-			);
-			path = Traits;
-			sourceTree = "<group>";
-		};
-		C002E521B22A6D016907480AEABE209D /* Platform */ = {
-			isa = PBXGroup;
-			children = (
-				F9C184F0E7C7B99DC340AFEF3EE6632C /* DataStructures */,
-				FB5599DAA38910EF464F6D87E2F5602F /* AtomicInt.swift */,
-				F8ADF171B7C98F317F17CA3A91AE8926 /* DispatchQueue+Extensions.swift */,
-				E954487FB5C2FF4BCA0F6A12801FAA17 /* Platform.Darwin.swift */,
-				1136FA91AA87AE7AB4375BAF8B09E046 /* Platform.Linux.swift */,
-				6EB584753B55DAC6313BCE1CD9ECAB65 /* RecursiveLock.swift */,
-			);
-			path = Platform;
-			sourceTree = "<group>";
-		};
-		F9C184F0E7C7B99DC340AFEF3EE6632C /* DataStructures */ = {
-			isa = PBXGroup;
-			children = (
-				39C29C42170249C94D397CF76F758122 /* Bag.swift */,
-				66C4EA499407125546A46F3C7CEF602B /* InfiniteSequence.swift */,
-				D57C5C3F16B2D0467DAB851A7FDF856E /* PriorityQueue.swift */,
-				7787F4C40F2529730C848A23D132C5D5 /* Queue.swift */,
-			);
-			path = DataStructures;
-			sourceTree = "<group>";
-		};
-		AF31AB4C9C90F8059D4FF3B75F5D0503 /* Disposables */ = {
-			isa = PBXGroup;
-			children = (
-				FB932C95EA42D49F6A18D4D88EF4D8CA /* AnonymousDisposable.swift */,
-				9ED918F9D708019869DED58D0FF572F1 /* BinaryDisposable.swift */,
-				D56A9B70B5CA23A4559E115DD6707D7F /* BooleanDisposable.swift */,
-				A026B5AB558FB3D33A78817595E6962C /* CompositeDisposable.swift */,
-				E8ABE6D2BAD191ADE0C0B8A8CD3CC2C2 /* Disposables.swift */,
-				9C7B4F95038E4E393865DCC591F00B0A /* DisposeBag.swift */,
-				01AD7A8CB440F7215C6E1402E32B97DA /* DisposeBase.swift */,
-				519B2071CBECF213D4C908D65519D4F8 /* NopDisposable.swift */,
-				88DB880D12604338D09558420F699155 /* RefCountDisposable.swift */,
-				2846C73F77FADB67776A13CCE0D009CB /* ScheduledDisposable.swift */,
-				84D5F4CA077FFC27371628AED32FD7E5 /* SerialDisposable.swift */,
-				C2F95F8E0CEBDDF97D695DAFE24B6F60 /* SingleAssignmentDisposable.swift */,
-				562D36E8A4CADF3198FFBF6AFEFC4EDC /* SubscriptionDisposable.swift */,
-			);
-			path = Disposables;
+			path = GitHubSignup;
 			sourceTree = "<group>";
 		};
 		311869C874A6BB1A6BD2F6872BE81DAC /* Observables */ = {
@@ -1798,400 +1688,6 @@
 			path = Observables;
 			sourceTree = "<group>";
 		};
-		C1DFA34A816E13CC3342ACC0BEA13DFE /* SwiftSupport */ = {
-			isa = PBXGroup;
-			children = (
-				0EFADC19FBF31B641F5DB2A12F84CA70 /* SwiftSupport.swift */,
-			);
-			path = SwiftSupport;
-			sourceTree = "<group>";
-		};
-		5AA0330EF88E57BB0929DE5CA03B3EE3 /* Extensions */ = {
-			isa = PBXGroup;
-			children = (
-				973279E46C9C74614DCEA4DC6B11CF8F /* Bag+Rx.swift */,
-				B5A23EE9F6750EBDB6EE9530837D9DC3 /* String+Rx.swift */,
-			);
-			path = Extensions;
-			sourceTree = "<group>";
-		};
-		CA0FF07B1E8DC7C146B29285E1DF7DC1 /* Concurrency */ = {
-			isa = PBXGroup;
-			children = (
-				3B3919186F524775D3FBBEC10B9C8DF2 /* AsyncLock.swift */,
-				6027DF14E52CCC6A3D0DE5920E01CE48 /* Lock.swift */,
-				81A94219203B13775DE22D82EE5CB85D /* LockOwnerType.swift */,
-				83B9BAD7CCA9F3F7FD247E6D0A03363C /* SynchronizedDisposeType.swift */,
-				257D97A45A3EFC55B590A6D6F94EAF3C /* SynchronizedOnType.swift */,
-				FF2F35394C85B6C4C7329DE06E026BE3 /* SynchronizedUnsubscribeType.swift */,
-			);
-			path = Concurrency;
-			sourceTree = "<group>";
-		};
-		A63D02A2E26666BAC3BDF528E4CCD915 /* Subjects */ = {
-			isa = PBXGroup;
-			children = (
-				E12515A354A1B858762BFAF3B8474B8D /* AsyncSubject.swift */,
-				EFCF4C9DB704D539CEE62B5B5A9C2510 /* BehaviorSubject.swift */,
-				CB468E13C2CB76F0762333EE8A2598E2 /* PublishSubject.swift */,
-				7379F1051B1D16EF7BD2BD2CB0AAB50C /* ReplaySubject.swift */,
-				5F3057CE993F5EE6E4AB1296CA2769CE /* SubjectType.swift */,
-			);
-			path = Subjects;
-			sourceTree = "<group>";
-		};
-		A7412D144C8223A052A6C41409A5BADA /* Observers */ = {
-			isa = PBXGroup;
-			children = (
-				04FEC956A5903B794ABD6038B98F33A6 /* AnonymousObserver.swift */,
-				22EA2BB89F66EAEE5D227B2E87B8B483 /* ObserverBase.swift */,
-				C18E0EDDE64B0B6471612917CB004350 /* TailRecursiveSink.swift */,
-			);
-			path = Observers;
-			sourceTree = "<group>";
-		};
-		EF6683A2E8B22D21AA170C231A78289A /* Schedulers */ = {
-			isa = PBXGroup;
-			children = (
-				8CEFC800B72E9B8EA384204EE8D4C6E1 /* Internal */,
-				E7EEBBA88273A69F33BA8DA26A7BC0EA /* ConcurrentDispatchQueueScheduler.swift */,
-				A7D2D18C5BE4079AB188E2FD07DAC854 /* ConcurrentMainScheduler.swift */,
-				BAD55FA942DE96C5EA83C704B112EBEB /* CurrentThreadScheduler.swift */,
-				271236E2311B6BAE7B62A0077DFDEF2A /* HistoricalScheduler.swift */,
-				FAC564A17E8A918D7FB6613A8A8BD27E /* HistoricalSchedulerTimeConverter.swift */,
-				1DE4AF00E0C0C864B36150185AF1DAEA /* MainScheduler.swift */,
-				FBB5FEA69A9CF165DCCEF0D06E5BEF6F /* OperationQueueScheduler.swift */,
-				1FDD8D3604D8FE58A7AB274B5C24F26A /* RecursiveScheduler.swift */,
-				D35C5DD3A7728F397A0A21C923687325 /* SchedulerServices+Emulation.swift */,
-				00A46A8E3DF15D385150C3008EBAC484 /* SerialDispatchQueueScheduler.swift */,
-				E305842A0104DA85D9A4006C8DA6198D /* VirtualTimeConverterType.swift */,
-				8D4EBCDDC8E72399BD3FB5F923CF2173 /* VirtualTimeScheduler.swift */,
-			);
-			path = Schedulers;
-			sourceTree = "<group>";
-		};
-		8CEFC800B72E9B8EA384204EE8D4C6E1 /* Internal */ = {
-			isa = PBXGroup;
-			children = (
-				A22C826FC673B4D5B8224ABF54D54A96 /* DispatchQueueConfiguration.swift */,
-				04EC8F0CDFE1C58F063B8E0474BE2869 /* InvocableScheduledItem.swift */,
-				70D4B0E4D817F451D20109DE22BAFD54 /* InvocableType.swift */,
-				010A6DC5F1C53FDDDE8E4162A1F22A01 /* ScheduledItem.swift */,
-				D2B6C15662276E607C358058E9DA0DF5 /* ScheduledItemType.swift */,
-			);
-			path = Internal;
-			sourceTree = "<group>";
-		};
-		94AC9130EFE30CF9329D77A1B09011A2 /* RxRelay */ = {
-			isa = PBXGroup;
-			children = (
-				DA2EF4DE381397DDAE7BC24868D7CA1C /* BehaviorRelay.swift */,
-				43FAAE091AC32089F20C6FAE6FD3DB08 /* Info.plist */,
-				55A30D7D142808B45877FBB24B5C7791 /* Observable+Bind.swift */,
-				DD8E31467F3C9DBDB479FD003106BB04 /* PublishRelay.swift */,
-				CA2DE94CD4690840F314447D0BBB0CD8 /* Utils.swift */,
-			);
-			path = RxRelay;
-			sourceTree = "<group>";
-		};
-		4F64ADADF5E186D9F09530FDB1926E9F /* Platform */ = {
-			isa = PBXGroup;
-			children = (
-				34BB52AE11177263FA76772B510890DD /* DataStructures */,
-				47AD130EC058D631CBAE464CD3A5EB78 /* AtomicInt.swift */,
-				415297C5E9E956E3AF77CE8666887F52 /* DispatchQueue+Extensions.swift */,
-				5CEE0058A536D4E17BF234D336A3C78C /* Platform.Darwin.swift */,
-				EB64A982B739CE5002F872F71CA24EC1 /* Platform.Linux.swift */,
-				7893191C88193F3A58C9F5C7BAEB8EE0 /* RecursiveLock.swift */,
-			);
-			path = Platform;
-			sourceTree = "<group>";
-		};
-		34BB52AE11177263FA76772B510890DD /* DataStructures */ = {
-			isa = PBXGroup;
-			children = (
-				145DE280C39840AE5280D9A7D023282E /* Bag.swift */,
-				2A3C74A33934A9681E1B58C21C2E3C1E /* InfiniteSequence.swift */,
-				FD5AAE7954CE968D8B56A3A35591EC98 /* PriorityQueue.swift */,
-				FF4A0B2FA85DDD6B70597134B64DEFF4 /* Queue.swift */,
-			);
-			path = DataStructures;
-			sourceTree = "<group>";
-		};
-		15B32872EA8A9D1DB9524426DF33A1B0 /* Tests */ = {
-			isa = PBXGroup;
-			children = (
-				49EA6C8307EAC9A55EEBCA2BFD9CEBC0 /* Benchmarks */,
-				B3834785A7E04BA74E9B4B99DBF290DC /* Microoptimizations */,
-				8A2DA1CF4FC1ECDABD3EF4BC2F0942BA /* Platform */,
-				91CF0033C168F922AA153466F24349C0 /* RxBlockingTests */,
-				7C0D7CF70FD68C15AF9C3E1543820539 /* RxCocoaTests */,
-				99720C425DDE864D65A98A9AA62116EB /* RxRelayTests */,
-				7ABE026BB3B02B50331348E2D5AE0761 /* RxSwiftTests */,
-				C1B60F15945AFEC9AF458EBED7202687 /* Info.plist */,
-				E61F3D5C0538C7E80C57A6B40B8F1B4F /* MessageProcessingStage.swift */,
-				BEAFEE0F79C1B7F71C00C25A8B6740C2 /* Recorded+Timeless.swift */,
-				A9B95AF6D01F383E1891A7FF3C541909 /* Resources.swift */,
-				974170C6D98CD36D99D490FFE49E304C /* RxTest.swift */,
-				5B8BDB292489B5F85BB2D07C94112639 /* TestErrors.swift */,
-				DAB63C1EE8993CB75C89FB85770EFF3A /* XCTest+AllTests.swift */,
-			);
-			path = Tests;
-			sourceTree = "<group>";
-		};
-		B3834785A7E04BA74E9B4B99DBF290DC /* Microoptimizations */ = {
-			isa = PBXGroup;
-			children = (
-				00A1EDB33525098993556FCF4E77A351 /* Info.plist */,
-				468C8F4010FB48929AF2FB64467A88F3 /* PerformanceTools.swift */,
-				9E59779189382F4874332EBFC5178733 /* main.swift */,
-			);
-			path = Microoptimizations;
-			sourceTree = "<group>";
-		};
-		99720C425DDE864D65A98A9AA62116EB /* RxRelayTests */ = {
-			isa = PBXGroup;
-			children = (
-				AE02227C2CE6A491B15B1CC19EEBF6D1 /* Observable+RelayBindTests.swift */,
-			);
-			path = RxRelayTests;
-			sourceTree = "<group>";
-		};
-		8A2DA1CF4FC1ECDABD3EF4BC2F0942BA /* Platform */ = {
-			isa = PBXGroup;
-			children = (
-				8A7B54DAEAD47B393E05C4AF54EFD8CC /* AtomicInt.swift */,
-				EA9A7584F362D80FF3CD97BFB0A5AD62 /* DispatchQueue+Extensions.swift */,
-				46DF55C85B5BEF7F364374CBC1C1F55C /* Platform.Darwin.swift */,
-				DB9E93015939F39209DFB3AF4772C110 /* Platform.Linux.swift */,
-				1D48F748FBC7FA69CEF3D9E574847397 /* RecursiveLock.swift */,
-			);
-			path = Platform;
-			sourceTree = "<group>";
-		};
-		7ABE026BB3B02B50331348E2D5AE0761 /* RxSwiftTests */ = {
-			isa = PBXGroup;
-			children = (
-				B50539874E30EE36FF41B9F2C75E1D25 /* TestImplementations */,
-				DCE9D4225BD58F539135672F4C8E14C2 /* Anomalies.swift */,
-				D8C5D782C56AB25E5810340D08926FA8 /* AssumptionsTest.swift */,
-				024728FB208DC7D69B1F370F1419CCBC /* AsyncSubjectTests.swift */,
-				DCB45D15FBE1698E206B22E407C3C5CB /* Atomic+Overrides.swift */,
-				0AB3317438E493850F107B2B11DFC68A /* AtomicTests.swift */,
-				A8F0AE5427763244D269A032C8BE7460 /* BagTest.swift */,
-				94D1215DF1A8D8261F7F16FD7BD5DA5C /* BehaviorSubjectTest.swift */,
-				148788D43E9B500451E06EB921D4C04C /* Completable+AndThen.swift */,
-				584DB030C9C41B4FAFB3146ECB9A1594 /* CompletableTest.swift */,
-				8682035D7CF83DF5554739006704CCE2 /* CurrentThreadSchedulerTest.swift */,
-				0A692B0E3B786CA175D7F9B32FBAEBED /* DisposableTest.swift */,
-				49E4C9FE4CF8624BDB431B74AA2156AE /* DisposeBagTest.swift */,
-				1C0EB907A33EA6E571A9E1EAD702784F /* Event+Test.swift */,
-				C88E34E26CC5E14487782B0E0C3F234E /* HistoricalSchedulerTest.swift */,
-				FEAB7B191C924EB4B23F850B87F3D126 /* MainSchedulerTests.swift */,
-				DDC88454B0CFD6B889441FAFCB933D6D /* MaybeTest.swift */,
-				DC1726AF838CC3FD27B0420A1F571973 /* Observable+AmbTests.swift */,
-				403C2896DD94FE8E4932D40FB2D140E1 /* Observable+BufferTests.swift */,
-				33F17106F74449D35B25F5059D58045F /* Observable+CatchTests.swift */,
-				F461936E061121ADD3B1D284645FF548 /* Observable+CombineLatestTests+arity.swift */,
-				D52833CBC273DA353F141B0E228AD229 /* Observable+CombineLatestTests+arity.tt */,
-				3FE69A7233AF985C931CBB62A5E397BB /* Observable+CombineLatestTests.swift */,
-				A295D898615967402B2F71521648A6C6 /* Observable+CompactMapTests.swift */,
-				660C5DBEE5CF1766153D1F2B640F967B /* Observable+ConcatTests.swift */,
-				4D52FD5567F30B916FEFAA946290C06C /* Observable+DebugTests.swift */,
-				562586F21F6B6D6B085B652E3CAA43AF /* Observable+DefaultIfEmpty.swift */,
-				585B665849472A139820A1BFA79285FF /* Observable+DelaySubscriptionTests.swift */,
-				CCD5FA89DB8079B21401BBBEB1FDDD4B /* Observable+DelayTests.swift */,
-				472C2EDA3C97679CEA00B27AC2EECB3E /* Observable+DematerializeTests.swift */,
-				6BE6A0C0292774D9E9D0D21B6AB9D572 /* Observable+DistinctUntilChangedTests.swift */,
-				343AE86C1989895BF512F6F52EFEEC7B /* Observable+DoOnTests.swift */,
-				656F7A775DA38C9E5684D463EF5F9081 /* Observable+ElementAtTests.swift */,
-				2C3FC41270504D8D385C437303B859D6 /* Observable+EnumeratedTests.swift */,
-				7158279433E115B57491AB77050C299C /* Observable+FilterTests.swift */,
-				545B487206134E478B9CD8828170091F /* Observable+GenerateTests.swift */,
-				2A0BECCED0ED9D292116B8EC8AE29013 /* Observable+GroupByTests.swift */,
-				128DAB807A91485CDCF4B28ECE634E54 /* Observable+JustTests.swift */,
-				EC50C9E62A97537D6A71E18B56245A64 /* Observable+MapTests.swift */,
-				B35D6231F0316CB21D375F2214550BC3 /* Observable+MaterializeTests.swift */,
-				EAA620960AA402CDC847A8B89CAFE88A /* Observable+MergeTests.swift */,
-				E7CB4C07B1514ECEB67930E6016C3D63 /* Observable+MulticastTests.swift */,
-				5B8084744F07B579BCCE88EFE2E1A54C /* Observable+ObserveOnTests.swift */,
-				2D3809F9950C1AFC8376B53B07FB4D7E /* Observable+OptionalTests.swift */,
-				6D2D49FCBB79774D284639EDAFB889EB /* Observable+PrimitiveSequenceTest.swift */,
-				5B041FE90E9E486D295179B54B47C402 /* Observable+RangeTests.swift */,
-				46C91047DDC0CB359813CD8670DC54AC /* Observable+ReduceTests.swift */,
-				6AD9BF31ADF4367DFE496606A7D343C6 /* Observable+RepeatTests.swift */,
-				3B792E191A2D109B895BF9F5C2C4A4F4 /* Observable+RetryWhenTests.swift */,
-				269FBFC067656ABD184F1E3EC90D0E03 /* Observable+SampleTests.swift */,
-				1C46A368E6F1DCA24884CD50B7F72A4E /* Observable+ScanTests.swift */,
-				D255B906EE140379260B40E514E1CDED /* Observable+SequenceTests.swift */,
-				DB50D7E3D0BA4C6F5F198737749FE6B6 /* Observable+ShareReplayScopeTests.swift */,
-				AE3077473E5414740B0434F638FADD21 /* Observable+SingleTests.swift */,
-				2A40255DA7245F3025769A6D5413881D /* Observable+SkipTests.swift */,
-				9932BE2F6DA09E8902890BF95B747907 /* Observable+SkipUntilTests.swift */,
-				84BA7FCF9FBD6EA8DFAD5DCC85068E13 /* Observable+SkipWhileTests.swift */,
-				F6B8D56A565A39A32744E60CCC84F409 /* Observable+SubscribeOnTests.swift */,
-				D2EB9CD7CCA1F9C7A4CC6221C3BB8922 /* Observable+SubscriptionTest.swift */,
-				4A208298A44E099CD445E59D34D1FA84 /* Observable+SwitchIfEmptyTests.swift */,
-				A1A6639F2FD288AAC41B6E38BB7DE220 /* Observable+SwitchTests.swift */,
-				CD97E9A7667753C61D7A2E9E076E3579 /* Observable+TakeLastTests.swift */,
-				D6B7B63319E28C2D00822D15646FF8A6 /* Observable+TakeTests.swift */,
-				E446C6C5B6F49AE4BB59723CED2BE6FF /* Observable+TakeUntilTests.swift */,
-				60F8618CDAB7DAC9269E678BB2081DFD /* Observable+TakeWhileTests.swift */,
-				A8082BC7CA4A11AEC9AC14CE517A25C4 /* Observable+Tests.swift */,
-				422046ECCA67AFBD1A4A6C1C0FEDCCEC /* Observable+ThrottleTests.swift */,
-				4C4589D23BC7D428066C8594E235C4F7 /* Observable+TimeoutTests.swift */,
-				3C681C21162C849DE5877602769C990C /* Observable+TimerTests.swift */,
-				6B8231DA2785D2BD30C86623372873C1 /* Observable+ToArrayTests.swift */,
-				458D49144EF1722FA401E8DB3FC4B2F1 /* Observable+UsingTests.swift */,
-				1317D8F49C8969D69F53E2E142CAAC5D /* Observable+WindowTests.swift */,
-				8A7456915F63B55591664B77FC290405 /* Observable+WithLatestFromTests.swift */,
-				51CF0CE3DDAE1451087266D5F0F034DC /* Observable+ZipTests+arity.swift */,
-				EFF04FD5B151ED3C7BEA83F3B9F661CD /* Observable+ZipTests+arity.tt */,
-				733F87966C40A213F388170F3D5E3CAA /* Observable+ZipTests.swift */,
-				CC643A0D08154D8EC55643E3F5D64FA6 /* ObservableType+SubscriptionTests.swift */,
-				448F81DFEC764F47E780368976172613 /* ObserverTests.swift */,
-				7789A7D0101B8E5D293E85727A4A1124 /* PrimitiveSequenceTest+zip+arity.swift */,
-				1A53ADA00C18AE3CFF437776BF343176 /* PrimitiveSequenceTest+zip+arity.tt */,
-				5B844C5D3AA32FC2140F054058C56B26 /* PublishSubjectTest.swift */,
-				5D3E222CD51143DC4D820E40B27A1F5A /* QueueTests.swift */,
-				38EBECE1247E0E17F976B0E980A3F5C9 /* Reactive+Tests.swift */,
-				054288611CB8B710058EF40F9AB69E8E /* RecursiveLockTest.swift */,
-				739213A63721183B7E46AF78A987ADE5 /* ReplaySubjectTest.swift */,
-				92C70A8DFD9DE6C616EB6588A4EBCFFD /* SchedulerTests.swift */,
-				A51A3A348FE6420678390478427AAD4C /* SharingSchedulerTests.swift */,
-				CBD588A55B49660B3C880FCB0696711A /* SingleTest.swift */,
-				60F9A0D44BA3E50EDC7D70849840A57E /* SubjectConcurrencyTest.swift */,
-				55A631CCF1FA82177A4EDDC8CEF4EDC7 /* Synchronized.swift */,
-				DEEA69D7B66DB8FB92E11F92EC0ABB27 /* VirtualSchedulerTest.swift */,
-			);
-			path = RxSwiftTests;
-			sourceTree = "<group>";
-		};
-		B50539874E30EE36FF41B9F2C75E1D25 /* TestImplementations */ = {
-			isa = PBXGroup;
-			children = (
-				74822689D62504B1114F36CDDB84BE8D /* Mocks */,
-				0EA4EA8029C632BA8558627CA5B2D99A /* ElementIndexPair.swift */,
-				874A20FC8B459468637FE9174BE529A8 /* EquatableArray.swift */,
-				D21824716798DAAC9699D7C5745E18E1 /* Observable+Extensions.swift */,
-				F0E4FE2ACE2DF73A37882AB9429A1722 /* TestVirtualScheduler.swift */,
-			);
-			path = TestImplementations;
-			sourceTree = "<group>";
-		};
-		74822689D62504B1114F36CDDB84BE8D /* Mocks */ = {
-			isa = PBXGroup;
-			children = (
-				E801306F368C465E60EA6661C6B2655B /* BackgroundThreadPrimitiveHotObservable.swift */,
-				B3D319D645AAD0B827013E2394562910 /* MainThreadPrimitiveHotObservable.swift */,
-				509C3F8A76D76CC44176369E8E7A6E78 /* MockDisposable.swift */,
-				138E03B464C0D2ED534F0DD48F485139 /* MySubject.swift */,
-				8CD6E85FA0BBB2B3C1BDFBE0DE9646B4 /* Observable.Extensions.swift */,
-				16010D598A0A8913523ED49BF3D232A5 /* PrimitiveHotObservable.swift */,
-				54129207C0010D1D509E575807D973FC /* PrimitiveMockObserver.swift */,
-				7AEBBEB63FD37684BB10BA18A57A6650 /* TestConnectableObservable.swift */,
-			);
-			path = Mocks;
-			sourceTree = "<group>";
-		};
-		7C0D7CF70FD68C15AF9C3E1543820539 /* RxCocoaTests */ = {
-			isa = PBXGroup;
-			children = (
-				208D194A875D8EE33A321170E7A098A4 /* TestImplementations */,
-				5E43B7050480428D19C0068F9CA6DADB /* Binder+Tests.swift */,
-				C6B267EDB5C31A9A6BB2E3C63B69C987 /* ControlEventTests.swift */,
-				240BB088556B52A8700DB0DFAC250585 /* ControlPropertyTests.swift */,
-				83471F5F090972F0F1CE8E6170D57E9A /* DelegateProxyTest+Cocoa.swift */,
-				830EFD3E32F7D9B96DECF24C77ACB2ED /* DelegateProxyTest+UIKit.swift */,
-				515855E01B98AA32869446EBB9866D01 /* DelegateProxyTest.swift */,
-				EF8D21D0582379473C74A11575687C20 /* Driver+Test.swift */,
-				C65146FF14A7B26607B7EF61912CDE59 /* ExampleTests.swift */,
-				7997DB64FEB11DF41178E04618AA63BA /* KVOObservableTests.swift */,
-				DA85EC4EB67FC198C403E23AB672F195 /* KeyPathBinder+RxTests.swift */,
-				D04FD485997BA7C402ED2DE678D88A10 /* NSButton+RxTests.swift */,
-				474110AA5619FA20F46E288B1D161EE3 /* NSControl+RxTests.swift */,
-				A9D61B1924123102A5AEF21A893445A1 /* NSLayoutConstraint+RxTests.swift */,
-				CAAB267B9DD71E09EB242A12210B3524 /* NSObject+RxTests.swift */,
-				3A32138261A459EC2FDA91DEA7AAE443 /* NSSlider+RxTests.swift */,
-				BA7D2238F5F74E68DB869A2422D2F233 /* NSTextField+RxTests.swift */,
-				FFBF8103C92D62BE3CAC149E35612177 /* NSTextView+RxTests.swift */,
-				5FB6680FF0155E7E519DC1A9D6343D73 /* NSView+RxTests.swift */,
-				47EAD0EBE66503A817E0D9C4F7659B1A /* NotificationCenterTests.swift */,
-				08DBAADF1EFA525C3AF818641EE34661 /* Observable+BindTests.swift */,
-				F5C2B1E4FED4352E27E7994BB6FD3846 /* ObservableConvertibleType+SharedSequence.swift */,
-				322A74717102B7F9198FF48AFB16C29B /* RXObjCRuntime+Testing.h */,
-				3425CBA0CC83DE983A3B6D1E91023A3D /* RXObjCRuntime+Testing.m */,
-				B0BCFAC39FB2AECA7F0D80484FF1C81F /* RuntimeStateSnapshot.swift */,
-				8C01181C5BD2F4523B6257DF02F306A9 /* RxObjCRuntimeState.swift */,
-				0D6DC0F4BB03CD5D8B1C0AC89A92F126 /* RxTest+Controls.swift */,
-				27B118A36824C3C1583C3B8CF66EA377 /* RxTest-iOS-Bridging-Header.h */,
-				B0CD16330057C865E392E38DEC1ECFC4 /* RxTest-macOS-Bridging-Header.h */,
-				A9DFC41C0BB5C0F8D89BF22AC571A340 /* RxTest-tvOS-Bridging-Header.h */,
-				E244B3715597D1D2C267FA7BB4BB6B17 /* SentMessageTest.swift */,
-				9F9FA277F65762E5C30591AB2BB92A01 /* SharedSequence+Extensions.swift */,
-				5033B2F1FCBB5204DA85FD2C912C871B /* SharedSequence+OperatorTest.swift */,
-				3A03173DDFD501D24B16687C49D8E8F2 /* SharedSequence+Test.swift */,
-				F97F1E796DAC5BE3B4EE9A6474B29DE4 /* Signal+Test.swift */,
-				B4EA36BFE544A3E4A9DFA557ACA2DBCA /* UIActivityIndicatorView+RxTests.swift */,
-				ED42DA917A0E3DB08B80BEAB4DE7F9D5 /* UIAlertAction+RxTests.swift */,
-				257DD5D568DE31FA4B47510E94DF8BF3 /* UIBarButtonItem+RxTests.swift */,
-				75CFAD3CFBCE0F256E83168369D32812 /* UIButton+RxTests.swift */,
-				6ACAEDCA402D5F96F388D462299FC24D /* UICollectionView+RxTests.swift */,
-				8D56DBFAB4056E59B8A72A7CE0DB77D3 /* UIControl+RxTests.swift */,
-				C50D71FCD94A69C6EE749641B5E10744 /* UIDatePicker+RxTests.swift */,
-				E03E2B7C2E6125720A9A4623426715E9 /* UIGestureRecognizer+RxTests.swift */,
-				E2BAEC6888B212566DF4A4EF04DD58AB /* UILabel+RxTests.swift */,
-				E1C8A73C7236F7F45A7DEE109C1A9366 /* UINavigationController+RxTests.swift */,
-				AEDA7B870808D236C469F7B3BAA860CF /* UINavigationItem+RxTests.swift.swift */,
-				D22F802FB687BA51FFE5445F0803921B /* UIPageControl+RxTest.swift */,
-				C112CD56B6B9BDB7BA4CAA8616F2D784 /* UIPickerView+RxTests.swift */,
-				50A0CE6A2D5D4F37405783511FA0B45B /* UIProgressView+RxTests.swift */,
-				886C4589474C4ABF03ABBF0EF3B260D7 /* UIRefreshControl+RxTests.swift */,
-				9DC402B18AE30EC40E8641C01AD42CD6 /* UIScrollView+RxTests.swift */,
-				F3A7A0650310AC1C9D3A49703817E50F /* UISearchBar+RxTests.swift */,
-				650EB1392F5C4AA4B568DB5E7B6FF293 /* UISearchController+RxTests.swift */,
-				BDC3E2248B39FFC31179DAEDDFEABC56 /* UISegmentedControl+RxTests.swift */,
-				BC3270E13F3994339AEECA5CAA0D5EF3 /* UISlider+RxTests.swift */,
-				F785F40F1A3FF2942715C93741778445 /* UIStepper+RxTests.swift */,
-				4FF92CE9E16B6A33732D54167DC7FA79 /* UISwitch+RxTests.swift */,
-				439118BAD52F961C8AA9106D29322AB7 /* UITabBar+RxTests.swift */,
-				002E3475CAFFBEDD81DB29DBB0AABA9A /* UITabBarController+RxTests.swift */,
-				1E2255AF7293927607D443988436668D /* UITabBarItem+RxTests.swift */,
-				58A013EE25D67D650B0FD6F8A3805631 /* UITableView+RxTests.swift */,
-				305E20F666657D788FDD8AD4226839B2 /* UITextField+RxTests.swift */,
-				1145F66AD87C52DE2302D14B54091237 /* UITextView+RxTests.swift */,
-				E8764E56F91C5A61A02C1022828650CA /* UIView+RxTests.swift */,
-				A663C4249D267C2FE636C1CB49C5ACE4 /* UIViewController+RxTests.swift */,
-				D44E9BF073EB33B5F25462ED8B5E6C6D /* UIWebView+RxTests.swift */,
-			);
-			path = RxCocoaTests;
-			sourceTree = "<group>";
-		};
-		208D194A875D8EE33A321170E7A098A4 /* TestImplementations */ = {
-			isa = PBXGroup;
-			children = (
-				90612C718724B2BEB25C0B0B055CE557 /* SectionedViewDataSourceMock.swift */,
-			);
-			path = TestImplementations;
-			sourceTree = "<group>";
-		};
-		49EA6C8307EAC9A55EEBCA2BFD9CEBC0 /* Benchmarks */ = {
-			isa = PBXGroup;
-			children = (
-				217D85EF9F7735A76D9FC89A3F6F5305 /* Benchmarks.swift */,
-				4EE5B9313F9AF55C7AA2168F60C9145C /* Info.plist */,
-			);
-			path = Benchmarks;
-			sourceTree = "<group>";
-		};
-		91CF0033C168F922AA153466F24349C0 /* RxBlockingTests */ = {
-			isa = PBXGroup;
-			children = (
-				64A69F4AB6546B73970B9BEEDB5A385E /* Observable+BlockingTest.swift */,
-			);
-			path = RxBlockingTests;
-			sourceTree = "<group>";
-		};
 		31F975FB2DADDD51B3B65E147EA64A7D /* RxExample */ = {
 			isa = PBXGroup;
 			children = (
@@ -2207,41 +1703,95 @@
 			path = RxExample;
 			sourceTree = "<group>";
 		};
-		2CAB394BC8526D371826A92570E0C316 /* Products */ = {
+		34BB52AE11177263FA76772B510890DD /* DataStructures */ = {
 			isa = PBXGroup;
 			children = (
-				7FA8A25FC235DAF711749571F45C9544 /* RxExample-iOS.app */,
-				49FDFB3739C657170242D3EB633A11A5 /* RxExample-iOSTests.xctest */,
-				AFBCF3A87277A2242527F23ED7EC22EF /* RxExample-iOSUITests.xctest */,
-				6DC6A0BC2B53D4296BF9CA39B860D5F8 /* RxExample-macOSUITests.xctest */,
-				EEE326A24AC925E4CE451DE3D014B844 /* RxExample.app */,
+				145DE280C39840AE5280D9A7D023282E /* Bag.swift */,
+				2A3C74A33934A9681E1B58C21C2E3C1E /* InfiniteSequence.swift */,
+				FD5AAE7954CE968D8B56A3A35591EC98 /* PriorityQueue.swift */,
+				FF4A0B2FA85DDD6B70597134B64DEFF4 /* Queue.swift */,
 			);
-			name = Products;
+			path = DataStructures;
 			sourceTree = "<group>";
 		};
-		7BF28E47B846A8EFB572E641C76B3134 /* RxExample */ = {
+		38FF76192B7AA03ACA814C7E86CDD639 /* Events */ = {
 			isa = PBXGroup;
 			children = (
-				66BA9A18358C5BBBCB5F922BC237B4DD /* Examples */,
-				83E23A8782F62469A6C503CA675EB2BF /* Services */,
-				614257803762669FF88748CEB8519526 /* iOS */,
-				4C8F4BDF631EDD2C6361E4BB9B749174 /* macOS */,
-				FE60BE1A2C2799470FD8DA8192BA21E3 /* Application+Extensions.swift */,
-				20EC43B90A9148F8F68BB8FB61F55F44 /* Example.swift */,
-				E1EEC2BB4637C1D06600820943D2A9CF /* Feedbacks.swift */,
-				CFB2B7AACBD76619500FA42BCFB5BE98 /* Images.xcassets */,
-				4EB93B0F4ED1BA0A70228BE2B0A9CD63 /* Info-iOS.plist */,
-				4AE13CE3946AA95524B0E825CABCE77A /* Info-macOS.plist */,
-				9D9D2472C4444DE4FE301A418D3513A1 /* Lenses.swift */,
-				3DF507A1DA09DF8F8688DD136B93CFAE /* Observable+Extensions.swift */,
-				B042422FFF1830131BDBD9D17F873A84 /* Operators.swift */,
-				BB5DE68ADB85152E82CED64E2C999DC5 /* Result.swift */,
-				45AB11F153A6D50CB66AE29C8B4EC8CC /* RxExample.xcdatamodeld */,
-				C7CE397C57E8CCD34499E1F85969EDD2 /* String+URL.swift */,
-				3C8AB2F86743AAF1E2F84F5ECC39612B /* Version.swift */,
-				6A8D8A2D220626C10FA55FBD488FE7BB /* ViewController.swift */,
+				0157100395E707C5BFBF069BF9B1AF58 /* ItemEvents.swift */,
 			);
-			path = RxExample;
+			path = Events;
+			sourceTree = "<group>";
+		};
+		3D931574F15CFECAAD4EE79596A99405 /* SimpleTableViewExample */ = {
+			isa = PBXGroup;
+			children = (
+				AC3CC9F1C85780E3663A36DDF2FF798F /* SimpleTableViewExample.storyboard */,
+				32AD809245804076AD3450D155173049 /* SimpleTableViewExampleViewController.swift */,
+			);
+			path = SimpleTableViewExample;
+			sourceTree = "<group>";
+		};
+		3FA06124EB5D720CDAAC9099DA396060 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				358B8F5EF120E47B92F1E35E6EB2801D /* CLLocationManager+Rx.swift */,
+				1F17015ABA88895A1D662E47D8A7D219 /* RxCLLocationManagerDelegateProxy.swift */,
+				01B417AF0B22E0E0268AE91FFDB56D57 /* RxImagePickerDelegateProxy.swift */,
+				2AF793DE41594B0FD309C59F386BAAA9 /* UIImagePickerController+Rx.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		412A30A1F6372C8449CCDD17F79ADB0E /* Preprocessor */ = {
+			isa = PBXGroup;
+			children = (
+				0BFAF02CFFF4DA10D024CE9801792D80 /* main.swift */,
+			);
+			path = Preprocessor;
+			sourceTree = "<group>";
+		};
+		42AAD8595808478845EAE78A1F717AE2 /* UsingDriver */ = {
+			isa = PBXGroup;
+			children = (
+				A5B11CEC2B9A7CFBA940C0800E24F0BB /* GitHubSignupViewController2.swift */,
+				900D124378DBCF445CFBE6CC4EBAA694 /* GithubSignupViewModel2.swift */,
+			);
+			path = UsingDriver;
+			sourceTree = "<group>";
+		};
+		440B96EBFFD66DDBEFFC4FC270F39F3E /* RxExample-iOSTests */ = {
+			isa = PBXGroup;
+			children = (
+				AEA06206CEBE91B1309F6B30E714C929 /* Mocks */,
+				0A110D666DC1A6A0BFFBA606FC12712F /* CLLocationManager+RxTests.swift */,
+				8072A0F014ECA735B534151DA6A4428B /* Info.plist */,
+				E0903DFAFA1CCEF0D15B287E5A6F35A6 /* RxExample_iOSTests.swift */,
+				5EF5416455DBFE46442E10FBE525A17B /* RxTest.swift */,
+				B68ED61BBD227025D936A87ADD5E69DF /* TestScheduler+MarbleTests.swift */,
+				8C164545E71F3F1F34140BA97EA4E543 /* UIImagePickerController+RxTests.swift */,
+			);
+			path = "RxExample-iOSTests";
+			sourceTree = "<group>";
+		};
+		44DE07BF00E6E345F00874D8D1958612 /* Traits */ = {
+			isa = PBXGroup;
+			children = (
+				8F4B0EBD96549B5FE19CC11B29C41422 /* Driver */,
+				9EF3030BB8719CE066FA2CB07A6E32A0 /* SharedSequence */,
+				1C9A52762BE2ED8F32A2D648EB3E53B0 /* Signal */,
+				3920D1E6C357B2D9251BCE3CD28A97C7 /* ControlEvent.swift */,
+				8C3B589BCD193CC09AFF3E7A4959460D /* ControlProperty.swift */,
+			);
+			path = Traits;
+			sourceTree = "<group>";
+		};
+		49EA6C8307EAC9A55EEBCA2BFD9CEBC0 /* Benchmarks */ = {
+			isa = PBXGroup;
+			children = (
+				217D85EF9F7735A76D9FC89A3F6F5305 /* Benchmarks.swift */,
+				4EE5B9313F9AF55C7AA2168F60C9145C /* Info.plist */,
+			);
+			path = Benchmarks;
 			sourceTree = "<group>";
 		};
 		4C8F4BDF631EDD2C6361E4BB9B749174 /* macOS */ = {
@@ -2251,6 +1801,77 @@
 				A97E285E7DE7AF9E5D9E4CDB7CFD4B8F /* Main.storyboard */,
 			);
 			path = macOS;
+			sourceTree = "<group>";
+		};
+		4F64ADADF5E186D9F09530FDB1926E9F /* Platform */ = {
+			isa = PBXGroup;
+			children = (
+				34BB52AE11177263FA76772B510890DD /* DataStructures */,
+				47AD130EC058D631CBAE464CD3A5EB78 /* AtomicInt.swift */,
+				415297C5E9E956E3AF77CE8666887F52 /* DispatchQueue+Extensions.swift */,
+				5CEE0058A536D4E17BF234D336A3C78C /* Platform.Darwin.swift */,
+				EB64A982B739CE5002F872F71CA24EC1 /* Platform.Linux.swift */,
+				7893191C88193F3A58C9F5C7BAEB8EE0 /* RecursiveLock.swift */,
+			);
+			path = Platform;
+			sourceTree = "<group>";
+		};
+		51EC350B50A11C07EB737DA08D42242C /* Runtime */ = {
+			isa = PBXGroup;
+			children = (
+				177DD5148F8EA2C1B48654FD4982DEB7 /* include */,
+				7B03BC906D73B13A474181419CFACC45 /* _RX.m */,
+				509ABDDEAA3DCE6E46C6918F408867CA /* _RXDelegateProxy.m */,
+				3943C6297F0AE5B93F3383B08E325EDB /* _RXKVOObserver.m */,
+				5AD3710580AF0BE09EB4F3E77485A52B /* _RXObjCRuntime.m */,
+			);
+			path = Runtime;
+			sourceTree = "<group>";
+		};
+		534B64813BE5CEA9DEC8BEDB5263F682 /* RxRelay */ = {
+			isa = PBXGroup;
+			children = (
+				211F30456F3E12100BA2C55D549A950B /* BehaviorRelay.swift */,
+				1EDA78F4D23BCB3C7683E9ABF7FC7421 /* Observable+Bind.swift */,
+				28A4DC07F569098E297E44AB4171C043 /* PublishRelay.swift */,
+				86184599686100100AEF5891C601DF25 /* Utils.swift */,
+			);
+			path = RxRelay;
+			sourceTree = "<group>";
+		};
+		5AA0330EF88E57BB0929DE5CA03B3EE3 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				973279E46C9C74614DCEA4DC6B11CF8F /* Bag+Rx.swift */,
+				B5A23EE9F6750EBDB6EE9530837D9DC3 /* String+Rx.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		5B893FC0FD29270D1E2F9D260DD2F0DB /* ImagePicker */ = {
+			isa = PBXGroup;
+			children = (
+				9FD00975C8308D9FB9DC3D654EEBE647 /* ImagePicker.storyboard */,
+				5F37F787FA5EBC4C61CBEDAE74F266FE /* ImagePickerController.swift */,
+				EDD122095ECAAE30087A42F7964E5522 /* UIImagePickerController+RxCreate.swift */,
+			);
+			path = ImagePicker;
+			sourceTree = "<group>";
+		};
+		5C3C1883F8D8F1CC65DBF6184EAA3FE0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2BB90C83E9DCD9C09FF21CFC37E6FE6A /* RxSwift */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5F8E61A9C5FA70CFA449B04E4732D262 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6308B3F9D437690B09D2F3527DA9C697 /* XX.app */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 		614257803762669FF88748CEB8519526 /* iOS */ = {
@@ -2288,27 +1909,6 @@
 			path = Examples;
 			sourceTree = "<group>";
 		};
-		C9F67C921316412525F69798D951AC9C /* SimpleTableViewExampleSectioned */ = {
-			isa = PBXGroup;
-			children = (
-				DEF2121F736C90B526E6CDDCAAA6C413 /* SimpleTableViewExampleSectioned.storyboard */,
-				CEBAB7D25F822CF3B3B68C49186119E3 /* SimpleTableViewExampleSectionedViewController.swift */,
-			);
-			path = SimpleTableViewExampleSectioned;
-			sourceTree = "<group>";
-		};
-		0530C1709AD918FD901EBF02259B7E9A /* GitHubSearchRepositories */ = {
-			isa = PBXGroup;
-			children = (
-				E8FF5693CB1D61E54ACEF24A1733A047 /* GitHubSearchRepositories.storyboard */,
-				07BEFFA67B30D79ACFD36C7F1A370C0A /* GitHubSearchRepositories.swift */,
-				12C6B1D8D781DEACB691206960C16410 /* GitHubSearchRepositoriesAPI.swift */,
-				51E0BC31998C6FB8B2F4F354D8CED923 /* GitHubSearchRepositoriesViewController.swift */,
-				20AF5CB3539D625DF5FFB6C1C0278FE1 /* UINavigationController+Extensions.swift */,
-			);
-			path = GitHubSearchRepositories;
-			sourceTree = "<group>";
-		};
 		6A9B35C1D9A9B3E74370373414EEB587 /* Numbers */ = {
 			isa = PBXGroup;
 			children = (
@@ -2316,205 +1916,6 @@
 				F7DB239E53FA43451FB7B53458E5D186 /* NumbersViewController.swift */,
 			);
 			path = Numbers;
-			sourceTree = "<group>";
-		};
-		CC24097552B7834A78CC1B023D12FA59 /* macOS simple example */ = {
-			isa = PBXGroup;
-			children = (
-				932EC51C5C24AB9ADAFEA1FE3BFF530C /* IntroductionExampleViewController.swift */,
-			);
-			path = "macOS simple example";
-			sourceTree = "<group>";
-		};
-		A960D24BB392BAF5BC7F777E1F738EF7 /* Calculator */ = {
-			isa = PBXGroup;
-			children = (
-				0BCD7075E7D9889C71B58BB954570C2F /* Calculator.storyboard */,
-				A8923F6FF7C8B3073C3ED1D4874E6D75 /* Calculator.swift */,
-				CB09794AE1210B32A47EE68E4867E174 /* CalculatorViewController.swift */,
-			);
-			path = Calculator;
-			sourceTree = "<group>";
-		};
-		5B893FC0FD29270D1E2F9D260DD2F0DB /* ImagePicker */ = {
-			isa = PBXGroup;
-			children = (
-				9FD00975C8308D9FB9DC3D654EEBE647 /* ImagePicker.storyboard */,
-				5F37F787FA5EBC4C61CBEDAE74F266FE /* ImagePickerController.swift */,
-				EDD122095ECAAE30087A42F7964E5522 /* UIImagePickerController+RxCreate.swift */,
-			);
-			path = ImagePicker;
-			sourceTree = "<group>";
-		};
-		3D931574F15CFECAAD4EE79596A99405 /* SimpleTableViewExample */ = {
-			isa = PBXGroup;
-			children = (
-				AC3CC9F1C85780E3663A36DDF2FF798F /* SimpleTableViewExample.storyboard */,
-				32AD809245804076AD3450D155173049 /* SimpleTableViewExampleViewController.swift */,
-			);
-			path = SimpleTableViewExample;
-			sourceTree = "<group>";
-		};
-		CE92027A57B26DEDB907D2A113D16100 /* APIWrappers */ = {
-			isa = PBXGroup;
-			children = (
-				7F40D5A827B7113B97B94AA5D3420C2B /* APIWrappers.storyboard */,
-				7BBE6113F676EE03E5A81DFBE4B4CC43 /* APIWrappersViewController.swift */,
-			);
-			path = APIWrappers;
-			sourceTree = "<group>";
-		};
-		2CE1C2B636E827014679A2EF8FEAD44C /* GitHubSignup */ = {
-			isa = PBXGroup;
-			children = (
-				42AAD8595808478845EAE78A1F717AE2 /* UsingDriver */,
-				1FC3F19F7E2F340B1A116C6FA2AC3CF2 /* UsingVanillaObservables */,
-				3BE32312D2AFA2EAEEF092F192272D3F /* BindingExtensions.swift */,
-				828EB8D5DF1CE8EB347A980C3856DED5 /* DefaultImplementations.swift */,
-				CB60415DFA50B168166C7C4BFB2E299B /* GitHubSignup1.storyboard */,
-				AF22E29E524F95A129B8993CECDDEA61 /* GitHubSignup2.storyboard */,
-				5844160F6FC5A928CF576AC030751CBC /* Protocols.swift */,
-			);
-			path = GitHubSignup;
-			sourceTree = "<group>";
-		};
-		42AAD8595808478845EAE78A1F717AE2 /* UsingDriver */ = {
-			isa = PBXGroup;
-			children = (
-				A5B11CEC2B9A7CFBA940C0800E24F0BB /* GitHubSignupViewController2.swift */,
-				900D124378DBCF445CFBE6CC4EBAA694 /* GithubSignupViewModel2.swift */,
-			);
-			path = UsingDriver;
-			sourceTree = "<group>";
-		};
-		1FC3F19F7E2F340B1A116C6FA2AC3CF2 /* UsingVanillaObservables */ = {
-			isa = PBXGroup;
-			children = (
-				0EAEA0AEEEC8740D9A52CC7282A6C2D4 /* GitHubSignupViewController1.swift */,
-				691D61DDA2157829746E270E5815D59D /* GithubSignupViewModel1.swift */,
-			);
-			path = UsingVanillaObservables;
-			sourceTree = "<group>";
-		};
-		CF6A0C5775F269FD05BB76D9027B0DBC /* TableViewWithEditingCommands */ = {
-			isa = PBXGroup;
-			children = (
-				F4821544D6D97CE4B9B3EAFF221DBE67 /* DetailViewController.swift */,
-				0577CDDD760EF4B8D7EAA01471F3469A /* RandomUserAPI.swift */,
-				0661C2C46BC58FF84DF0593F77128DD5 /* TableViewWithEditingCommands.storyboard */,
-				747695540F69D41A94A88E66EE10B9F2 /* TableViewWithEditingCommandsViewController.swift */,
-				ED3D8815AA2DB5F5A70C4D6CA562C989 /* UIImageView+Extensions.swift */,
-				67562DAB860AE9F4430EE33773CEC8BD /* User.swift */,
-			);
-			path = TableViewWithEditingCommands;
-			sourceTree = "<group>";
-		};
-		B2E52B72AC36B10D13BE74CD0504B851 /* TableViewPartialUpdates */ = {
-			isa = PBXGroup;
-			children = (
-				66A9DB4AD46148FA9480BF65D897BBA2 /* NumberCell.swift */,
-				5A1A37AFB49238C6FF404EE699B86CCB /* NumberSectionView.swift */,
-				0935933CEB3DA22E1FB7C77978E22CAA /* PartialUpdates.storyboard */,
-				037A4878D535A987BB5C7BFDEBA92C73 /* PartialUpdatesViewController.swift */,
-			);
-			path = TableViewPartialUpdates;
-			sourceTree = "<group>";
-		};
-		CDC0DFF423BF322C971D31A53CA51F20 /* UIPickerViewExample */ = {
-			isa = PBXGroup;
-			children = (
-				45A61F4A52C0DE023493E56BED0B3977 /* CustomPickerViewAdapterExampleViewController.swift */,
-				F8A00E45BAC84C118D79FF9CD949C867 /* SimplePickerViewExampleViewController.swift */,
-				E1A292582479F5DEEA5897C791E031D6 /* SimpleUIPickerViewExample.storyboard */,
-			);
-			path = UIPickerViewExample;
-			sourceTree = "<group>";
-		};
-		D0E7390E922E5BEEBEA30C0BF3C910CD /* SimpleValidation */ = {
-			isa = PBXGroup;
-			children = (
-				B6179E90B170C81C0402B8FD26B9B7A2 /* SimpleValidation.storyboard */,
-				71018E6612F6ED03830867D59999B499 /* SimpleValidationViewController.swift */,
-			);
-			path = SimpleValidation;
-			sourceTree = "<group>";
-		};
-		70AFBD7F8F0ADE9DDCBA45C524F8FB71 /* GeolocationExample */ = {
-			isa = PBXGroup;
-			children = (
-				B1760715C555001DAC191A87F654F6F6 /* Geolocation.storyboard */,
-				20AA2D951627A9FA270A4B5C56A34C03 /* GeolocationViewController.swift */,
-			);
-			path = GeolocationExample;
-			sourceTree = "<group>";
-		};
-		FA2FA6F1F24962EFC2E6B1F76E918DB6 /* WikipediaImageSearch */ = {
-			isa = PBXGroup;
-			children = (
-				A1F25E1998FE1C29A7F190623E2A79F4 /* ViewModels */,
-				295CBE68DC38ABA2899FB4BC6454B62E /* Views */,
-				D10010E1F1E4C7D33BFC011166583011 /* WikipediaAPI */,
-				F775BC36F9A6ECA054E07EAC6F7C53E8 /* WikipediaSearch.storyboard */,
-			);
-			path = WikipediaImageSearch;
-			sourceTree = "<group>";
-		};
-		A1F25E1998FE1C29A7F190623E2A79F4 /* ViewModels */ = {
-			isa = PBXGroup;
-			children = (
-				6B7B1564B07219D037E4301C7CD2150C /* SearchResultViewModel.swift */,
-			);
-			path = ViewModels;
-			sourceTree = "<group>";
-		};
-		D10010E1F1E4C7D33BFC011166583011 /* WikipediaAPI */ = {
-			isa = PBXGroup;
-			children = (
-				6C259AD869E127F4B7C83D634F923FF7 /* WikipediaAPI.swift */,
-				E371074329040C1628BF6E5091119CC9 /* WikipediaPage.swift */,
-				B913C444FA25AE70A1D61AA6397A6F04 /* WikipediaSearchResult.swift */,
-			);
-			path = WikipediaAPI;
-			sourceTree = "<group>";
-		};
-		295CBE68DC38ABA2899FB4BC6454B62E /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				F50D20EC127E2D8B740D03B45C2BFEA2 /* CollectionViewImageCell.swift */,
-				AA481107EEFA8CE4EE0B4153571D6D8D /* WikipediaImageCell.xib */,
-				A099290F8BE11506EFE5B81E9D48B1B3 /* WikipediaSearchCell.swift */,
-				8A775281CE556E4AC0C836A26C22107A /* WikipediaSearchCell.xib */,
-				93E24F534ED631944CB5BE01AAB01A53 /* WikipediaSearchViewController.swift */,
-			);
-			path = Views;
-			sourceTree = "<group>";
-		};
-		83E23A8782F62469A6C503CA675EB2BF /* Services */ = {
-			isa = PBXGroup;
-			children = (
-				2760EEA675564E2322E06E9B2E184A32 /* ActivityIndicator.swift */,
-				D2F540A19CBFD8CC8186391DFDEF6343 /* DownloadableImage.swift */,
-				D9E419EC176A0374986DC3ED68D4509C /* GeolocationService.swift */,
-				31CA63F83541CDC8EE6BF425A98AC191 /* HtmlParsing.swift */,
-				F109852BCD2F71D2605AF93E6F2A1C18 /* ImageService.swift */,
-				3358C7B133DCC3CBC42BA0984CD308F1 /* PseudoRandomGenerator.swift */,
-				90C46404B13DE8BA7546306DC5F5360D /* Randomizer.swift */,
-				49E83F4734DCC3512A7E1EE4EA3ECBFD /* Reachability.swift */,
-				6B4962A552A87B04EB0055A0733E8A17 /* ReachabilityService.swift */,
-				6F3A769A6497892AE641E81239F1AF76 /* UIImage+Extensions.swift */,
-				D5434707AE978506C7750E1F97030379 /* UIImageView+DownloadableImage.swift */,
-				9A4C8EA22CB4F2FC1CC8026B81F76315 /* Wireframe.swift */,
-			);
-			path = Services;
-			sourceTree = "<group>";
-		};
-		D25BDB59453987AB2E7B7F45DEDAD7BD /* RxExample-iOSUITests */ = {
-			isa = PBXGroup;
-			children = (
-				5A313739EBAD0663EBF7C7C04AB433FB /* FlowTests.swift */,
-				529F04695C8E654D3F4C2453527CA6FB /* Info.plist */,
-			);
-			path = "RxExample-iOSUITests";
 			sourceTree = "<group>";
 		};
 		6DA7BFDD4773E42E3143EDCFF15942A9 /* RxDataSources */ = {
@@ -2527,103 +1928,28 @@
 			path = RxDataSources;
 			sourceTree = "<group>";
 		};
-		BB0D2A0097A39F7B5B74866F7912558E /* RxDataSources */ = {
+		70AFBD7F8F0ADE9DDCBA45C524F8FB71 /* GeolocationExample */ = {
 			isa = PBXGroup;
 			children = (
-				180C73177C42F52136A89032662F7FBD /* AnimationConfiguration.swift */,
-				CE3EFFD39BB8A4C05B23DB0A46179D5F /* Array+Extensions.swift */,
-				F562856ECA94CEDF824771EAD8A66BD2 /* CollectionViewSectionedDataSource.swift */,
-				F14F09DFAFAE5B4446C41E86A5F00CC2 /* DataSources.swift */,
-				9313AEB1F594E01E2AEF63BF659288FD /* Deprecated.swift */,
-				9867DED1C3526C1F0B00E5683504F2D2 /* FloatingPointType+IdentifiableType.swift */,
-				4B3B92D9CC79BF7E49C5CBC055F710BB /* Info.plist */,
-				EF52B4D0C40E3AC228B9BCB8645F2A9C /* IntegerType+IdentifiableType.swift */,
-				B8A4A49A4B990F551FE150170DC303F3 /* RxCollectionViewSectionedAnimatedDataSource.swift */,
-				2C2495CA6D42FED6AE292699B0519CF7 /* RxCollectionViewSectionedReloadDataSource.swift */,
-				AF72D0AA653D192702104749B3FE3381 /* RxDataSources.h */,
-				928433D0636B0876985C3499E0F8814F /* RxPickerViewAdapter.swift */,
-				88DA222FCC41D5CB05E6BD793AD30FAE /* RxTableViewSectionedAnimatedDataSource.swift */,
-				10D7590193A3DA163C7AC518B832DDA2 /* RxTableViewSectionedReloadDataSource.swift */,
-				6BA9523D359BE2587DAE1A519F329902 /* String+IdentifiableType.swift */,
-				DB5B7321F9D386F6A613600F717EA5D1 /* TableViewSectionedDataSource.swift */,
-				CE88F9CAB325C87768DEA5AA77EA7024 /* UI+SectionedViewType.swift */,
+				B1760715C555001DAC191A87F654F6F6 /* Geolocation.storyboard */,
+				20AA2D951627A9FA270A4B5C56A34C03 /* GeolocationViewController.swift */,
 			);
-			path = RxDataSources;
+			path = GeolocationExample;
 			sourceTree = "<group>";
 		};
-		E204AFEA49B232524E7CC4F2BF804541 /* Differentiator */ = {
+		74822689D62504B1114F36CDDB84BE8D /* Mocks */ = {
 			isa = PBXGroup;
 			children = (
-				2B09E4ABA1A69003639C031C475815DB /* AnimatableSectionModel.swift */,
-				EB60F16BBCD6ADE981CFF943ABB8A870 /* AnimatableSectionModelType+ItemPath.swift */,
-				344A0E001644121236248FC24E7B667C /* AnimatableSectionModelType.swift */,
-				D06BB1B1EBFAEB96D7AFAACDFB37DA26 /* Changeset.swift */,
-				B1136C18642CDDB5D761D8990C95FFD0 /* Diff.swift */,
-				BD9B8BF75DC5F7F48D00B6E8A945DD9F /* Differentiator.h */,
-				B147A5CA755353D3122B4D0AB983E942 /* IdentifiableType.swift */,
-				4942A2A4CEE42E5C3ED64C2363526E99 /* IdentifiableValue.swift */,
-				3B0F367D28521B87723666716DBAAF70 /* Info.plist */,
-				97CE931789B146C89AB87C6F5A58CD2D /* ItemPath.swift */,
-				521BF7D3FC246FE555B49F0AFB1EEC6D /* Optional+Extensions.swift */,
-				A112FB33F58000C14AE7413EF7B721C4 /* SectionModel.swift */,
-				9A2D28497B14E4D51B3547BF4F0B0BEB /* SectionModelType.swift */,
-				CDDF26C7D67AC8B36FA277CF89AEF135 /* Utilities.swift */,
-			);
-			path = Differentiator;
-			sourceTree = "<group>";
-		};
-		3FA06124EB5D720CDAAC9099DA396060 /* Extensions */ = {
-			isa = PBXGroup;
-			children = (
-				358B8F5EF120E47B92F1E35E6EB2801D /* CLLocationManager+Rx.swift */,
-				1F17015ABA88895A1D662E47D8A7D219 /* RxCLLocationManagerDelegateProxy.swift */,
-				01B417AF0B22E0E0268AE91FFDB56D57 /* RxImagePickerDelegateProxy.swift */,
-				2AF793DE41594B0FD309C59F386BAAA9 /* UIImagePickerController+Rx.swift */,
-			);
-			path = Extensions;
-			sourceTree = "<group>";
-		};
-		EE9EC45E786A4184873AF7AD6C5FBB48 /* Playgrounds */ = {
-			isa = PBXGroup;
-			children = (
-				AF06FB7F749378199D3AEDBBF7110A3F /* Info.plist */,
-				B01CA8AC2A45073F621A806FD6A49352 /* RxPlaygrounds.swift */,
-			);
-			path = Playgrounds;
-			sourceTree = "<group>";
-		};
-		440B96EBFFD66DDBEFFC4FC270F39F3E /* RxExample-iOSTests */ = {
-			isa = PBXGroup;
-			children = (
-				AEA06206CEBE91B1309F6B30E714C929 /* Mocks */,
-				0A110D666DC1A6A0BFFBA606FC12712F /* CLLocationManager+RxTests.swift */,
-				8072A0F014ECA735B534151DA6A4428B /* Info.plist */,
-				E0903DFAFA1CCEF0D15B287E5A6F35A6 /* RxExample_iOSTests.swift */,
-				5EF5416455DBFE46442E10FBE525A17B /* RxTest.swift */,
-				B68ED61BBD227025D936A87ADD5E69DF /* TestScheduler+MarbleTests.swift */,
-				8C164545E71F3F1F34140BA97EA4E543 /* UIImagePickerController+RxTests.swift */,
-			);
-			path = "RxExample-iOSTests";
-			sourceTree = "<group>";
-		};
-		AEA06206CEBE91B1309F6B30E714C929 /* Mocks */ = {
-			isa = PBXGroup;
-			children = (
-				D251D31AE6D9C4162BEF3714C46ABA5D /* MockGitHubAPI.swift */,
-				6D05F882903259568DCF06F2AC9F9500 /* MockWireframe.swift */,
-				61C9B99B3CE2B0C18F4A54F91DE5CE79 /* NotImplementedStubs.swift */,
-				C88E72DE0127546C48958EE623AB50BA /* ValidationResult+Equatable.swift */,
+				E801306F368C465E60EA6661C6B2655B /* BackgroundThreadPrimitiveHotObservable.swift */,
+				B3D319D645AAD0B827013E2394562910 /* MainThreadPrimitiveHotObservable.swift */,
+				509C3F8A76D76CC44176369E8E7A6E78 /* MockDisposable.swift */,
+				138E03B464C0D2ED534F0DD48F485139 /* MySubject.swift */,
+				8CD6E85FA0BBB2B3C1BDFBE0DE9646B4 /* Observable.Extensions.swift */,
+				16010D598A0A8913523ED49BF3D232A5 /* PrimitiveHotObservable.swift */,
+				54129207C0010D1D509E575807D973FC /* PrimitiveMockObserver.swift */,
+				7AEBBEB63FD37684BB10BA18A57A6650 /* TestConnectableObservable.swift */,
 			);
 			path = Mocks;
-			sourceTree = "<group>";
-		};
-		FE43DB3629DCEEE00C80B49EC9404FDE /* RxExample-macOSUITests */ = {
-			isa = PBXGroup;
-			children = (
-				010D06C8E8A0126D920D81BF98E0792A /* Info.plist */,
-				DF95858AC5DC1E924C7E2163C7F853CB /* RxExample_macOSUITests.swift */,
-			);
-			path = "RxExample-macOSUITests";
 			sourceTree = "<group>";
 		};
 		753F42A66C4C0189E92503183AA44086 /* scripts */ = {
@@ -2643,141 +1969,6 @@
 				5884BD807EE3FAD349D1364AE196B045 /* validate-podspec.sh */,
 			);
 			path = scripts;
-			sourceTree = "<group>";
-		};
-		98D28E49B4BE9745565B99FFE40932A5 /* .github */ = {
-			isa = PBXGroup;
-			children = (
-				88521C6B3198E557235EE65013B6048C /* ISSUE_TEMPLATE.md */,
-			);
-			path = .github;
-			sourceTree = "<group>";
-		};
-		11B5C95128DE93D428AD0763782FA1F4 /* Sources */ = {
-			isa = PBXGroup;
-			children = (
-				DA28CE465E01C9BDB5977766877932CB /* AllTestz */,
-				8115BE58BD8312B13E66FD32ADF36ED6 /* RxBlocking */,
-				DEC8A376113C7127FA1B9E8D720CE9AB /* RxCocoa */,
-				E14BFBCDE3C3C76603E1C87F0B4A17A7 /* RxCocoaRuntime */,
-				534B64813BE5CEA9DEC8BEDB5263F682 /* RxRelay */,
-				759341CB0A8CEB56B296554C30835984 /* RxSwift */,
-				2679DD05EA41FF2AEE24C943C99DD987 /* RxTest */,
-			);
-			path = Sources;
-			sourceTree = "<group>";
-		};
-		DEC8A376113C7127FA1B9E8D720CE9AB /* RxCocoa */ = {
-			isa = PBXGroup;
-			children = (
-				CA859F76DCF8A6959D777FEFEEDD0615 /* BehaviorRelay+Driver.swift */,
-				4BFAC1C2C83B62EC36212271A5D8EDC7 /* Binder.swift */,
-				59EB9ECD5499DA11EDFCACE21235C903 /* ControlEvent+Driver.swift */,
-				51CDDB266052BD3C79A702D2FB86A7A3 /* ControlEvent+Signal.swift */,
-				E3F01943EA6F9163B99E48309F8C2204 /* ControlEvent.swift */,
-				62ABAD510827388E2457E0CA01C43415 /* ControlProperty+Driver.swift */,
-				C0027E007476E3751658477D7B1E5DEB /* ControlProperty.swift */,
-				0C7FDABDDF5CAA15EF7EB5400732B33B /* ControlTarget.swift */,
-				9B0BC2CFCB2E9C6DF44BA6A7F53BCFC7 /* DelegateProxy.swift */,
-				B040345F54D741DE1C2E144DC06F5915 /* DelegateProxyType.swift */,
-				A426BBA292C160FA56B155B14512D68B /* Deprecated.swift */,
-				F96C8528940605208F737FE105AC5A60 /* DispatchQueue+Extensions.swift */,
-				AF45C42DE132052FEA233891B1819E85 /* Driver+Subscription.swift */,
-				AC74E3873F18A8A20F48D3429F031C06 /* Driver.swift */,
-				846BE123765EEA6E6FF982FA3F17D720 /* ItemEvents.swift */,
-				DC774CAE99F0DC5DDCE487126E14EF33 /* KVORepresentable+CoreGraphics.swift */,
-				2FC2DE7078171F466CA6374B83A273B3 /* KVORepresentable+Swift.swift */,
-				82C92A1D1B4AFF2ADDCB75148BA595A1 /* KVORepresentable.swift */,
-				91223C37013328FBC5439AB095A21F04 /* KeyPathBinder.swift */,
-				72F36479C78DDCD93436AB103E0E83AE /* Logging.swift */,
-				C47CE1A52FEC605E5CEE045EA55A3327 /* NSButton+Rx.swift */,
-				939FEB967F2B8D5F9A5923C0674D98E2 /* NSControl+Rx.swift */,
-				E397DA79986921A0EDDA620A43DD4095 /* NSImageView+Rx.swift */,
-				43F3CE21E9D9D77B9FBE16BCD7C34672 /* NSLayoutConstraint+Rx.swift */,
-				DFD0150945D628A2F540A2DB5E998A39 /* NSObject+Rx+KVORepresentable.swift */,
-				F32F16BC792CDA1784FBA013B5B16F0A /* NSObject+Rx+RawRepresentable.swift */,
-				1FCA079FE4312BC698004D614C94F368 /* NSObject+Rx.swift */,
-				D16EBB446AE757A6503B48A3D1A49B08 /* NSSlider+Rx.swift */,
-				090ECAA7757ED229AE6AFDA2E23F3A9C /* NSTextField+Rx.swift */,
-				42DF5D49C028F5091E527A7DEE90BE7E /* NSTextStorage+Rx.swift */,
-				C63310369ED358A0B359D7873773DF81 /* NSTextView+Rx.swift */,
-				BBC2A9817CD0EED614BE6BBF54EE991F /* NSView+Rx.swift */,
-				0E659691C4E9A59809514965BCA3417A /* NotificationCenter+Rx.swift */,
-				9F1CFA9A34C96FD91ED4CB3E128CA576 /* Observable+Bind.swift */,
-				BB09227E415D30726F360995FFFD4B63 /* ObservableConvertibleType+Driver.swift */,
-				8BFF4DE6E0BD3B724374C4DA4234827A /* ObservableConvertibleType+SharedSequence.swift */,
-				A4B91EFDC02266AF89061FB1C344E6F2 /* ObservableConvertibleType+Signal.swift */,
-				648EBE75C01A5BE556EF5FFEE8AE8023 /* PublishRelay+Signal.swift */,
-				E43E24DC346D6D2CF88C18289CBA23B7 /* RxCocoa.swift */,
-				8239863F84F3355D699F5F0ADFB298EA /* RxCocoaObjCRuntimeError+Extensions.swift */,
-				BE7970C000577D43EAC9CCC98E19A4AD /* RxCollectionViewDataSourcePrefetchingProxy.swift */,
-				365DD7F8224A5A091463F0BDF9689FDF /* RxCollectionViewDataSourceProxy.swift */,
-				0E9D37E2008A032BBA18B7B948DFF97F /* RxCollectionViewDataSourceType.swift */,
-				6B0A52AA2584F54D25721D224A229C2D /* RxCollectionViewDelegateProxy.swift */,
-				5C16BAEB4868F40461CA485894CF54D2 /* RxCollectionViewReactiveArrayDataSource.swift */,
-				EFE06E084E4AC4819565792AB1442D3F /* RxNavigationControllerDelegateProxy.swift */,
-				E3EF1B53254C897C65C17A40C5787128 /* RxPickerViewAdapter.swift */,
-				B1F94F886A0A6236C4E061199E245E67 /* RxPickerViewDataSourceProxy.swift */,
-				DA7EE331A31FDD724D63B7B195DDCA12 /* RxPickerViewDataSourceType.swift */,
-				4762362553B67C119818DCB9B17CF1E4 /* RxPickerViewDelegateProxy.swift */,
-				1FC2FE71A752DFD4292FFC247445A988 /* RxScrollViewDelegateProxy.swift */,
-				87F875A7493391BFDD1951B814846F91 /* RxSearchBarDelegateProxy.swift */,
-				421F2E004566A7DA8375DCEA7F8A00A7 /* RxSearchControllerDelegateProxy.swift */,
-				A4C564C5CC59E1C469665FCCB707B692 /* RxTabBarControllerDelegateProxy.swift */,
-				AD92391006E1E0633152B74962B0B64D /* RxTabBarDelegateProxy.swift */,
-				1CC58F8C4DB393ABC89BC889019B2E9B /* RxTableViewDataSourcePrefetchingProxy.swift */,
-				9C32F1166CAF01D74479534F1EC41C82 /* RxTableViewDataSourceProxy.swift */,
-				87B3ED943FE361C596851DA3A040F450 /* RxTableViewDataSourceType.swift */,
-				F35CDFA4A0D0704AC99953DB90B319F5 /* RxTableViewDelegateProxy.swift */,
-				869AC0EFC87D154601AB6AD4272A5F96 /* RxTableViewReactiveArrayDataSource.swift */,
-				0D1E48543A7D0C24E231769DC3274602 /* RxTarget.swift */,
-				8E19C5C0F66B5F63264C0A93606EB148 /* RxTextStorageDelegateProxy.swift */,
-				B7111AF07644C3059EDC02AA479A84DF /* RxTextViewDelegateProxy.swift */,
-				1C1CB2CA036D16CC4A5F695482FAFD5B /* RxWebViewDelegateProxy.swift */,
-				86491B4D1E4E72F0EF5A6AAA51B5D344 /* SchedulerType+SharedSequence.swift */,
-				20EC9FECA974F9E2FFEF372FA353E7B7 /* SectionedViewDataSourceType.swift */,
-				0DC360247F976AE10FBB23C42DA18021 /* SharedSequence+Operators+arity.swift */,
-				9359C5419B906E971A065ED5A305A34C /* SharedSequence+Operators.swift */,
-				83AEC7D8403D1D76E52632BACF0EC164 /* SharedSequence.swift */,
-				9E5D49A12EBF59FAB6878FF16F453956 /* Signal+Subscription.swift */,
-				A822F95EB91DE73D8DDF63CA65C5DC00 /* Signal.swift */,
-				F552E371B167CA2CEFFF1DDE91CFEE47 /* TextInput.swift */,
-				E34D3E0C649A04C98DEE07C4977259D9 /* UIActivityIndicatorView+Rx.swift */,
-				F9797125FDDF5880F7E3FD5150BF1F8F /* UIAlertAction+Rx.swift */,
-				39DC0C2D1BF7DD6BFD4A0A0E20404F12 /* UIApplication+Rx.swift */,
-				0F243666E1C17CF6BF579990B38D03D4 /* UIBarButtonItem+Rx.swift */,
-				4CAF4B7FA1B5B08818DCB12D6D9166FE /* UIButton+Rx.swift */,
-				2C54E5793E3549E8E61971DF42E2FC16 /* UICollectionView+Rx.swift */,
-				2813AAB984F37EB1CA05DDFB79F9FA04 /* UIControl+Rx.swift */,
-				C08A92D942C3C9173DC2661D7B6A9B75 /* UIDatePicker+Rx.swift */,
-				2DAB4BEE88D7DD2B4FCEAEDEB8FDFEB5 /* UIGestureRecognizer+Rx.swift */,
-				261126D1C8E751C12C9166598BCF5DC0 /* UIImageView+Rx.swift */,
-				18469CBE369D18FB880B7837BE138E61 /* UILabel+Rx.swift */,
-				230C36F37593AB51AC319DD672F98134 /* UINavigationController+Rx.swift */,
-				E5F3EF0628D6CCE471FB90B5FCE805F4 /* UINavigationItem+Rx.swift */,
-				5B379FAECDBF20BE675D05C0EF9DBE5B /* UIPageControl+Rx.swift */,
-				35E70B581BF220063C5B7F8D545A6830 /* UIPickerView+Rx.swift */,
-				7355473C3C8E0C07667391A242AF6151 /* UIProgressView+Rx.swift */,
-				76F16F2422F9D4B9E67F881F7E71B273 /* UIRefreshControl+Rx.swift */,
-				B3F584B06A1AD546786CF1281F579E7D /* UIScrollView+Rx.swift */,
-				B8596EFD9798382D4F159D7C83C907E3 /* UISearchBar+Rx.swift */,
-				351E3B813F8F4BA637461D9710BDDAA7 /* UISearchController+Rx.swift */,
-				92B164010C34E3FD157D5BBFCB4E6CC6 /* UISegmentedControl+Rx.swift */,
-				4CAC4B84D8EE05E345B445D1CBE12EC0 /* UISlider+Rx.swift */,
-				659A86F8AAF4F2A5E9BCBDA8BAF365F8 /* UIStepper+Rx.swift */,
-				A985FD0FC443E29A43F0E66086F90191 /* UISwitch+Rx.swift */,
-				31187523F1AC598A484D9A9681E267B0 /* UITabBar+Rx.swift */,
-				8E74934FF01F0C4679ED3DEB9A911FE0 /* UITabBarController+Rx.swift */,
-				B62C992C5DECD68483C7152CDCDEA479 /* UITabBarItem+Rx.swift */,
-				050B2B6DC4DFCCC6B5FFCB47CB69CE77 /* UITableView+Rx.swift */,
-				AA60F9A6330C7E7E75418CBEC1E70AED /* UITextField+Rx.swift */,
-				8B9030B38A8B1188C90D15AB201F3995 /* UITextView+Rx.swift */,
-				6723E5C31BC204C5C6A35AA3915E3A0A /* UIView+Rx.swift */,
-				31A193166AF7C39A2BCD93D6B0E50046 /* UIViewController+Rx.swift */,
-				39538BC0E5605117E36AECADFE73080B /* UIWebView+Rx.swift */,
-				8CC42D8C774A401A40C998206370AED4 /* URLSession+Rx.swift */,
-			);
-			path = RxCocoa;
 			sourceTree = "<group>";
 		};
 		759341CB0A8CEB56B296554C30835984 /* RxSwift */ = {
@@ -2938,15 +2129,769 @@
 			path = RxSwift;
 			sourceTree = "<group>";
 		};
-		534B64813BE5CEA9DEC8BEDB5263F682 /* RxRelay */ = {
+		78E5D90263DBA6C617E2B4A071100306 /* DataSources */ = {
 			isa = PBXGroup;
 			children = (
-				211F30456F3E12100BA2C55D549A950B /* BehaviorRelay.swift */,
-				1EDA78F4D23BCB3C7683E9ABF7FC7421 /* Observable+Bind.swift */,
-				28A4DC07F569098E297E44AB4171C043 /* PublishRelay.swift */,
-				86184599686100100AEF5891C601DF25 /* Utils.swift */,
+				FE5433E8760269BCB33E7D00DB8A22AE /* RxCollectionViewReactiveArrayDataSource.swift */,
+				9103DC60443E57783003BBCE1D4BDB41 /* RxPickerViewAdapter.swift */,
+				41783546B17D2284423CF939DE0EB101 /* RxTableViewReactiveArrayDataSource.swift */,
+			);
+			path = DataSources;
+			sourceTree = "<group>";
+		};
+		7ABE026BB3B02B50331348E2D5AE0761 /* RxSwiftTests */ = {
+			isa = PBXGroup;
+			children = (
+				B50539874E30EE36FF41B9F2C75E1D25 /* TestImplementations */,
+				DCE9D4225BD58F539135672F4C8E14C2 /* Anomalies.swift */,
+				D8C5D782C56AB25E5810340D08926FA8 /* AssumptionsTest.swift */,
+				024728FB208DC7D69B1F370F1419CCBC /* AsyncSubjectTests.swift */,
+				DCB45D15FBE1698E206B22E407C3C5CB /* Atomic+Overrides.swift */,
+				0AB3317438E493850F107B2B11DFC68A /* AtomicTests.swift */,
+				A8F0AE5427763244D269A032C8BE7460 /* BagTest.swift */,
+				94D1215DF1A8D8261F7F16FD7BD5DA5C /* BehaviorSubjectTest.swift */,
+				148788D43E9B500451E06EB921D4C04C /* Completable+AndThen.swift */,
+				584DB030C9C41B4FAFB3146ECB9A1594 /* CompletableTest.swift */,
+				8682035D7CF83DF5554739006704CCE2 /* CurrentThreadSchedulerTest.swift */,
+				0A692B0E3B786CA175D7F9B32FBAEBED /* DisposableTest.swift */,
+				49E4C9FE4CF8624BDB431B74AA2156AE /* DisposeBagTest.swift */,
+				1C0EB907A33EA6E571A9E1EAD702784F /* Event+Test.swift */,
+				C88E34E26CC5E14487782B0E0C3F234E /* HistoricalSchedulerTest.swift */,
+				FEAB7B191C924EB4B23F850B87F3D126 /* MainSchedulerTests.swift */,
+				DDC88454B0CFD6B889441FAFCB933D6D /* MaybeTest.swift */,
+				DC1726AF838CC3FD27B0420A1F571973 /* Observable+AmbTests.swift */,
+				403C2896DD94FE8E4932D40FB2D140E1 /* Observable+BufferTests.swift */,
+				33F17106F74449D35B25F5059D58045F /* Observable+CatchTests.swift */,
+				F461936E061121ADD3B1D284645FF548 /* Observable+CombineLatestTests+arity.swift */,
+				D52833CBC273DA353F141B0E228AD229 /* Observable+CombineLatestTests+arity.tt */,
+				3FE69A7233AF985C931CBB62A5E397BB /* Observable+CombineLatestTests.swift */,
+				A295D898615967402B2F71521648A6C6 /* Observable+CompactMapTests.swift */,
+				660C5DBEE5CF1766153D1F2B640F967B /* Observable+ConcatTests.swift */,
+				4D52FD5567F30B916FEFAA946290C06C /* Observable+DebugTests.swift */,
+				562586F21F6B6D6B085B652E3CAA43AF /* Observable+DefaultIfEmpty.swift */,
+				585B665849472A139820A1BFA79285FF /* Observable+DelaySubscriptionTests.swift */,
+				CCD5FA89DB8079B21401BBBEB1FDDD4B /* Observable+DelayTests.swift */,
+				472C2EDA3C97679CEA00B27AC2EECB3E /* Observable+DematerializeTests.swift */,
+				6BE6A0C0292774D9E9D0D21B6AB9D572 /* Observable+DistinctUntilChangedTests.swift */,
+				343AE86C1989895BF512F6F52EFEEC7B /* Observable+DoOnTests.swift */,
+				656F7A775DA38C9E5684D463EF5F9081 /* Observable+ElementAtTests.swift */,
+				2C3FC41270504D8D385C437303B859D6 /* Observable+EnumeratedTests.swift */,
+				7158279433E115B57491AB77050C299C /* Observable+FilterTests.swift */,
+				545B487206134E478B9CD8828170091F /* Observable+GenerateTests.swift */,
+				2A0BECCED0ED9D292116B8EC8AE29013 /* Observable+GroupByTests.swift */,
+				128DAB807A91485CDCF4B28ECE634E54 /* Observable+JustTests.swift */,
+				EC50C9E62A97537D6A71E18B56245A64 /* Observable+MapTests.swift */,
+				B35D6231F0316CB21D375F2214550BC3 /* Observable+MaterializeTests.swift */,
+				EAA620960AA402CDC847A8B89CAFE88A /* Observable+MergeTests.swift */,
+				E7CB4C07B1514ECEB67930E6016C3D63 /* Observable+MulticastTests.swift */,
+				5B8084744F07B579BCCE88EFE2E1A54C /* Observable+ObserveOnTests.swift */,
+				2D3809F9950C1AFC8376B53B07FB4D7E /* Observable+OptionalTests.swift */,
+				6D2D49FCBB79774D284639EDAFB889EB /* Observable+PrimitiveSequenceTest.swift */,
+				5B041FE90E9E486D295179B54B47C402 /* Observable+RangeTests.swift */,
+				46C91047DDC0CB359813CD8670DC54AC /* Observable+ReduceTests.swift */,
+				6AD9BF31ADF4367DFE496606A7D343C6 /* Observable+RepeatTests.swift */,
+				3B792E191A2D109B895BF9F5C2C4A4F4 /* Observable+RetryWhenTests.swift */,
+				269FBFC067656ABD184F1E3EC90D0E03 /* Observable+SampleTests.swift */,
+				1C46A368E6F1DCA24884CD50B7F72A4E /* Observable+ScanTests.swift */,
+				D255B906EE140379260B40E514E1CDED /* Observable+SequenceTests.swift */,
+				DB50D7E3D0BA4C6F5F198737749FE6B6 /* Observable+ShareReplayScopeTests.swift */,
+				AE3077473E5414740B0434F638FADD21 /* Observable+SingleTests.swift */,
+				2A40255DA7245F3025769A6D5413881D /* Observable+SkipTests.swift */,
+				9932BE2F6DA09E8902890BF95B747907 /* Observable+SkipUntilTests.swift */,
+				84BA7FCF9FBD6EA8DFAD5DCC85068E13 /* Observable+SkipWhileTests.swift */,
+				F6B8D56A565A39A32744E60CCC84F409 /* Observable+SubscribeOnTests.swift */,
+				D2EB9CD7CCA1F9C7A4CC6221C3BB8922 /* Observable+SubscriptionTest.swift */,
+				4A208298A44E099CD445E59D34D1FA84 /* Observable+SwitchIfEmptyTests.swift */,
+				A1A6639F2FD288AAC41B6E38BB7DE220 /* Observable+SwitchTests.swift */,
+				CD97E9A7667753C61D7A2E9E076E3579 /* Observable+TakeLastTests.swift */,
+				D6B7B63319E28C2D00822D15646FF8A6 /* Observable+TakeTests.swift */,
+				E446C6C5B6F49AE4BB59723CED2BE6FF /* Observable+TakeUntilTests.swift */,
+				60F8618CDAB7DAC9269E678BB2081DFD /* Observable+TakeWhileTests.swift */,
+				A8082BC7CA4A11AEC9AC14CE517A25C4 /* Observable+Tests.swift */,
+				422046ECCA67AFBD1A4A6C1C0FEDCCEC /* Observable+ThrottleTests.swift */,
+				4C4589D23BC7D428066C8594E235C4F7 /* Observable+TimeoutTests.swift */,
+				3C681C21162C849DE5877602769C990C /* Observable+TimerTests.swift */,
+				6B8231DA2785D2BD30C86623372873C1 /* Observable+ToArrayTests.swift */,
+				458D49144EF1722FA401E8DB3FC4B2F1 /* Observable+UsingTests.swift */,
+				1317D8F49C8969D69F53E2E142CAAC5D /* Observable+WindowTests.swift */,
+				8A7456915F63B55591664B77FC290405 /* Observable+WithLatestFromTests.swift */,
+				51CF0CE3DDAE1451087266D5F0F034DC /* Observable+ZipTests+arity.swift */,
+				EFF04FD5B151ED3C7BEA83F3B9F661CD /* Observable+ZipTests+arity.tt */,
+				733F87966C40A213F388170F3D5E3CAA /* Observable+ZipTests.swift */,
+				CC643A0D08154D8EC55643E3F5D64FA6 /* ObservableType+SubscriptionTests.swift */,
+				448F81DFEC764F47E780368976172613 /* ObserverTests.swift */,
+				7789A7D0101B8E5D293E85727A4A1124 /* PrimitiveSequenceTest+zip+arity.swift */,
+				1A53ADA00C18AE3CFF437776BF343176 /* PrimitiveSequenceTest+zip+arity.tt */,
+				5B844C5D3AA32FC2140F054058C56B26 /* PublishSubjectTest.swift */,
+				5D3E222CD51143DC4D820E40B27A1F5A /* QueueTests.swift */,
+				38EBECE1247E0E17F976B0E980A3F5C9 /* Reactive+Tests.swift */,
+				054288611CB8B710058EF40F9AB69E8E /* RecursiveLockTest.swift */,
+				739213A63721183B7E46AF78A987ADE5 /* ReplaySubjectTest.swift */,
+				92C70A8DFD9DE6C616EB6588A4EBCFFD /* SchedulerTests.swift */,
+				A51A3A348FE6420678390478427AAD4C /* SharingSchedulerTests.swift */,
+				CBD588A55B49660B3C880FCB0696711A /* SingleTest.swift */,
+				60F9A0D44BA3E50EDC7D70849840A57E /* SubjectConcurrencyTest.swift */,
+				55A631CCF1FA82177A4EDDC8CEF4EDC7 /* Synchronized.swift */,
+				DEEA69D7B66DB8FB92E11F92EC0ABB27 /* VirtualSchedulerTest.swift */,
+			);
+			path = RxSwiftTests;
+			sourceTree = "<group>";
+		};
+		7BF28E47B846A8EFB572E641C76B3134 /* RxExample */ = {
+			isa = PBXGroup;
+			children = (
+				66BA9A18358C5BBBCB5F922BC237B4DD /* Examples */,
+				83E23A8782F62469A6C503CA675EB2BF /* Services */,
+				614257803762669FF88748CEB8519526 /* iOS */,
+				4C8F4BDF631EDD2C6361E4BB9B749174 /* macOS */,
+				FE60BE1A2C2799470FD8DA8192BA21E3 /* Application+Extensions.swift */,
+				20EC43B90A9148F8F68BB8FB61F55F44 /* Example.swift */,
+				E1EEC2BB4637C1D06600820943D2A9CF /* Feedbacks.swift */,
+				CFB2B7AACBD76619500FA42BCFB5BE98 /* Images.xcassets */,
+				4EB93B0F4ED1BA0A70228BE2B0A9CD63 /* Info-iOS.plist */,
+				4AE13CE3946AA95524B0E825CABCE77A /* Info-macOS.plist */,
+				9D9D2472C4444DE4FE301A418D3513A1 /* Lenses.swift */,
+				3DF507A1DA09DF8F8688DD136B93CFAE /* Observable+Extensions.swift */,
+				B042422FFF1830131BDBD9D17F873A84 /* Operators.swift */,
+				BB5DE68ADB85152E82CED64E2C999DC5 /* Result.swift */,
+				45AB11F153A6D50CB66AE29C8B4EC8CC /* RxExample.xcdatamodeld */,
+				C7CE397C57E8CCD34499E1F85969EDD2 /* String+URL.swift */,
+				3C8AB2F86743AAF1E2F84F5ECC39612B /* Version.swift */,
+				6A8D8A2D220626C10FA55FBD488FE7BB /* ViewController.swift */,
+			);
+			path = RxExample;
+			sourceTree = "<group>";
+		};
+		7C0D7CF70FD68C15AF9C3E1543820539 /* RxCocoaTests */ = {
+			isa = PBXGroup;
+			children = (
+				208D194A875D8EE33A321170E7A098A4 /* TestImplementations */,
+				5E43B7050480428D19C0068F9CA6DADB /* Binder+Tests.swift */,
+				C6B267EDB5C31A9A6BB2E3C63B69C987 /* ControlEventTests.swift */,
+				240BB088556B52A8700DB0DFAC250585 /* ControlPropertyTests.swift */,
+				83471F5F090972F0F1CE8E6170D57E9A /* DelegateProxyTest+Cocoa.swift */,
+				830EFD3E32F7D9B96DECF24C77ACB2ED /* DelegateProxyTest+UIKit.swift */,
+				515855E01B98AA32869446EBB9866D01 /* DelegateProxyTest.swift */,
+				EF8D21D0582379473C74A11575687C20 /* Driver+Test.swift */,
+				C65146FF14A7B26607B7EF61912CDE59 /* ExampleTests.swift */,
+				7997DB64FEB11DF41178E04618AA63BA /* KVOObservableTests.swift */,
+				DA85EC4EB67FC198C403E23AB672F195 /* KeyPathBinder+RxTests.swift */,
+				D04FD485997BA7C402ED2DE678D88A10 /* NSButton+RxTests.swift */,
+				474110AA5619FA20F46E288B1D161EE3 /* NSControl+RxTests.swift */,
+				A9D61B1924123102A5AEF21A893445A1 /* NSLayoutConstraint+RxTests.swift */,
+				CAAB267B9DD71E09EB242A12210B3524 /* NSObject+RxTests.swift */,
+				3A32138261A459EC2FDA91DEA7AAE443 /* NSSlider+RxTests.swift */,
+				BA7D2238F5F74E68DB869A2422D2F233 /* NSTextField+RxTests.swift */,
+				FFBF8103C92D62BE3CAC149E35612177 /* NSTextView+RxTests.swift */,
+				5FB6680FF0155E7E519DC1A9D6343D73 /* NSView+RxTests.swift */,
+				47EAD0EBE66503A817E0D9C4F7659B1A /* NotificationCenterTests.swift */,
+				08DBAADF1EFA525C3AF818641EE34661 /* Observable+BindTests.swift */,
+				F5C2B1E4FED4352E27E7994BB6FD3846 /* ObservableConvertibleType+SharedSequence.swift */,
+				322A74717102B7F9198FF48AFB16C29B /* RXObjCRuntime+Testing.h */,
+				3425CBA0CC83DE983A3B6D1E91023A3D /* RXObjCRuntime+Testing.m */,
+				B0BCFAC39FB2AECA7F0D80484FF1C81F /* RuntimeStateSnapshot.swift */,
+				8C01181C5BD2F4523B6257DF02F306A9 /* RxObjCRuntimeState.swift */,
+				0D6DC0F4BB03CD5D8B1C0AC89A92F126 /* RxTest+Controls.swift */,
+				27B118A36824C3C1583C3B8CF66EA377 /* RxTest-iOS-Bridging-Header.h */,
+				B0CD16330057C865E392E38DEC1ECFC4 /* RxTest-macOS-Bridging-Header.h */,
+				A9DFC41C0BB5C0F8D89BF22AC571A340 /* RxTest-tvOS-Bridging-Header.h */,
+				E244B3715597D1D2C267FA7BB4BB6B17 /* SentMessageTest.swift */,
+				9F9FA277F65762E5C30591AB2BB92A01 /* SharedSequence+Extensions.swift */,
+				5033B2F1FCBB5204DA85FD2C912C871B /* SharedSequence+OperatorTest.swift */,
+				3A03173DDFD501D24B16687C49D8E8F2 /* SharedSequence+Test.swift */,
+				F97F1E796DAC5BE3B4EE9A6474B29DE4 /* Signal+Test.swift */,
+				B4EA36BFE544A3E4A9DFA557ACA2DBCA /* UIActivityIndicatorView+RxTests.swift */,
+				ED42DA917A0E3DB08B80BEAB4DE7F9D5 /* UIAlertAction+RxTests.swift */,
+				257DD5D568DE31FA4B47510E94DF8BF3 /* UIBarButtonItem+RxTests.swift */,
+				75CFAD3CFBCE0F256E83168369D32812 /* UIButton+RxTests.swift */,
+				6ACAEDCA402D5F96F388D462299FC24D /* UICollectionView+RxTests.swift */,
+				8D56DBFAB4056E59B8A72A7CE0DB77D3 /* UIControl+RxTests.swift */,
+				C50D71FCD94A69C6EE749641B5E10744 /* UIDatePicker+RxTests.swift */,
+				E03E2B7C2E6125720A9A4623426715E9 /* UIGestureRecognizer+RxTests.swift */,
+				E2BAEC6888B212566DF4A4EF04DD58AB /* UILabel+RxTests.swift */,
+				E1C8A73C7236F7F45A7DEE109C1A9366 /* UINavigationController+RxTests.swift */,
+				AEDA7B870808D236C469F7B3BAA860CF /* UINavigationItem+RxTests.swift.swift */,
+				D22F802FB687BA51FFE5445F0803921B /* UIPageControl+RxTest.swift */,
+				C112CD56B6B9BDB7BA4CAA8616F2D784 /* UIPickerView+RxTests.swift */,
+				50A0CE6A2D5D4F37405783511FA0B45B /* UIProgressView+RxTests.swift */,
+				886C4589474C4ABF03ABBF0EF3B260D7 /* UIRefreshControl+RxTests.swift */,
+				9DC402B18AE30EC40E8641C01AD42CD6 /* UIScrollView+RxTests.swift */,
+				F3A7A0650310AC1C9D3A49703817E50F /* UISearchBar+RxTests.swift */,
+				650EB1392F5C4AA4B568DB5E7B6FF293 /* UISearchController+RxTests.swift */,
+				BDC3E2248B39FFC31179DAEDDFEABC56 /* UISegmentedControl+RxTests.swift */,
+				BC3270E13F3994339AEECA5CAA0D5EF3 /* UISlider+RxTests.swift */,
+				F785F40F1A3FF2942715C93741778445 /* UIStepper+RxTests.swift */,
+				4FF92CE9E16B6A33732D54167DC7FA79 /* UISwitch+RxTests.swift */,
+				439118BAD52F961C8AA9106D29322AB7 /* UITabBar+RxTests.swift */,
+				002E3475CAFFBEDD81DB29DBB0AABA9A /* UITabBarController+RxTests.swift */,
+				1E2255AF7293927607D443988436668D /* UITabBarItem+RxTests.swift */,
+				58A013EE25D67D650B0FD6F8A3805631 /* UITableView+RxTests.swift */,
+				305E20F666657D788FDD8AD4226839B2 /* UITextField+RxTests.swift */,
+				1145F66AD87C52DE2302D14B54091237 /* UITextView+RxTests.swift */,
+				E8764E56F91C5A61A02C1022828650CA /* UIView+RxTests.swift */,
+				A663C4249D267C2FE636C1CB49C5ACE4 /* UIViewController+RxTests.swift */,
+				D44E9BF073EB33B5F25462ED8B5E6C6D /* UIWebView+RxTests.swift */,
+			);
+			path = RxCocoaTests;
+			sourceTree = "<group>";
+		};
+		7DD2EA115AC1BC151E265F728BE12D5C /* Platform */ = {
+			isa = PBXGroup;
+			children = (
+				54B78F7C8528F1A71D4E1992C265D74B /* AtomicInt.swift */,
+				FA0BF75EEDA6ACAF0C1CF3936F5EC796 /* Platform.Darwin.swift */,
+				BB11D9DE41E6442235FB437AB6655A45 /* Platform.Linux.swift */,
+				4802E9892185904E592805160B921F3A /* RecursiveLock.swift */,
+			);
+			path = Platform;
+			sourceTree = "<group>";
+		};
+		8115BE58BD8312B13E66FD32ADF36ED6 /* RxBlocking */ = {
+			isa = PBXGroup;
+			children = (
+				90BC048D8DABD8664A50E25468696060 /* AtomicInt.swift */,
+				E6E9E648919D787C0DDACF00D7BCDBD0 /* BlockingObservable+Operators.swift */,
+				A7CF77EBE85BEC129BF522EA054520D3 /* BlockingObservable.swift */,
+				5F78AB4A62D13774CC73124ECF6172E1 /* ObservableConvertibleType+Blocking.swift */,
+				9A38A7570043202FF050348542590C46 /* Platform.Darwin.swift */,
+				FA86ABE3D6BD2DBC477113FD0F9E69A8 /* Platform.Linux.swift */,
+				4C89E1C71C1C5F59FA89973AE5233760 /* RecursiveLock.swift */,
+				E2358D5230E936E16453AB2862A7F5A8 /* Resources.swift */,
+				13EB2F1BED918B4BAE2CD0DBB44F7FB4 /* RunLoopLock.swift */,
+			);
+			path = RxBlocking;
+			sourceTree = "<group>";
+		};
+		8377BB0E0F2C508F7324EA8A76CECA79 /* Foundation */ = {
+			isa = PBXGroup;
+			children = (
+				DB5408449143A24DA7A7FE96100CA19C /* KVORepresentable+CoreGraphics.swift */,
+				1731CBA57EC780457E5E04EA1379F4DE /* KVORepresentable+Swift.swift */,
+				D5B2B1298658D97888D90005ADCB9044 /* KVORepresentable.swift */,
+				F405DB4CB9DAB4041A770C481B9286B4 /* Logging.swift */,
+				0CC869858DAC37D97B7112D5816A68C8 /* NSObject+Rx+KVORepresentable.swift */,
+				321ABE13B22B574FDA7A27A242039B26 /* NSObject+Rx+RawRepresentable.swift */,
+				F585B9AFCD289FE65C29AA751E7D77B6 /* NSObject+Rx.swift */,
+				E581D29C4495E74FC56CFB1468CF9E1A /* NotificationCenter+Rx.swift */,
+				C86D9EF7E53DA69E78DD5B7012792C84 /* URLSession+Rx.swift */,
+			);
+			path = Foundation;
+			sourceTree = "<group>";
+		};
+		83E23A8782F62469A6C503CA675EB2BF /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				2760EEA675564E2322E06E9B2E184A32 /* ActivityIndicator.swift */,
+				D2F540A19CBFD8CC8186391DFDEF6343 /* DownloadableImage.swift */,
+				D9E419EC176A0374986DC3ED68D4509C /* GeolocationService.swift */,
+				31CA63F83541CDC8EE6BF425A98AC191 /* HtmlParsing.swift */,
+				F109852BCD2F71D2605AF93E6F2A1C18 /* ImageService.swift */,
+				3358C7B133DCC3CBC42BA0984CD308F1 /* PseudoRandomGenerator.swift */,
+				90C46404B13DE8BA7546306DC5F5360D /* Randomizer.swift */,
+				49E83F4734DCC3512A7E1EE4EA3ECBFD /* Reachability.swift */,
+				6B4962A552A87B04EB0055A0733E8A17 /* ReachabilityService.swift */,
+				6F3A769A6497892AE641E81239F1AF76 /* UIImage+Extensions.swift */,
+				D5434707AE978506C7750E1F97030379 /* UIImageView+DownloadableImage.swift */,
+				9A4C8EA22CB4F2FC1CC8026B81F76315 /* Wireframe.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		86AF4B3D6B7FDE1CD39E8EBAE76A4746 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				304631139A7011DB8F45106226F2AF46 /* Binder.swift */,
+				C87C87E443CD953BD60DC9B5E299AC46 /* ControlTarget.swift */,
+				82C00CFBE81EBF5FE224D402A7B36C2D /* DelegateProxy.swift */,
+				29A6350E9DBBB97DD1F44C39D502BD16 /* DelegateProxyType.swift */,
+				DC8A54E1CF90C7BD292129AA084A1607 /* KeyPathBinder.swift */,
+				68265F843F1B9A8E0B496E002E7E21EB /* NSLayoutConstraint+Rx.swift */,
+				67CB0471E9BBC94952AE0EB8EBD0E41C /* Observable+Bind.swift */,
+				C20C352E61A5C57B04617930D6FC49DF /* RxCocoaObjCRuntimeError+Extensions.swift */,
+				6A1CA71992965C462770E2A910BBB561 /* RxTarget.swift */,
+				97AFDC4E55F564F68B428585281ADB7D /* SectionedViewDataSourceType.swift */,
+				157645EB038CB105139CBAD2A0893093 /* TextInput.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		8A1890842C1ACF94FC870C304125A7CD /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				BA5417BB986D7392D2193397025E35E0 /* RxCollectionViewDataSourceType.swift */,
+				4390CA6C314C4F589E5F7BBF204AC571 /* RxPickerViewDataSourceType.swift */,
+				1EF0458A2B6385CEF31AC5D5C89F593A /* RxTableViewDataSourceType.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		8A2DA1CF4FC1ECDABD3EF4BC2F0942BA /* Platform */ = {
+			isa = PBXGroup;
+			children = (
+				8A7B54DAEAD47B393E05C4AF54EFD8CC /* AtomicInt.swift */,
+				EA9A7584F362D80FF3CD97BFB0A5AD62 /* DispatchQueue+Extensions.swift */,
+				46DF55C85B5BEF7F364374CBC1C1F55C /* Platform.Darwin.swift */,
+				DB9E93015939F39209DFB3AF4772C110 /* Platform.Linux.swift */,
+				1D48F748FBC7FA69CEF3D9E574847397 /* RecursiveLock.swift */,
+			);
+			path = Platform;
+			sourceTree = "<group>";
+		};
+		8CEFC800B72E9B8EA384204EE8D4C6E1 /* Internal */ = {
+			isa = PBXGroup;
+			children = (
+				A22C826FC673B4D5B8224ABF54D54A96 /* DispatchQueueConfiguration.swift */,
+				04EC8F0CDFE1C58F063B8E0474BE2869 /* InvocableScheduledItem.swift */,
+				70D4B0E4D817F451D20109DE22BAFD54 /* InvocableType.swift */,
+				010A6DC5F1C53FDDDE8E4162A1F22A01 /* ScheduledItem.swift */,
+				D2B6C15662276E607C358058E9DA0DF5 /* ScheduledItemType.swift */,
+			);
+			path = Internal;
+			sourceTree = "<group>";
+		};
+		8D02A5C57CBAB9C13AEF8823AA5FFBEB /* macOS */ = {
+			isa = PBXGroup;
+			children = (
+				AC4EB41ED3E697EC7E8DB6298D5CDB87 /* NSButton+Rx.swift */,
+				4596886EC044BE4378DBDC5F00538A01 /* NSControl+Rx.swift */,
+				86F50562782F032F5BA0E106ADB6250E /* NSImageView+Rx.swift */,
+				FA533A3806C2618A0E57F748F0C75947 /* NSSlider+Rx.swift */,
+				098436664C02BE92348DC1DF8116DE56 /* NSTextField+Rx.swift */,
+				1490CB0E04F30AC3D1381E2132C592CA /* NSTextView+Rx.swift */,
+				23FCD0E81D18DB0B5A8D461B72449B1F /* NSView+Rx.swift */,
+			);
+			path = macOS;
+			sourceTree = "<group>";
+		};
+		8F4B0EBD96549B5FE19CC11B29C41422 /* Driver */ = {
+			isa = PBXGroup;
+			children = (
+				679FA76FDACFA304D0332DFA89E83172 /* BehaviorRelay+Driver.swift */,
+				6209F58C031D3B0B438EC270EE3D0090 /* ControlEvent+Driver.swift */,
+				ADB4E25DACD28FCC40B308BAB6567EF5 /* ControlProperty+Driver.swift */,
+				06D5886BD1891A4E5E14BE510408389B /* Driver+Subscription.swift */,
+				50F250B573C53536ED58947362BDA1AD /* Driver.swift */,
+				6C368D4088E7026DE6F359CFD929948E /* ObservableConvertibleType+Driver.swift */,
+			);
+			path = Driver;
+			sourceTree = "<group>";
+		};
+		91CF0033C168F922AA153466F24349C0 /* RxBlockingTests */ = {
+			isa = PBXGroup;
+			children = (
+				64A69F4AB6546B73970B9BEEDB5A385E /* Observable+BlockingTest.swift */,
+			);
+			path = RxBlockingTests;
+			sourceTree = "<group>";
+		};
+		934B333319CA0EBDE1581D08A46E5A5C /* assets */ = {
+			isa = PBXGroup;
+			children = (
+				B2E45A49B4146D559D0F5FA84A6BFB33 /* CNAME.txt */,
+				F3080FD1A46DBA9DB17D6C299F1E9AE8 /* LICENSE.txt */,
+				1512731521449CB484BE974E585C4EB3 /* Rx_Logo_M.png */,
+			);
+			path = assets;
+			sourceTree = "<group>";
+		};
+		94AC9130EFE30CF9329D77A1B09011A2 /* RxRelay */ = {
+			isa = PBXGroup;
+			children = (
+				DA2EF4DE381397DDAE7BC24868D7CA1C /* BehaviorRelay.swift */,
+				43FAAE091AC32089F20C6FAE6FD3DB08 /* Info.plist */,
+				55A30D7D142808B45877FBB24B5C7791 /* Observable+Bind.swift */,
+				DD8E31467F3C9DBDB479FD003106BB04 /* PublishRelay.swift */,
+				CA2DE94CD4690840F314447D0BBB0CD8 /* Utils.swift */,
 			);
 			path = RxRelay;
+			sourceTree = "<group>";
+		};
+		98D28E49B4BE9745565B99FFE40932A5 /* .github */ = {
+			isa = PBXGroup;
+			children = (
+				88521C6B3198E557235EE65013B6048C /* ISSUE_TEMPLATE.md */,
+			);
+			path = .github;
+			sourceTree = "<group>";
+		};
+		99720C425DDE864D65A98A9AA62116EB /* RxRelayTests */ = {
+			isa = PBXGroup;
+			children = (
+				AE02227C2CE6A491B15B1CC19EEBF6D1 /* Observable+RelayBindTests.swift */,
+			);
+			path = RxRelayTests;
+			sourceTree = "<group>";
+		};
+		9EF3030BB8719CE066FA2CB07A6E32A0 /* SharedSequence */ = {
+			isa = PBXGroup;
+			children = (
+				EFE76A715B5FD14F97377802E0E5D083 /* ObservableConvertibleType+SharedSequence.swift */,
+				0771FC4C23959F77F942463B33B27965 /* SchedulerType+SharedSequence.swift */,
+				7A02C9046D84D96BF689E9ED852899D5 /* SharedSequence+Operators+arity.swift */,
+				CEF2CD822EFB80EB230424C5ED01A61A /* SharedSequence+Operators+arity.tt */,
+				2EAE4BF748236947E91064EC1C97D050 /* SharedSequence+Operators.swift */,
+				D0D40B6CEA3666D097A032F5338495CB /* SharedSequence.swift */,
+			);
+			path = SharedSequence;
+			sourceTree = "<group>";
+		};
+		9F74FE4CDB580409788B7B1FE373C8A3 /* RxTest */ = {
+			isa = PBXGroup;
+			children = (
+				0D331FB8BD24E95ABE6C3C6D73AEE02B /* Platform */,
+				DDC8A04D35C4F9CAE4F2DD4FDBD5906D /* Schedulers */,
+				9E14DE560EB364A48487A1D877954C9D /* Any+Equatable.swift */,
+				22CABB20AC3847D34D7DF4082BC7EABA /* ColdObservable.swift */,
+				818AB09246E12446ECFD9A8D4279B2CA /* Deprecated.swift */,
+				B938DFF2A573A717C83D5102262F4460 /* Event+Equatable.swift */,
+				D75B35D69D6327289A5F97F22A113B81 /* HotObservable.swift */,
+				116259403363D9D13F535CD9A74DB683 /* Info.plist */,
+				29122004EBC22B26ABD1FF4E46BD367D /* Recorded+Event.swift */,
+				05963C173BD83080E524ACDAC61DC048 /* Recorded.swift */,
+				ECF321C3955236AF4F722CD11CB1F021 /* RxTest.swift */,
+				53944112B359142468B76630764B147D /* Subscription.swift */,
+				43EC7617707557132AACCAC1A6ED90F0 /* TestableObservable.swift */,
+				A1244674069AF40FF77B4FB61881B079 /* TestableObserver.swift */,
+				CC795D9F48B4B903C6A8074D51199364 /* XCTest+Rx.swift */,
+			);
+			path = RxTest;
+			sourceTree = "<group>";
+		};
+		A1F25E1998FE1C29A7F190623E2A79F4 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				6B7B1564B07219D037E4301C7CD2150C /* SearchResultViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		A26EE190954C8C3D043A04B9E4F92133 = {
+			isa = PBXGroup;
+			children = (
+				5C3C1883F8D8F1CC65DBF6184EAA3FE0 /* Frameworks */,
+				5F8E61A9C5FA70CFA449B04E4732D262 /* Products */,
+				D47A22E91452765DDFD3690BE996AB31 /* XX */,
+			);
+			sourceTree = "<group>";
+		};
+		A36A3CF6B86ADF9EAD8B1734853A1587 /* Proxies */ = {
+			isa = PBXGroup;
+			children = (
+				513AAE3D05BDA4C066449EDEA2BCCB5C /* RxCollectionViewDataSourcePrefetchingProxy.swift */,
+				519D1922F3DCA477409D9C351A6657C2 /* RxCollectionViewDataSourceProxy.swift */,
+				FD9AD7CC1573E59C60B1102AE8A03C27 /* RxCollectionViewDelegateProxy.swift */,
+				696A6126E984214CF680CE80D9937054 /* RxNavigationControllerDelegateProxy.swift */,
+				F509249179180AF513BF63ECF663DEA9 /* RxPickerViewDataSourceProxy.swift */,
+				9480C126A7EDE4C28FFD703C1E544ABA /* RxPickerViewDelegateProxy.swift */,
+				182A21FCB76E096A9D7FEDBEF76AA694 /* RxScrollViewDelegateProxy.swift */,
+				A75E520EFC7FB5FCD37A68B574C70A09 /* RxSearchBarDelegateProxy.swift */,
+				B150312C9CDFA0F7E715FB4D2303E4DD /* RxSearchControllerDelegateProxy.swift */,
+				B2CCE6082CF016773E3F0E29411B0840 /* RxTabBarControllerDelegateProxy.swift */,
+				ADACF5F64B8BB946BCF315E5EFDFBBD5 /* RxTabBarDelegateProxy.swift */,
+				E19C9CE80A938658DB42E90B9C5795F1 /* RxTableViewDataSourcePrefetchingProxy.swift */,
+				E6986BC370B8E9341C15A9EE09C430AF /* RxTableViewDataSourceProxy.swift */,
+				EECA7FD78A4EAC70AFA24D8436316ED4 /* RxTableViewDelegateProxy.swift */,
+				181824E1FAF010776A40CD02AECABC32 /* RxTextStorageDelegateProxy.swift */,
+				F28AE0DEE50B305C8FDED0B9DE84742D /* RxTextViewDelegateProxy.swift */,
+				7BE85CAD23F9865830FEB2F38D263DFB /* RxWebViewDelegateProxy.swift */,
+			);
+			path = Proxies;
+			sourceTree = "<group>";
+		};
+		A63D02A2E26666BAC3BDF528E4CCD915 /* Subjects */ = {
+			isa = PBXGroup;
+			children = (
+				E12515A354A1B858762BFAF3B8474B8D /* AsyncSubject.swift */,
+				EFCF4C9DB704D539CEE62B5B5A9C2510 /* BehaviorSubject.swift */,
+				CB468E13C2CB76F0762333EE8A2598E2 /* PublishSubject.swift */,
+				7379F1051B1D16EF7BD2BD2CB0AAB50C /* ReplaySubject.swift */,
+				5F3057CE993F5EE6E4AB1296CA2769CE /* SubjectType.swift */,
+			);
+			path = Subjects;
+			sourceTree = "<group>";
+		};
+		A7412D144C8223A052A6C41409A5BADA /* Observers */ = {
+			isa = PBXGroup;
+			children = (
+				04FEC956A5903B794ABD6038B98F33A6 /* AnonymousObserver.swift */,
+				22EA2BB89F66EAEE5D227B2E87B8B483 /* ObserverBase.swift */,
+				C18E0EDDE64B0B6471612917CB004350 /* TailRecursiveSink.swift */,
+			);
+			path = Observers;
+			sourceTree = "<group>";
+		};
+		A960D24BB392BAF5BC7F777E1F738EF7 /* Calculator */ = {
+			isa = PBXGroup;
+			children = (
+				0BCD7075E7D9889C71B58BB954570C2F /* Calculator.storyboard */,
+				A8923F6FF7C8B3073C3ED1D4874E6D75 /* Calculator.swift */,
+				CB09794AE1210B32A47EE68E4867E174 /* CalculatorViewController.swift */,
+			);
+			path = Calculator;
+			sourceTree = "<group>";
+		};
+		AE8E9E687E10DA00B287E5EB8F699AD7 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				45EBBE176355A0041334D9B3A9DB07F1 /* RxCocoaRuntime.h */,
+				4EBF5D111E4E233D6BD3E5020559B244 /* _RX.h */,
+				414453D6787C62A7938E2F5E885A8F19 /* _RXDelegateProxy.h */,
+				F59DEA94159E055C547431ACE9F828AB /* _RXKVOObserver.h */,
+				18818F55EDC68156EB7C6CDAFF48D73B /* _RXObjCRuntime.h */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		AEA06206CEBE91B1309F6B30E714C929 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				D251D31AE6D9C4162BEF3714C46ABA5D /* MockGitHubAPI.swift */,
+				6D05F882903259568DCF06F2AC9F9500 /* MockWireframe.swift */,
+				61C9B99B3CE2B0C18F4A54F91DE5CE79 /* NotImplementedStubs.swift */,
+				C88E72DE0127546C48958EE623AB50BA /* ValidationResult+Equatable.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+		AF31AB4C9C90F8059D4FF3B75F5D0503 /* Disposables */ = {
+			isa = PBXGroup;
+			children = (
+				FB932C95EA42D49F6A18D4D88EF4D8CA /* AnonymousDisposable.swift */,
+				9ED918F9D708019869DED58D0FF572F1 /* BinaryDisposable.swift */,
+				D56A9B70B5CA23A4559E115DD6707D7F /* BooleanDisposable.swift */,
+				A026B5AB558FB3D33A78817595E6962C /* CompositeDisposable.swift */,
+				E8ABE6D2BAD191ADE0C0B8A8CD3CC2C2 /* Disposables.swift */,
+				9C7B4F95038E4E393865DCC591F00B0A /* DisposeBag.swift */,
+				01AD7A8CB440F7215C6E1402E32B97DA /* DisposeBase.swift */,
+				519B2071CBECF213D4C908D65519D4F8 /* NopDisposable.swift */,
+				88DB880D12604338D09558420F699155 /* RefCountDisposable.swift */,
+				2846C73F77FADB67776A13CCE0D009CB /* ScheduledDisposable.swift */,
+				84D5F4CA077FFC27371628AED32FD7E5 /* SerialDisposable.swift */,
+				C2F95F8E0CEBDDF97D695DAFE24B6F60 /* SingleAssignmentDisposable.swift */,
+				562D36E8A4CADF3198FFBF6AFEFC4EDC /* SubscriptionDisposable.swift */,
+			);
+			path = Disposables;
+			sourceTree = "<group>";
+		};
+		B016617E856E25DEF6C6782473F913C3 /* Platform */ = {
+			isa = PBXGroup;
+			children = (
+				4CB24F62640B8EDD2D6126C0AE29CA5D /* DispatchQueue+Extensions.swift */,
+			);
+			path = Platform;
+			sourceTree = "<group>";
+		};
+		B2E52B72AC36B10D13BE74CD0504B851 /* TableViewPartialUpdates */ = {
+			isa = PBXGroup;
+			children = (
+				66A9DB4AD46148FA9480BF65D897BBA2 /* NumberCell.swift */,
+				5A1A37AFB49238C6FF404EE699B86CCB /* NumberSectionView.swift */,
+				0935933CEB3DA22E1FB7C77978E22CAA /* PartialUpdates.storyboard */,
+				037A4878D535A987BB5C7BFDEBA92C73 /* PartialUpdatesViewController.swift */,
+			);
+			path = TableViewPartialUpdates;
+			sourceTree = "<group>";
+		};
+		B3834785A7E04BA74E9B4B99DBF290DC /* Microoptimizations */ = {
+			isa = PBXGroup;
+			children = (
+				00A1EDB33525098993556FCF4E77A351 /* Info.plist */,
+				468C8F4010FB48929AF2FB64467A88F3 /* PerformanceTools.swift */,
+				9E59779189382F4874332EBFC5178733 /* main.swift */,
+			);
+			path = Microoptimizations;
+			sourceTree = "<group>";
+		};
+		B50539874E30EE36FF41B9F2C75E1D25 /* TestImplementations */ = {
+			isa = PBXGroup;
+			children = (
+				74822689D62504B1114F36CDDB84BE8D /* Mocks */,
+				0EA4EA8029C632BA8558627CA5B2D99A /* ElementIndexPair.swift */,
+				874A20FC8B459468637FE9174BE529A8 /* EquatableArray.swift */,
+				D21824716798DAAC9699D7C5745E18E1 /* Observable+Extensions.swift */,
+				F0E4FE2ACE2DF73A37882AB9429A1722 /* TestVirtualScheduler.swift */,
+			);
+			path = TestImplementations;
+			sourceTree = "<group>";
+		};
+		B57D846CEEC7323F22B7E4B64843B697 /* Documentation */ = {
+			isa = PBXGroup;
+			children = (
+				E2F8EBBCD6166431B57B7D059DC87DFF /* ComparisonWithOtherLibraries.md */,
+				39E4EDBE38CF8F38CD8A48C6A4E915C9 /* DesignRationale.md */,
+				2203101F3E650D944A6CA02AD57D125A /* ExampleApp.md */,
+				CD5CC77E032C961414D034FB9CBC6B81 /* Examples.md */,
+				E8DE77FC1609401EB16E561738F9A780 /* GettingStarted.md */,
+				62EE72E061780554B1ADD0C7D00A1446 /* HotAndColdObservables.md */,
+				CB4C030BCAEEDE4C912DF729FA13E71C /* MathBehindRx.md */,
+				142908E0F17C1543F1054D9E68EC4ED6 /* NewFeatureRequestTemplate.md */,
+				3A1C398668DA27A155BB60E03072DD70 /* Playgrounds.md */,
+				FEE8B7EC65E28A1A69BFFF7961291E62 /* Schedulers.md */,
+				220071E4E9D88B7C3466BD08E4B73FA9 /* Subjects.md */,
+				9EBC6F9F460CE1D34E89388B0FD9C1E8 /* Tips.md */,
+				D16899E6A8341571C3D8C0704A5FD3CD /* Traits.md */,
+				6C403C8FE0AE4C813688868EC8D080D0 /* UnitTests.md */,
+				F9DE1F1A8A5B3C11A555919CE4F69475 /* Warnings.md */,
+				C408A3FF2CEA2DA08A325BDD19168A75 /* Why.md */,
+			);
+			path = Documentation;
+			sourceTree = "<group>";
+		};
+		B7F0B7B89D16D5D294091E9B70522274 /* DataStructures */ = {
+			isa = PBXGroup;
+			children = (
+				29FD4C87A5D04B45EA6C2E78DDD953F5 /* Bag.swift */,
+			);
+			path = DataStructures;
+			sourceTree = "<group>";
+		};
+		BB0D2A0097A39F7B5B74866F7912558E /* RxDataSources */ = {
+			isa = PBXGroup;
+			children = (
+				180C73177C42F52136A89032662F7FBD /* AnimationConfiguration.swift */,
+				CE3EFFD39BB8A4C05B23DB0A46179D5F /* Array+Extensions.swift */,
+				F562856ECA94CEDF824771EAD8A66BD2 /* CollectionViewSectionedDataSource.swift */,
+				F14F09DFAFAE5B4446C41E86A5F00CC2 /* DataSources.swift */,
+				9313AEB1F594E01E2AEF63BF659288FD /* Deprecated.swift */,
+				9867DED1C3526C1F0B00E5683504F2D2 /* FloatingPointType+IdentifiableType.swift */,
+				4B3B92D9CC79BF7E49C5CBC055F710BB /* Info.plist */,
+				EF52B4D0C40E3AC228B9BCB8645F2A9C /* IntegerType+IdentifiableType.swift */,
+				B8A4A49A4B990F551FE150170DC303F3 /* RxCollectionViewSectionedAnimatedDataSource.swift */,
+				2C2495CA6D42FED6AE292699B0519CF7 /* RxCollectionViewSectionedReloadDataSource.swift */,
+				AF72D0AA653D192702104749B3FE3381 /* RxDataSources.h */,
+				928433D0636B0876985C3499E0F8814F /* RxPickerViewAdapter.swift */,
+				88DA222FCC41D5CB05E6BD793AD30FAE /* RxTableViewSectionedAnimatedDataSource.swift */,
+				10D7590193A3DA163C7AC518B832DDA2 /* RxTableViewSectionedReloadDataSource.swift */,
+				6BA9523D359BE2587DAE1A519F329902 /* String+IdentifiableType.swift */,
+				DB5B7321F9D386F6A613600F717EA5D1 /* TableViewSectionedDataSource.swift */,
+				CE88F9CAB325C87768DEA5AA77EA7024 /* UI+SectionedViewType.swift */,
+			);
+			path = RxDataSources;
+			sourceTree = "<group>";
+		};
+		C002E521B22A6D016907480AEABE209D /* Platform */ = {
+			isa = PBXGroup;
+			children = (
+				F9C184F0E7C7B99DC340AFEF3EE6632C /* DataStructures */,
+				FB5599DAA38910EF464F6D87E2F5602F /* AtomicInt.swift */,
+				F8ADF171B7C98F317F17CA3A91AE8926 /* DispatchQueue+Extensions.swift */,
+				E954487FB5C2FF4BCA0F6A12801FAA17 /* Platform.Darwin.swift */,
+				1136FA91AA87AE7AB4375BAF8B09E046 /* Platform.Linux.swift */,
+				6EB584753B55DAC6313BCE1CD9ECAB65 /* RecursiveLock.swift */,
+			);
+			path = Platform;
+			sourceTree = "<group>";
+		};
+		C1DFA34A816E13CC3342ACC0BEA13DFE /* SwiftSupport */ = {
+			isa = PBXGroup;
+			children = (
+				0EFADC19FBF31B641F5DB2A12F84CA70 /* SwiftSupport.swift */,
+			);
+			path = SwiftSupport;
+			sourceTree = "<group>";
+		};
+		C9F67C921316412525F69798D951AC9C /* SimpleTableViewExampleSectioned */ = {
+			isa = PBXGroup;
+			children = (
+				DEF2121F736C90B526E6CDDCAAA6C413 /* SimpleTableViewExampleSectioned.storyboard */,
+				CEBAB7D25F822CF3B3B68C49186119E3 /* SimpleTableViewExampleSectionedViewController.swift */,
+			);
+			path = SimpleTableViewExampleSectioned;
+			sourceTree = "<group>";
+		};
+		CA0FF07B1E8DC7C146B29285E1DF7DC1 /* Concurrency */ = {
+			isa = PBXGroup;
+			children = (
+				3B3919186F524775D3FBBEC10B9C8DF2 /* AsyncLock.swift */,
+				6027DF14E52CCC6A3D0DE5920E01CE48 /* Lock.swift */,
+				81A94219203B13775DE22D82EE5CB85D /* LockOwnerType.swift */,
+				83B9BAD7CCA9F3F7FD247E6D0A03363C /* SynchronizedDisposeType.swift */,
+				257D97A45A3EFC55B590A6D6F94EAF3C /* SynchronizedOnType.swift */,
+				FF2F35394C85B6C4C7329DE06E026BE3 /* SynchronizedUnsubscribeType.swift */,
+			);
+			path = Concurrency;
+			sourceTree = "<group>";
+		};
+		CC24097552B7834A78CC1B023D12FA59 /* macOS simple example */ = {
+			isa = PBXGroup;
+			children = (
+				932EC51C5C24AB9ADAFEA1FE3BFF530C /* IntroductionExampleViewController.swift */,
+			);
+			path = "macOS simple example";
+			sourceTree = "<group>";
+		};
+		CDC0DFF423BF322C971D31A53CA51F20 /* UIPickerViewExample */ = {
+			isa = PBXGroup;
+			children = (
+				45A61F4A52C0DE023493E56BED0B3977 /* CustomPickerViewAdapterExampleViewController.swift */,
+				F8A00E45BAC84C118D79FF9CD949C867 /* SimplePickerViewExampleViewController.swift */,
+				E1A292582479F5DEEA5897C791E031D6 /* SimpleUIPickerViewExample.storyboard */,
+			);
+			path = UIPickerViewExample;
+			sourceTree = "<group>";
+		};
+		CE92027A57B26DEDB907D2A113D16100 /* APIWrappers */ = {
+			isa = PBXGroup;
+			children = (
+				7F40D5A827B7113B97B94AA5D3420C2B /* APIWrappers.storyboard */,
+				7BBE6113F676EE03E5A81DFBE4B4CC43 /* APIWrappersViewController.swift */,
+			);
+			path = APIWrappers;
+			sourceTree = "<group>";
+		};
+		CF6A0C5775F269FD05BB76D9027B0DBC /* TableViewWithEditingCommands */ = {
+			isa = PBXGroup;
+			children = (
+				F4821544D6D97CE4B9B3EAFF221DBE67 /* DetailViewController.swift */,
+				0577CDDD760EF4B8D7EAA01471F3469A /* RandomUserAPI.swift */,
+				0661C2C46BC58FF84DF0593F77128DD5 /* TableViewWithEditingCommands.storyboard */,
+				747695540F69D41A94A88E66EE10B9F2 /* TableViewWithEditingCommandsViewController.swift */,
+				ED3D8815AA2DB5F5A70C4D6CA562C989 /* UIImageView+Extensions.swift */,
+				67562DAB860AE9F4430EE33773CEC8BD /* User.swift */,
+			);
+			path = TableViewWithEditingCommands;
+			sourceTree = "<group>";
+		};
+		D0E7390E922E5BEEBEA30C0BF3C910CD /* SimpleValidation */ = {
+			isa = PBXGroup;
+			children = (
+				B6179E90B170C81C0402B8FD26B9B7A2 /* SimpleValidation.storyboard */,
+				71018E6612F6ED03830867D59999B499 /* SimpleValidationViewController.swift */,
+			);
+			path = SimpleValidation;
+			sourceTree = "<group>";
+		};
+		D10010E1F1E4C7D33BFC011166583011 /* WikipediaAPI */ = {
+			isa = PBXGroup;
+			children = (
+				6C259AD869E127F4B7C83D634F923FF7 /* WikipediaAPI.swift */,
+				E371074329040C1628BF6E5091119CC9 /* WikipediaPage.swift */,
+				B913C444FA25AE70A1D61AA6397A6F04 /* WikipediaSearchResult.swift */,
+			);
+			path = WikipediaAPI;
+			sourceTree = "<group>";
+		};
+		D25BDB59453987AB2E7B7F45DEDAD7BD /* RxExample-iOSUITests */ = {
+			isa = PBXGroup;
+			children = (
+				5A313739EBAD0663EBF7C7C04AB433FB /* FlowTests.swift */,
+				529F04695C8E654D3F4C2453527CA6FB /* Info.plist */,
+			);
+			path = "RxExample-iOSUITests";
+			sourceTree = "<group>";
+		};
+		D47A22E91452765DDFD3690BE996AB31 /* XX */ = {
+			isa = PBXGroup;
+			children = (
+				B4BC5246FCB604F6A3BB58BA5B780127 /* AppDelegate.swift */,
+				1804DD43026500CA6D81A05C9BDDF4CD /* Assets.xcassets */,
+				B77587401D77975FA2FD7C1F98CC1FD8 /* Info.plist */,
+				1D701E25B9E0F2B7A4655B8CA13A21DB /* LaunchScreen.storyboard */,
+				449397A9CFD6B7F12E9CCB48B424B12F /* Main.storyboard */,
+				C10C9814577D19BB15C1A0F78536882F /* ViewController.swift */,
+				16E7DA482CA5A9A9C5EF137063A8DD4B /* XX-Bridging-Header.h */,
+			);
+			path = XX;
 			sourceTree = "<group>";
 		};
 		DA28CE465E01C9BDB5977766877932CB /* AllTestz */ = {
@@ -3075,6 +3020,128 @@
 			path = AllTestz;
 			sourceTree = "<group>";
 		};
+		DDC8A04D35C4F9CAE4F2DD4FDBD5906D /* Schedulers */ = {
+			isa = PBXGroup;
+			children = (
+				0D0CE91A74257DCE1553F265351A4FF4 /* TestScheduler.swift */,
+				549826E190F3B7EDE3B59D9D5D62288F /* TestSchedulerVirtualTimeConverter.swift */,
+			);
+			path = Schedulers;
+			sourceTree = "<group>";
+		};
+		DEC8A376113C7127FA1B9E8D720CE9AB /* RxCocoa */ = {
+			isa = PBXGroup;
+			children = (
+				CA859F76DCF8A6959D777FEFEEDD0615 /* BehaviorRelay+Driver.swift */,
+				4BFAC1C2C83B62EC36212271A5D8EDC7 /* Binder.swift */,
+				59EB9ECD5499DA11EDFCACE21235C903 /* ControlEvent+Driver.swift */,
+				51CDDB266052BD3C79A702D2FB86A7A3 /* ControlEvent+Signal.swift */,
+				E3F01943EA6F9163B99E48309F8C2204 /* ControlEvent.swift */,
+				62ABAD510827388E2457E0CA01C43415 /* ControlProperty+Driver.swift */,
+				C0027E007476E3751658477D7B1E5DEB /* ControlProperty.swift */,
+				0C7FDABDDF5CAA15EF7EB5400732B33B /* ControlTarget.swift */,
+				9B0BC2CFCB2E9C6DF44BA6A7F53BCFC7 /* DelegateProxy.swift */,
+				B040345F54D741DE1C2E144DC06F5915 /* DelegateProxyType.swift */,
+				A426BBA292C160FA56B155B14512D68B /* Deprecated.swift */,
+				F96C8528940605208F737FE105AC5A60 /* DispatchQueue+Extensions.swift */,
+				AF45C42DE132052FEA233891B1819E85 /* Driver+Subscription.swift */,
+				AC74E3873F18A8A20F48D3429F031C06 /* Driver.swift */,
+				846BE123765EEA6E6FF982FA3F17D720 /* ItemEvents.swift */,
+				DC774CAE99F0DC5DDCE487126E14EF33 /* KVORepresentable+CoreGraphics.swift */,
+				2FC2DE7078171F466CA6374B83A273B3 /* KVORepresentable+Swift.swift */,
+				82C92A1D1B4AFF2ADDCB75148BA595A1 /* KVORepresentable.swift */,
+				91223C37013328FBC5439AB095A21F04 /* KeyPathBinder.swift */,
+				72F36479C78DDCD93436AB103E0E83AE /* Logging.swift */,
+				C47CE1A52FEC605E5CEE045EA55A3327 /* NSButton+Rx.swift */,
+				939FEB967F2B8D5F9A5923C0674D98E2 /* NSControl+Rx.swift */,
+				E397DA79986921A0EDDA620A43DD4095 /* NSImageView+Rx.swift */,
+				43F3CE21E9D9D77B9FBE16BCD7C34672 /* NSLayoutConstraint+Rx.swift */,
+				DFD0150945D628A2F540A2DB5E998A39 /* NSObject+Rx+KVORepresentable.swift */,
+				F32F16BC792CDA1784FBA013B5B16F0A /* NSObject+Rx+RawRepresentable.swift */,
+				1FCA079FE4312BC698004D614C94F368 /* NSObject+Rx.swift */,
+				D16EBB446AE757A6503B48A3D1A49B08 /* NSSlider+Rx.swift */,
+				090ECAA7757ED229AE6AFDA2E23F3A9C /* NSTextField+Rx.swift */,
+				42DF5D49C028F5091E527A7DEE90BE7E /* NSTextStorage+Rx.swift */,
+				C63310369ED358A0B359D7873773DF81 /* NSTextView+Rx.swift */,
+				BBC2A9817CD0EED614BE6BBF54EE991F /* NSView+Rx.swift */,
+				0E659691C4E9A59809514965BCA3417A /* NotificationCenter+Rx.swift */,
+				9F1CFA9A34C96FD91ED4CB3E128CA576 /* Observable+Bind.swift */,
+				BB09227E415D30726F360995FFFD4B63 /* ObservableConvertibleType+Driver.swift */,
+				8BFF4DE6E0BD3B724374C4DA4234827A /* ObservableConvertibleType+SharedSequence.swift */,
+				A4B91EFDC02266AF89061FB1C344E6F2 /* ObservableConvertibleType+Signal.swift */,
+				648EBE75C01A5BE556EF5FFEE8AE8023 /* PublishRelay+Signal.swift */,
+				E43E24DC346D6D2CF88C18289CBA23B7 /* RxCocoa.swift */,
+				8239863F84F3355D699F5F0ADFB298EA /* RxCocoaObjCRuntimeError+Extensions.swift */,
+				BE7970C000577D43EAC9CCC98E19A4AD /* RxCollectionViewDataSourcePrefetchingProxy.swift */,
+				365DD7F8224A5A091463F0BDF9689FDF /* RxCollectionViewDataSourceProxy.swift */,
+				0E9D37E2008A032BBA18B7B948DFF97F /* RxCollectionViewDataSourceType.swift */,
+				6B0A52AA2584F54D25721D224A229C2D /* RxCollectionViewDelegateProxy.swift */,
+				5C16BAEB4868F40461CA485894CF54D2 /* RxCollectionViewReactiveArrayDataSource.swift */,
+				EFE06E084E4AC4819565792AB1442D3F /* RxNavigationControllerDelegateProxy.swift */,
+				E3EF1B53254C897C65C17A40C5787128 /* RxPickerViewAdapter.swift */,
+				B1F94F886A0A6236C4E061199E245E67 /* RxPickerViewDataSourceProxy.swift */,
+				DA7EE331A31FDD724D63B7B195DDCA12 /* RxPickerViewDataSourceType.swift */,
+				4762362553B67C119818DCB9B17CF1E4 /* RxPickerViewDelegateProxy.swift */,
+				1FC2FE71A752DFD4292FFC247445A988 /* RxScrollViewDelegateProxy.swift */,
+				87F875A7493391BFDD1951B814846F91 /* RxSearchBarDelegateProxy.swift */,
+				421F2E004566A7DA8375DCEA7F8A00A7 /* RxSearchControllerDelegateProxy.swift */,
+				A4C564C5CC59E1C469665FCCB707B692 /* RxTabBarControllerDelegateProxy.swift */,
+				AD92391006E1E0633152B74962B0B64D /* RxTabBarDelegateProxy.swift */,
+				1CC58F8C4DB393ABC89BC889019B2E9B /* RxTableViewDataSourcePrefetchingProxy.swift */,
+				9C32F1166CAF01D74479534F1EC41C82 /* RxTableViewDataSourceProxy.swift */,
+				87B3ED943FE361C596851DA3A040F450 /* RxTableViewDataSourceType.swift */,
+				F35CDFA4A0D0704AC99953DB90B319F5 /* RxTableViewDelegateProxy.swift */,
+				869AC0EFC87D154601AB6AD4272A5F96 /* RxTableViewReactiveArrayDataSource.swift */,
+				0D1E48543A7D0C24E231769DC3274602 /* RxTarget.swift */,
+				8E19C5C0F66B5F63264C0A93606EB148 /* RxTextStorageDelegateProxy.swift */,
+				B7111AF07644C3059EDC02AA479A84DF /* RxTextViewDelegateProxy.swift */,
+				1C1CB2CA036D16CC4A5F695482FAFD5B /* RxWebViewDelegateProxy.swift */,
+				86491B4D1E4E72F0EF5A6AAA51B5D344 /* SchedulerType+SharedSequence.swift */,
+				20EC9FECA974F9E2FFEF372FA353E7B7 /* SectionedViewDataSourceType.swift */,
+				0DC360247F976AE10FBB23C42DA18021 /* SharedSequence+Operators+arity.swift */,
+				9359C5419B906E971A065ED5A305A34C /* SharedSequence+Operators.swift */,
+				83AEC7D8403D1D76E52632BACF0EC164 /* SharedSequence.swift */,
+				9E5D49A12EBF59FAB6878FF16F453956 /* Signal+Subscription.swift */,
+				A822F95EB91DE73D8DDF63CA65C5DC00 /* Signal.swift */,
+				F552E371B167CA2CEFFF1DDE91CFEE47 /* TextInput.swift */,
+				E34D3E0C649A04C98DEE07C4977259D9 /* UIActivityIndicatorView+Rx.swift */,
+				F9797125FDDF5880F7E3FD5150BF1F8F /* UIAlertAction+Rx.swift */,
+				39DC0C2D1BF7DD6BFD4A0A0E20404F12 /* UIApplication+Rx.swift */,
+				0F243666E1C17CF6BF579990B38D03D4 /* UIBarButtonItem+Rx.swift */,
+				4CAF4B7FA1B5B08818DCB12D6D9166FE /* UIButton+Rx.swift */,
+				2C54E5793E3549E8E61971DF42E2FC16 /* UICollectionView+Rx.swift */,
+				2813AAB984F37EB1CA05DDFB79F9FA04 /* UIControl+Rx.swift */,
+				C08A92D942C3C9173DC2661D7B6A9B75 /* UIDatePicker+Rx.swift */,
+				2DAB4BEE88D7DD2B4FCEAEDEB8FDFEB5 /* UIGestureRecognizer+Rx.swift */,
+				261126D1C8E751C12C9166598BCF5DC0 /* UIImageView+Rx.swift */,
+				18469CBE369D18FB880B7837BE138E61 /* UILabel+Rx.swift */,
+				230C36F37593AB51AC319DD672F98134 /* UINavigationController+Rx.swift */,
+				E5F3EF0628D6CCE471FB90B5FCE805F4 /* UINavigationItem+Rx.swift */,
+				5B379FAECDBF20BE675D05C0EF9DBE5B /* UIPageControl+Rx.swift */,
+				35E70B581BF220063C5B7F8D545A6830 /* UIPickerView+Rx.swift */,
+				7355473C3C8E0C07667391A242AF6151 /* UIProgressView+Rx.swift */,
+				76F16F2422F9D4B9E67F881F7E71B273 /* UIRefreshControl+Rx.swift */,
+				B3F584B06A1AD546786CF1281F579E7D /* UIScrollView+Rx.swift */,
+				B8596EFD9798382D4F159D7C83C907E3 /* UISearchBar+Rx.swift */,
+				351E3B813F8F4BA637461D9710BDDAA7 /* UISearchController+Rx.swift */,
+				92B164010C34E3FD157D5BBFCB4E6CC6 /* UISegmentedControl+Rx.swift */,
+				4CAC4B84D8EE05E345B445D1CBE12EC0 /* UISlider+Rx.swift */,
+				659A86F8AAF4F2A5E9BCBDA8BAF365F8 /* UIStepper+Rx.swift */,
+				A985FD0FC443E29A43F0E66086F90191 /* UISwitch+Rx.swift */,
+				31187523F1AC598A484D9A9681E267B0 /* UITabBar+Rx.swift */,
+				8E74934FF01F0C4679ED3DEB9A911FE0 /* UITabBarController+Rx.swift */,
+				B62C992C5DECD68483C7152CDCDEA479 /* UITabBarItem+Rx.swift */,
+				050B2B6DC4DFCCC6B5FFCB47CB69CE77 /* UITableView+Rx.swift */,
+				AA60F9A6330C7E7E75418CBEC1E70AED /* UITextField+Rx.swift */,
+				8B9030B38A8B1188C90D15AB201F3995 /* UITextView+Rx.swift */,
+				6723E5C31BC204C5C6A35AA3915E3A0A /* UIView+Rx.swift */,
+				31A193166AF7C39A2BCD93D6B0E50046 /* UIViewController+Rx.swift */,
+				39538BC0E5605117E36AECADFE73080B /* UIWebView+Rx.swift */,
+				8CC42D8C774A401A40C998206370AED4 /* URLSession+Rx.swift */,
+			);
+			path = RxCocoa;
+			sourceTree = "<group>";
+		};
 		E14BFBCDE3C3C76603E1C87F0B4A17A7 /* RxCocoaRuntime */ = {
 			isa = PBXGroup;
 			children = (
@@ -3087,64 +3154,25 @@
 			path = RxCocoaRuntime;
 			sourceTree = "<group>";
 		};
-		AE8E9E687E10DA00B287E5EB8F699AD7 /* include */ = {
+		E204AFEA49B232524E7CC4F2BF804541 /* Differentiator */ = {
 			isa = PBXGroup;
 			children = (
-				45EBBE176355A0041334D9B3A9DB07F1 /* RxCocoaRuntime.h */,
-				4EBF5D111E4E233D6BD3E5020559B244 /* _RX.h */,
-				414453D6787C62A7938E2F5E885A8F19 /* _RXDelegateProxy.h */,
-				F59DEA94159E055C547431ACE9F828AB /* _RXKVOObserver.h */,
-				18818F55EDC68156EB7C6CDAFF48D73B /* _RXObjCRuntime.h */,
+				2B09E4ABA1A69003639C031C475815DB /* AnimatableSectionModel.swift */,
+				EB60F16BBCD6ADE981CFF943ABB8A870 /* AnimatableSectionModelType+ItemPath.swift */,
+				344A0E001644121236248FC24E7B667C /* AnimatableSectionModelType.swift */,
+				D06BB1B1EBFAEB96D7AFAACDFB37DA26 /* Changeset.swift */,
+				B1136C18642CDDB5D761D8990C95FFD0 /* Diff.swift */,
+				BD9B8BF75DC5F7F48D00B6E8A945DD9F /* Differentiator.h */,
+				B147A5CA755353D3122B4D0AB983E942 /* IdentifiableType.swift */,
+				4942A2A4CEE42E5C3ED64C2363526E99 /* IdentifiableValue.swift */,
+				3B0F367D28521B87723666716DBAAF70 /* Info.plist */,
+				97CE931789B146C89AB87C6F5A58CD2D /* ItemPath.swift */,
+				521BF7D3FC246FE555B49F0AFB1EEC6D /* Optional+Extensions.swift */,
+				A112FB33F58000C14AE7413EF7B721C4 /* SectionModel.swift */,
+				9A2D28497B14E4D51B3547BF4F0B0BEB /* SectionModelType.swift */,
+				CDDF26C7D67AC8B36FA277CF89AEF135 /* Utilities.swift */,
 			);
-			path = include;
-			sourceTree = "<group>";
-		};
-		2679DD05EA41FF2AEE24C943C99DD987 /* RxTest */ = {
-			isa = PBXGroup;
-			children = (
-				375842F986E5F198E79FFC7B7ABD02C2 /* Any+Equatable.swift */,
-				0D151A2746BF9DADB3E1B44DD0814B6A /* Bag.swift */,
-				824D5C81E4437F0E8D3E323F6B2484ED /* ColdObservable.swift */,
-				ED08650CEFA81450E70E2E00C78776A0 /* Deprecated.swift */,
-				12FE3A765EAC45BDC12F4006A06657D5 /* Event+Equatable.swift */,
-				A7D3F978508FA62CE25853C91DFDB35D /* HotObservable.swift */,
-				17D575B889F6109D76E3290FA482307E /* Recorded+Event.swift */,
-				C066403924BC25A272A99E0F9DDBF507 /* Recorded.swift */,
-				92DF141027CBEE13BFB33A3C0C83F1D8 /* RxTest.swift */,
-				B6C5A8FDAD780C3AD60EFF555CFFFC83 /* Subscription.swift */,
-				7929D8F7743BB09A75CA747BD3666DAA /* TestScheduler.swift */,
-				985D69F325C21E9074F0406AEA5CE690 /* TestSchedulerVirtualTimeConverter.swift */,
-				1063A2EC699ADFE6BB900825419D8284 /* TestableObservable.swift */,
-				BE1564DAA2A601102AD0DA940E6C4725 /* TestableObserver.swift */,
-				2BFEFD6A0900A283B94627AA4D4E242D /* XCTest+Rx.swift */,
-			);
-			path = RxTest;
-			sourceTree = "<group>";
-		};
-		8115BE58BD8312B13E66FD32ADF36ED6 /* RxBlocking */ = {
-			isa = PBXGroup;
-			children = (
-				90BC048D8DABD8664A50E25468696060 /* AtomicInt.swift */,
-				E6E9E648919D787C0DDACF00D7BCDBD0 /* BlockingObservable+Operators.swift */,
-				A7CF77EBE85BEC129BF522EA054520D3 /* BlockingObservable.swift */,
-				5F78AB4A62D13774CC73124ECF6172E1 /* ObservableConvertibleType+Blocking.swift */,
-				9A38A7570043202FF050348542590C46 /* Platform.Darwin.swift */,
-				FA86ABE3D6BD2DBC477113FD0F9E69A8 /* Platform.Linux.swift */,
-				4C89E1C71C1C5F59FA89973AE5233760 /* RecursiveLock.swift */,
-				E2358D5230E936E16453AB2862A7F5A8 /* Resources.swift */,
-				13EB2F1BED918B4BAE2CD0DBB44F7FB4 /* RunLoopLock.swift */,
-			);
-			path = RxBlocking;
-			sourceTree = "<group>";
-		};
-		934B333319CA0EBDE1581D08A46E5A5C /* assets */ = {
-			isa = PBXGroup;
-			children = (
-				B2E45A49B4146D559D0F5FA84A6BFB33 /* CNAME.txt */,
-				F3080FD1A46DBA9DB17D6C299F1E9AE8 /* LICENSE.txt */,
-				1512731521449CB484BE974E585C4EB3 /* Rx_Logo_M.png */,
-			);
-			path = assets;
+			path = Differentiator;
 			sourceTree = "<group>";
 		};
 		ED1D48D7C844C60BB2C115BA34F0285F /* Preprocessor */ = {
@@ -3157,110 +3185,82 @@
 			path = Preprocessor;
 			sourceTree = "<group>";
 		};
-		1CB5A22EFFE00256DBDAF9A017F41F1C /* Products */ = {
+		EE9EC45E786A4184873AF7AD6C5FBB48 /* Playgrounds */ = {
 			isa = PBXGroup;
 			children = (
-				9EC8DCED5D7E25639B1C2087E56295EF /* Preprocessor */,
+				AF06FB7F749378199D3AEDBBF7110A3F /* Info.plist */,
+				B01CA8AC2A45073F621A806FD6A49352 /* RxPlaygrounds.swift */,
 			);
-			name = Products;
+			path = Playgrounds;
 			sourceTree = "<group>";
 		};
-		412A30A1F6372C8449CCDD17F79ADB0E /* Preprocessor */ = {
+		EF6683A2E8B22D21AA170C231A78289A /* Schedulers */ = {
 			isa = PBXGroup;
 			children = (
-				0BFAF02CFFF4DA10D024CE9801792D80 /* main.swift */,
-			);
-			path = Preprocessor;
-			sourceTree = "<group>";
-		};
-		9F74FE4CDB580409788B7B1FE373C8A3 /* RxTest */ = {
-			isa = PBXGroup;
-			children = (
-				0D331FB8BD24E95ABE6C3C6D73AEE02B /* Platform */,
-				DDC8A04D35C4F9CAE4F2DD4FDBD5906D /* Schedulers */,
-				9E14DE560EB364A48487A1D877954C9D /* Any+Equatable.swift */,
-				22CABB20AC3847D34D7DF4082BC7EABA /* ColdObservable.swift */,
-				818AB09246E12446ECFD9A8D4279B2CA /* Deprecated.swift */,
-				B938DFF2A573A717C83D5102262F4460 /* Event+Equatable.swift */,
-				D75B35D69D6327289A5F97F22A113B81 /* HotObservable.swift */,
-				116259403363D9D13F535CD9A74DB683 /* Info.plist */,
-				29122004EBC22B26ABD1FF4E46BD367D /* Recorded+Event.swift */,
-				05963C173BD83080E524ACDAC61DC048 /* Recorded.swift */,
-				ECF321C3955236AF4F722CD11CB1F021 /* RxTest.swift */,
-				53944112B359142468B76630764B147D /* Subscription.swift */,
-				43EC7617707557132AACCAC1A6ED90F0 /* TestableObservable.swift */,
-				A1244674069AF40FF77B4FB61881B079 /* TestableObserver.swift */,
-				CC795D9F48B4B903C6A8074D51199364 /* XCTest+Rx.swift */,
-			);
-			path = RxTest;
-			sourceTree = "<group>";
-		};
-		0D331FB8BD24E95ABE6C3C6D73AEE02B /* Platform */ = {
-			isa = PBXGroup;
-			children = (
-				B7F0B7B89D16D5D294091E9B70522274 /* DataStructures */,
-			);
-			path = Platform;
-			sourceTree = "<group>";
-		};
-		B7F0B7B89D16D5D294091E9B70522274 /* DataStructures */ = {
-			isa = PBXGroup;
-			children = (
-				29FD4C87A5D04B45EA6C2E78DDD953F5 /* Bag.swift */,
-			);
-			path = DataStructures;
-			sourceTree = "<group>";
-		};
-		DDC8A04D35C4F9CAE4F2DD4FDBD5906D /* Schedulers */ = {
-			isa = PBXGroup;
-			children = (
-				0D0CE91A74257DCE1553F265351A4FF4 /* TestScheduler.swift */,
-				549826E190F3B7EDE3B59D9D5D62288F /* TestSchedulerVirtualTimeConverter.swift */,
+				8CEFC800B72E9B8EA384204EE8D4C6E1 /* Internal */,
+				E7EEBBA88273A69F33BA8DA26A7BC0EA /* ConcurrentDispatchQueueScheduler.swift */,
+				A7D2D18C5BE4079AB188E2FD07DAC854 /* ConcurrentMainScheduler.swift */,
+				BAD55FA942DE96C5EA83C704B112EBEB /* CurrentThreadScheduler.swift */,
+				271236E2311B6BAE7B62A0077DFDEF2A /* HistoricalScheduler.swift */,
+				FAC564A17E8A918D7FB6613A8A8BD27E /* HistoricalSchedulerTimeConverter.swift */,
+				1DE4AF00E0C0C864B36150185AF1DAEA /* MainScheduler.swift */,
+				FBB5FEA69A9CF165DCCEF0D06E5BEF6F /* OperationQueueScheduler.swift */,
+				1FDD8D3604D8FE58A7AB274B5C24F26A /* RecursiveScheduler.swift */,
+				D35C5DD3A7728F397A0A21C923687325 /* SchedulerServices+Emulation.swift */,
+				00A46A8E3DF15D385150C3008EBAC484 /* SerialDispatchQueueScheduler.swift */,
+				E305842A0104DA85D9A4006C8DA6198D /* VirtualTimeConverterType.swift */,
+				8D4EBCDDC8E72399BD3FB5F923CF2173 /* VirtualTimeScheduler.swift */,
 			);
 			path = Schedulers;
 			sourceTree = "<group>";
 		};
-		04091465C4B142AAC64CE70F6147EBFE /* RxBlocking */ = {
+		F9C184F0E7C7B99DC340AFEF3EE6632C /* DataStructures */ = {
 			isa = PBXGroup;
 			children = (
-				7DD2EA115AC1BC151E265F728BE12D5C /* Platform */,
-				87CC5403E50890D70D8BCF803E917BAB /* BlockingObservable+Operators.swift */,
-				6E7B65747B8375D67897AA480E7E5B21 /* BlockingObservable.swift */,
-				9028FFEE982B4591AA952BA6EFB57B6C /* Info.plist */,
-				57A80B832B56318F0F3252C1FA6A7785 /* ObservableConvertibleType+Blocking.swift */,
-				0B522D8CE79BAA21FCDC573996DCCB32 /* README.md */,
-				5EA7D3A807331615FA49A1A6EC5A48BA /* Resources.swift */,
-				1D4232DA38F1A94FA52BB2667089871A /* RunLoopLock.swift */,
+				39C29C42170249C94D397CF76F758122 /* Bag.swift */,
+				66C4EA499407125546A46F3C7CEF602B /* InfiniteSequence.swift */,
+				D57C5C3F16B2D0467DAB851A7FDF856E /* PriorityQueue.swift */,
+				7787F4C40F2529730C848A23D132C5D5 /* Queue.swift */,
 			);
-			path = RxBlocking;
+			path = DataStructures;
 			sourceTree = "<group>";
 		};
-		7DD2EA115AC1BC151E265F728BE12D5C /* Platform */ = {
+		FA2FA6F1F24962EFC2E6B1F76E918DB6 /* WikipediaImageSearch */ = {
 			isa = PBXGroup;
 			children = (
-				54B78F7C8528F1A71D4E1992C265D74B /* AtomicInt.swift */,
-				FA0BF75EEDA6ACAF0C1CF3936F5EC796 /* Platform.Darwin.swift */,
-				BB11D9DE41E6442235FB437AB6655A45 /* Platform.Linux.swift */,
-				4802E9892185904E592805160B921F3A /* RecursiveLock.swift */,
+				A1F25E1998FE1C29A7F190623E2A79F4 /* ViewModels */,
+				295CBE68DC38ABA2899FB4BC6454B62E /* Views */,
+				D10010E1F1E4C7D33BFC011166583011 /* WikipediaAPI */,
+				F775BC36F9A6ECA054E07EAC6F7C53E8 /* WikipediaSearch.storyboard */,
 			);
-			path = Platform;
+			path = WikipediaImageSearch;
 			sourceTree = "<group>";
 		};
-		1777BB0D9B4224DAF3E7C13A25086988 /* Products */ = {
+		FC0BFAACAE853B8C76447938EB4E93B2 /* RxCocoa */ = {
 			isa = PBXGroup;
 			children = (
-				1F5CA7A19E2621E207FFCCF109B94EC9 /* AllTests-iOS.xctest */,
-				B443F6FDDF3C9B7271F270AFAF0A89A6 /* AllTests-macOS.xctest */,
-				A17477E2D7CDF65FF683502AD61F9DD4 /* AllTests-tvOS.xctest */,
-				3CBBA4FE5F3BEBB9DD44007CA412B2A4 /* Benchmarks.xctest */,
-				8C0291D31F29D711EB2765BB1BEE3A31 /* PerformanceTests.app */,
-				32B05EBDDDC6FD6647D708DD35D439A3 /* RxBlocking.framework */,
-				8A15AA55D85FCC7A1C18544E175FB562 /* RxCocoa.framework */,
-				3B9E160314B58C0288B5B611EC4D2C4C /* RxRelay.framework */,
-				B0E45E70B5819BB0BCF8DB935B722689 /* RxSwift.framework */,
-				31069BF7A2B3F652850FC76E88DE41AB /* RxTest.framework */,
+				86AF4B3D6B7FDE1CD39E8EBAE76A4746 /* Common */,
+				8377BB0E0F2C508F7324EA8A76CECA79 /* Foundation */,
+				B016617E856E25DEF6C6782473F913C3 /* Platform */,
+				51EC350B50A11C07EB737DA08D42242C /* Runtime */,
+				44DE07BF00E6E345F00874D8D1958612 /* Traits */,
+				2AB971ACB01D8EF09913FEA8F6BBEFDD /* iOS */,
+				8D02A5C57CBAB9C13AEF8823AA5FFBEB /* macOS */,
+				79005E39ECD2F95E0136F74135062F49 /* Deprecated.swift */,
+				7001DB16F8C83CBA6ACFD5D564AD6B1F /* Info.plist */,
+				87992ABB2010CE25EF935E635271F117 /* RxCocoa.h */,
+				0BAF06828709041A39DBE145F11C8FA6 /* RxCocoa.swift */,
 			);
-			name = Products;
+			path = RxCocoa;
+			sourceTree = "<group>";
+		};
+		FE43DB3629DCEEE00C80B49EC9404FDE /* RxExample-macOSUITests */ = {
+			isa = PBXGroup;
+			children = (
+				010D06C8E8A0126D920D81BF98E0792A /* Info.plist */,
+				DF95858AC5DC1E924C7E2163C7F853CB /* RxExample_macOSUITests.swift */,
+			);
+			path = "RxExample-macOSUITests";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -3333,39 +3333,11 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		9EC8DCED5D7E25639B1C2087E56295EF /* Preprocessor */ = {
+		1F5CA7A19E2621E207FFCCF109B94EC9 /* AllTests-iOS.xctest */ = {
 			isa = PBXReferenceProxy;
-			fileType = "compiled.mach-o.executable";
-			path = Preprocessor;
-			remoteRef = BBB91F3287BDE20F24DBB9BDB0610FB2 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		B0E45E70B5819BB0BCF8DB935B722689 /* RxSwift.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = RxSwift.framework;
-			remoteRef = EA012DFD951DDD2998CB8E7257486D0A /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		8A15AA55D85FCC7A1C18544E175FB562 /* RxCocoa.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = RxCocoa.framework;
-			remoteRef = 5C63CA5F8ECAE2206BFAD5FDF2AE60DC /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		3B9E160314B58C0288B5B611EC4D2C4C /* RxRelay.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = RxRelay.framework;
-			remoteRef = 48C9978E4F99E088A578982BD0668262 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		32B05EBDDDC6FD6647D708DD35D439A3 /* RxBlocking.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = RxBlocking.framework;
-			remoteRef = 6202C87689C31492B1451F1181B4BE35 /* PBXContainerItemProxy */;
+			fileType = wrapper.cfbundle;
+			path = "AllTests-iOS.xctest";
+			remoteRef = 30B3F297899413C49913AD9BA6271825 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 		31069BF7A2B3F652850FC76E88DE41AB /* RxTest.framework */ = {
@@ -3375,25 +3347,53 @@
 			remoteRef = 1BA0F0DDA6B9DFF88819B90525C9C233 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		1F5CA7A19E2621E207FFCCF109B94EC9 /* AllTests-iOS.xctest */ = {
+		32B05EBDDDC6FD6647D708DD35D439A3 /* RxBlocking.framework */ = {
 			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = "AllTests-iOS.xctest";
-			remoteRef = 30B3F297899413C49913AD9BA6271825 /* PBXContainerItemProxy */;
+			fileType = wrapper.framework;
+			path = RxBlocking.framework;
+			remoteRef = 6202C87689C31492B1451F1181B4BE35 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		A17477E2D7CDF65FF683502AD61F9DD4 /* AllTests-tvOS.xctest */ = {
+		3B9E160314B58C0288B5B611EC4D2C4C /* RxRelay.framework */ = {
 			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = "AllTests-tvOS.xctest";
-			remoteRef = 15142F3D9A47DA1653C6E6EAAB614097 /* PBXContainerItemProxy */;
+			fileType = wrapper.framework;
+			path = RxRelay.framework;
+			remoteRef = 48C9978E4F99E088A578982BD0668262 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		B443F6FDDF3C9B7271F270AFAF0A89A6 /* AllTests-macOS.xctest */ = {
+		3CBBA4FE5F3BEBB9DD44007CA412B2A4 /* Benchmarks.xctest */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.cfbundle;
-			path = "AllTests-macOS.xctest";
-			remoteRef = B1A33B104E296B03390BEBCFE80AB535 /* PBXContainerItemProxy */;
+			path = Benchmarks.xctest;
+			remoteRef = 849CC3D448A3CEA50B461FC8C2E4FE92 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		49FDFB3739C657170242D3EB633A11A5 /* RxExample-iOSTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "RxExample-iOSTests.xctest";
+			remoteRef = 99CEC12B8DD8E998B25EA6A749ED16CD /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		6DC6A0BC2B53D4296BF9CA39B860D5F8 /* RxExample-macOSUITests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "RxExample-macOSUITests.xctest";
+			remoteRef = C719EADC9DFEC55B30FC5B04549056AA /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		7FA8A25FC235DAF711749571F45C9544 /* RxExample-iOS.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = "RxExample-iOS.app";
+			remoteRef = 2D5468DF55AE22C34ADE026C6E6AA21A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		8A15AA55D85FCC7A1C18544E175FB562 /* RxCocoa.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = RxCocoa.framework;
+			remoteRef = 5C63CA5F8ECAE2206BFAD5FDF2AE60DC /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 		8C0291D31F29D711EB2765BB1BEE3A31 /* PerformanceTests.app */ = {
@@ -3404,32 +3404,18 @@
 			remoteRef = FE8A5BCE4692BC6DC1BB2D1252C6BB97 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		3CBBA4FE5F3BEBB9DD44007CA412B2A4 /* Benchmarks.xctest */ = {
+		9EC8DCED5D7E25639B1C2087E56295EF /* Preprocessor */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = Preprocessor;
+			remoteRef = BBB91F3287BDE20F24DBB9BDB0610FB2 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		A17477E2D7CDF65FF683502AD61F9DD4 /* AllTests-tvOS.xctest */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.cfbundle;
-			path = Benchmarks.xctest;
-			remoteRef = 849CC3D448A3CEA50B461FC8C2E4FE92 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		7FA8A25FC235DAF711749571F45C9544 /* RxExample-iOS.app */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.application;
-			path = "RxExample-iOS.app";
-			remoteRef = 2D5468DF55AE22C34ADE026C6E6AA21A /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		EEE326A24AC925E4CE451DE3D014B844 /* RxExample.app */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.application;
-			path = RxExample.app;
-			remoteRef = 4B1F8A6952C0CE5251798B832C8BEAFB /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		49FDFB3739C657170242D3EB633A11A5 /* RxExample-iOSTests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = "RxExample-iOSTests.xctest";
-			remoteRef = 99CEC12B8DD8E998B25EA6A749ED16CD /* PBXContainerItemProxy */;
+			path = "AllTests-tvOS.xctest";
+			remoteRef = 15142F3D9A47DA1653C6E6EAAB614097 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 		AFBCF3A87277A2242527F23ED7EC22EF /* RxExample-iOSUITests.xctest */ = {
@@ -3439,11 +3425,25 @@
 			remoteRef = 467D067816F34C07817E32E6124FFB90 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		6DC6A0BC2B53D4296BF9CA39B860D5F8 /* RxExample-macOSUITests.xctest */ = {
+		B0E45E70B5819BB0BCF8DB935B722689 /* RxSwift.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = RxSwift.framework;
+			remoteRef = EA012DFD951DDD2998CB8E7257486D0A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		B443F6FDDF3C9B7271F270AFAF0A89A6 /* AllTests-macOS.xctest */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.cfbundle;
-			path = "RxExample-macOSUITests.xctest";
-			remoteRef = C719EADC9DFEC55B30FC5B04549056AA /* PBXContainerItemProxy */;
+			path = "AllTests-macOS.xctest";
+			remoteRef = B1A33B104E296B03390BEBCFE80AB535 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		EEE326A24AC925E4CE451DE3D014B844 /* RxExample.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = RxExample.app;
+			remoteRef = 4B1F8A6952C0CE5251798B832C8BEAFB /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -3498,14 +3498,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		449397A9CFD6B7F12E9CCB48B424B12F /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				2DB51BFFD35912CBBD3406FE669A29F9 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		1D701E25B9E0F2B7A4655B8CA13A21DB /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -3514,9 +3506,38 @@
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
+		449397A9CFD6B7F12E9CCB48B424B12F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2DB51BFFD35912CBBD3406FE669A29F9 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		46D1817B8A1A520F651124C06B9810B6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 79JAW5V2W8;
+				INFOPLIST_FILE = XX/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.yapp.XX;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "XX/XX-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
 		6B3E83995DB6F7D3A2352722CBE24A21 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -3633,27 +3654,6 @@
 			};
 			name = Release;
 		};
-		46D1817B8A1A520F651124C06B9810B6 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 79JAW5V2W8;
-				INFOPLIST_FILE = XX/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.yapp.XX11;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "XX/XX-Bridging-Header.h";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 1;
-			};
-			name = Debug;
-		};
 		EC422D7CD78233DA8D07F8C117D532AE /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -3666,7 +3666,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.yapp.XX11;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yapp.XX;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "XX/XX-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
@@ -3677,20 +3677,20 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		D496A722954185720D633B3BD2A62335 /* Build configuration list for PBXProject "XX" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				6B3E83995DB6F7D3A2352722CBE24A21 /* Debug */,
-				D6A52F38B9F9D8181348F70ABCABAF83 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		440D28CF52A1BAF60963BE56A650A98A /* Build configuration list for PBXNativeTarget "XX" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				46D1817B8A1A520F651124C06B9810B6 /* Debug */,
 				EC422D7CD78233DA8D07F8C117D532AE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D496A722954185720D633B3BD2A62335 /* Build configuration list for PBXProject "XX" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6B3E83995DB6F7D3A2352722CBE24A21 /* Debug */,
+				D6A52F38B9F9D8181348F70ABCABAF83 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
