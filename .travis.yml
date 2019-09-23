@@ -5,3 +5,5 @@ xcode_scheme: XX
 xcode_destination: platform=iOS Simulator,OS=12.1,name=iPhone X
 notifications:
   slack: yapp15ios:iJ035rFt5uphqJZuKwQfwIt5
+before_install:
+  - bash update_carthage.sh 0.11
