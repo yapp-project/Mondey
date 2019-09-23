@@ -3,12 +3,5 @@ osx_image: xcode10.3
 xcode_project: XX.xcodeproj
 xcode_scheme: XX
 xcode_destination: platform=iOS Simulator,OS=12.1,name=iPhone X
-script:
-        - brew uninstall carthage
-        - HOMEBREW_NO_AUTO_UPDATE=1 brew install bats
-        - make install
-        - bats IntegrationTests
-      env:
-        - JOB=CI_INTEGRATION_TESTS
 notifications:
   slack: yapp15ios:iJ035rFt5uphqJZuKwQfwIt5
