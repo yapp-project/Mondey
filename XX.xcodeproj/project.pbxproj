@@ -1361,14 +1361,6 @@
 			path = RxSwift;
 			sourceTree = "<group>";
 		};
-		D35BBEF956158CFBB9FB8016C66FDEB2 /* SignIn */ = {
-			isa = PBXGroup;
-			children = (
-				AA8370A6AEEA84FD796C974EF559F071 /* SighIn.storyboard */,
-			);
-			path = SignIn;
-			sourceTree = "<group>";
-		};
 		15B32872EA8A9D1DB9524426DF33A1B0 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
@@ -1393,16 +1385,16 @@
 		1777BB0D9B4224DAF3E7C13A25086988 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				1F5CA7A19E2621E207FFCCF109B94EC9 /* AllTests-iOS.xctest */,
-				B443F6FDDF3C9B7271F270AFAF0A89A6 /* AllTests-macOS.xctest */,
-				A17477E2D7CDF65FF683502AD61F9DD4 /* AllTests-tvOS.xctest */,
-				3CBBA4FE5F3BEBB9DD44007CA412B2A4 /* Benchmarks.xctest */,
-				8C0291D31F29D711EB2765BB1BEE3A31 /* PerformanceTests.app */,
-				32B05EBDDDC6FD6647D708DD35D439A3 /* RxBlocking.framework */,
+				B0E45E70B5819BB0BCF8DB935B722689 /* RxSwift.framework */,
 				8A15AA55D85FCC7A1C18544E175FB562 /* RxCocoa.framework */,
 				3B9E160314B58C0288B5B611EC4D2C4C /* RxRelay.framework */,
-				B0E45E70B5819BB0BCF8DB935B722689 /* RxSwift.framework */,
+				32B05EBDDDC6FD6647D708DD35D439A3 /* RxBlocking.framework */,
 				31069BF7A2B3F652850FC76E88DE41AB /* RxTest.framework */,
+				1F5CA7A19E2621E207FFCCF109B94EC9 /* AllTests-iOS.xctest */,
+				A17477E2D7CDF65FF683502AD61F9DD4 /* AllTests-tvOS.xctest */,
+				B443F6FDDF3C9B7271F270AFAF0A89A6 /* AllTests-macOS.xctest */,
+				8C0291D31F29D711EB2765BB1BEE3A31 /* PerformanceTests.app */,
+				3CBBA4FE5F3BEBB9DD44007CA412B2A4 /* Benchmarks.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -1598,10 +1590,10 @@
 			isa = PBXGroup;
 			children = (
 				7FA8A25FC235DAF711749571F45C9544 /* RxExample-iOS.app */,
+				EEE326A24AC925E4CE451DE3D014B844 /* RxExample.app */,
 				49FDFB3739C657170242D3EB633A11A5 /* RxExample-iOSTests.xctest */,
 				AFBCF3A87277A2242527F23ED7EC22EF /* RxExample-iOSUITests.xctest */,
 				6DC6A0BC2B53D4296BF9CA39B860D5F8 /* RxExample-macOSUITests.xctest */,
-				EEE326A24AC925E4CE451DE3D014B844 /* RxExample.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -2890,6 +2882,14 @@
 			path = "RxExample-iOSUITests";
 			sourceTree = "<group>";
 		};
+		D35BBEF956158CFBB9FB8016C66FDEB2 /* SignIn */ = {
+			isa = PBXGroup;
+			children = (
+				AA8370A6AEEA84FD796C974EF559F071 /* SighIn.storyboard */,
+			);
+			path = SignIn;
+			sourceTree = "<group>";
+		};
 		D47A22E91452765DDFD3690BE996AB31 /* XX */ = {
 			isa = PBXGroup;
 			children = (
@@ -3537,6 +3537,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 79JAW5V2W8;
 				INFOPLIST_FILE = XX/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -3674,6 +3675,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 79JAW5V2W8;
 				INFOPLIST_FILE = XX/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
