@@ -8,4 +8,3 @@ notifications:
 before_install:
 - brew update
 - brew upgrade carthage
-- carthage update --platform iOS
