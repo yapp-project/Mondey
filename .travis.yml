@@ -1,6 +1,5 @@
 language: swift
 osx_image: xcode10.3
-xcode_project: XX.xcodeproj
 xcode_scheme: XX
 matrix:
   include:
