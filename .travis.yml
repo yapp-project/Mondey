@@ -3,6 +3,9 @@ osx_image: xcode10.3
 xcode_project: XX.xcodeproj
 xcode_scheme: XX
 xcode_destination: platform=iOS Simulator,OS=12.1,name=iPhone X
-script:
+before_install:
+- brew install carthage
+- brew upgrade carthage
+- carthage update
 notifications:
   slack: yapp15ios:iJ035rFt5uphqJZuKwQfwIt5
