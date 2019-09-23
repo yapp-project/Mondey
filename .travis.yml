@@ -6,39 +6,16 @@ xcode_destination: platform=iOS Simulator,OS=12.1,name=iPhone X
 matrix:
   include:
     - os: osx
-      osx_image: xcode10.2
-      xcode_scheme: ReactiveTask
-      script:
-        - set -o pipefail && xcodebuild -workspace "$TRAVIS_XCODE_WORKSPACE" -scheme "$TRAVIS_XCODE_SCHEME" test | xcpretty
-      env: JOB=Xcode10.2
-language: swift
-xcode_project: XX.xcodeproj
-branches:
-  only:
-    - master
-matrix:
-  include:
-    - os: osx
       osx_image: xcode10.3
       xcode_scheme: XX
       script:
         - set -o pipefail && xcodebuild -workspace "$TRAVIS_XCODE_WORKSPACE" -scheme "$TRAVIS_XCODE_SCHEME" test | xcpretty
       env: JOB=Xcode10.3
-    - os: osx
-      osx_image: xcode10.
-      script:
-        - swift --version
-        - swift build
-        - swift test
-      git:
-        submodules: false
-      env: JOB=SWIFTPM_DARWIN
-    - os: osx
-      osx_image: xcode10.3
-      script:
-        - gem update cocoapods
-        - pod repo update
-        - pod lib lint
+language: swift
+xcode_project: XX.xcodeproj
+branches:
+  only:
+    - master
 notifications:
  slack: 
     yapp15ios:iJ035rFt5uphqJZuKwQfwIt5
