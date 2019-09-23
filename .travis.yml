@@ -7,6 +7,8 @@ notifications:
   slack: yapp15ios:iJ035rFt5uphqJZuKwQfwIt5
 before_install:
 - gem install xcpretty -N
+- brew update
+- brew upgrade carthage
 script:
 - set -o pipefail
 - travis_retry xcodebuild -xcodeproj XX.xcodeproj -scheme XX -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO | xcpretty -c
