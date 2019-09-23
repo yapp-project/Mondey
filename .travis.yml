@@ -1,7 +1,8 @@
-anguage: swift
+language: swift
 osx_image: xcode10.3
 xcode_project: XX.xcodeproj
 xcode_scheme: XX
 xcode_destination: platform=iOS Simulator,OS=12.1,name=iPhone X
+script:
 notifications:
   slack: yapp15ios:iJ035rFt5uphqJZuKwQfwIt5
