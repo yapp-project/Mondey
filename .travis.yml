@@ -4,8 +4,9 @@ xcode_project: XX.xcodeproj
 xcode_scheme: XX
 xcode_destination: platform=iOS Simulator,OS=12.1,name=iPhone X
 before_install:
-- brew install carthage
-- brew upgrade carthage
-- carthage update
+  - gem update bundler
+  - gem install xcpretty --no-document
+  - brew update
+  - brew outdated carthage || brew upgrade carthage
 notifications:
   slack: yapp15ios:iJ035rFt5uphqJZuKwQfwIt5
