@@ -1,6 +1,0 @@
-language: swift
-xcode_project: XX.xcodeproj
-xcode_scheme: XX
-xcode_destination: platform=iOS Simulator,OS=13.0,name=iPhone X
-notifications:
-  slack: yapp15ios:iJ035rFt5uphqJZuKwQfwIt5
