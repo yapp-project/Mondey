@@ -1,7 +1,6 @@
 language: objective-c
 osx_image: xcode11
 xcode_workspace: XX.xcworkspace
-xcode_sdk: iphonesimulator
 xcode_scheme: XX
 xcode_destination: platform=iOS Simulator, OS=12.4, name=iPhone 11
 before_install:
@@ -11,3 +10,5 @@ before_install:
 script:
 - set -o pipefail
 - travis_retry xcodebuild -workspace XX.xcworkspace -scheme XX -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO | xcpretty -c
+notifications:
+  slack: yapp15ios:iJ035rFt5uphqJZuKwQfwIt5
