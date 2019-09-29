@@ -15,7 +15,6 @@ class SignInViewController: BaseViewController {
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        
-        performSegue(withIdentifier: "pushSample", sender: nil)
+
     }
 }
