@@ -147,7 +147,7 @@
 			attributes = {
 				LastSwiftUpdateCheck = 1030;
 				LastUpgradeCheck = 1030;
-				ORGANIZATIONNAME = ebpark;
+				ORGANIZATIONNAME = YAPP;
 				TargetAttributes = {
 					07F622AF5D5FF749246C34442CBD84E8 = {
 						CreatedOnToolsVersion = 10.3;
