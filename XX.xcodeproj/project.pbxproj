@@ -55,22 +55,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		971A526AEBA13F89F4CB75DCE2D402BB /* initialize */ = {
-			isa = PBXGroup;
-			children = (
-				74895EA2F1451312FB19B7C0E8539B93 /* Initialize.storyboard */,
-			);
-			path = initialize;
-			sourceTree = "<group>";
-		};
-		F74002603B21107AA838A1EE3F222820 /* SignUp */ = {
-			isa = PBXGroup;
-			children = (
-				DBE9FB4BF8E0298FAD349784CEA8BE77 /* SignUpViewController.swift */,
-			);
-			path = SignUp;
-			sourceTree = "<group>";
-		};
 		3CFCB3581982F0E865131974D7050211 /* Common */ = {
 			isa = PBXGroup;
 			children = (
@@ -78,14 +62,6 @@
 				4112B293D7BB0C8D42EEE6A529883A9B /* BaseViewController.swift */,
 			);
 			path = Common;
-			sourceTree = "<group>";
-		};
-		FE3A1AA3F3E451BF00683492AE2A77E3 /* Extension */ = {
-			isa = PBXGroup;
-			children = (
-				4107897DBF3CCAA4779B23E86E1387F9 /* UIImage+Extension.swift */,
-			);
-			path = Extension;
 			sourceTree = "<group>";
 		};
 		5C3C1883F8D8F1CC65DBF6184EAA3FE0 /* Frameworks */ = {
@@ -102,6 +78,23 @@
 				6308B3F9D437690B09D2F3527DA9C697 /* XX.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		81DA73917FFF1113B15C5FAD53E9F2B8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8111B9F16409983644EC2227CCB0B909 /* Pods-XX.debug.xcconfig */,
+				D98E658C15E41927F106017B130EE3B3 /* Pods-XX.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		971A526AEBA13F89F4CB75DCE2D402BB /* initialize */ = {
+			isa = PBXGroup;
+			children = (
+				74895EA2F1451312FB19B7C0E8539B93 /* Initialize.storyboard */,
+			);
+			path = initialize;
 			sourceTree = "<group>";
 		};
 		A26EE190954C8C3D043A04B9E4F92133 = {
@@ -142,13 +135,20 @@
 			path = XX;
 			sourceTree = "<group>";
 		};
-		81DA73917FFF1113B15C5FAD53E9F2B8 /* Pods */ = {
+		F74002603B21107AA838A1EE3F222820 /* SignUp */ = {
 			isa = PBXGroup;
 			children = (
-				8111B9F16409983644EC2227CCB0B909 /* Pods-XX.debug.xcconfig */,
-				D98E658C15E41927F106017B130EE3B3 /* Pods-XX.release.xcconfig */,
+				DBE9FB4BF8E0298FAD349784CEA8BE77 /* SignUpViewController.swift */,
 			);
-			path = Pods;
+			path = SignUp;
+			sourceTree = "<group>";
+		};
+		FE3A1AA3F3E451BF00683492AE2A77E3 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				4107897DBF3CCAA4779B23E86E1387F9 /* UIImage+Extension.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -180,7 +180,7 @@
 			attributes = {
 				LastSwiftUpdateCheck = 1030;
 				LastUpgradeCheck = 1030;
-				ORGANIZATIONNAME = ebpark;
+				ORGANIZATIONNAME = YAPP;
 				TargetAttributes = {
 					07F622AF5D5FF749246C34442CBD84E8 = {
 						CreatedOnToolsVersion = 10.3;
