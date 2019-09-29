@@ -3,7 +3,7 @@
 //  XX
 //
 //  Created by ebpark on 11/09/2019.
-//  Copyright © 2019 ebpark. All rights reserved.
+//  Copyright © 2019 YAPP. All rights reserved.
 //
 
 import UIKit
