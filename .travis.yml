@@ -1,0 +1,14 @@
+language: objective-c
+osx_image: xcode11
+xcode_workspace: XX.xcworkspace
+xcode_scheme: XX
+xcode_destination: platform=iOS Simulator, OS=12.4, name=iPhone 11
+before_install:
+- gem install cocoapods-acknowledgements
+- gem install cocoapods
+- pod install --repo-update
+script:
+- set -o pipefail
+- travis_retry xcodebuild -workspace XX.xcworkspace -scheme XX -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO | xcpretty -c
+notifications:
+  slack: yapp15ios:iJ035rFt5uphqJZuKwQfwIt5

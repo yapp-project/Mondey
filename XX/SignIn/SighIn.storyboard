@@ -10,14 +10,14 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Sign In View Controller-->
         <scene sceneID="FHD-h0-hTI">
             <objects>
-                <viewController id="VDK-sX-mK1" sceneMemberID="viewController">
+                <viewController id="VDK-sX-mK1" customClass="SignInViewController" customModule="XX" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="bZ1-WN-aL2">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="1" green="0.26231871066728296" blue="0.22108783659054143" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <viewLayoutGuide key="safeArea" id="iP5-PZ-qvW"/>
                     </view>
                     <navigationItem key="navigationItem" id="REj-nn-juf"/>
@@ -26,10 +26,10 @@
             </objects>
             <point key="canvasLocation" x="668.11594202898561" y="49.553571428571423"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Base Navigation Controller-->
         <scene sceneID="x3B-QZ-QjK">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="uUp-kr-vV1" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="uUp-kr-vV1" customClass="BaseNavigationController" customModule="XX" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="xJU-nF-kcQ">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
