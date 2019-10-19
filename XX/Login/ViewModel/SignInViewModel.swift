@@ -9,6 +9,9 @@
 import Foundation
 
 class SignInViewModel: BaseViewModel {
+    let emailTextRelay = BehaviorRelay(value: "")
+    let passwordTextRelauy = BehaviorRelay(value: "")
+    
     func presentSignUpAction() -> CocoaAction {
         return CocoaAction { _ in
             let viewModel = SignUpViewModel(title: "회원가입", sceneCoordinator: self.sceneCoordinator, storage: self.storage)
@@ -20,10 +23,10 @@ class SignInViewModel: BaseViewModel {
     
     func presentSignInAction() -> CocoaAction {
         return CocoaAction { _ in
-            let viewModel = SignUpViewModel(title: "수입입력", sceneCoordinator: self.sceneCoordinator, storage: self.storage)
-            let scene = LoginScene.signUp(viewModel)
+            let viewModel = IncomeViewModel(title: "수입입력", sceneCoordinator: self.sceneCoordinator, storage: self.storage)
+            let scene = InitializeScene.income(viewModel)
             
-            return self.sceneCoordinator.transition(to: scene, using: .modal, animated: true).asObservable().map { _ in }
+            return self.sceneCoordinator.transition(to: scene, using: .root, animated: true).asObservable().map { _ in }
         }
     }
 }
