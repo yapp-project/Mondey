@@ -31,7 +31,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E2b-76-wd6">
-                                <rect key="frame" x="128.5" y="201" width="157.5" height="74"/>
+                                <rect key="frame" x="132" y="201" width="150.5" height="58.5"/>
                                 <string key="text">고정수입을
 입력 해 주세요!</string>
                                 <fontDescription key="fontDescription" name="SpoqaHanSans-Regular" family="SpoqaHanSans" pointSize="25"/>
@@ -39,13 +39,13 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="0" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qU6-gG-0Ux">
-                                <rect key="frame" x="135" y="352" width="110.5" height="27"/>
+                                <rect key="frame" x="135" y="336.5" width="112.5" height="21"/>
                                 <color key="textColor" name="tealish"/>
                                 <fontDescription key="fontDescription" name="SpoqaHanSans-Bold" family="SpoqaHanSans" pointSize="18"/>
                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                             </textField>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bz5-zE-AEy">
-                                <rect key="frame" x="135" y="381" width="144" height="1"/>
+                                <rect key="frame" x="135" y="359.5" width="144" height="1"/>
                                 <color key="backgroundColor" red="0.5921894907951355" green="0.59207397699356079" blue="0.59607940912246704" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="143.90000000000001" id="cMC-t3-gZj"/>
@@ -53,7 +53,7 @@
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="만원" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rvD-Jq-XnC">
-                                <rect key="frame" x="245.5" y="353" width="33.5" height="27"/>
+                                <rect key="frame" x="247.5" y="337.5" width="31.5" height="21"/>
                                 <fontDescription key="fontDescription" name="SpoqaHanSans-Light" family="SpoqaHanSans" pointSize="18"/>
                                 <color key="textColor" name="51"/>
                                 <nil key="highlightedColor"/>
@@ -92,10 +92,10 @@
             </objects>
             <point key="canvasLocation" x="1160.8695652173915" y="136.60714285714286"/>
         </scene>
-        <!--View Controller-->
+        <!--Set Categories View Controller-->
         <scene sceneID="7YH-Ot-OAm">
             <objects>
-                <viewController id="8E3-82-3lL" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SetCategoriesViewController" id="8E3-82-3lL" customClass="SetCategoriesViewController" customModule="XX" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="cwI-MV-e1U">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -108,19 +108,19 @@
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="지출 항목을 선택 해 주세요" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mcp-YP-fhd">
-                                            <rect key="frame" x="119" y="0.0" width="176.5" height="24"/>
+                                            <rect key="frame" x="122" y="0.0" width="170.5" height="19"/>
                                             <fontDescription key="fontDescription" name="SpoqaHanSans-Regular" family="SpoqaHanSans" pointSize="16"/>
                                             <color key="textColor" name="51"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" text="300000" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kb8-ys-yel">
-                                            <rect key="frame" x="175" y="37" width="64.5" height="16"/>
+                                            <rect key="frame" x="177" y="32" width="60.5" height="21"/>
                                             <fontDescription key="fontDescription" name="SpoqaHanSans-Regular" family="SpoqaHanSans" pointSize="18"/>
                                             <color key="textColor" name="tealish"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="예산" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dgJ-e1-noT">
-                                            <rect key="frame" x="143" y="38" width="22.5" height="18"/>
+                                            <rect key="frame" x="146.5" y="42" width="21" height="14"/>
                                             <fontDescription key="fontDescription" name="SpoqaHanSans-Regular" family="SpoqaHanSans" pointSize="12"/>
                                             <color key="textColor" name="102"/>
                                             <nil key="highlightedColor"/>
@@ -146,7 +146,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="bBw-cE-XX0">
-                                                    <rect key="frame" x="109" y="23.5" width="196" height="31"/>
+                                                    <rect key="frame" x="109.5" y="23.5" width="195" height="31"/>
                                                     <subviews>
                                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uJR-jb-hC8">
                                                             <rect key="frame" x="0.0" y="0.0" width="44" height="31"/>
@@ -157,16 +157,16 @@
                                                             <state key="selected" image="active"/>
                                                         </button>
                                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="nNy-yV-LcW">
-                                                            <rect key="frame" x="54" y="0.0" width="142" height="31"/>
+                                                            <rect key="frame" x="54" y="0.0" width="141" height="31"/>
                                                             <subviews>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="식비" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5RC-VA-xVa">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="142" height="22.5"/>
+                                                                    <rect key="frame" x="0.0" y="0.0" width="141" height="17.5"/>
                                                                     <fontDescription key="fontDescription" name="SpoqaHanSans-Regular" family="SpoqaHanSans" pointSize="15"/>
                                                                     <color key="textColor" name="51"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalCompressionResistancePriority="749" text="식사, 외식, 카페, 술, 장보기등" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2h5-9I-WBJ">
-                                                                    <rect key="frame" x="0.0" y="22.5" width="142" height="8.5"/>
+                                                                    <rect key="frame" x="0.0" y="17.5" width="141" height="13.5"/>
                                                                     <fontDescription key="fontDescription" name="SpoqaHanSans-Regular" family="SpoqaHanSans" pointSize="12"/>
                                                                     <color key="textColor" name="102"/>
                                                                     <nil key="highlightedColor"/>
@@ -219,29 +219,29 @@
             </objects>
             <point key="canvasLocation" x="1940.5797101449277" y="136.60714285714286"/>
         </scene>
-        <!--View Controller-->
+        <!--Set Budget View Controller-->
         <scene sceneID="oDz-h3-eLq">
             <objects>
-                <viewController id="mW1-gX-yGR" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SetBudgetViewController" id="mW1-gX-yGR" customClass="SetBudgetViewController" customModule="XX" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="WMJ-7B-cKN">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="hud-hL-BEt">
-                                <rect key="frame" x="0.0" y="88" width="414" height="680"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="684"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <view key="tableHeaderView" contentMode="scaleToFill" id="SI8-TI-YOy">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="92"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="남은 금액은 저축 금액이 됩니다 !" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o5r-oK-jvA">
-                                            <rect key="frame" x="79.5" y="43" width="161" height="15"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="남은 금액은 저축 금액이 됩니다 !" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o5r-oK-jvA">
+                                            <rect key="frame" x="129.5" y="43" width="155" height="15"/>
                                             <fontDescription key="fontDescription" name="SpoqaHanSans-Regular" family="SpoqaHanSans" pointSize="12"/>
                                             <color key="textColor" name="tealish"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="300,000" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="euc-7g-bUu">
-                                            <rect key="frame" x="125.5" y="16" width="69" height="27"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" ambiguous="YES" text="300,000" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="euc-7g-bUu">
+                                            <rect key="frame" x="174.5" y="16" width="65.5" height="27"/>
                                             <fontDescription key="fontDescription" name="SpoqaHanSans-Bold" family="SpoqaHanSans" pointSize="18"/>
                                             <color key="textColor" name="tealish"/>
                                             <nil key="highlightedColor"/>
@@ -265,25 +265,25 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" ambiguous="YES" text="식비" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LCX-tb-VBy">
-                                                    <rect key="frame" x="72" y="21" width="24" height="20"/>
+                                                    <rect key="frame" x="72" y="21" width="22.5" height="20"/>
                                                     <fontDescription key="fontDescription" name="SpoqaHanSans-Regular" family="SpoqaHanSans" pointSize="13"/>
                                                     <color key="textColor" name="51"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="식사, 외식, 카페, 술, 장보기등" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x57-ri-rfy">
-                                                    <rect key="frame" x="72" y="41" width="119" height="14"/>
+                                                    <rect key="frame" x="72" y="41" width="117.5" height="14"/>
                                                     <fontDescription key="fontDescription" name="SpoqaHanSans-Regular" family="SpoqaHanSans" pointSize="10"/>
                                                     <color key="textColor" name="102"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="만원" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SJh-KM-p9a">
-                                                    <rect key="frame" x="336.5" y="27" width="26" height="21"/>
+                                                    <rect key="frame" x="338" y="29.5" width="24.5" height="16.5"/>
                                                     <fontDescription key="fontDescription" name="SpoqaHanSans-Regular" family="SpoqaHanSans" pointSize="14"/>
                                                     <color key="textColor" name="102"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="1,000" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fLw-mL-cyI">
-                                                    <rect key="frame" x="288.5" y="27" width="41" height="21"/>
+                                                    <rect key="frame" x="291" y="29" width="40" height="17"/>
                                                     <color key="textColor" name="102"/>
                                                     <fontDescription key="fontDescription" name="SpoqaHanSans-Regular" family="SpoqaHanSans" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits" keyboardType="namePhonePad"/>
@@ -317,10 +317,10 @@
                                 </state>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zyH-wu-nQd">
-                                <rect key="frame" x="0.0" y="768" width="414" height="50"/>
+                                <rect key="frame" x="0.0" y="772" width="414" height="46"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="매달 30만원 저축" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="svA-fV-hzs">
-                                        <rect key="frame" x="164" y="16" width="86" height="18"/>
+                                        <rect key="frame" x="166" y="16" width="82.5" height="14"/>
                                         <fontDescription key="fontDescription" name="SpoqaHanSans-Regular" family="SpoqaHanSans" pointSize="12"/>
                                         <color key="textColor" name="51"/>
                                         <nil key="highlightedColor"/>
@@ -354,10 +354,10 @@
             </objects>
             <point key="canvasLocation" x="2623.1884057971015" y="130.58035714285714"/>
         </scene>
-        <!--View Controller-->
+        <!--Set Period View Controller-->
         <scene sceneID="mJ1-0X-pQL">
             <objects>
-                <viewController id="hqc-dv-Vjv" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SetPeriodViewController" id="hqc-dv-Vjv" customClass="SetPeriodViewController" customModule="XX" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="FS5-kd-TXQ">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -382,30 +382,30 @@
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="나의 소비를 점검 하기 위한 항목입니다" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VUE-mE-xvi">
-                                            <rect key="frame" x="81" y="0.0" width="158.5" height="15"/>
+                                            <rect key="frame" x="131" y="0.0" width="152.5" height="12"/>
                                             <fontDescription key="fontDescription" name="SpoqaHanSans-Regular" family="SpoqaHanSans" pointSize="10"/>
                                             <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="yxO-Yy-ZO2">
-                                            <rect key="frame" x="136.5" y="60" width="138" height="32"/>
+                                            <rect key="frame" x="230.5" y="64" width="138" height="28"/>
                                             <subviews>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gu9-ce-aNt">
-                                                    <rect key="frame" x="0.0" y="0.0" width="46" height="32"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="46" height="28"/>
                                                     <fontDescription key="fontDescription" name="SpoqaHanSans-Regular" family="SpoqaHanSans" pointSize="13"/>
                                                     <state key="normal" title="매일">
                                                         <color key="titleColor" name="tealish"/>
                                                     </state>
                                                 </button>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eoA-tn-Dt1">
-                                                    <rect key="frame" x="46" y="0.0" width="46" height="32"/>
+                                                    <rect key="frame" x="46" y="0.0" width="46" height="28"/>
                                                     <fontDescription key="fontDescription" name="SpoqaHanSans-Regular" family="SpoqaHanSans" pointSize="13"/>
                                                     <state key="normal" title="매주">
                                                         <color key="titleColor" name="tealish"/>
                                                     </state>
                                                 </button>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Cf-Vk-bUK">
-                                                    <rect key="frame" x="92" y="0.0" width="46" height="32"/>
+                                                    <rect key="frame" x="92" y="0.0" width="46" height="28"/>
                                                     <fontDescription key="fontDescription" name="SpoqaHanSans-Regular" family="SpoqaHanSans" pointSize="13"/>
                                                     <state key="normal" title="매달">
                                                         <color key="titleColor" name="tealish"/>
@@ -414,7 +414,7 @@
                                             </subviews>
                                         </stackView>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dnl-hI-rNs">
-                                            <rect key="frame" x="136.5" y="92" width="138" height="1"/>
+                                            <rect key="frame" x="230.5" y="92" width="138" height="1"/>
                                             <color key="backgroundColor" name="tealish"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="138" id="MZG-Fy-MkA"/>
@@ -442,10 +442,10 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="PE1-jl-x3D">
-                                                    <rect key="frame" x="136.5" y="26" width="138" height="32"/>
+                                                    <rect key="frame" x="230.5" y="28" width="138" height="28"/>
                                                     <subviews>
                                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LGs-ja-4tV">
-                                                            <rect key="frame" x="0.0" y="0.0" width="46" height="32"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="46" height="28"/>
                                                             <fontDescription key="fontDescription" name="SpoqaHanSans-Regular" family="SpoqaHanSans" pointSize="13"/>
                                                             <state key="normal" title="매일">
                                                                 <color key="titleColor" red="0.80784313725490198" green="0.80784313725490198" blue="0.80784313725490198" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -455,7 +455,7 @@
                                                             </state>
                                                         </button>
                                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pj1-ot-F6n">
-                                                            <rect key="frame" x="46" y="0.0" width="46" height="32"/>
+                                                            <rect key="frame" x="46" y="0.0" width="46" height="28"/>
                                                             <fontDescription key="fontDescription" name="SpoqaHanSans-Regular" family="SpoqaHanSans" pointSize="13"/>
                                                             <state key="normal" title="매주">
                                                                 <color key="titleColor" red="0.80784313725490198" green="0.80784313725490198" blue="0.80784313725490198" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -465,7 +465,7 @@
                                                             </state>
                                                         </button>
                                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dw1-Fq-WCw">
-                                                            <rect key="frame" x="92" y="0.0" width="46" height="32"/>
+                                                            <rect key="frame" x="92" y="0.0" width="46" height="28"/>
                                                             <fontDescription key="fontDescription" name="SpoqaHanSans-Regular" family="SpoqaHanSans" pointSize="13"/>
                                                             <state key="normal" title="매달">
                                                                 <color key="titleColor" red="0.80784313725490198" green="0.80784313725490198" blue="0.80784313725490198" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -480,7 +480,7 @@
                                                     </constraints>
                                                 </stackView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="식비" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NLN-TG-JAp">
-                                                    <rect key="frame" x="67.5" y="28.5" width="26" height="27"/>
+                                                    <rect key="frame" x="71.5" y="28.5" width="24.5" height="27"/>
                                                     <fontDescription key="fontDescription" name="SpoqaHanSans-Regular" family="SpoqaHanSans" pointSize="14"/>
                                                     <color key="textColor" name="51"/>
                                                     <nil key="highlightedColor"/>
@@ -515,10 +515,10 @@
             </objects>
             <point key="canvasLocation" x="3342.0289855072465" y="132.58928571428572"/>
         </scene>
-        <!--View Controller-->
+        <!--Set Noti View Controller-->
         <scene sceneID="0wu-4v-x0t">
             <objects>
-                <viewController id="p2y-YY-e4k" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SetNotiViewController" id="p2y-YY-e4k" customClass="SetNotiViewController" customModule="XX" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="vNg-ZD-dON">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -653,7 +653,7 @@
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JrH-bE-QUU">
-                                <rect key="frame" x="119" y="496" width="176" height="50.5"/>
+                                <rect key="frame" x="124" y="496" width="166.5" height="40"/>
                                 <string key="text">부자될 준비 완료!
 소비일기를 시작해보아요</string>
                                 <fontDescription key="fontDescription" name="SpoqaHanSans-Regular" family="SpoqaHanSans" pointSize="17"/>

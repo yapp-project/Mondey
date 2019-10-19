@@ -13,6 +13,7 @@
 		FD8F6B81BF3EDE0D7AB6D6D8124DC57F /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E429FD2698733BFF65BBCB3D7E1B161 /* BaseViewController.swift */; };
 		2D06B93D1FE35A15D8818E62E44714D9 /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4895444E6480A8CDFD3913D59A3CAED /* BaseViewModel.swift */; };
 		A263E2F84BDBA7B6E5283BB868012F77 /* FinishInitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34D22318FF394FA8DB7624B778B1CB15 /* FinishInitViewController.swift */; };
+		90A34290C74FB8F478D93D41005D104A /* FinishInitViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCD3277359FE022DB71EB1F5C22E956A /* FinishInitViewModel.swift */; };
 		EB4AF60D75CD1E96EDEC1D853AAA2D05 /* IncomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B23096CC8EE7E53B895F95BBE509529F /* IncomeViewController.swift */; };
 		AF401EA58054DF9DD796B227C9A995F4 /* IncomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D96B2B06DEA69958CE3C9F9560D22B8 /* IncomeViewModel.swift */; };
 		FFD155190FAC2EB7C472BD793FD78516 /* Initialize.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 740B9F80EA558325E5BFC1023DDB634D /* Initialize.storyboard */; };
@@ -26,6 +27,14 @@
 		38F6746B5DA8080758A3441EC5B09630 /* SceneCoodinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A51E23BF7FDD3AECA55D43968CBEB36C /* SceneCoodinator.swift */; };
 		92B44D897CC121E71478E3D924BBB9AE /* SceneCoordinatorType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3181263BA19227365FB8377CDDB482E0 /* SceneCoordinatorType.swift */; };
 		FA30A9E53799F716A3121C7AF8609155 /* SceneType.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD096E46260FC30E734B2AF8E9CF0643 /* SceneType.swift */; };
+		FE3AE2DCCD7A9B7BFB4370B3E7B53C91 /* SetBudgetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76612EA7C032A843BBDFA9970DC7CB8D /* SetBudgetViewController.swift */; };
+		76044DF6661A9F0F4B25A634C48D3616 /* SetBudgetViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16A49C73F7F7CC6F6D89487174E17049 /* SetBudgetViewModel.swift */; };
+		CE3A79BCA3ECCC0B94912D5D024D2F7E /* SetCategoriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1803DFFEEC7D549F99674B71CEC9BE /* SetCategoriesViewController.swift */; };
+		F8C5F88E92C4C70EF240F934D9EC5215 /* SetCategoriesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8C5374A96F89A419CD19545AA673C26 /* SetCategoriesViewModel.swift */; };
+		FE30DADB4934F1E4F95D746617A3D2C3 /* SetNotiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 816AC7C22D532971C3AA8790986A0ECE /* SetNotiViewController.swift */; };
+		25A58E1FCE7BAD9D731A0B3248CFDFA8 /* SetNotiViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71437382ADB100B24567F253560EEEBA /* SetNotiViewModel.swift */; };
+		15C28C49C46F499F1598FBB1DDC8C605 /* SetPeriodViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C9E2B99D1826770F0B1546EDBA8BD4 /* SetPeriodViewController.swift */; };
+		E916AC68D9339BB1CFC681E59CD4D4C2 /* SetPeriodViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC83F9E0ED957A1BABF93BC019A653DF /* SetPeriodViewModel.swift */; };
 		2706778CB2B9D55C64BA9AD07190296A /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD04846A532B0663F600B728A04FD072 /* SignInViewController.swift */; };
 		C93FA50F0134001F268B1D39234FECA9 /* SignInViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93AE0B91F54758072614DDB83C503BCA /* SignInViewModel.swift */; };
 		1CDFFC3C20BDE3DD0D37358AFD59D33B /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE50B2B5BB12BE66EFBD9DA426DBAFC /* SignUpViewController.swift */; };
@@ -52,6 +61,7 @@
 		1E429FD2698733BFF65BBCB3D7E1B161 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		A4895444E6480A8CDFD3913D59A3CAED /* BaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
 		34D22318FF394FA8DB7624B778B1CB15 /* FinishInitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinishInitViewController.swift; sourceTree = SOURCE_ROOT; };
+		FCD3277359FE022DB71EB1F5C22E956A /* FinishInitViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinishInitViewModel.swift; sourceTree = SOURCE_ROOT; };
 		B23096CC8EE7E53B895F95BBE509529F /* IncomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncomeViewController.swift; sourceTree = SOURCE_ROOT; };
 		7D96B2B06DEA69958CE3C9F9560D22B8 /* IncomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncomeViewModel.swift; sourceTree = SOURCE_ROOT; };
 		B77587401D77975FA2FD7C1F98CC1FD8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -66,6 +76,14 @@
 		A51E23BF7FDD3AECA55D43968CBEB36C /* SceneCoodinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneCoodinator.swift; sourceTree = "<group>"; };
 		3181263BA19227365FB8377CDDB482E0 /* SceneCoordinatorType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneCoordinatorType.swift; sourceTree = "<group>"; };
 		CD096E46260FC30E734B2AF8E9CF0643 /* SceneType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneType.swift; sourceTree = "<group>"; };
+		76612EA7C032A843BBDFA9970DC7CB8D /* SetBudgetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetBudgetViewController.swift; sourceTree = SOURCE_ROOT; };
+		16A49C73F7F7CC6F6D89487174E17049 /* SetBudgetViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetBudgetViewModel.swift; sourceTree = SOURCE_ROOT; };
+		CE1803DFFEEC7D549F99674B71CEC9BE /* SetCategoriesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetCategoriesViewController.swift; sourceTree = SOURCE_ROOT; };
+		E8C5374A96F89A419CD19545AA673C26 /* SetCategoriesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetCategoriesViewModel.swift; sourceTree = SOURCE_ROOT; };
+		816AC7C22D532971C3AA8790986A0ECE /* SetNotiViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetNotiViewController.swift; sourceTree = SOURCE_ROOT; };
+		71437382ADB100B24567F253560EEEBA /* SetNotiViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetNotiViewModel.swift; sourceTree = SOURCE_ROOT; };
+		49C9E2B99D1826770F0B1546EDBA8BD4 /* SetPeriodViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetPeriodViewController.swift; sourceTree = SOURCE_ROOT; };
+		FC83F9E0ED957A1BABF93BC019A653DF /* SetPeriodViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetPeriodViewModel.swift; sourceTree = SOURCE_ROOT; };
 		BD04846A532B0663F600B728A04FD072 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		93AE0B91F54758072614DDB83C503BCA /* SignInViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewModel.swift; sourceTree = "<group>"; };
 		ACE50B2B5BB12BE66EFBD9DA426DBAFC /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
@@ -107,7 +125,12 @@
 		337A052B39C6FC6A4615A78722E48349 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				FCD3277359FE022DB71EB1F5C22E956A /* FinishInitViewModel.swift */,
 				7D96B2B06DEA69958CE3C9F9560D22B8 /* IncomeViewModel.swift */,
+				16A49C73F7F7CC6F6D89487174E17049 /* SetBudgetViewModel.swift */,
+				E8C5374A96F89A419CD19545AA673C26 /* SetCategoriesViewModel.swift */,
+				71437382ADB100B24567F253560EEEBA /* SetNotiViewModel.swift */,
+				FC83F9E0ED957A1BABF93BC019A653DF /* SetPeriodViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -176,6 +199,10 @@
 			children = (
 				34D22318FF394FA8DB7624B778B1CB15 /* FinishInitViewController.swift */,
 				B23096CC8EE7E53B895F95BBE509529F /* IncomeViewController.swift */,
+				76612EA7C032A843BBDFA9970DC7CB8D /* SetBudgetViewController.swift */,
+				CE1803DFFEEC7D549F99674B71CEC9BE /* SetCategoriesViewController.swift */,
+				816AC7C22D532971C3AA8790986A0ECE /* SetNotiViewController.swift */,
+				49C9E2B99D1826770F0B1546EDBA8BD4 /* SetPeriodViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -427,6 +454,7 @@
 				FD8F6B81BF3EDE0D7AB6D6D8124DC57F /* BaseViewController.swift in Sources */,
 				2D06B93D1FE35A15D8818E62E44714D9 /* BaseViewModel.swift in Sources */,
 				A263E2F84BDBA7B6E5283BB868012F77 /* FinishInitViewController.swift in Sources */,
+				90A34290C74FB8F478D93D41005D104A /* FinishInitViewModel.swift in Sources */,
 				EB4AF60D75CD1E96EDEC1D853AAA2D05 /* IncomeViewController.swift in Sources */,
 				AF401EA58054DF9DD796B227C9A995F4 /* IncomeViewModel.swift in Sources */,
 				98812264E18CAE2F7137F6700A6740FE /* InitializeScene.swift in Sources */,
@@ -436,6 +464,14 @@
 				38F6746B5DA8080758A3441EC5B09630 /* SceneCoodinator.swift in Sources */,
 				92B44D897CC121E71478E3D924BBB9AE /* SceneCoordinatorType.swift in Sources */,
 				FA30A9E53799F716A3121C7AF8609155 /* SceneType.swift in Sources */,
+				FE3AE2DCCD7A9B7BFB4370B3E7B53C91 /* SetBudgetViewController.swift in Sources */,
+				76044DF6661A9F0F4B25A634C48D3616 /* SetBudgetViewModel.swift in Sources */,
+				CE3A79BCA3ECCC0B94912D5D024D2F7E /* SetCategoriesViewController.swift in Sources */,
+				F8C5F88E92C4C70EF240F934D9EC5215 /* SetCategoriesViewModel.swift in Sources */,
+				FE30DADB4934F1E4F95D746617A3D2C3 /* SetNotiViewController.swift in Sources */,
+				25A58E1FCE7BAD9D731A0B3248CFDFA8 /* SetNotiViewModel.swift in Sources */,
+				15C28C49C46F499F1598FBB1DDC8C605 /* SetPeriodViewController.swift in Sources */,
+				E916AC68D9339BB1CFC681E59CD4D4C2 /* SetPeriodViewModel.swift in Sources */,
 				2706778CB2B9D55C64BA9AD07190296A /* SignInViewController.swift in Sources */,
 				C93FA50F0134001F268B1D39234FECA9 /* SignInViewModel.swift in Sources */,
 				1CDFFC3C20BDE3DD0D37358AFD59D33B /* SignUpViewController.swift in Sources */,
