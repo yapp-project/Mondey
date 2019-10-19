@@ -17,7 +17,3 @@ class FinishInitViewController: UIViewController {
     }
     
 }
-
-extension FinishInitViewController: ViewModelBindableType {
-    
-}
