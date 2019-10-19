@@ -10,6 +10,11 @@
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Spoqa Han Sans Regular.ttf">
+            <string>SpoqaHanSans-Regular</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--Sign In View Controller-->
         <scene sceneID="FHD-h0-hTI">
@@ -26,22 +31,22 @@
                                     <constraint firstAttribute="width" constant="54" id="unK-j1-smo"/>
                                 </constraints>
                             </imageView>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="q8D-6i-ZdM">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="q8D-6i-ZdM">
                                 <rect key="frame" x="31" y="304" width="352" height="39"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="39" id="clc-9d-zad"/>
                                 </constraints>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" name="51"/>
+                                <fontDescription key="fontDescription" name="SpoqaHanSans-Regular" family="SpoqaHanSans" pointSize="17"/>
                                 <textInputTraits key="textInputTraits" returnKeyType="done" textContentType="email"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bDA-nL-Wvo">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bDA-nL-Wvo">
                                 <rect key="frame" x="31" y="392.5" width="352" height="39"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="39" id="tF6-GF-uNL"/>
                                 </constraints>
-                                <color key="textColor" red="0.20000156760000001" green="0.19999706749999999" blue="0.20000010730000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" name="51"/>
+                                <fontDescription key="fontDescription" name="SpoqaHanSans-Regular" family="SpoqaHanSans" pointSize="17"/>
                                 <textInputTraits key="textInputTraits" returnKeyType="done" textContentType="password"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C6K-NK-jV5">
@@ -51,6 +56,7 @@
                                     <constraint firstAttribute="width" constant="231" id="IZm-y2-5Jc"/>
                                     <constraint firstAttribute="height" constant="39" id="bfs-di-a8R"/>
                                 </constraints>
+                                <fontDescription key="fontDescription" name="SpoqaHanSans-Regular" family="SpoqaHanSans" pointSize="16"/>
                                 <state key="normal" title="로그인">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
@@ -61,19 +67,20 @@
                                     <constraint firstAttribute="width" constant="231" id="CaC-rX-hic"/>
                                     <constraint firstAttribute="height" constant="39" id="cfK-Bq-zkc"/>
                                 </constraints>
+                                <fontDescription key="fontDescription" name="SpoqaHanSans-Regular" family="SpoqaHanSans" pointSize="16"/>
                                 <state key="normal" title="회원가입">
                                     <color key="titleColor" name="tealish"/>
                                 </state>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A1K-gC-MTv">
                                 <rect key="frame" x="31" y="276" width="42" height="20"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                <fontDescription key="fontDescription" name="SpoqaHanSans-Regular" family="SpoqaHanSans" pointSize="17"/>
                                 <color key="textColor" name="tealish"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bR4-og-Sgd">
-                                <rect key="frame" x="31" y="363.5" width="74" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <rect key="frame" x="31" y="364.5" width="75.5" height="20"/>
+                                <fontDescription key="fontDescription" name="SpoqaHanSans-Regular" family="SpoqaHanSans" pointSize="17"/>
                                 <color key="textColor" name="tealish"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -125,8 +132,71 @@
                                 <color key="textColor" name="tealish"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="* 비밀번호가 틀립니다" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0jt-aM-thu">
+                                <rect key="frame" x="133" y="449" width="148" height="20"/>
+                                <fontDescription key="fontDescription" name="SpoqaHanSans-Regular" family="SpoqaHanSans" pointSize="17"/>
+                                <color key="textColor" red="1" green="0.26231871070000001" blue="0.2210878366" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="입력" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ryc-Pg-7Mb">
+                                <rect key="frame" x="34" y="194.5" width="346" height="20"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="SpoqaHanSans-Regular" family="SpoqaHanSans" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="done" textContentType="email"/>
+                            </textField>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kIg-Im-q3t">
+                                <rect key="frame" x="34" y="227" width="346" height="2"/>
+                                <color key="backgroundColor" red="0.96482723951339722" green="0.97238188982009888" blue="0.98039406538009644" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="2" id="WS4-SN-5YN"/>
+                                </constraints>
+                            </view>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="입력" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Bgd-mX-ycn">
+                                <rect key="frame" x="34" y="294.5" width="346" height="20"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="SpoqaHanSans-Regular" family="SpoqaHanSans" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="done" secureTextEntry="YES" textContentType="new-password"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="입력" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ghF-YT-VrJ">
+                                <rect key="frame" x="34" y="394.5" width="346" height="20"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="SpoqaHanSans-Regular" family="SpoqaHanSans" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="done" secureTextEntry="YES" textContentType="new-password"/>
+                            </textField>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Wlg-EZ-WQW">
+                                <rect key="frame" x="34" y="327" width="346" height="2"/>
+                                <color key="backgroundColor" red="0.96482723950000004" green="0.97238188979999995" blue="0.98039406539999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="2" id="08V-7h-M1H"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cCI-s1-pD0">
+                                <rect key="frame" x="34" y="427" width="346" height="2"/>
+                                <color key="backgroundColor" red="0.96482723950000004" green="0.97238188979999995" blue="0.98039406539999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="2" id="L85-Vg-ZiX"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="이메일" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NWp-pH-yeI">
+                                <rect key="frame" x="34" y="159" width="44.5" height="20"/>
+                                <fontDescription key="fontDescription" name="SpoqaHanSans-Regular" family="SpoqaHanSans" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="비밀번호" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T91-t4-zmL">
+                                <rect key="frame" x="34" y="259" width="59" height="20"/>
+                                <fontDescription key="fontDescription" name="SpoqaHanSans-Regular" family="SpoqaHanSans" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="비밀번호 확인" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sRy-jQ-gpI">
+                                <rect key="frame" x="34" y="359" width="93" height="20"/>
+                                <fontDescription key="fontDescription" name="SpoqaHanSans-Regular" family="SpoqaHanSans" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mfy-ni-az4">
-                                <rect key="frame" x="91.5" y="488" width="231" height="39"/>
+                                <rect key="frame" x="91.5" y="482" width="231" height="39"/>
                                 <color key="backgroundColor" name="tealish"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="231" id="Dt6-Ni-Qjf"/>
@@ -136,76 +206,12 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="* 비밀번호가 틀립니다" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0jt-aM-thu">
-                                <rect key="frame" x="132.5" y="454" width="149" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="1" green="0.26231871070000001" blue="0.2210878366" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="입력" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ryc-Pg-7Mb">
-                                <rect key="frame" x="34" y="194.5" width="346" height="17"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" returnKeyType="done" textContentType="email"/>
-                            </textField>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kIg-Im-q3t">
-                                <rect key="frame" x="34" y="224" width="346" height="2"/>
-                                <color key="backgroundColor" red="0.96482723951339722" green="0.97238188982009888" blue="0.98039406538009644" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="2" id="WS4-SN-5YN"/>
-                                </constraints>
-                            </view>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="입력" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Bgd-mX-ycn">
-                                <rect key="frame" x="34" y="291.5" width="346" height="17"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" returnKeyType="done" textContentType="new-password"/>
-                            </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="입력" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ghF-YT-VrJ">
-                                <rect key="frame" x="34" y="388.5" width="346" height="17"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" returnKeyType="done" textContentType="new-password"/>
-                            </textField>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Wlg-EZ-WQW">
-                                <rect key="frame" x="34" y="321" width="346" height="2"/>
-                                <color key="backgroundColor" red="0.96482723950000004" green="0.97238188979999995" blue="0.98039406539999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="2" id="08V-7h-M1H"/>
-                                </constraints>
-                            </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cCI-s1-pD0">
-                                <rect key="frame" x="34" y="418" width="346" height="2"/>
-                                <color key="backgroundColor" red="0.96482723950000004" green="0.97238188979999995" blue="0.98039406539999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="2" id="L85-Vg-ZiX"/>
-                                </constraints>
-                            </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="이메일" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NWp-pH-yeI">
-                                <rect key="frame" x="34" y="158" width="44.5" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="비밀번호" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T91-t4-zmL">
-                                <rect key="frame" x="34" y="255" width="59" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="비밀번호 확인" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sRy-jQ-gpI">
-                                <rect key="frame" x="34" y="352" width="93" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="ghF-YT-VrJ" firstAttribute="leading" secondItem="Nzz-pY-CUP" secondAttribute="leading" constant="34" id="0fA-0o-u08"/>
                             <constraint firstItem="cCI-s1-pD0" firstAttribute="leading" secondItem="ghF-YT-VrJ" secondAttribute="leading" id="0im-ir-hEz"/>
                             <constraint firstItem="Nzz-pY-CUP" firstAttribute="trailing" secondItem="ghF-YT-VrJ" secondAttribute="trailing" constant="34" id="5TT-v1-YAE"/>
-                            <constraint firstItem="mfy-ni-az4" firstAttribute="top" secondItem="jBt-Qp-Dwd" secondAttribute="bottom" constant="421" id="5gi-7W-vhv"/>
                             <constraint firstItem="ryc-Pg-7Mb" firstAttribute="top" secondItem="NWp-pH-yeI" secondAttribute="bottom" constant="15.300000000000001" id="87t-ri-n1I"/>
                             <constraint firstItem="Nzz-pY-CUP" firstAttribute="trailing" secondItem="Bgd-mX-ycn" secondAttribute="trailing" constant="34" id="8l4-MV-fao"/>
                             <constraint firstItem="mfy-ni-az4" firstAttribute="centerX" secondItem="6xy-da-1av" secondAttribute="centerX" id="8p4-ai-nd8"/>
@@ -216,9 +222,11 @@
                             <constraint firstItem="kIg-Im-q3t" firstAttribute="leading" secondItem="ryc-Pg-7Mb" secondAttribute="leading" id="Mgo-1q-aZo"/>
                             <constraint firstItem="ryc-Pg-7Mb" firstAttribute="leading" secondItem="NWp-pH-yeI" secondAttribute="leading" id="U95-Lc-b7V"/>
                             <constraint firstItem="jBt-Qp-Dwd" firstAttribute="top" secondItem="Nzz-pY-CUP" secondAttribute="top" constant="2" id="UWc-HC-iKB"/>
+                            <constraint firstItem="mfy-ni-az4" firstAttribute="top" secondItem="0jt-aM-thu" secondAttribute="bottom" constant="13" id="V0C-cg-1GW"/>
                             <constraint firstItem="Bgd-mX-ycn" firstAttribute="leading" secondItem="Nzz-pY-CUP" secondAttribute="leading" constant="34" id="XVn-GA-O3y"/>
                             <constraint firstItem="ghF-YT-VrJ" firstAttribute="leading" secondItem="sRy-jQ-gpI" secondAttribute="leading" id="YF8-An-Hbi"/>
                             <constraint firstItem="Wlg-EZ-WQW" firstAttribute="top" secondItem="Bgd-mX-ycn" secondAttribute="bottom" constant="12.699999999999999" id="awu-63-jv9"/>
+                            <constraint firstItem="0jt-aM-thu" firstAttribute="top" secondItem="cCI-s1-pD0" secondAttribute="bottom" constant="20" id="b1P-wt-qdF"/>
                             <constraint firstItem="jBt-Qp-Dwd" firstAttribute="centerX" secondItem="6xy-da-1av" secondAttribute="centerX" id="c7g-Yd-n5x"/>
                             <constraint firstItem="Bgd-mX-ycn" firstAttribute="top" secondItem="kIg-Im-q3t" secondAttribute="bottom" constant="65.299999999999997" id="ey0-bC-ewz"/>
                             <constraint firstItem="cCI-s1-pD0" firstAttribute="trailing" secondItem="ghF-YT-VrJ" secondAttribute="trailing" id="fGF-ze-KO2"/>
@@ -227,7 +235,6 @@
                             <constraint firstItem="Wlg-EZ-WQW" firstAttribute="leading" secondItem="Bgd-mX-ycn" secondAttribute="leading" id="nbV-Yd-2hX"/>
                             <constraint firstItem="ryc-Pg-7Mb" firstAttribute="top" secondItem="jBt-Qp-Dwd" secondAttribute="bottom" constant="127.40000000000001" id="r1g-55-fE9"/>
                             <constraint firstItem="Bgd-mX-ycn" firstAttribute="leading" secondItem="T91-t4-zmL" secondAttribute="leading" id="t54-Ix-W6O"/>
-                            <constraint firstItem="mfy-ni-az4" firstAttribute="top" secondItem="0jt-aM-thu" secondAttribute="bottom" constant="13" id="uNy-DY-2z5"/>
                             <constraint firstItem="ghF-YT-VrJ" firstAttribute="top" secondItem="Wlg-EZ-WQW" secondAttribute="bottom" constant="65.299999999999997" id="umd-qg-YFF"/>
                             <constraint firstItem="Bgd-mX-ycn" firstAttribute="top" secondItem="T91-t4-zmL" secondAttribute="bottom" constant="15.300000000000001" id="wSR-XY-xfL"/>
                             <constraint firstItem="kIg-Im-q3t" firstAttribute="trailing" secondItem="ryc-Pg-7Mb" secondAttribute="trailing" id="xJ8-fF-dUT"/>
@@ -237,6 +244,10 @@
                     </view>
                     <connections>
                         <outlet property="SignUpButton" destination="mfy-ni-az4" id="Kuk-Za-iYm"/>
+                        <outlet property="checkPasswordTextField" destination="ghF-YT-VrJ" id="Ev4-YG-0nm"/>
+                        <outlet property="emailTextField" destination="ryc-Pg-7Mb" id="mrC-mF-gaF"/>
+                        <outlet property="passwordTextField" destination="Bgd-mX-ycn" id="5oL-Lz-vLz"/>
+                        <outlet property="warningLabel" destination="0jt-aM-thu" id="AWm-F9-V9E"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FOo-rg-FJY" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -264,8 +275,11 @@
     </scenes>
     <resources>
         <image name="group8" width="54" height="56"/>
+        <namedColor name="51">
+            <color red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <namedColor name="tealish">
-            <color red="0.13333333333333333" green="0.70980392156862748" blue="0.6470588235294118" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.13300000131130219" green="0.70999997854232788" blue="0.6470000147819519" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
     </resources>
 </document>
