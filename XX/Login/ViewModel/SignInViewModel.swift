@@ -17,4 +17,13 @@ class SignInViewModel: BaseViewModel {
             return self.sceneCoordinator.transition(to: scene, using: .modal, animated: true).asObservable().map { _ in }
         }
     }
+    
+    func presentSignInAction() -> CocoaAction {
+        return CocoaAction { _ in
+            let viewModel = SignUpViewModel(title: "수입입력", sceneCoordinator: self.sceneCoordinator, storage: self.storage)
+            let scene = LoginScene.signUp(viewModel)
+            
+            return self.sceneCoordinator.transition(to: scene, using: .modal, animated: true).asObservable().map { _ in }
+        }
+    }
 }

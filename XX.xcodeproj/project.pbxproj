@@ -31,12 +31,16 @@
 		8E88399312D9B7EF91074C69BCAFCA89 /* SignUpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF604F507534A2C14532AD6A133C5515 /* SignUpViewModel.swift */; };
 		92B44D897CC121E71478E3D924BBB9AE /* SceneCoordinatorType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3181263BA19227365FB8377CDDB482E0 /* SceneCoordinatorType.swift */; };
 		9670A0EC99584EE7051E25061AD9BF0A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1804DD43026500CA6D81A05C9BDDF4CD /* Assets.xcassets */; };
+		98812264E18CAE2F7137F6700A6740FE /* InitializeScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2627D4BCD85653C8EEB495C0AE78631 /* InitializeScene.swift */; };
+		A263E2F84BDBA7B6E5283BB868012F77 /* FinishInitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34D22318FF394FA8DB7624B778B1CB15 /* FinishInitViewController.swift */; };
 		AE7B818C46677813242EABBA413566FF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4BC5246FCB604F6A3BB58BA5B780127 /* AppDelegate.swift */; };
+		AF401EA58054DF9DD796B227C9A995F4 /* IncomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D96B2B06DEA69958CE3C9F9560D22B8 /* IncomeViewModel.swift */; };
 		C93FA50F0134001F268B1D39234FECA9 /* SignInViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93AE0B91F54758072614DDB83C503BCA /* SignInViewModel.swift */; };
 		CEEED3CCCB313E0F7414913293A57E11 /* Spoqa Han Sans Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 35D18458F36AC3EDDB03631295D5428C /* Spoqa Han Sans Bold.ttf */; };
 		D686F0DEF31109799597524A48EB58CD /* Spoqa Han Sans Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2EF92D07E6ECB8378735ED3633690A7F /* Spoqa Han Sans Light.ttf */; };
 		DBE3F7E5F89E44148715F6A61D7A9969 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 449397A9CFD6B7F12E9CCB48B424B12F /* Main.storyboard */; };
 		E77FA397D6E6A42BEFAAEF066305FFE8 /* TransitionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79FFC9A5E81953AE7A6D696656DBCED2 /* TransitionModel.swift */; };
+		EB4AF60D75CD1E96EDEC1D853AAA2D05 /* IncomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B23096CC8EE7E53B895F95BBE509529F /* IncomeViewController.swift */; };
 		F0F3579A37A9B89B117625F19EB05CAE /* Spoqa Han Sans Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 259D3CB5282D0F9ED1777404313E690E /* Spoqa Han Sans Light.ttf */; };
 		FA30A9E53799F716A3121C7AF8609155 /* SceneType.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD096E46260FC30E734B2AF8E9CF0643 /* SceneType.swift */; };
 		FD8F6B81BF3EDE0D7AB6D6D8124DC57F /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E429FD2698733BFF65BBCB3D7E1B161 /* BaseViewController.swift */; };
@@ -54,6 +58,7 @@
 		2EF92D07E6ECB8378735ED3633690A7F /* Spoqa Han Sans Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Spoqa Han Sans Light.ttf"; sourceTree = "<group>"; };
 		3181263BA19227365FB8377CDDB482E0 /* SceneCoordinatorType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneCoordinatorType.swift; sourceTree = "<group>"; };
 		3198ED65323477E8CEBDAFE8473202C5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		34D22318FF394FA8DB7624B778B1CB15 /* FinishInitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinishInitViewController.swift; sourceTree = SOURCE_ROOT; };
 		35D18458F36AC3EDDB03631295D5428C /* Spoqa Han Sans Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Spoqa Han Sans Bold.ttf"; sourceTree = "<group>"; };
 		3F8BE3EB03A281B39827EE1978D8EB28 /* Mondey.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Mondey.xcdatamodel; sourceTree = "<group>"; };
 		4107897DBF3CCAA4779B23E86E1387F9 /* UIImage+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Extension.swift"; sourceTree = "<group>"; };
@@ -65,6 +70,7 @@
 		740B9F80EA558325E5BFC1023DDB634D /* Initialize.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Initialize.storyboard; sourceTree = "<group>"; };
 		79A1547C011485C455A7457B8482FED9 /* Spoqa Han Sans Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Spoqa Han Sans Regular.ttf"; sourceTree = "<group>"; };
 		79FFC9A5E81953AE7A6D696656DBCED2 /* TransitionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransitionModel.swift; sourceTree = "<group>"; };
+		7D96B2B06DEA69958CE3C9F9560D22B8 /* IncomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncomeViewModel.swift; sourceTree = SOURCE_ROOT; };
 		8111B9F16409983644EC2227CCB0B909 /* Pods-XX.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XX.debug.xcconfig"; path = "Target Support Files/Pods-XX/Pods-XX.debug.xcconfig"; sourceTree = "<group>"; };
 		923C070BA90956B673B7DBE6D2AC2EC4 /* libPods-XX.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-XX.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		93AE0B91F54758072614DDB83C503BCA /* SignInViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewModel.swift; sourceTree = "<group>"; };
@@ -73,6 +79,7 @@
 		A4917B1D22A8C3EF7B8339A254711E79 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
 		A51E23BF7FDD3AECA55D43968CBEB36C /* SceneCoodinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneCoodinator.swift; sourceTree = "<group>"; };
 		ACE50B2B5BB12BE66EFBD9DA426DBAFC /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		B23096CC8EE7E53B895F95BBE509529F /* IncomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncomeViewController.swift; sourceTree = SOURCE_ROOT; };
 		B4BC5246FCB604F6A3BB58BA5B780127 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B77587401D77975FA2FD7C1F98CC1FD8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BD04846A532B0663F600B728A04FD072 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
@@ -83,6 +90,7 @@
 		DB053A44D9FE080E290D1D692073797F /* Spoqa Han Sans Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Spoqa Han Sans Regular.ttf"; path = "XX/Resource/Spoqa Han Sans Regular.ttf"; sourceTree = SOURCE_ROOT; };
 		DBCA70C678ED74B2AC39E9DF945F177C /* Spoqa Han Sans Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Spoqa Han Sans Thin.ttf"; path = "XX/Resource/Spoqa Han Sans Thin.ttf"; sourceTree = SOURCE_ROOT; };
 		DF604F507534A2C14532AD6A133C5515 /* SignUpViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewModel.swift; sourceTree = "<group>"; };
+		E2627D4BCD85653C8EEB495C0AE78631 /* InitializeScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitializeScene.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,29 +105,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		F1D290122558ED6D7AEB970557510D2E /* Recovered References */ = {
-			isa = PBXGroup;
-			children = (
-				35D18458F36AC3EDDB03631295D5428C /* Spoqa Han Sans Bold.ttf */,
-				2EF92D07E6ECB8378735ED3633690A7F /* Spoqa Han Sans Light.ttf */,
-				79A1547C011485C455A7457B8482FED9 /* Spoqa Han Sans Regular.ttf */,
-				671B14642EF5D4C63818CDB4E7F2CF6C /* Spoqa Han Sans Thin.ttf */,
-			);
-			name = "Recovered References";
-			sourceTree = "<group>";
-		};
-		DA02CE6C8F4B3B16AE385DD829A6FD39 /* Resource */ = {
-			isa = PBXGroup;
-			children = (
-				98133003CF745D4DD6E25150801CD1CB /* Spoqa Han Sans Bold.ttf */,
-				259D3CB5282D0F9ED1777404313E690E /* Spoqa Han Sans Light.ttf */,
-				DB053A44D9FE080E290D1D692073797F /* Spoqa Han Sans Regular.ttf */,
-				DBCA70C678ED74B2AC39E9DF945F177C /* Spoqa Han Sans Thin.ttf */,
-			);
-			name = Resource;
-			path = SceneCoodinator/Resource;
-			sourceTree = "<group>";
-		};
 		2961DA8A9A2B1B147A55508EC6D8BBD6 /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -130,6 +115,7 @@
 		337A052B39C6FC6A4615A78722E48349 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				7D96B2B06DEA69958CE3C9F9560D22B8 /* IncomeViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -146,6 +132,7 @@
 		3AACE50E4B150DBEBCE9B33F6CBC1320 /* Scene */ = {
 			isa = PBXGroup;
 			children = (
+				E2627D4BCD85653C8EEB495C0AE78631 /* InitializeScene.swift */,
 			);
 			path = Scene;
 			sourceTree = "<group>";
@@ -195,6 +182,8 @@
 		659EC539786C6F43A909526D02F618CC /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				34D22318FF394FA8DB7624B778B1CB15 /* FinishInitViewController.swift */,
+				B23096CC8EE7E53B895F95BBE509529F /* IncomeViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -309,6 +298,18 @@
 			path = XX;
 			sourceTree = "<group>";
 		};
+		DA02CE6C8F4B3B16AE385DD829A6FD39 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				98133003CF745D4DD6E25150801CD1CB /* Spoqa Han Sans Bold.ttf */,
+				259D3CB5282D0F9ED1777404313E690E /* Spoqa Han Sans Light.ttf */,
+				DB053A44D9FE080E290D1D692073797F /* Spoqa Han Sans Regular.ttf */,
+				DBCA70C678ED74B2AC39E9DF945F177C /* Spoqa Han Sans Thin.ttf */,
+			);
+			name = Resource;
+			path = SceneCoodinator/Resource;
+			sourceTree = "<group>";
+		};
 		DE0B0F7D336723654D671A55B0E7B156 /* Service */ = {
 			isa = PBXGroup;
 			children = (
@@ -324,6 +325,17 @@
 			children = (
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		F1D290122558ED6D7AEB970557510D2E /* Recovered References */ = {
+			isa = PBXGroup;
+			children = (
+				35D18458F36AC3EDDB03631295D5428C /* Spoqa Han Sans Bold.ttf */,
+				2EF92D07E6ECB8378735ED3633690A7F /* Spoqa Han Sans Light.ttf */,
+				79A1547C011485C455A7457B8482FED9 /* Spoqa Han Sans Regular.ttf */,
+				671B14642EF5D4C63818CDB4E7F2CF6C /* Spoqa Han Sans Thin.ttf */,
+			);
+			name = "Recovered References";
 			sourceTree = "<group>";
 		};
 		FE3A1AA3F3E451BF00683492AE2A77E3 /* Extension */ = {
@@ -447,6 +459,10 @@
 				4C29CC812411E4D951452C31DCCD2D72 /* BaseNavigationController.swift in Sources */,
 				FD8F6B81BF3EDE0D7AB6D6D8124DC57F /* BaseViewController.swift in Sources */,
 				2D06B93D1FE35A15D8818E62E44714D9 /* BaseViewModel.swift in Sources */,
+				A263E2F84BDBA7B6E5283BB868012F77 /* FinishInitViewController.swift in Sources */,
+				EB4AF60D75CD1E96EDEC1D853AAA2D05 /* IncomeViewController.swift in Sources */,
+				AF401EA58054DF9DD796B227C9A995F4 /* IncomeViewModel.swift in Sources */,
+				98812264E18CAE2F7137F6700A6740FE /* InitializeScene.swift in Sources */,
 				66B5D9CA9BE38D7BE26ED69861DB8828 /* LoginScene.swift in Sources */,
 				07BBB144363AB6A20CD8852FA06CF9E6 /* MemoryStorage.swift in Sources */,
 				63F69DE98213B3B318E76B0047A88115 /* Mondey.xcdatamodeld in Sources */,
