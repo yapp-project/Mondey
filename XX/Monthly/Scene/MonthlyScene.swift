@@ -11,6 +11,7 @@ import UIKit
 enum MonthlyScene {
     case Mmain(MonthlyViewModel)
     case Mdetail(MonthlyDetailViewModel)
+    case PickYear(PickYearViewModel)
 }
 
 extension MonthlyScene: SceneType {
@@ -33,6 +34,16 @@ extension MonthlyScene: SceneType {
                 .instantiateViewController(withIdentifier: "MonthlyDetailViewController") as? UINavigationController,
                 var viewController = navigationController
                     .viewControllers.first as? MonthlyDetailViewController
+                else {
+                    return UIViewController()
+            }
+            viewController.bind(viewModel: viewModel)
+            return navigationController
+        case .PickYear(let viewModel):
+            guard let navigationController = storyboard
+                .instantiateViewController(withIdentifier: "PickYearViewController") as? UINavigationController,
+                var viewController = navigationController
+                    .viewControllers.first as? PickYearViewController
                 else {
                     return UIViewController()
             }

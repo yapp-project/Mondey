@@ -1,5 +1,5 @@
 //
-//  MonthlyDetailViewController.swift
+//  PickYearViewController.swift
 //  XX
 //
 //  Created by 이재은 on 19/10/2019.
@@ -8,23 +8,21 @@
 
 import UIKit
 
-class MonthlyDetailViewController: BaseViewController {
-    
-    var viewModel: MonthlyDetailViewModel?
-    
+class PickYearViewController: BaseViewController {
+
+    var viewModel: PickYearViewModel?
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+
     }
-    
+
 }
 
-extension MonthlyDetailViewController: ViewModelBindableType {
-    
+extension PickYearViewController: ViewModelBindableType {
+
     func bindViewModel() {
         guard let viewModel = viewModel else { return }
         
     }
 }
-
-
