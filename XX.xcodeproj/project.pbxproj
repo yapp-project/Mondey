@@ -278,9 +278,19 @@
 				5C3C1883F8D8F1CC65DBF6184EAA3FE0 /* Frameworks */,
 				81DA73917FFF1113B15C5FAD53E9F2B8 /* Pods */,
 				5F8E61A9C5FA70CFA449B04E4732D262 /* Products */,
-				F1D290122558ED6D7AEB970557510D2E /* Recovered References */,
 				D47A22E91452765DDFD3690BE996AB31 /* XX */,
 			);
+			sourceTree = "<group>";
+		};
+		DA02CE6C8F4B3B16AE385DD829A6FD39 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				98133003CF745D4DD6E25150801CD1CB /* Spoqa Han Sans Bold.ttf */,
+				259D3CB5282D0F9ED1777404313E690E /* Spoqa Han Sans Light.ttf */,
+				DB053A44D9FE080E290D1D692073797F /* Spoqa Han Sans Regular.ttf */,
+				DBCA70C678ED74B2AC39E9DF945F177C /* Spoqa Han Sans Thin.ttf */,
+			);
+			path = Resource;
 			sourceTree = "<group>";
 		};
 		CC8B4327DCD8EA590321FFC3E9C4306F /* Initialize */ = {
@@ -302,6 +312,7 @@
 				FE3A1AA3F3E451BF00683492AE2A77E3 /* Extension */,
 				CC8B4327DCD8EA590321FFC3E9C4306F /* Initialize */,
 				795D55ECFCA953C29ABCD56E23352323 /* Login */,
+				DA02CE6C8F4B3B16AE385DD829A6FD39 /* Resource */,
 				9250C5DD6FB6DA18744C170550989528 /* SceneCoodinator */,
 				DE0B0F7D336723654D671A55B0E7B156 /* Service */,
 				B4BC5246FCB604F6A3BB58BA5B780127 /* AppDelegate.swift */,
@@ -410,10 +421,10 @@
 				223ED72A730C213DD645FA2B9F5A799D /* LaunchScreen.storyboard in Resources */,
 				4B1FE16BC0F0A1D5D6C14025674E8081 /* Login.storyboard in Resources */,
 				DBE3F7E5F89E44148715F6A61D7A9969 /* Main.storyboard in Resources */,
-				CEEED3CCCB313E0F7414913293A57E11 /* Spoqa Han Sans Bold.ttf in Resources */,
-				D686F0DEF31109799597524A48EB58CD /* Spoqa Han Sans Light.ttf in Resources */,
-				1959EA856C17817123DCE9F27543328B /* Spoqa Han Sans Regular.ttf in Resources */,
-				69C2CBB693069D1ABEE624332DCB7BCD /* Spoqa Han Sans Thin.ttf in Resources */,
+				66CE51BA39C5A538EB55ACD9224BE78D /* Spoqa Han Sans Bold.ttf in Resources */,
+				F0F3579A37A9B89B117625F19EB05CAE /* Spoqa Han Sans Light.ttf in Resources */,
+				78C1F3DCCCC8E3530B3755B88C421452 /* Spoqa Han Sans Regular.ttf in Resources */,
+				8672DA95A88FA897309DC4CFF5598E05 /* Spoqa Han Sans Thin.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
