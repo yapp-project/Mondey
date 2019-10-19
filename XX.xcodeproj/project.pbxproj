@@ -245,17 +245,6 @@
 			);
 			sourceTree = "<group>";
 		};
-		F1D290122558ED6D7AEB970557510D2E /* Recovered References */ = {
-			isa = PBXGroup;
-			children = (
-				35D18458F36AC3EDDB03631295D5428C /* Spoqa Han Sans Bold.ttf */,
-				2EF92D07E6ECB8378735ED3633690A7F /* Spoqa Han Sans Light.ttf */,
-				79A1547C011485C455A7457B8482FED9 /* Spoqa Han Sans Regular.ttf */,
-				671B14642EF5D4C63818CDB4E7F2CF6C /* Spoqa Han Sans Thin.ttf */,
-			);
-			name = "Recovered References";
-			sourceTree = "<group>";
-		};
 		CC8B4327DCD8EA590321FFC3E9C4306F /* Initialize */ = {
 			isa = PBXGroup;
 			children = (
@@ -303,6 +292,17 @@
 			children = (
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		F1D290122558ED6D7AEB970557510D2E /* Recovered References */ = {
+			isa = PBXGroup;
+			children = (
+				35D18458F36AC3EDDB03631295D5428C /* Spoqa Han Sans Bold.ttf */,
+				2EF92D07E6ECB8378735ED3633690A7F /* Spoqa Han Sans Light.ttf */,
+				79A1547C011485C455A7457B8482FED9 /* Spoqa Han Sans Regular.ttf */,
+				671B14642EF5D4C63818CDB4E7F2CF6C /* Spoqa Han Sans Thin.ttf */,
+			);
+			name = "Recovered References";
 			sourceTree = "<group>";
 		};
 		FE3A1AA3F3E451BF00683492AE2A77E3 /* Extension */ = {
