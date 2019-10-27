@@ -9,4 +9,5 @@ target 'XX' do
     pod 'RxDataSources'
     pod 'RxCoreData'
     pod 'SwiftKeychainWrapper'
+    pod 'CenteredCollectionView'
 end
