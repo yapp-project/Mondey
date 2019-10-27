@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="MainHeaderCollectionViewFirstCell" reuseIdentifier="MainHeaderCollectionViewFirstCell" id="lhz-mj-Ggn" customClass="MainHeaderCollectionViewFirstCell" customModule="XX" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="272" height="150"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                <rect key="frame" x="0.0" y="0.0" width="272" height="150"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kn1-hc-J4v">
+                        <rect key="frame" x="0.0" y="0.0" width="272" height="150"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="메인헤더셀-1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I8i-ss-gqf">
+                        <rect key="frame" x="91.5" y="64.5" width="89" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="kn1-hc-J4v" secondAttribute="bottom" id="1Mw-Ku-iCx"/>
+                <constraint firstItem="kn1-hc-J4v" firstAttribute="top" secondItem="lhz-mj-Ggn" secondAttribute="top" id="R8n-vM-QjA"/>
+                <constraint firstAttribute="trailing" secondItem="kn1-hc-J4v" secondAttribute="trailing" id="c6K-UJ-400"/>
+                <constraint firstItem="I8i-ss-gqf" firstAttribute="centerX" secondItem="lhz-mj-Ggn" secondAttribute="centerX" id="hQT-4H-LI2"/>
+                <constraint firstItem="kn1-hc-J4v" firstAttribute="leading" secondItem="lhz-mj-Ggn" secondAttribute="leading" id="hds-pV-eTj"/>
+                <constraint firstItem="I8i-ss-gqf" firstAttribute="centerY" secondItem="lhz-mj-Ggn" secondAttribute="centerY" id="hjC-rZ-8aS"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="c3m-8K-5RN"/>
+            <size key="customSize" width="272" height="150"/>
+            <point key="canvasLocation" x="-10" y="38"/>
+        </collectionViewCell>
+    </objects>
+</document>
