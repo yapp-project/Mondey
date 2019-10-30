@@ -24,6 +24,7 @@
 		4B1FE16BC0F0A1D5D6C14025674E8081 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C10A12E4539A07076F20C7F6372D2BA /* Login.storyboard */; };
 		66B5D9CA9BE38D7BE26ED69861DB8828 /* LoginScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60687211048EC6F549D031B5927CDF82 /* LoginScene.swift */; };
 		02EBDD96D4B6C9D9DB4621BE55CE2A89 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF99EAF8D88AF592A9B17401D5C8884F /* Main.storyboard */; };
+		F20A424D6799FDDD61690CB65C807B7B /* MainCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F78F2910C824934B559CB546F0E3507 /* MainCollectionViewCell.swift */; };
 		8DC1AA648D9F842C8D738640645B8F7C /* MainHeaderCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76F43A84FCA52074028BD2E73B71C9FD /* MainHeaderCollectionViewCell.swift */; };
 		39AAD7B44516456C0BA824FF063DCBB9 /* MainHeaderCollectionViewFirstCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB553AA1A2778827756C28818B9BF0F8 /* MainHeaderCollectionViewFirstCell.xib */; };
 		4A696BF18ACDBF8AE4DAD2098A675435 /* MainHeaderCollectionViewSecondCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C176A325C1DD0AFD51E141899A540661 /* MainHeaderCollectionViewSecondCell.xib */; };
@@ -66,7 +67,9 @@
 		8672DA95A88FA897309DC4CFF5598E05 /* Spoqa Han Sans Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DBCA70C678ED74B2AC39E9DF945F177C /* Spoqa Han Sans Thin.ttf */; };
 		40B6DA6ACC77A19D399E3CF1B4BFDBA9 /* StorageType.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA70CD79EB1D095957D26A630106FD42 /* StorageType.swift */; };
 		E77FA397D6E6A42BEFAAEF066305FFE8 /* TransitionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79FFC9A5E81953AE7A6D696656DBCED2 /* TransitionModel.swift */; };
+		63E7A38BE78A631B753034892FE50956 /* UICollectionViewCell+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07413C204A4AC0073518805EB39FF0E5 /* UICollectionViewCell+.swift */; };
 		64D306CF1D59A9D3D974A84BB3EA03AB /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4107897DBF3CCAA4779B23E86E1387F9 /* UIImage+Extension.swift */; };
+		F7CD5236AB51D27B3623EC54A8C18E9E /* UIView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F93A60BFC6C671C7FCE2023CF703B6C /* UIView+.swift */; };
 		83DCCA8964F62E09E2047E4E21D5866B /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4917B1D22A8C3EF7B8339A254711E79 /* UIViewController+Extension.swift */; };
 		7DEBED294A651EEA06933A9EAE5A8F74 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C10C9814577D19BB15C1A0F78536882F /* ViewController.swift */; };
 		3B0BF5672BD1DC92262333A57827824F /* ViewModelBindableType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C7B0C6AB31D4E58374A9E5B5D7487D /* ViewModelBindableType.swift */; };
@@ -92,6 +95,7 @@
 		E2627D4BCD85653C8EEB495C0AE78631 /* InitializeScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InitializeScene.swift; sourceTree = "<group>"; };
 		2C10A12E4539A07076F20C7F6372D2BA /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		60687211048EC6F549D031B5927CDF82 /* LoginScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScene.swift; sourceTree = "<group>"; };
+		4F78F2910C824934B559CB546F0E3507 /* MainCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCollectionViewCell.swift; sourceTree = "<group>"; };
 		76F43A84FCA52074028BD2E73B71C9FD /* MainHeaderCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainHeaderCollectionViewCell.swift; sourceTree = "<group>"; };
 		EB553AA1A2778827756C28818B9BF0F8 /* MainHeaderCollectionViewFirstCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainHeaderCollectionViewFirstCell.xib; sourceTree = "<group>"; };
 		C176A325C1DD0AFD51E141899A540661 /* MainHeaderCollectionViewSecondCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainHeaderCollectionViewSecondCell.xib; sourceTree = "<group>"; };
@@ -136,7 +140,9 @@
 		DBCA70C678ED74B2AC39E9DF945F177C /* Spoqa Han Sans Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Spoqa Han Sans Thin.ttf"; sourceTree = "<group>"; };
 		CA70CD79EB1D095957D26A630106FD42 /* StorageType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageType.swift; sourceTree = "<group>"; };
 		79FFC9A5E81953AE7A6D696656DBCED2 /* TransitionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransitionModel.swift; sourceTree = "<group>"; };
+		07413C204A4AC0073518805EB39FF0E5 /* UICollectionViewCell+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionViewCell+.swift"; sourceTree = "<group>"; };
 		4107897DBF3CCAA4779B23E86E1387F9 /* UIImage+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Extension.swift"; sourceTree = "<group>"; };
+		5F93A60BFC6C671C7FCE2023CF703B6C /* UIView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+.swift"; sourceTree = "<group>"; };
 		A4917B1D22A8C3EF7B8339A254711E79 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
 		C10C9814577D19BB15C1A0F78536882F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		18C7B0C6AB31D4E58374A9E5B5D7487D /* ViewModelBindableType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelBindableType.swift; sourceTree = "<group>"; };
@@ -386,6 +392,7 @@
 		B653F6150F03282958BB7D5AF8AA6ABF /* Cell */ = {
 			isa = PBXGroup;
 			children = (
+				4F78F2910C824934B559CB546F0E3507 /* MainCollectionViewCell.swift */,
 				76F43A84FCA52074028BD2E73B71C9FD /* MainHeaderCollectionViewCell.swift */,
 				EB553AA1A2778827756C28818B9BF0F8 /* MainHeaderCollectionViewFirstCell.xib */,
 				C176A325C1DD0AFD51E141899A540661 /* MainHeaderCollectionViewSecondCell.xib */,
@@ -498,7 +505,9 @@
 		FE3A1AA3F3E451BF00683492AE2A77E3 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
+				07413C204A4AC0073518805EB39FF0E5 /* UICollectionViewCell+.swift */,
 				4107897DBF3CCAA4779B23E86E1387F9 /* UIImage+Extension.swift */,
+				5F93A60BFC6C671C7FCE2023CF703B6C /* UIView+.swift */,
 				A4917B1D22A8C3EF7B8339A254711E79 /* UIViewController+Extension.swift */,
 			);
 			path = Extension;
@@ -623,6 +632,7 @@
 				AF401EA58054DF9DD796B227C9A995F4 /* IncomeViewModel.swift in Sources */,
 				98812264E18CAE2F7137F6700A6740FE /* InitializeScene.swift in Sources */,
 				66B5D9CA9BE38D7BE26ED69861DB8828 /* LoginScene.swift in Sources */,
+				F20A424D6799FDDD61690CB65C807B7B /* MainCollectionViewCell.swift in Sources */,
 				8DC1AA648D9F842C8D738640645B8F7C /* MainHeaderCollectionViewCell.swift in Sources */,
 				FB5AF5B3993320678C5F151E0DF0EAF7 /* MainHeaderReusableView.swift in Sources */,
 				912A9F5291C8C1625CB77444565F6994 /* MainModel.swift in Sources */,
@@ -658,7 +668,9 @@
 				882E8FDD4BE98301AC748C10685190F7 /* SpendDetailViewModel.swift in Sources */,
 				40B6DA6ACC77A19D399E3CF1B4BFDBA9 /* StorageType.swift in Sources */,
 				E77FA397D6E6A42BEFAAEF066305FFE8 /* TransitionModel.swift in Sources */,
+				63E7A38BE78A631B753034892FE50956 /* UICollectionViewCell+.swift in Sources */,
 				64D306CF1D59A9D3D974A84BB3EA03AB /* UIImage+Extension.swift in Sources */,
+				F7CD5236AB51D27B3623EC54A8C18E9E /* UIView+.swift in Sources */,
 				83DCCA8964F62E09E2047E4E21D5866B /* UIViewController+Extension.swift in Sources */,
 				7DEBED294A651EEA06933A9EAE5A8F74 /* ViewController.swift in Sources */,
 				3B0BF5672BD1DC92262333A57827824F /* ViewModelBindableType.swift in Sources */,

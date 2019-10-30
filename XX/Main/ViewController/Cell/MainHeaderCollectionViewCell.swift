@@ -15,10 +15,16 @@ class MainHeaderCollectionViewFirstCell: UICollectionViewCell {
 
 class MainHeaderCollectionViewSecondCell: UICollectionViewCell {
     @IBOutlet weak var textLabel: UILabel!
-
+    @IBOutlet weak var rightView: UIView!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
-        print("호출은되니")
+        
+        setLayout()
+    }
+    
+    func setLayout() {
+        self.rightView.setCorner(cornerRadius: 20)
     }
 }
 
