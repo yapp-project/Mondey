@@ -15,8 +15,9 @@ class MainViewController: BaseViewController {
     @IBOutlet weak var collectionView: UICollectionView!
     
     let HEADER_CELL_NAME = "MainHeaderCell"
-    let SUB_HEADER_CELL_NAME = "MainSubHeaderCell"
     let MAIN_CELL_NAME = "MainCollectionViewCell"
+    
+    let MAIN_CELL_WIDTH = UIScreen.main.bounds.width * 0.405
     
     var viewModel: MainViewModel?
     let bag = DisposeBag()
@@ -39,7 +40,7 @@ extension MainViewController: ViewModelBindableType {
     }
     
     private func bindCollectionView() {
-        let dummyData = ["default", "London", "Vienna", "Lisbon", "Lisbon", "Lisbon", "Lisbon", "Lisbon", "Lisbon", "Lisbon", "Lisbon", "Lisbon", "Lisbon", "Lisbon", "Lisbon", "Lisbon", "Lisbon", "Lisbon"]
+        let dummyData = ["default", "London", "Vienna", "Lisbon", "Lisbon", "Lisbon", "Lisbon", "Lisbon", "Lisbon", "Lisbon"]
         
         let sections = [
             SectionModel<String, String>(model: "first section", items: dummyData)
@@ -60,14 +61,9 @@ extension MainViewController: ViewModelBindableType {
     private var mainDatasource: MainCollectionViewDataSource {
         let configureCell: (CollectionViewSectionedDataSource<MainSectionModel>, UICollectionView, IndexPath, String) -> UICollectionViewCell =
         { (datasource, collectionView, indexPath,  element) in
-            if indexPath.item == 0 {
-                let cell = collectionView.dequeueReusableCell(withReuseIdentifier: self.SUB_HEADER_CELL_NAME, for: indexPath)
-                return cell
-            } else {
                 guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: self.MAIN_CELL_NAME, for: indexPath) as? MainCollectionViewCell else { return UICollectionViewCell() }
                 
                 return cell
-            }
         }
         
         let datasource = MainCollectionViewDataSource.init(configureCell: configureCell)
@@ -85,18 +81,19 @@ extension MainViewController: ViewModelBindableType {
         
     }
     
+    
+    
 }
 
 extension MainViewController: UICollectionViewDelegateFlowLayout {
+    
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        
-        if indexPath.item == 0 {
-            return CGSize(width: UIScreen.main.bounds.width,
-                               height: 116)
-        }
-        
-        return CGSize(width: UIScreen.main.bounds.width * 0.408,
-                      height: UIScreen.main.bounds.width * 0.408)
+        return CGSize(width: MAIN_CELL_WIDTH,
+                      height: MAIN_CELL_WIDTH)
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
+        let padding = (UIScreen.main.bounds.width - (MAIN_CELL_WIDTH * 2)) / 4 + 10
+        return UIEdgeInsets(top: 0, left: padding, bottom: 0, right: padding)
     }
 }
-
