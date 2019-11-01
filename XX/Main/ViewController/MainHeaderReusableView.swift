@@ -11,8 +11,10 @@ import CenteredCollectionView
 
 
 class MainHeaderReusableView: UICollectionReusableView {
+    let FIRST_CELL_NAME = "MainHeaderCollectionViewFirstCell"
+    let SECOND_CELL_NAME = "MainHeaderCollectionViewSecondCell"
     
-    let cellPercentWidth: CGFloat = 0.83
+    let cellPercentWidth: CGFloat = 0.845
     let cellPercntSpacing: CGFloat = 0.037
     
     var centeredCollectionViewFlowLayout: CenteredCollectionViewFlowLayout!
@@ -30,6 +32,12 @@ class MainHeaderReusableView: UICollectionReusableView {
     }
     
     func setLayoutCollectionView() {
+        let nib = UINib(nibName: FIRST_CELL_NAME, bundle: nil)
+        collectionView.register(nib, forCellWithReuseIdentifier: FIRST_CELL_NAME)
+        
+        let nib2 = UINib(nibName: SECOND_CELL_NAME, bundle: nil)
+        collectionView.register(nib2, forCellWithReuseIdentifier: SECOND_CELL_NAME)
+        
         centeredCollectionViewFlowLayout = (collectionView.collectionViewLayout as! CenteredCollectionViewFlowLayout)
         collectionView.decelerationRate = UIScrollView.DecelerationRate.fast
         
@@ -54,7 +62,8 @@ extension MainHeaderReusableView: ViewModelBindableType {
         let sections = [
             SectionModel<String, String>(model: "first section", items: dummyData)
         ]
-         
+        
+               
         collectionView
             .rx.didEndDecelerating
             .bind { () in
@@ -83,23 +92,27 @@ extension MainHeaderReusableView: ViewModelBindableType {
     private var mainDatasource: MainHeaderCollectionViewDataSource {
         let configureCell: (CollectionViewSectionedDataSource<MainHeaderReusableSectionModel>, UICollectionView, IndexPath, String) -> UICollectionViewCell =
         { (datasource, collectionView, indexPath,  element) in
-            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: String(describing: "CollectionViewCell"), for: indexPath) as! MainViewCollectionViewCell
-            cell.label.text = "Cell #\(element)"
             
-            cell.contentView.layer.cornerRadius = 15.0
-            cell.contentView.layer.borderWidth = 1.0
-            cell.contentView.layer.borderColor = UIColor.clear.cgColor
-            cell.contentView.layer.masksToBounds = true
-            cell.layer.shadowColor = UIColor.lightGray.cgColor.copy(alpha: 0.3)
-            cell.layer.shadowOffset = CGSize(width: -3.0, height: 2.0)
-            cell.layer.shadowRadius = 4.0
-            cell.layer.shadowOpacity = 10
-            
-            cell.layer.masksToBounds = false
-            cell.layer.shadowPath = UIBezierPath(roundedRect: cell.bounds,
-                                                 cornerRadius: cell.contentView.layer.cornerRadius).cgPath
-            
-            return cell
+            if indexPath.item == 0 {
+                guard let cell = collectionView
+                    .dequeueReusableCell(withReuseIdentifier: self.FIRST_CELL_NAME,
+                                         for: indexPath) as? MainHeaderCollectionViewFirstCell
+                    else {
+                        return UICollectionViewCell()
+                }
+                
+                return cell
+                
+            } else {
+                guard let cell = collectionView
+                    .dequeueReusableCell(withReuseIdentifier: self.SECOND_CELL_NAME,
+                                         for: indexPath) as? MainHeaderCollectionViewSecondCell
+                    else {
+                        return UICollectionViewCell()
+                }
+                
+                return cell
+            }
         }
         
         let datasource = MainHeaderCollectionViewDataSource.init(configureCell: configureCell)

@@ -16,7 +16,7 @@ class MainViewController: BaseViewController {
     
     let HEADER_CELL_NAME = "MainHeaderCell"
     let SUB_HEADER_CELL_NAME = "MainSubHeaderCell"
-    let CELL_NAME = "MainCell"
+    let MAIN_CELL_NAME = "MainCollectionViewCell"
     
     var viewModel: MainViewModel?
     let bag = DisposeBag()
@@ -64,7 +64,8 @@ extension MainViewController: ViewModelBindableType {
                 let cell = collectionView.dequeueReusableCell(withReuseIdentifier: self.SUB_HEADER_CELL_NAME, for: indexPath)
                 return cell
             } else {
-                let cell = collectionView.dequeueReusableCell(withReuseIdentifier: self.CELL_NAME, for: indexPath)
+                guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: self.MAIN_CELL_NAME, for: indexPath) as? MainCollectionViewCell else { return UICollectionViewCell() }
+                
                 return cell
             }
         }

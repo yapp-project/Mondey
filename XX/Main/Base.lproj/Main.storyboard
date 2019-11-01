@@ -31,7 +31,7 @@
                                 <rect key="frame" x="0.0" y="44" width="375" height="734"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="hpL-HP-VWx">
-                                    <size key="itemSize" width="182" height="172"/>
+                                    <size key="itemSize" width="153" height="151"/>
                                     <size key="headerReferenceSize" width="50" height="240"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
@@ -48,13 +48,13 @@
                                                     <rect key="frame" x="30" y="0.0" width="315" height="64"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="나의 소비 평가" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ta1-tL-DLy">
-                                                            <rect key="frame" x="0.0" y="28" width="92" height="18.666666666666671"/>
+                                                            <rect key="frame" x="0.0" y="28" width="95.666666666666671" height="24"/>
                                                             <fontDescription key="fontDescription" name="SpoqaHanSans-Regular" family="SpoqaHanSans" pointSize="16"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xAv-ZH-EFF">
-                                                            <rect key="frame" x="274.33333333333331" y="14" width="47" height="47"/>
+                                                            <rect key="frame" x="274.33333333333331" y="16.666666666666671" width="47" height="47"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="width" secondItem="xAv-ZH-EFF" secondAttribute="height" multiplier="1:1" id="E8S-yh-b3W"/>
                                                                 <constraint firstAttribute="height" constant="47" id="WCt-Nw-UWn"/>
@@ -62,7 +62,7 @@
                                                             <state key="normal" title="Button" image="icDelete48Px"/>
                                                         </button>
                                                         <button opaque="NO" contentMode="topRight" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AHm-H2-yg5">
-                                                            <rect key="frame" x="227.33333333333331" y="14" width="47" height="47"/>
+                                                            <rect key="frame" x="227.33333333333331" y="16.666666666666664" width="47.000000000000014" height="47.000000000000014"/>
                                                             <state key="normal" backgroundImage="icHighlightOff48Px"/>
                                                         </button>
                                                     </subviews>
@@ -83,31 +83,31 @@
                                                     <rect key="frame" x="30" y="64" width="315" height="58"/>
                                                     <subviews>
                                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cYR-QY-Y4i">
-                                                            <rect key="frame" x="60.333333333333329" y="21" width="194.33333333333337" height="16.333333333333329"/>
+                                                            <rect key="frame" x="56" y="18.666666666666671" width="203" height="21"/>
                                                             <subviews>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="999" verticalHuggingPriority="1000" text="전체 사용 금액" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Ngd-az-EsE">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="80.666666666666671" height="16.333333333333332"/>
+                                                                    <rect key="frame" x="0.0" y="0.0" width="83.666666666666671" height="21"/>
                                                                     <fontDescription key="fontDescription" name="SpoqaHanSans-Bold" family="SpoqaHanSans" pointSize="14"/>
                                                                     <color key="textColor" red="0.13333333333333333" green="0.70980392156862748" blue="0.6470588235294118" alpha="1" colorSpace="calibratedRGB"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                                 <stackView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" spacing="2.5" translatesAutoresizingMaskIntoConstraints="NO" id="Tub-ii-2sD">
-                                                                    <rect key="frame" x="90.666666666666657" y="0.0" width="103.66666666666666" height="16.333333333333332"/>
+                                                                    <rect key="frame" x="93.666666666666657" y="0.0" width="109.33333333333334" height="21"/>
                                                                     <subviews>
                                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="999" verticalHuggingPriority="999" text="13,000" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="sWA-lB-mdK">
-                                                                            <rect key="frame" x="0.0" y="0.0" width="43" height="16.333333333333332"/>
+                                                                            <rect key="frame" x="0.0" y="0.0" width="45.333333333333336" height="21"/>
                                                                             <fontDescription key="fontDescription" name="SpoqaHanSans-Bold" family="SpoqaHanSans" pointSize="14"/>
                                                                             <color key="textColor" red="0.13333333333333333" green="0.70980392156862748" blue="0.6470588235294118" alpha="1" colorSpace="calibratedRGB"/>
                                                                             <nil key="highlightedColor"/>
                                                                         </label>
                                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" text="/" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="96F-SD-mpu">
-                                                                            <rect key="frame" x="45.666666666666657" y="0.0" width="4.6666666666666643" height="16.333333333333332"/>
+                                                                            <rect key="frame" x="48" y="0.0" width="5.6666666666666643" height="21"/>
                                                                             <fontDescription key="fontDescription" name="SpoqaHanSans-Regular" family="SpoqaHanSans" pointSize="14"/>
                                                                             <color key="textColor" red="0.13333333333333333" green="0.70980392156862748" blue="0.6470588235294118" alpha="1" colorSpace="calibratedRGB"/>
                                                                             <nil key="highlightedColor"/>
                                                                         </label>
                                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="999" verticalHuggingPriority="999" text="300,000" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="1" translatesAutoresizingMaskIntoConstraints="NO" id="aUc-xu-cpn">
-                                                                            <rect key="frame" x="53" y="0.0" width="50.666666666666657" height="16.333333333333332"/>
+                                                                            <rect key="frame" x="56.333333333333343" y="0.0" width="53" height="21"/>
                                                                             <fontDescription key="fontDescription" name="SpoqaHanSans-Regular" family="SpoqaHanSans" pointSize="14"/>
                                                                             <color key="textColor" red="0.13333333333333333" green="0.70980392156862748" blue="0.6470588235294118" alpha="1" colorSpace="calibratedRGB"/>
                                                                             <nil key="highlightedColor"/>
@@ -147,25 +147,25 @@
                                         </constraints>
                                         <size key="customSize" width="375" height="130"/>
                                     </collectionViewCell>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="MainCell" id="cBu-dF-giB">
-                                        <rect key="frame" x="96.666666666666671" y="380" width="182" height="172"/>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="MainCollectionViewCell" id="cBu-dF-giB" customClass="MainCollectionViewCell" customModule="XX" customModuleProvider="target">
+                                        <rect key="frame" x="111" y="380" width="153" height="151"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
-                                            <rect key="frame" x="0.0" y="0.0" width="182" height="172"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="153" height="151"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qIh-pP-RI2">
-                                                    <rect key="frame" x="70" y="75.666666666666671" width="42" height="21"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hDU-zZ-Pil">
+                                                    <rect key="frame" x="0.0" y="0.0" width="153" height="151"/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </view>
                                             </subviews>
                                         </view>
-                                        <color key="backgroundColor" name="tealish"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
-                                            <constraint firstItem="qIh-pP-RI2" firstAttribute="centerX" secondItem="cBu-dF-giB" secondAttribute="centerX" id="lU5-Mu-t0r"/>
-                                            <constraint firstItem="qIh-pP-RI2" firstAttribute="centerY" secondItem="cBu-dF-giB" secondAttribute="centerY" id="y0d-mF-tKM"/>
+                                            <constraint firstItem="hDU-zZ-Pil" firstAttribute="leading" secondItem="cBu-dF-giB" secondAttribute="leading" id="ECW-OG-gDH"/>
+                                            <constraint firstAttribute="trailing" secondItem="hDU-zZ-Pil" secondAttribute="trailing" id="GB0-9n-Ft5"/>
+                                            <constraint firstItem="hDU-zZ-Pil" firstAttribute="top" secondItem="cBu-dF-giB" secondAttribute="top" id="NC4-pQ-02b"/>
+                                            <constraint firstAttribute="bottom" secondItem="hDU-zZ-Pil" secondAttribute="bottom" id="zcg-cm-xJq"/>
                                         </constraints>
                                     </collectionViewCell>
                                 </cells>
@@ -182,7 +182,7 @@
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1000" verticalHuggingPriority="251" text="소비 입력" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YZN-MN-pJm">
                                                             <rect key="frame" x="0.0" y="0.0" width="62.666666666666664" height="24"/>
                                                             <fontDescription key="fontDescription" name="SpoqaHanSans-Regular" family="SpoqaHanSans" pointSize="16"/>
-                                                            <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="0.84705882352941175" colorSpace="calibratedRGB"/>
+                                                            <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="0.84705882352941175" colorSpace="calibratedRGB"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="저축 등급" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0tq-GJ-mcW">
@@ -225,42 +225,7 @@
                                                         <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                                         <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                                     </collectionViewFlowLayout>
-                                                    <cells>
-                                                        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="CollectionViewCell" reuseIdentifier="CollectionViewCell" id="MmW-gF-fEf" customClass="MainViewCollectionViewCell" customModule="XX" customModuleProvider="target">
-                                                            <rect key="frame" x="51.666666666666664" y="0.0" width="272" height="150"/>
-                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
-                                                                <rect key="frame" x="0.0" y="0.0" width="272" height="150"/>
-                                                                <autoresizingMask key="autoresizingMask"/>
-                                                                <subviews>
-                                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="K8N-LH-lsX">
-                                                                        <rect key="frame" x="0.0" y="0.0" width="272" height="150"/>
-                                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                                    </view>
-                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VEw-Uf-kbl">
-                                                                        <rect key="frame" x="115" y="64.666666666666671" width="42" height="21"/>
-                                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                                        <nil key="textColor"/>
-                                                                        <nil key="highlightedColor"/>
-                                                                    </label>
-                                                                </subviews>
-                                                            </view>
-                                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                            <constraints>
-                                                                <constraint firstItem="K8N-LH-lsX" firstAttribute="leading" secondItem="MmW-gF-fEf" secondAttribute="leading" id="6m8-Uu-1WX"/>
-                                                                <constraint firstAttribute="trailing" secondItem="K8N-LH-lsX" secondAttribute="trailing" id="8VU-pO-aXH"/>
-                                                                <constraint firstItem="VEw-Uf-kbl" firstAttribute="centerY" secondItem="MmW-gF-fEf" secondAttribute="centerY" id="MVM-Sd-X4b"/>
-                                                                <constraint firstItem="VEw-Uf-kbl" firstAttribute="centerX" secondItem="MmW-gF-fEf" secondAttribute="centerX" id="Pid-wV-5AB"/>
-                                                                <constraint firstItem="K8N-LH-lsX" firstAttribute="top" secondItem="MmW-gF-fEf" secondAttribute="top" id="TRw-fu-BBU"/>
-                                                                <constraint firstAttribute="bottom" secondItem="K8N-LH-lsX" secondAttribute="bottom" id="tkI-Va-OJe"/>
-                                                            </constraints>
-                                                            <size key="customSize" width="272" height="150"/>
-                                                            <connections>
-                                                                <outlet property="label" destination="VEw-Uf-kbl" id="Pdd-Q4-cyD"/>
-                                                                <outlet property="view" destination="K8N-LH-lsX" id="wYz-ek-Po5"/>
-                                                            </connections>
-                                                        </collectionViewCell>
-                                                    </cells>
+                                                    <cells/>
                                                 </collectionView>
                                             </subviews>
                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -442,9 +407,6 @@
         <image name="moreIcon" width="62" height="62"/>
         <namedColor name="lightTeal">
             <color red="0.55686274509803924" green="0.92941176470588238" blue="0.75686274509803919" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
-        <namedColor name="tealish">
-            <color red="0.13300000131130219" green="0.70999997854232788" blue="0.6470000147819519" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
     </resources>
 </document>
