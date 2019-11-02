@@ -9,20 +9,20 @@
 import UIKit
 
 class SpendDetailViewController: BaseViewController {
-  
-    @IBOutlet weak var backButton: UIButton!
+    
+//    @IBOutlet weak var backButton: UIButton!
     
     var viewModel: SpendDetailViewModel?
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        self.navigationController?.setNavigationBarHidden(false, animated: true)
+        self.navigationController?.setNavigationBarHidden(true, animated: true)
     }
 }
 
 extension SpendDetailViewController: ViewModelBindableType {
     func bindViewModel() {
         guard let viewModel = viewModel else { return }
-        backButton.rx.action = viewModel.requestBackButtonAction()
+//        backButton.rx.action = viewModel.requestBackButtonAction()
     }
 }
