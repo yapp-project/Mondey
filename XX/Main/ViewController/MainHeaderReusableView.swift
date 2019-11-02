@@ -20,14 +20,16 @@ class MainHeaderReusableView: UICollectionReusableView {
     var centeredCollectionViewFlowLayout: CenteredCollectionViewFlowLayout!
     
     @IBOutlet weak var collectionView: UICollectionView!
+    @IBOutlet weak var addSpendMoveButton: UIButton!
     
-    // 뷰모델 너무 많아질것을 고려하여 MainViewModel 갖다씀
+    // 뷰모델 너무 많아질것을 고려하여 MainViewModel 갖다놓긴 했는데 어디서 이 뷰모델 값을 세팅해야할진 아직 고민 안해봄 ㅎㅎ!
     var viewModel: MainViewModel?
     let bag = DisposeBag()
     
     override func awakeFromNib() {
         super.awakeFromNib()
         setLayoutCollectionView()
+        bindViewModel()
         bindCollectionView()
     }
     
@@ -54,6 +56,7 @@ class MainHeaderReusableView: UICollectionReusableView {
 extension MainHeaderReusableView: ViewModelBindableType {
     func bindViewModel() {
 //        guard let viewModel = viewModel else { return }
+//        addSpendMoveButton.rx.action = viewModel.requestAddSpendMoveMoveAction()
     }
     
     private func bindCollectionView() {
