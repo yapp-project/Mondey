@@ -9,22 +9,31 @@
 import UIKit
 
 class SetCategoriesViewController: UIViewController {
+    
+    @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var budgetLabel: UILabel!
+    @IBOutlet weak var nextButton: UIButton!
+    
+    var viewModel: SetCategoriesViewModel?
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        setButton()
     }
-    
 
-    /*
-    // MARK: - Navigation
+}
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+extension SetCategoriesViewController {
+    private func setButton() {
+        nextButton.layer.cornerRadius = 22
     }
-    */
+}
 
+extension SetCategoriesViewController: ViewModelBindableType {
+    func bindViewModel() {
+        guard let viewModel = viewModel else { return }
+        
+        nextButton.rx.action = viewModel.presentBudgetAction()
+    }
 }

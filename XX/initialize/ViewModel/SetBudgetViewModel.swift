@@ -9,5 +9,12 @@
 import Foundation
 
 class SetBudgetViewModel: BaseViewModel {
-    
+    func presentPeriodAction() -> CocoaAction {
+        return CocoaAction { _ in
+            let viewModel = SetPeriodViewModel(title: "예산 주기", viewModel: self)
+            let scene = InitializeScene.period(viewModel)
+            
+            return self.sceneCoordinator.transition(to: scene, using: .push, animated: true).asObservable().map { _ in }
+        }
+    }
 }

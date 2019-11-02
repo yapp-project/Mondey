@@ -18,4 +18,10 @@ class BaseViewModel: NSObject {
         self.sceneCoordinator = sceneCoordinator
         self.storage = storage
     }
+    
+    init(title: String = "", viewModel: BaseViewModel) {
+        self.title = Observable.just(title).asDriver(onErrorJustReturn: "")
+        self.sceneCoordinator = viewModel.sceneCoordinator
+        self.storage = viewModel.storage
+    }
 }

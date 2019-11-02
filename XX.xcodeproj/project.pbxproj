@@ -115,6 +115,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C63EEC278AE2C036D88FA77D18E70232 /* TableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = TableViewCell;
+			sourceTree = "<group>";
+		};
 		2961DA8A9A2B1B147A55508EC6D8BBD6 /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -289,6 +296,7 @@
 			children = (
 				2961DA8A9A2B1B147A55508EC6D8BBD6 /* Model */,
 				3AACE50E4B150DBEBCE9B33F6CBC1320 /* Scene */,
+				C63EEC278AE2C036D88FA77D18E70232 /* TableViewCell */,
 				659EC539786C6F43A909526D02F618CC /* ViewController */,
 				337A052B39C6FC6A4615A78722E48349 /* ViewModel */,
 				740B9F80EA558325E5BFC1023DDB634D /* Initialize.storyboard */,

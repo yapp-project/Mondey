@@ -9,22 +9,33 @@
 import UIKit
 
 class SetPeriodViewController: UIViewController {
+    
+    @IBOutlet weak var dayButton: UIButton!
+    @IBOutlet weak var weekButton: UIButton!
+    @IBOutlet weak var monthButton: UIButton!
+    
+    @IBOutlet weak var nextButton: UIButton!
+    
+    var viewModel: SetPeriodViewModel?
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        setButton()
     }
-    
 
-    /*
-    // MARK: - Navigation
+}
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+extension SetPeriodViewController {
+    private func setButton() {
+        nextButton.layer.cornerRadius = 22
     }
-    */
+}
 
+extension SetPeriodViewController: ViewModelBindableType {
+    func bindViewModel() {
+        guard let viewModel = viewModel else { return }
+        
+        nextButton.rx.action = viewModel.presentNotiSettingAction()
+    }
 }

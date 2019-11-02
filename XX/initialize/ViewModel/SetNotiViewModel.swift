@@ -9,5 +9,12 @@
 import Foundation
 
 class SetNotiViewModel: BaseViewModel {
-    
+    func presentFinishAction() -> CocoaAction {
+        return CocoaAction { _ in
+            let viewModel = FinishInitViewModel(title: "설정완료", viewModel: self)
+            let scene = InitializeScene.finish(viewModel)
+            
+            return self.sceneCoordinator.transition(to: scene, using: .modal, animated: true).asObservable().map { _ in }
+        }
+    }
 }
