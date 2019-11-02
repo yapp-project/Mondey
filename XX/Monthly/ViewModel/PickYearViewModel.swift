@@ -10,5 +10,9 @@ import Foundation
 
 class PickYearViewModel: BaseViewModel {
 
-
+    func requestCloseButtonAction() -> CocoaAction {
+        return Action { _ in
+            return self.sceneCoordinator.close(animated: true).asObservable().map { _ in }
+        }
+    }
 }
