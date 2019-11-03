@@ -9,11 +9,31 @@
 import UIKit
 
 class FinishInitViewController: UIViewController {
+    
+    @IBOutlet weak var startButton: UIButton!
+    
+    var viewModel: FinishInitViewModel?
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        setButton()
     }
     
 }
+
+extension FinishInitViewController {
+    private func setButton() {
+        startButton.layer.cornerRadius = 22
+    }
+}
+
+
+extension FinishInitViewController: ViewModelBindableType {
+    func bindViewModel() {
+        guard let viewModel = viewModel else { return }
+        
+        startButton.rx.action = viewModel.presentMainAction()
+    }
+}
+

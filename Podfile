@@ -8,6 +8,7 @@ target 'XX' do
     pod 'NSObject+Rx'
     pod 'RxDataSources'
     pod 'RxCoreData'
+    pod 'RxGesture'
     pod 'SwiftKeychainWrapper'
     pod 'CenteredCollectionView'
 end

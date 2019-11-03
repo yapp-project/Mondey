@@ -9,19 +9,14 @@
 import UIKit
 
 class BaseNavigationController: UINavigationController {
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         navigationBar.setBackgroundImage(UIImage(), for: .default)
         navigationBar.shadowImage = UIImage()
-        navigationBar.tintColor = #colorLiteral(red: 0.5564265847, green: 0.9294613004, blue: 0.7571136951, alpha: 1)
-        
-        navigationBar.backIndicatorImage = .backButton
-        navigationBar.backIndicatorTransitionMaskImage = .backButton
-        
-        let backItem = UIBarButtonItem()
-        backItem.title = nil
-        navigationBar.topItem?.backBarButtonItem = backItem
+        navigationBar.tintColor = #colorLiteral(red: 0.1335935891, green: 0.7091693282, blue: 0.6469839811, alpha: 1)
+        UIBarButtonItem.appearance().setTitleTextAttributes([NSAttributedString.Key.foregroundColor: UIColor.clear], for: .normal)
+        UIBarButtonItem.appearance().setTitleTextAttributes([NSAttributedString.Key.foregroundColor: UIColor.clear], for: UIControl.State.highlighted)
     }
 }

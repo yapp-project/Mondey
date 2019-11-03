@@ -9,22 +9,56 @@
 import UIKit
 
 class SetCategoriesViewController: UIViewController {
+    
+    @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var budgetLabel: UILabel!
+    @IBOutlet weak var nextButton: UIButton!
+    
+    var viewModel: SetCategoriesViewModel?
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        setButton()
+        setTableView()
+    }
+}
+
+extension SetCategoriesViewController {
+    private func setTableView() {
+        tableView.keyboardDismissMode = .onDrag
+        tableView.alwaysBounceVertical = false
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    private func setButton() {
+        nextButton.layer.cornerRadius = 22
     }
-    */
+}
 
+extension SetCategoriesViewController: ViewModelBindableType {
+    func bindViewModel() {
+        guard let viewModel = viewModel else { return }
+
+        viewModel.categories
+            .bind(to: tableView.rx.items(cellIdentifier: CategoryTableViewCell.reuseIdentifier))
+            { row, category, cell in
+                guard var cell = cell as? CategoryTableViewCell else { return }
+
+                let viewModel = CategoryTableViewCellViewModel()
+                viewModel.category.accept(category)
+                cell.bind(viewModel: viewModel)
+            }
+            .disposed(by: rx.disposeBag)
+        
+        tableView.rx.itemSelected
+            .map { $0.row }
+            .subscribe(onNext: viewModel.selectItem)
+            .disposed(by: rx.disposeBag)
+        
+        nextButton.rx.action = viewModel.presentBudgetAction()
+        
+        viewModel.incomeString()
+            .bind(to: budgetLabel.rx.text)
+            .disposed(by: rx.disposeBag)
+    }
 }

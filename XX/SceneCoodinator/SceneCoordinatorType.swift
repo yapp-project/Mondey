@@ -9,6 +9,8 @@
 import Foundation
 
 protocol SceneCoordinatorType {
+    @discardableResult
+    func showWarning(title: String, message: String) -> Completable
     
     @discardableResult
     func transition(to scene: SceneType, using style: TransitionStyle, animated: Bool) -> Completable
