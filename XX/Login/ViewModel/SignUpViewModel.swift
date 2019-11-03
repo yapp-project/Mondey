@@ -12,39 +12,58 @@ class SignUpViewModel: BaseViewModel {
     let emailTextRelay = BehaviorRelay(value: "")
     let passwordTextRelay = BehaviorRelay(value: "")
     let checkPasswordTextRelay = BehaviorRelay(value: "")
-    let signUpButtonTap = PublishRelay<Void>()
-    
-    override init(title: String, sceneCoordinator: SceneCoordinatorType, storage: StorageType) {
-        super.init(title: title, sceneCoordinator: sceneCoordinator, storage: storage)
-        
-        signUpButtonTap
-            .subscribe(onNext: requestSignUp)
-            .disposed(by: rx.disposeBag)
-    }
-    
-    func isPasswordVaild() -> Observable<Bool> {
+
+    func isPasswordValid() -> Observable<Bool> {
         return Observable.combineLatest(passwordTextRelay, checkPasswordTextRelay, resultSelector: checkPassword)
             .distinctUntilChanged()
+    }
+    
+    func isValidateEmail() -> Observable<Bool> {
+        return emailTextRelay
+            .flatMap { [unowned self] in Observable.just(self.checkEmail($0)) }
+    }
+    
+    func isSignUpValid() -> Observable<Bool> {
+        return Observable.combineLatest(
+            isValidateEmail(),
+            isPasswordValid(),
+            resultSelector: { $0 && $1 }
+        )
+    }
+    
+    private func checkEmail(_ email: String) -> Bool {
+        let emailRegex = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,6}"
+        return NSPredicate(format: "SELF MATCHES %@", emailRegex).evaluate(with: email)
     }
     
     private func checkPassword(_ p1: String, p2: String) -> Bool {
         return (p1 == p2)
     }
     
-    func validateEmail(candidate: String) -> Bool {
-        let emailRegex = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,6}"
-        return NSPredicate(format: "SELF MATCHES %@", emailRegex).evaluate(with: candidate)
+    func signUpAction() -> CocoaAction {
+        return Action { [unowned self] action in
+            return Observable.just(action)
+                .withLatestFrom(self.isSignUpValid())
+                .flatMap(self.checkSignUpAction().execute)
+        }
     }
     
-    private func requestSignUp() {
-        guard validateEmail(candidate: emailTextRelay.value),
-            checkPassword(passwordTextRelay.value, p2: checkPasswordTextRelay.value),
-            !passwordTextRelay.value.isEmpty
-            else { return }
-
+    private func checkSignUpAction() -> Action<Bool, Void> {
+        return Action { [unowned self] valid in
+            return valid ? self.requestSignUp() : self.shwoAlert()
+        }
+    }
+    
+    private func shwoAlert() -> Observable<Void> {
+        sceneCoordinator.showWarning(title: "로그인 실패", message: "이메일과 비밀번호를 다시 확인해 주세요")
+        return Observable.empty()
+    }
+    
+    private func requestSignUp() -> Observable<Void> {
         let viewModel = IncomeViewModel(title: "수입입력", sceneCoordinator: self.sceneCoordinator, storage: self.storage)
         let scene = InitializeScene.income(viewModel)
         
         sceneCoordinator.transition(to: scene, using: .root, animated: true)
+        return Observable.empty()
     }
 }

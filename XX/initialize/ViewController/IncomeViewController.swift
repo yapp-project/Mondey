@@ -36,6 +36,10 @@ extension IncomeViewController: ViewModelBindableType {
             .bind(to: viewModel.incomeText)
             .disposed(by: rx.disposeBag)
         
+        viewModel.incomeString()
+            .bind(to: incomeTextField.rx.text)
+            .disposed(by: rx.disposeBag)
+        
         nextButton.rx.action = viewModel.presentCategoriesAction()
     }
 }

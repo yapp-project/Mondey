@@ -9,6 +9,8 @@
 import UIKit
 
 class MondeyHelper: NSObject {
+    static let mondeyCategoryId = [1, 2, 3, 4, 5, 6, 7]
+    
     static let mondeyCategoryTitle = ["식비",
                                               "쇼핑",
                                               "미용/운동",
@@ -24,4 +26,13 @@ class MondeyHelper: NSObject {
                                                  "여가, 취미, 문화새오할등",
                                                  "경조사, 보험금, 공과금등",
                                                  "적금, 애완동물등"]
+    
+    static let mondeyCategory =
+        mondeyCategoryId.map { Category(id: $0, title: mondeyCategoryTitle[$0 - 1], SubTitle: mondeyCategorySubTitle[$0 - 1]) }
+    
+    struct Category {
+        let id: Int
+        let title: String
+        let SubTitle: String
+    }
 }

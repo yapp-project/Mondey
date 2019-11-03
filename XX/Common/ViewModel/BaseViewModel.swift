@@ -24,4 +24,17 @@ class BaseViewModel: NSObject {
         self.sceneCoordinator = viewModel.sceneCoordinator
         self.storage = viewModel.storage
     }
+    
+    func decimal(int: Int) -> String {
+        let formatter = NumberFormatter()
+        formatter.numberStyle = .decimal
+        
+        return formatter.string(from: int as NSNumber) ?? ""
+    }
+    
+    func stringToInt(_ string: String) -> Int {
+        let pureIntString = string.components(separatedBy: ",").joined()
+        
+        return Int(pureIntString) ?? 0
+    }
 }
