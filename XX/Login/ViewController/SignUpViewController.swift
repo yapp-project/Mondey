@@ -27,10 +27,7 @@ class SignUpViewController: BaseViewController {
 extension SignUpViewController: ViewModelBindableType {
     func bindViewModel() {
         guard let viewModel = viewModel else { return }
-        SignUpButton.rx.tap
-            .bind(to: viewModel.signUpButtonTap)
-            .disposed(by: rx.disposeBag)
-        
+
         emailTextField.rx.text.orEmpty
             .bind(to: viewModel.emailTextRelay)
             .disposed(by: rx.disposeBag)
@@ -41,9 +38,11 @@ extension SignUpViewController: ViewModelBindableType {
             .bind(to: viewModel.checkPasswordTextRelay)
             .disposed(by: rx.disposeBag)
         
-        viewModel.isPasswordVaild()
+        viewModel.isPasswordValid()
             .bind(to: warningLabel.rx.isHidden)
             .disposed(by: rx.disposeBag)
+        
+        SignUpButton.rx.action = viewModel.signUpAction()
     }
 }
 

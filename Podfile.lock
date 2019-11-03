@@ -16,6 +16,9 @@ PODS:
     - Differentiator (~> 4.0)
     - RxCocoa (~> 5.0)
     - RxSwift (~> 5.0)
+  - RxGesture (3.0.1):
+    - RxCocoa (~> 5.0)
+    - RxSwift (~> 5.0)
   - RxRelay (5.0.1):
     - RxSwift (~> 5)
   - RxSwift (5.0.1)
@@ -28,6 +31,7 @@ DEPENDENCIES:
   - RxCocoa (~> 5)
   - RxCoreData
   - RxDataSources
+  - RxGesture
   - RxSwift (~> 5)
   - SwiftKeychainWrapper
 
@@ -40,6 +44,7 @@ SPEC REPOS:
     - RxCocoa
     - RxCoreData
     - RxDataSources
+    - RxGesture
     - RxRelay
     - RxSwift
     - SwiftKeychainWrapper
@@ -52,10 +57,11 @@ SPEC CHECKSUMS:
   RxCocoa: e741b9749968e8a143e2b787f1dfbff2b63d0a5c
   RxCoreData: 1ed5f83e80facccc90fc054eb7f39a44177de56a
   RxDataSources: efee07fa4de48477eca0a4611e6d11e2da9c1114
+  RxGesture: a3f8dd6adf078110ed5e1c9c30d09d705a09852e
   RxRelay: 89d54507f4fd4d969e6ec1d4bd7f3673640b4640
   RxSwift: e2dc62b366a3adf6a0be44ba9f405efd4c94e0c4
   SwiftKeychainWrapper: 6fc49fbf7d4a6b0772917acb0e53a1639f6078d6
 
-PODFILE CHECKSUM: ef7acb1ee54297797a864191c0a9b779820f1caf
+PODFILE CHECKSUM: c9c0a25f57014fc080ea9aecb03b9f09d54bf362
 
 COCOAPODS: 1.8.4

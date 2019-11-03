@@ -7,5 +7,30 @@
 //
 
 class IncomeViewModel: BaseViewModel {
+    let incomeText = BehaviorRelay(value: "")
     
+    private let incomeValue = BehaviorRelay(value: 0)
+    
+    func incomeString() -> Observable<String> {
+        return incomeText
+            .map(stringToInt)
+            .withLatestFrom(incomeValue) {
+                ($0 > 99999999) ? $1 : $0
+            }
+            .do(onNext: incomeValue.accept)
+            .map(decimal)
+    }
+
+    func presentCategoriesAction() -> CocoaAction {
+        return CocoaAction { [unowned self] _ in
+            let income = self.incomeValue.value
+            UserDefaultManager.budget = income
+            
+            let viewModel = SetCategoriesViewModel(title: "지출항목", viewModel: self)
+            viewModel.incomeValue.accept(income * 10000)
+            let scene = InitializeScene.category(viewModel)
+            
+            return self.sceneCoordinator.transition(to: scene, using: .push, animated: true).asObservable().map { _ in }
+        }
+    }
 }

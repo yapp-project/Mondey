@@ -22,6 +22,22 @@ class SceneCoodinator: NSObject {
 
 extension SceneCoodinator: SceneCoordinatorType {
     @discardableResult
+    func showWarning(title: String, message: String) -> Completable {
+        let subject = PublishSubject<Void>()
+        
+        let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        let action = UIAlertAction.Action("확인", style: .cancel)
+        
+        alert.addAction(action)
+        
+        currentVC.present(alert, animated: true) {
+            subject.onCompleted()
+        }
+        
+        return subject.ignoreElements()
+    }
+    
+    @discardableResult
     func transition(to scene: SceneType, using style: TransitionStyle, animated: Bool) -> Completable {
         let subject = PublishSubject<Void>()
         

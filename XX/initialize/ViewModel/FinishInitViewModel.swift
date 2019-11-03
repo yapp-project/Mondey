@@ -9,5 +9,13 @@
 import Foundation
 
 class FinishInitViewModel: BaseViewModel {
-    
+    func presentMainAction() -> CocoaAction {
+        return CocoaAction { _ in
+//            let storage = MemoryStorage()
+            let viewModel = MainViewModel(title: "메인", viewModel: self)
+            let scene = MainScene.main(viewModel)
+
+            return self.sceneCoordinator.transition(to: scene, using: .root, animated: true).asObservable().map { _ in }
+        }
+    }
 }

@@ -7,3 +7,4 @@
 @import Action;
 @import NSObject_Rx;
 @import RxDataSources;
+@import RxGesture;

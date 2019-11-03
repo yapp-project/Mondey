@@ -9,22 +9,39 @@
 import UIKit
 
 class SetNotiViewController: UIViewController {
+    
+    @IBOutlet weak var timePicker: UIDatePicker!
+    @IBOutlet weak var alertButton: UIButton!
+    @IBOutlet weak var nextButton: UIButton!
+    
+    @IBOutlet weak var scrollView: UIScrollView!
+    
+    var viewModel: SetNotiViewModel?
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        setButton()
+        setScrollView()
+    }
+}
+
+extension SetNotiViewController {
+    private func setScrollView() {
+        scrollView.keyboardDismissMode = .onDrag
+        scrollView.alwaysBounceVertical = false
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    private func setButton() {
+        nextButton.layer.cornerRadius = 22
     }
-    */
-
 }
+
+extension SetNotiViewController: ViewModelBindableType {
+    func bindViewModel() {
+        guard let viewModel = viewModel else { return }
+        
+        nextButton.rx.action = viewModel.presentFinishAction()
+    }
+}
+
