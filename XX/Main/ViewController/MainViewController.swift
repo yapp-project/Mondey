@@ -17,7 +17,7 @@ class MainViewController: BaseViewController {
     let MAIN_CELL_WIDTH = UIScreen.main.bounds.width * 0.405
     
     var viewModel: MainViewModel?
-    let bag = DisposeBag()
+//    let bag = DisposeBag()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -58,16 +58,22 @@ extension MainViewController: ViewModelBindableType {
                 // 셀쪽 이벤트 RX에 대해 알아봐야할듯 이 방법이 맞는지 모르겠음
                 viewModel.requestSpendDetailMoveAction().execute()
             }
-            .disposed(by: bag)
+            .disposed(by: rx.disposeBag)
+        
+//
+//        collectionView
+//            .rx.itemSelected.bind(to: viewModel.requestSpendDetailMoveAction().inputs)
+//            // 셀쪽 이벤트 RX에 대해 알아봐야할듯 이 방법이 맞는지 모르겠음
+//            .disposed(by: rx.disposeBag)
         
         
         collectionView
         .rx.setDelegate(self)
-        .disposed(by: bag)
+        .disposed(by: rx.disposeBag)
         
         Observable.just(sections)
             .bind(to: collectionView.rx.items(dataSource: mainDatasource))
-            .disposed(by: bag)
+            .disposed(by: rx.disposeBag)
     }
     
     typealias MainSectionModel = SectionModel<String, String>

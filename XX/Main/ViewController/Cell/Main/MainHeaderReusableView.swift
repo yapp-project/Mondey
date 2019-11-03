@@ -71,22 +71,22 @@ extension MainHeaderReusableView: ViewModelBindableType {
             .rx.didEndDecelerating
             .bind { () in
 //                print("Current centered index: \(String(describing: self.centeredCollectionViewFlowLayout.currentCenteredPage ?? nil))")
-            }.disposed(by: bag)
+            }.disposed(by: rx.disposeBag)
         
         collectionView
             .rx.didEndScrollingAnimation
             .bind { () in
 //              print("Current centered index: \(String(describing: self.centeredCollectionViewFlowLayout.currentCenteredPage ?? nil))")
-        }.disposed(by: bag)
+        }.disposed(by: rx.disposeBag)
         
         collectionView
             .rx.itemSelected.bind { (indexPath) in
 //                print("indexPath >>> \(indexPath.item)")
-        }.disposed(by: bag)
+        }.disposed(by: rx.disposeBag)
         
         Observable.just(sections)
             .bind(to: collectionView.rx.items(dataSource: mainDatasource))
-            .disposed(by: bag)
+            .disposed(by: rx.disposeBag)
     }
     
     typealias MainHeaderReusableSectionModel = SectionModel<String, String>
