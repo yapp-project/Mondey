@@ -9,5 +9,10 @@
 import UIKit
 
 class MainCollectionViewCell: UICollectionViewCell {
+    @IBOutlet weak var percentBarView: UIView!
     
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        percentBarView.setCorner(cornerRadius: (self.contentView.bounds.width * 0.078 / 2) )
+    }
 }
