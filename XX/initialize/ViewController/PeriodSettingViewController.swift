@@ -8,7 +8,7 @@
 
 import UIKit
 
-class PeriodSettingViewController: UIViewController {
+class PeriodSettingViewController: BaseViewController {
     
     @IBOutlet weak var dayButton: UIButton!
     @IBOutlet weak var weekButton: UIButton!

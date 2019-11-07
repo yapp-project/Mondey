@@ -8,7 +8,7 @@
 
 import UIKit
 
-class BudgetSettingViewController: UIViewController {
+class BudgetSettingViewController: BaseViewController {
     
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var budgetLabel: UILabel!

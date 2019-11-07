@@ -8,11 +8,11 @@
 
 import UIKit
 
-class FinishInitViewController: UIViewController {
+class SignUpSettingCompletionViewController: BaseViewController {
     
     @IBOutlet weak var startButton: UIButton!
     
-    var viewModel: FinishInitViewModel?
+    var viewModel: SignUpSettingCompletionViewModel?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,14 +22,14 @@ class FinishInitViewController: UIViewController {
     
 }
 
-extension FinishInitViewController {
+extension SignUpSettingCompletionViewController {
     private func setButton() {
         startButton.layer.cornerRadius = 22
     }
 }
 
 
-extension FinishInitViewController: ViewModelBindableType {
+extension SignUpSettingCompletionViewController: ViewModelBindableType {
     func bindViewModel() {
         guard let viewModel = viewModel else { return }
         

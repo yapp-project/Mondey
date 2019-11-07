@@ -14,7 +14,7 @@ enum SignUpSettingScene {
     case budget(BudgetSettingViewModel)
     case period(PeriodSettingViewModel)
     case notiSetting(NotiSettingViewModel)
-    case finish(FinishInitViewModel)
+    case finish(SignUpSettingCompletionViewModel)
 }
 
 extension SignUpSettingScene: SceneType {
@@ -47,7 +47,7 @@ extension SignUpSettingScene: SceneType {
             viewController.bind(viewModel: viewModel)
             return viewController
         case .finish(let viewModel):
-            guard var viewController = storyboard.instantiateViewController(withIdentifier: "FinishInitViewController") as? FinishInitViewController else { return .init() }
+            guard var viewController = storyboard.instantiateViewController(withIdentifier: "FinishInitViewController") as? SignUpSettingCompletionViewController else { return .init() }
             viewController.bind(viewModel: viewModel)
             return viewController
         }

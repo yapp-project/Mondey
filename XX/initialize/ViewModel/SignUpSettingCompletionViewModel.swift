@@ -8,7 +8,7 @@
 
 import Foundation
 
-class FinishInitViewModel: BaseViewModel {
+class SignUpSettingCompletionViewModel: BaseViewModel {
     func presentMainAction() -> CocoaAction {
         return CocoaAction { _ in
 //            let storage = MemoryStorage()

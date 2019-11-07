@@ -8,7 +8,7 @@
 
 import UIKit
 
-class NotiSettingViewController: UIViewController {
+class NotiSettingViewController: BaseViewController {
     
     @IBOutlet weak var timePicker: UIDatePicker!
     @IBOutlet weak var alertButton: UIButton!

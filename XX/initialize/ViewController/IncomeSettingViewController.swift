@@ -8,7 +8,7 @@
 
 import UIKit
 
-class IncomeSettingViewController: UIViewController {
+class IncomeSettingViewController: BaseViewController {
     
     @IBOutlet weak var incomeTextField: UITextField!
     @IBOutlet weak var nextButton: UIButton!
