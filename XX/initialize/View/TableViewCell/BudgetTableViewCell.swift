@@ -15,7 +15,7 @@ class BudgetTableViewCell: UITableViewCell {
     @IBOutlet weak var subTitleLabel: UILabel!
     @IBOutlet weak var budgetTextField: UITextField!
     
-    var viewModel: BudgetTableViewCellViewModel?
+    var viewModel: BudgetSettingCellViewModel?
     
     override func prepareForReuse() {
         super.prepareForReuse()
@@ -27,7 +27,7 @@ class BudgetTableViewCell: UITableViewCell {
     }
 }
 
-extension BudgetTableViewCell: InitializeCellBindableType {
+extension BudgetTableViewCell: SignUpSettingCellBindableType {
     func bindViewModel() {
         guard let viewModel = viewModel else { return }
         

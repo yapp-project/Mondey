@@ -8,7 +8,7 @@
 
 import UIKit
 
-class SetNotiViewController: UIViewController {
+class NotiSettingViewController: UIViewController {
     
     @IBOutlet weak var timePicker: UIDatePicker!
     @IBOutlet weak var alertButton: UIButton!
@@ -16,7 +16,7 @@ class SetNotiViewController: UIViewController {
     
     @IBOutlet weak var scrollView: UIScrollView!
     
-    var viewModel: SetNotiViewModel?
+    var viewModel: NotiSettingViewModel?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,7 +26,7 @@ class SetNotiViewController: UIViewController {
     }
 }
 
-extension SetNotiViewController {
+extension NotiSettingViewController {
     private func setScrollView() {
         scrollView.keyboardDismissMode = .onDrag
         scrollView.alwaysBounceVertical = false
@@ -37,7 +37,7 @@ extension SetNotiViewController {
     }
 }
 
-extension SetNotiViewController: ViewModelBindableType {
+extension NotiSettingViewController: ViewModelBindableType {
     func bindViewModel() {
         guard let viewModel = viewModel else { return }
         

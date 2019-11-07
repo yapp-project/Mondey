@@ -8,9 +8,11 @@
 
 import Foundation
 
-class SetCategoriesViewModel: BaseViewModel {
+class CategoriesSetting: BaseViewModel {
     let incomeValue = BehaviorRelay(value: 0)
-    let categories = BehaviorRelay(value: SettingModel(initValue: MondeyHelper.mondeyCategory).categories)
+    let categories = BehaviorRelay(value: MondeyHelper.mondeyCategory.map {
+        Category(initValue: $0)
+    })
     
     func incomeString() -> Observable<String> {
         return incomeValue
@@ -24,15 +26,21 @@ class SetCategoriesViewModel: BaseViewModel {
         categories.accept(current)
     }
     
+    func validSetting() -> Observable<Bool> {
+        return categories.asObservable()
+            .map { $0.filter { $0.active } }
+            .map { $0.count > 0 }
+    }
+    
     func presentBudgetAction() -> CocoaAction {
         return CocoaAction { [unowned self] _ in
             let income = self.incomeValue.value
             let categoryList = self.categories.value.filter { $0.active }
 
-            let viewModel = SetBudgetViewModel(title: "예산 설정", viewModel: self)
+            let viewModel = BudgetSettingViewModel(title: "예산 설정", viewModel: self)
             viewModel.incomeValue.accept(income)
             viewModel.categories.accept(categoryList)
-            let scene = InitializeScene.budget(viewModel)
+            let scene = SignUpSettingScene.budget(viewModel)
             
             return self.sceneCoordinator.transition(to: scene, using: .push, animated: true).asObservable().map { _ in }
         }

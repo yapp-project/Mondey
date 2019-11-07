@@ -8,7 +8,7 @@
 
 import Foundation
 
-protocol InitializeCellBindableType {
+protocol SignUpSettingCellBindableType {
     associatedtype ViewModelType
     
     var viewModel: ViewModelType? { get set }
@@ -16,7 +16,7 @@ protocol InitializeCellBindableType {
     func bindViewModel()
 }
 
-extension InitializeCellBindableType where Self: UITableViewCell {
+extension SignUpSettingCellBindableType where Self: UITableViewCell {
     mutating func bind(viewModel: Self.ViewModelType) {
         self.viewModel = viewModel
 

@@ -8,6 +8,6 @@
 
 import Foundation
 
-class CategoryTableViewCellViewModel: InitializeCellViewModel {
+class CategorySettingCellViewModel: SignUpSettingCellViewModel {
     
 }

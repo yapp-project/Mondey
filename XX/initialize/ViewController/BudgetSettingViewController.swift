@@ -8,7 +8,7 @@
 
 import UIKit
 
-class SetBudgetViewController: UIViewController {
+class BudgetSettingViewController: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var budgetLabel: UILabel!
@@ -25,7 +25,7 @@ class SetBudgetViewController: UIViewController {
     }
 }
 
-extension SetBudgetViewController {
+extension BudgetSettingViewController {
     private func setTableView() {
         tableView.keyboardDismissMode = .onDrag
         tableView.alwaysBounceVertical = false
@@ -36,7 +36,7 @@ extension SetBudgetViewController {
     }
 }
 
-extension SetBudgetViewController: ViewModelBindableType {
+extension BudgetSettingViewController: ViewModelBindableType {
     func bindViewModel() {
         guard let viewModel = viewModel else { return }
         
@@ -72,12 +72,12 @@ extension SetBudgetViewController: ViewModelBindableType {
             .disposed(by: rx.disposeBag)
     }
     
-    private func viewModel(index: Int, category: Category) -> BudgetTableViewCellViewModel {
+    private func viewModel(index: Int, category: Category) -> BudgetSettingCellViewModel {
         if let viewModel = viewModel?.subViewModels[index] {
             return viewModel
         }
         
-        let viewModel = BudgetTableViewCellViewModel()
+        let viewModel = BudgetSettingCellViewModel()
         viewModel.category.accept(category)
         self.viewModel?.addSubViewModels(index: index, subViewModel: viewModel)
         

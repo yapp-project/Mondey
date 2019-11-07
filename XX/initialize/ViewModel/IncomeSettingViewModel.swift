@@ -6,7 +6,7 @@
 //  Copyright © 2019 YAPP. All rights reserved.
 //
 
-class IncomeViewModel: BaseViewModel {
+class IncomeSettingViewModel: BaseViewModel {
     let incomeText = BehaviorRelay(value: "")
     
     private let incomeValue = BehaviorRelay(value: 0)
@@ -26,9 +26,9 @@ class IncomeViewModel: BaseViewModel {
             let income = self.incomeValue.value
             UserDefaultManager.budget = income
             
-            let viewModel = SetCategoriesViewModel(title: "지출항목", viewModel: self)
+            let viewModel = CategoriesSetting(title: "지출항목", viewModel: self)
             viewModel.incomeValue.accept(income * 10000)
-            let scene = InitializeScene.category(viewModel)
+            let scene = SignUpSettingScene.category(viewModel)
             
             return self.sceneCoordinator.transition(to: scene, using: .push, animated: true).asObservable().map { _ in }
         }

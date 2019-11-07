@@ -11,9 +11,9 @@ import Foundation
 class PeriodSettingViewModel: BaseViewModel {
     let categories = BehaviorRelay<[Category]>(value: [])
     
-    var subViewModels = [Int: PeriodTableViewCellViewModel]()
+    var subViewModels = [Int: PeriodSettingCellViewModel]()
     
-    func addSubViewModels(index: Int, subViewModel: PeriodTableViewCellViewModel) {
+    func addSubViewModels(index: Int, subViewModel: PeriodSettingCellViewModel) {
         subViewModel.periodType
             .filter { $0 == nil }
             .subscribe(onNext: { [unowned self] period in
@@ -33,7 +33,7 @@ class PeriodSettingViewModel: BaseViewModel {
     
     func presentNotiSettingAction() -> CocoaAction {
         return CocoaAction { _ in
-            let viewModel = SetNotiViewModel(title: "알림설정", viewModel: self)
+            let viewModel = NotiSettingViewModel(title: "알림설정", viewModel: self)
             let scene = SignUpSettingScene.notiSetting(viewModel)
             
             return self.sceneCoordinator.transition(to: scene, using: .push, animated: true).asObservable().map { _ in }

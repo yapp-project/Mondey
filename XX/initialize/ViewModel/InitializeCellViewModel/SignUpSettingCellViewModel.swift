@@ -8,7 +8,7 @@
 
 import Foundation
 
-class InitializeCellViewModel: NSObject {
+class SignUpSettingCellViewModel: NSObject {
     let category = BehaviorRelay<Category>(value: .init())
     
     func decimal(int: Int) -> String {

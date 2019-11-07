@@ -8,7 +8,7 @@
 
 import UIKit
 
-class SetPeriodViewController: UIViewController {
+class PeriodSettingViewController: UIViewController {
     
     @IBOutlet weak var dayButton: UIButton!
     @IBOutlet weak var weekButton: UIButton!
@@ -18,7 +18,7 @@ class SetPeriodViewController: UIViewController {
     
     @IBOutlet weak var nextButton: UIButton!
     
-    var viewModel: SetPeriodViewModel?
+    var viewModel: PeriodSettingViewModel?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,7 +28,7 @@ class SetPeriodViewController: UIViewController {
     }
 }
 
-extension SetPeriodViewController {
+extension PeriodSettingViewController {
     private func setTableView() {
         tableView.keyboardDismissMode = .onDrag
         tableView.alwaysBounceVertical = false
@@ -39,7 +39,7 @@ extension SetPeriodViewController {
     }
 }
 
-extension SetPeriodViewController: ViewModelBindableType {
+extension PeriodSettingViewController: ViewModelBindableType {
     func bindViewModel() {
         guard let viewModel = viewModel else { return }
         
@@ -52,14 +52,23 @@ extension SetPeriodViewController: ViewModelBindableType {
             { row, category, cell in
                 guard var cell = cell as? PeriodTableViewCell else { return }
                 
-                let viewModel = PeriodTableViewCellViewModel()
-                viewModel.category.accept(category)
+                let viewModel = self.viewModel(index: row, category: category)
                 cell.bind(viewModel: viewModel)
-                
-                self.viewModel?.addSubViewModels(index: row, subViewModel: viewModel)
             }
             .disposed(by: rx.disposeBag)
         
         nextButton.rx.action = viewModel.presentNotiSettingAction()
+    }
+    
+    private func viewModel(index: Int, category: Category) -> PeriodSettingCellViewModel {
+        if let viewModel = viewModel?.subViewModels[index] {
+            return viewModel
+        }
+        
+        let viewModel = PeriodSettingCellViewModel()
+        viewModel.category.accept(category)
+        self.viewModel?.addSubViewModels(index: index, subViewModel: viewModel)
+        
+        return viewModel
     }
 }

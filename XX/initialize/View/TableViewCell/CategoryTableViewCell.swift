@@ -15,10 +15,10 @@ class CategoryTableViewCell: UITableViewCell {
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var subTitleLabel: UILabel!
     
-    var viewModel: CategoryTableViewCellViewModel?
+    var viewModel: CategorySettingCellViewModel?
 }
 
-extension CategoryTableViewCell: InitializeCellBindableType {
+extension CategoryTableViewCell: SignUpSettingCellBindableType {
     func bindViewModel() {
         guard let viewModel = viewModel else { return }
         

@@ -60,8 +60,8 @@ class SignUpViewModel: BaseViewModel {
     }
     
     private func requestSignUp() -> Observable<Void> {
-        let viewModel = IncomeViewModel(title: "수입입력", sceneCoordinator: self.sceneCoordinator, storage: self.storage)
-        let scene = InitializeScene.income(viewModel)
+        let viewModel = IncomeSettingViewModel(title: "수입입력", sceneCoordinator: self.sceneCoordinator, storage: self.storage)
+        let scene = SignUpSettingScene.income(viewModel)
         
         sceneCoordinator.transition(to: scene, using: .root, animated: true)
         return Observable.empty()
