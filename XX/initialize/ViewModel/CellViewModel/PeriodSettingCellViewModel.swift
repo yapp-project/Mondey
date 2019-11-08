@@ -8,7 +8,7 @@
 
 import Foundation
 
-class PeriodTableViewCellViewModel: InitializeCellViewModel {
+class PeriodSettingCellViewModel: SignUpSettingCellViewModel {
     let periodType = BehaviorRelay<Category.Period?>(value: nil)
     
     override init() {

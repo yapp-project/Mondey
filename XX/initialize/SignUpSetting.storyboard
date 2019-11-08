@@ -22,10 +22,10 @@
         </array>
     </customFonts>
     <scenes>
-        <!--Income View Controller-->
+        <!--Income Setting View Controller-->
         <scene sceneID="VfU-a6-y9U">
             <objects>
-                <viewController id="r6F-c4-CwM" customClass="IncomeViewController" customModule="XX" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="r6F-c4-CwM" customClass="IncomeSettingViewController" customModule="XX" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="w8T-1G-eHB">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -42,7 +42,7 @@
                                 <rect key="frame" x="135" y="352" width="110.5" height="27"/>
                                 <color key="textColor" name="tealish"/>
                                 <fontDescription key="fontDescription" name="SpoqaHanSans-Bold" family="SpoqaHanSans" pointSize="18"/>
-                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="done"/>
                             </textField>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bz5-zE-AEy">
                                 <rect key="frame" x="135" y="381" width="144" height="1"/>
@@ -96,10 +96,10 @@
             </objects>
             <point key="canvasLocation" x="1160.8695652173915" y="136.60714285714286"/>
         </scene>
-        <!--Set Categories View Controller-->
+        <!--Categories Setting View Controller-->
         <scene sceneID="7YH-Ot-OAm">
             <objects>
-                <viewController storyboardIdentifier="SetCategoriesViewController" id="8E3-82-3lL" customClass="SetCategoriesViewController" customModule="XX" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="CategoriesSettingViewController" id="8E3-82-3lL" customClass="CategoriesSettingViewController" customModule="XX" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="cwI-MV-e1U">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -196,7 +196,7 @@
                             </tableView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kO3-lD-yZo">
                                 <rect key="frame" x="91.5" y="818" width="231" height="44"/>
-                                <color key="backgroundColor" name="tealish"/>
+                                <color key="backgroundColor" name="153"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="cT0-fi-R6N"/>
                                     <constraint firstAttribute="width" constant="231" id="eQK-8S-pif"/>
@@ -205,7 +205,9 @@
                                 <state key="normal" title="다음">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
-                                <state key="disabled" title="다음"/>
+                                <state key="disabled" title="다음">
+                                    <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
                                 <state key="selected">
                                     <color key="titleColor" name="tealish"/>
                                 </state>
@@ -233,10 +235,10 @@
             </objects>
             <point key="canvasLocation" x="1940.5797101449277" y="136.60714285714286"/>
         </scene>
-        <!--Set Budget View Controller-->
+        <!--Budget Setting View Controller-->
         <scene sceneID="oDz-h3-eLq">
             <objects>
-                <viewController storyboardIdentifier="SetBudgetViewController" id="mW1-gX-yGR" customClass="SetBudgetViewController" customModule="XX" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="BudgetSettingViewController" id="mW1-gX-yGR" customClass="BudgetSettingViewController" customModule="XX" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="WMJ-7B-cKN">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -300,7 +302,7 @@
                                                     <rect key="frame" x="288.5" y="27" width="41" height="21"/>
                                                     <color key="textColor" name="102"/>
                                                     <fontDescription key="fontDescription" name="SpoqaHanSans-Regular" family="SpoqaHanSans" pointSize="14"/>
-                                                    <textInputTraits key="textInputTraits" keyboardType="namePhonePad"/>
+                                                    <textInputTraits key="textInputTraits" keyboardType="namePhonePad" returnKeyType="done"/>
                                                 </textField>
                                             </subviews>
                                             <constraints>
@@ -379,10 +381,10 @@
             </objects>
             <point key="canvasLocation" x="2623.1884057971015" y="130.58035714285714"/>
         </scene>
-        <!--Set Period View Controller-->
+        <!--Period Setting View Controller-->
         <scene sceneID="mJ1-0X-pQL">
             <objects>
-                <viewController storyboardIdentifier="SetPeriodViewController" id="hqc-dv-Vjv" customClass="SetPeriodViewController" customModule="XX" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="PeriodSettingViewController" id="hqc-dv-Vjv" customClass="PeriodSettingViewController" customModule="XX" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="FS5-kd-TXQ">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -553,10 +555,10 @@
             </objects>
             <point key="canvasLocation" x="3342.0289855072465" y="132.58928571428572"/>
         </scene>
-        <!--Set Noti View Controller-->
+        <!--Noti Setting View Controller-->
         <scene sceneID="0wu-4v-x0t">
             <objects>
-                <viewController storyboardIdentifier="SetNotiViewController" id="p2y-YY-e4k" customClass="SetNotiViewController" customModule="XX" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="NotiSettingViewController" id="p2y-YY-e4k" customClass="NotiSettingViewController" customModule="XX" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="vNg-ZD-dON">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -669,10 +671,10 @@
             </objects>
             <point key="canvasLocation" x="4066.666666666667" y="132.58928571428572"/>
         </scene>
-        <!--Finish Init View Controller-->
+        <!--Sign Up Setting Completion View Controller-->
         <scene sceneID="vBh-Hb-XY6">
             <objects>
-                <viewController storyboardIdentifier="FinishInitViewController" id="FtO-RD-ewP" customClass="FinishInitViewController" customModule="XX" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SignUpSettingCompletionViewController" id="FtO-RD-ewP" customClass="SignUpSettingCompletionViewController" customModule="XX" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="TlP-iQ-FC4">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -728,7 +730,7 @@
         <!--Base Navigation Controller-->
         <scene sceneID="bi9-Aa-9lf">
             <objects>
-                <navigationController storyboardIdentifier="InitializeViewController" automaticallyAdjustsScrollViewInsets="NO" id="Vlx-bu-8dm" customClass="BaseNavigationController" customModule="XX" customModuleProvider="target" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="IncomeSettingViewController" automaticallyAdjustsScrollViewInsets="NO" id="Vlx-bu-8dm" customClass="BaseNavigationController" customModule="XX" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ddf-K3-Bq7">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -753,6 +755,9 @@
         <image name="select" width="46" height="45"/>
         <namedColor name="102">
             <color red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="153">
+            <color red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="51">
             <color red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

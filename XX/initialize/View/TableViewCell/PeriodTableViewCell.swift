@@ -17,7 +17,7 @@ class PeriodTableViewCell: UITableViewCell {
     @IBOutlet weak var weekButton: UIButton!
     @IBOutlet weak var monthButton: UIButton!
     
-    var viewModel: PeriodTableViewCellViewModel?
+    var viewModel: PeriodSettingCellViewModel?
     
     override func prepareForReuse() {
         super.prepareForReuse()
@@ -29,7 +29,7 @@ class PeriodTableViewCell: UITableViewCell {
     }
 }
 
-extension PeriodTableViewCell: InitializeCellBindableType {
+extension PeriodTableViewCell: SignUpSettingCellBindableType {
     func bindViewModel() {
         guard let viewModel = viewModel else { return }
         

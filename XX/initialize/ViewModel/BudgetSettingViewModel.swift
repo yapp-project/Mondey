@@ -8,12 +8,12 @@
 
 import Foundation
 
-class SetBudgetViewModel: BaseViewModel {
+class BudgetSettingViewModel: BaseViewModel {
     let incomeValue = BehaviorRelay(value: 0)
     let categories = BehaviorRelay<[Category]>(value: [])
     let budgets = BehaviorRelay<[Int]>(value: [0, 0, 0, 0, 0, 0, 0])
     
-    var subViewModels = [Int: BudgetTableViewCellViewModel]()
+    var subViewModels = [Int: BudgetSettingCellViewModel]()
     
     func incomeString() -> Observable<String> {
         return incomeValue
@@ -23,6 +23,12 @@ class SetBudgetViewModel: BaseViewModel {
     func categoryList() -> Observable<[Category]> {
         return categories.asObservable()
             .withLatestFrom(budgets, resultSelector: mergeCategoryAndBudget)
+    }
+    
+    func validSetting() -> Observable<Bool> {
+        return Observable.combineLatest(categories, budgets, resultSelector: {
+            return $0.count == $1.filter({ $0 > 0 }).count
+        })
     }
     
     func updateBudget(index: Int, budget: String) {
@@ -43,7 +49,7 @@ class SetBudgetViewModel: BaseViewModel {
             .map { "매달 \($0)만원 저축" }
     }
     
-    func addSubViewModels(index: Int, subViewModel: BudgetTableViewCellViewModel) {
+    func addSubViewModels(index: Int, subViewModel: BudgetSettingCellViewModel) {
 
         subViewModel.budsetString()
             .subscribe(onNext: { [unowned self] in
@@ -64,9 +70,9 @@ class SetBudgetViewModel: BaseViewModel {
     }
     
     private func moveToPeriodView(categories: [Category]) -> Observable<Void> {
-        let viewModel = SetPeriodViewModel(title: "점검 주기 설정", viewModel: self)
+        let viewModel = PeriodSettingViewModel(title: "점검 주기 설정", viewModel: self)
         viewModel.categories.accept(categories)
-        let scene = InitializeScene.period(viewModel)
+        let scene = SignUpSettingScene.period(viewModel)
         self.sceneCoordinator.transition(to: scene, using: .push, animated: true)
         
         return Observable.empty()

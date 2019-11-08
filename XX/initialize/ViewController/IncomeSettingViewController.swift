@@ -8,13 +8,13 @@
 
 import UIKit
 
-class IncomeViewController: UIViewController {
+class IncomeSettingViewController: BaseViewController {
     
     @IBOutlet weak var incomeTextField: UITextField!
     @IBOutlet weak var nextButton: UIButton!
     
-    var viewModel: IncomeViewModel?
-
+    var viewModel: IncomeSettingViewModel?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -22,15 +22,22 @@ class IncomeViewController: UIViewController {
     }
 }
 
-extension IncomeViewController {
+extension IncomeSettingViewController {
     private func setButton() {
         nextButton.layer.cornerRadius = 22
     }
 }
 
-extension IncomeViewController: ViewModelBindableType {
+extension IncomeSettingViewController: ViewModelBindableType {
     func bindViewModel() {
         guard let viewModel = viewModel else { return }
+        
+        view.rx.tapGesture()
+            .when(.recognized)
+            .subscribe(onNext: { [unowned self] _ in
+                self.view.endEditing(true)
+            })
+            .disposed(by: rx.disposeBag)
         
         incomeTextField.rx.text.orEmpty
             .bind(to: viewModel.incomeText)

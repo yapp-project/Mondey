@@ -8,23 +8,23 @@
 
 import UIKit
 
-class SetCategoriesViewController: UIViewController {
+class CategoriesSettingViewController: BaseViewController {
     
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var budgetLabel: UILabel!
     @IBOutlet weak var nextButton: UIButton!
     
-    var viewModel: SetCategoriesViewModel?
-
+    var viewModel: CategoriesSetting?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         setButton()
         setTableView()
     }
 }
 
-extension SetCategoriesViewController {
+extension CategoriesSettingViewController {
     private func setTableView() {
         tableView.keyboardDismissMode = .onDrag
         tableView.alwaysBounceVertical = false
@@ -35,16 +35,16 @@ extension SetCategoriesViewController {
     }
 }
 
-extension SetCategoriesViewController: ViewModelBindableType {
+extension CategoriesSettingViewController: ViewModelBindableType {
     func bindViewModel() {
         guard let viewModel = viewModel else { return }
-
+        
         viewModel.categories
             .bind(to: tableView.rx.items(cellIdentifier: CategoryTableViewCell.reuseIdentifier))
             { row, category, cell in
                 guard var cell = cell as? CategoryTableViewCell else { return }
-
-                let viewModel = CategoryTableViewCellViewModel()
+                
+                let viewModel = CategorySettingCellViewModel()
                 viewModel.category.accept(category)
                 cell.bind(viewModel: viewModel)
             }
@@ -59,6 +59,13 @@ extension SetCategoriesViewController: ViewModelBindableType {
         
         viewModel.incomeString()
             .bind(to: budgetLabel.rx.text)
+            .disposed(by: rx.disposeBag)
+        
+        viewModel.validSetting()
+            .do(onNext: { [unowned self] in
+                self.nextButton.backgroundColor = $0 ? UIColor(named: "tealish") : UIColor(named: "153")
+            })
+            .bind(to: nextButton.rx.isEnabled)
             .disposed(by: rx.disposeBag)
     }
 }

@@ -23,8 +23,8 @@ class SignInViewModel: BaseViewModel {
     
     func presentSignInAction() -> CocoaAction {
         return CocoaAction { _ in
-            let viewModel = IncomeViewModel(title: "수입입력", sceneCoordinator: self.sceneCoordinator, storage: self.storage)
-            let scene = InitializeScene.income(viewModel)
+            let viewModel = IncomeSettingViewModel(title: "수입입력", sceneCoordinator: self.sceneCoordinator, storage: self.storage)
+            let scene = SignUpSettingScene.income(viewModel)
             
             return self.sceneCoordinator.transition(to: scene, using: .root, animated: true).asObservable().map { _ in }
         }

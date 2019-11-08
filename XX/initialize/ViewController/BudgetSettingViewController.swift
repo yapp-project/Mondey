@@ -8,24 +8,24 @@
 
 import UIKit
 
-class SetBudgetViewController: UIViewController {
+class BudgetSettingViewController: BaseViewController {
     
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var budgetLabel: UILabel!
     @IBOutlet weak var savingLabel: UILabel!
     @IBOutlet weak var nextButton: UIButton!
     
-    var viewModel: SetBudgetViewModel?
-
+    var viewModel: BudgetSettingViewModel?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         setTableView()
         setButton()
     }
 }
 
-extension SetBudgetViewController {
+extension BudgetSettingViewController {
     private func setTableView() {
         tableView.keyboardDismissMode = .onDrag
         tableView.alwaysBounceVertical = false
@@ -36,9 +36,16 @@ extension SetBudgetViewController {
     }
 }
 
-extension SetBudgetViewController: ViewModelBindableType {
+extension BudgetSettingViewController: ViewModelBindableType {
     func bindViewModel() {
         guard let viewModel = viewModel else { return }
+        
+        view.rx.tapGesture()
+            .when(.recognized)
+            .subscribe(onNext: { [unowned self] _ in
+                self.view.endEditing(true)
+            })
+            .disposed(by: rx.disposeBag)
         
         viewModel.title
             .drive(navigationItem.rx.title)
@@ -49,11 +56,8 @@ extension SetBudgetViewController: ViewModelBindableType {
             { row, category, cell in
                 guard var cell = cell as? BudgetTableViewCell else { return }
                 
-                let viewModel = BudgetTableViewCellViewModel()
-                viewModel.category.accept(category)
+                let viewModel = self.viewModel(index: row, category: category)
                 cell.bind(viewModel: viewModel)
-                
-                self.viewModel?.addSubViewModels(index: row, subViewModel: viewModel)
             }
             .disposed(by: rx.disposeBag)
         
@@ -66,6 +70,25 @@ extension SetBudgetViewController: ViewModelBindableType {
         viewModel.totalBudget()
             .bind(to: savingLabel.rx.text)
             .disposed(by: rx.disposeBag)
+        
+        viewModel.validSetting()
+            .do(onNext: { [unowned self] in
+                self.nextButton.backgroundColor = $0 ? UIColor(named: "tealish") : UIColor(named: "153")
+            })
+            .bind(to: nextButton.rx.isEnabled)
+            .disposed(by: rx.disposeBag)
+    }
+    
+    private func viewModel(index: Int, category: Category) -> BudgetSettingCellViewModel {
+        if let viewModel = viewModel?.subViewModels[index] {
+            return viewModel
+        }
+        
+        let viewModel = BudgetSettingCellViewModel()
+        viewModel.category.accept(category)
+        self.viewModel?.addSubViewModels(index: index, subViewModel: viewModel)
+        
+        return viewModel
     }
 }
 

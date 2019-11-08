@@ -8,7 +8,7 @@
 
 import Foundation
 
-class BudgetTableViewCellViewModel: SignUpSettingCellViewModel {
+class BudgetSettingCellViewModel: SignUpSettingCellViewModel {
     let budgetText = BehaviorRelay(value: "")
     
     func budsetString() -> Observable<String> {
