@@ -5,21 +5,19 @@
 //  Created by 박은비 on 19/10/2019.
 //  Copyright © 2019 YAPP. All rights reserved.
 //
-
 import UIKit
 
 class MainViewController: BaseViewController {
-
-    @IBOutlet weak var spendDetailMoveButton: UIButton!
-    @IBOutlet weak var addSpendMoveButton: UIButton!
+ 
     @IBOutlet weak var collectionView: UICollectionView!
     
     let HEADER_CELL_NAME = "MainHeaderCell"
-    let SUB_HEADER_CELL_NAME = "MainSubHeaderCell"
     let MAIN_CELL_NAME = "MainCollectionViewCell"
     
+    let MAIN_CELL_WIDTH = UIScreen.main.bounds.width * 0.405
+    
     var viewModel: MainViewModel?
-    let bag = DisposeBag()
+//    let bag = DisposeBag()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -33,25 +31,49 @@ class MainViewController: BaseViewController {
 
 extension MainViewController: ViewModelBindableType {
     func bindViewModel() {
-        guard let viewModel = viewModel else { return }
-        spendDetailMoveButton.rx.action = viewModel.requestSpendDetailMoveAction()
-        addSpendMoveButton.rx.action = viewModel.requestAddSpendMoveMoveAction()
+//        guard let viewModel = viewModel else { return }
     }
     
-    private func bindCollectionView() {
-        let dummyData = ["default", "London", "Vienna", "Lisbon", "Lisbon", "Lisbon", "Lisbon", "Lisbon", "Lisbon", "Lisbon", "Lisbon", "Lisbon", "Lisbon", "Lisbon", "Lisbon", "Lisbon", "Lisbon", "Lisbon"]
+    private func bindCollectionView() { 
+        guard let viewModel = viewModel else { return }
         
+        let dummyData = ["default",
+                         "London",
+                         "Vienna",
+                         "Lisbon",
+                         "Lisbon",
+                         "Lisbon",
+                         "Lisbon",
+                         "Lisbon",
+                         "Lisbon",
+                         "Lisbon"]
+        
+        //뷰모델을 전달하면..?
         let sections = [
-            SectionModel<String, String>(model: "first section", items: dummyData)
+            SectionModel<String, String>(model: "Fisrt", items: dummyData)
         ]
         
         collectionView
+            .rx.itemSelected.bind { (indexPath) in
+                // 셀쪽 이벤트 RX에 대해 알아봐야할듯 이 방법이 맞는지 모르겠음
+                viewModel.requestSpendDetailMoveAction().execute()
+            }
+            .disposed(by: rx.disposeBag)
+        
+//
+//        collectionView
+//            .rx.itemSelected.bind(to: viewModel.requestSpendDetailMoveAction().inputs)
+//            // 셀쪽 이벤트 RX에 대해 알아봐야할듯 이 방법이 맞는지 모르겠음
+//            .disposed(by: rx.disposeBag)
+        
+        
+        collectionView
         .rx.setDelegate(self)
-        .disposed(by: bag)
+        .disposed(by: rx.disposeBag)
         
         Observable.just(sections)
             .bind(to: collectionView.rx.items(dataSource: mainDatasource))
-            .disposed(by: bag)
+            .disposed(by: rx.disposeBag)
     }
     
     typealias MainSectionModel = SectionModel<String, String>
@@ -59,44 +81,52 @@ extension MainViewController: ViewModelBindableType {
     
     private var mainDatasource: MainCollectionViewDataSource {
         let configureCell: (CollectionViewSectionedDataSource<MainSectionModel>, UICollectionView, IndexPath, String) -> UICollectionViewCell =
-        { (datasource, collectionView, indexPath,  element) in
-            if indexPath.item == 0 {
-                let cell = collectionView.dequeueReusableCell(withReuseIdentifier: self.SUB_HEADER_CELL_NAME, for: indexPath)
-                return cell
-            } else {
-                guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: self.MAIN_CELL_NAME, for: indexPath) as? MainCollectionViewCell else { return UICollectionViewCell() }
-                
-                return cell
-            }
+        { (datasource,
+            collectionView,
+            indexPath,
+            element) in
+            guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: self.MAIN_CELL_NAME, for: indexPath) as? MainCollectionViewCell
+                else { return UICollectionViewCell() }
+            
+            return cell
         }
         
         let datasource = MainCollectionViewDataSource.init(configureCell: configureCell)
+        
         
         datasource.configureSupplementaryView = {
             (dataSource,
             collectionView,
             kind,
             indexPath) -> UICollectionReusableView in
-            let header = collectionView.dequeueReusableSupplementaryView(ofKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: self.HEADER_CELL_NAME, for: indexPath)
-            return header
+            if let header = collectionView.dequeueReusableSupplementaryView(ofKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: self.HEADER_CELL_NAME, for: indexPath) as? MainHeaderReusableView {
+                
+                // 어떻게 하면 더 나은 방법으로 전달할수 있을가
+                header.addSpendMoveButton.rx.action = self.viewModel?.requestAddSpendMoveMoveAction()
+                
+                return header
+            }
+            
+            return UICollectionReusableView()
         }
         
         return datasource
         
     }
     
+    
+    
 }
 
 extension MainViewController: UICollectionViewDelegateFlowLayout {
+    
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        
-        if indexPath.item == 0 {
-            return CGSize(width: UIScreen.main.bounds.width,
-                               height: 116)
-        }
-        
-        return CGSize(width: UIScreen.main.bounds.width * 0.408,
-                      height: UIScreen.main.bounds.width * 0.408)
+        return CGSize(width: MAIN_CELL_WIDTH,
+                      height: MAIN_CELL_WIDTH)
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
+        let padding = (UIScreen.main.bounds.width - (MAIN_CELL_WIDTH * 2)) / 4 + 10
+        return UIEdgeInsets(top: 0, left: padding, bottom: 0, right: padding)
     }
 }
-

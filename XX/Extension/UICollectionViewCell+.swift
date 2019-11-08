@@ -52,8 +52,7 @@ extension UICollectionViewCell {
                 self.layer.shadowOpacity = 5
                 
                 
-                self.layer.masksToBounds = false
-                print(self.bounds)
+                self.layer.masksToBounds = false 
                 self.layer.shadowPath = UIBezierPath(roundedRect: CGRect(x: 0,
                                                                          y: 0,
                                                                          width: UIScreen.main.bounds.width * 0.403,

@@ -68,6 +68,7 @@ extension SceneCoodinator: SceneCoordinatorType {
                 subject.onCompleted()
             }
             currentVC = target.sceneViewController
+            currentVC.modalPresentationStyle = .overFullScreen
         }
         
         return subject.ignoreElements()
