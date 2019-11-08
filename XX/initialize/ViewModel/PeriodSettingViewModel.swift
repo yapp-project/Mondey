@@ -10,7 +10,7 @@ import Foundation
 
 class PeriodSettingViewModel: BaseViewModel {
     let categories = BehaviorRelay<[Category]>(value: [])
-    
+
     var subViewModels = [Int: PeriodSettingCellViewModel]()
     
     func addSubViewModels(index: Int, subViewModel: PeriodSettingCellViewModel) {

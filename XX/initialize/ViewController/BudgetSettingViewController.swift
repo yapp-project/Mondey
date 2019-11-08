@@ -40,6 +40,13 @@ extension BudgetSettingViewController: ViewModelBindableType {
     func bindViewModel() {
         guard let viewModel = viewModel else { return }
         
+        view.rx.tapGesture()
+            .when(.recognized)
+            .subscribe(onNext: { [unowned self] _ in
+                self.view.endEditing(true)
+            })
+            .disposed(by: rx.disposeBag)
+        
         viewModel.title
             .drive(navigationItem.rx.title)
             .disposed(by: rx.disposeBag)

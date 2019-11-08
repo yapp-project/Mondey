@@ -32,6 +32,13 @@ extension IncomeSettingViewController: ViewModelBindableType {
     func bindViewModel() {
         guard let viewModel = viewModel else { return }
         
+        view.rx.tapGesture()
+            .when(.recognized)
+            .subscribe(onNext: { [unowned self] _ in
+                self.view.endEditing(true)
+            })
+            .disposed(by: rx.disposeBag)
+        
         incomeTextField.rx.text.orEmpty
             .bind(to: viewModel.incomeText)
             .disposed(by: rx.disposeBag)

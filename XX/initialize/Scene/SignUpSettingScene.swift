@@ -23,7 +23,7 @@ extension SignUpSettingScene: SceneType {
         
         switch self {
         case .income(let viewModel):
-            guard let navigationController = storyboard.instantiateViewController(withIdentifier: "InitializeViewController") as? UINavigationController,
+            guard let navigationController = storyboard.instantiateViewController(withIdentifier: "IncomeSettingViewController") as? UINavigationController,
                 var viewController = navigationController.viewControllers.first as? IncomeSettingViewController
                 else {
                     return .init()
@@ -31,29 +31,29 @@ extension SignUpSettingScene: SceneType {
             viewController.bind(viewModel: viewModel)
             return navigationController
         case .category(let viewModel):
-            guard var viewController = storyboard.instantiateViewController(withIdentifier: "SetCategoriesViewController") as? CategoriesSettingViewController else { return .init() }
+            guard var viewController = storyboard.instantiateViewController(withIdentifier: "CategoriesSettingViewController") as? CategoriesSettingViewController else { return .init() }
             viewController.bind(viewModel: viewModel)
             return viewController
         case .budget(let viewModel):
-            guard var viewController = storyboard.instantiateViewController(withIdentifier: "SetBudgetViewController") as? BudgetSettingViewController else { return .init() }
+            guard var viewController = storyboard.instantiateViewController(withIdentifier: "BudgetSettingViewController") as? BudgetSettingViewController else { return .init() }
             viewController.bind(viewModel: viewModel)
             return viewController
         case .period(let viewModel):
-            guard var viewController = storyboard.instantiateViewController(withIdentifier: "SetPeriodViewController") as? PeriodSettingViewController else { return .init() }
+            guard var viewController = storyboard.instantiateViewController(withIdentifier: "PeriodSettingViewController") as? PeriodSettingViewController else { return .init() }
             viewController.bind(viewModel: viewModel)
             return viewController
         case .notiSetting(let viewModel):
-            guard var viewController = storyboard.instantiateViewController(withIdentifier: "SetNotiViewController") as? NotiSettingViewController else { return .init() }
+            guard var viewController = storyboard.instantiateViewController(withIdentifier: "NotiSettingViewController") as? NotiSettingViewController else { return .init() }
             viewController.bind(viewModel: viewModel)
             return viewController
         case .finish(let viewModel):
-            guard var viewController = storyboard.instantiateViewController(withIdentifier: "FinishInitViewController") as? SignUpSettingCompletionViewController else { return .init() }
+            guard var viewController = storyboard.instantiateViewController(withIdentifier: "SignUpSettingCompletionViewController") as? SignUpSettingCompletionViewController else { return .init() }
             viewController.bind(viewModel: viewModel)
             return viewController
         }
     }
     
     func instantiate() -> UIViewController {
-        return instantiate(from: "Initialize")
+        return instantiate(from: "SignUpSetting")
     }
 }
