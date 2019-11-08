@@ -15,15 +15,12 @@
 		FD8F6B81BF3EDE0D7AB6D6D8124DC57F /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E429FD2698733BFF65BBCB3D7E1B161 /* BaseViewController.swift */; };
 		2D06B93D1FE35A15D8818E62E44714D9 /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4895444E6480A8CDFD3913D59A3CAED /* BaseViewModel.swift */; };
 		4B2C9C91E75C2568D265433E93B9A0BF /* BudgetSettingCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDE88213D0AF19A29FE1500DD206DEA6 /* BudgetSettingCellViewModel.swift */; };
-		63237F5760F1FDA68FC8760C27F2D86D /* BudgetSettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1045AC85E8FEA7248952EED2F6A811D5 /* BudgetSettingViewController.swift */; };
 		F3938F911F21B41938274A1CCA1570E1 /* BudgetSettingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484A87D2ED5D908FC992517FEBA762C9 /* BudgetSettingViewModel.swift */; };
 		4A9D2BC5C8895271E7CF2E25D7AE28DF /* BudgetTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2508380CF5CD7E6E356C6DEC13267381 /* BudgetTableViewCell.swift */; };
-		A617EC3484EE38B952516636C1DE1674 /* CategoriesSettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 623431F5F7FF128CAC257951116DDD27 /* CategoriesSettingViewController.swift */; };
 		603003EC7E38AEB84B84D392D4137F42 /* CategoriesSettingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9E5DDBA6A738E5C268A6913A43F300B /* CategoriesSettingViewModel.swift */; };
 		BE30794A07C69501C35002C7B4A12C56 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B06779D33F3A91331AB10E1E71DF19C /* Category.swift */; };
 		7B3891592424EF60C327AD01CF9F9C87 /* CategorySettingCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 880B519144692C8D3AEA24ED7878F28D /* CategorySettingCellViewModel.swift */; };
 		096784B8E066D019896FF0FA39CD7A5A /* CategoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02CF0EFA887F01237D45193D24A1034C /* CategoryTableViewCell.swift */; };
-		9BBBD9C8A11AB8BFA3D92A2BC7C8EC0A /* IncomeSettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFBA8C0960E5EA91E9C847F9ED299C25 /* IncomeSettingViewController.swift */; };
 		E8E2BD1636B1E003174FE1EB46AA74F9 /* IncomeSettingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D00AB9B82604B3B1782A54E6C622B9D /* IncomeSettingViewModel.swift */; };
 		223ED72A730C213DD645FA2B9F5A799D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D701E25B9E0F2B7A4655B8CA13A21DB /* LaunchScreen.storyboard */; };
 		4B1FE16BC0F0A1D5D6C14025674E8081 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C10A12E4539A07076F20C7F6372D2BA /* Login.storyboard */; };
@@ -47,10 +44,8 @@
 		58E638DC9C7CE5971118BB3E19A43D49 /* MonthlyScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08E8DC1A459825C9EE4564BE1F508E11 /* MonthlyScene.swift */; };
 		0A993601A00CE3944A609815403A5469 /* MonthlyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834757FE49312AA01EA232D9554F6C71 /* MonthlyViewController.swift */; };
 		712706B430FD25B3DA1FCDED455B885E /* MonthlyViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22783BB2F8803ACD802AD66E18EEB8EA /* MonthlyViewModel.swift */; };
-		6B2A22E59D587BD802A2B205CEC11819 /* NotiSettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE1521EC9D4005A8C5AFB07B9AD3CCD3 /* NotiSettingViewController.swift */; };
 		E874BBE86D5AF1B4E773EFDB445C4A0E /* NotiSettingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF26EA2C8A016E85AA9551B161C77F7 /* NotiSettingViewModel.swift */; };
 		69C6FFD4259B6042514ED81A749A5620 /* PeriodSettingCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8195961B983041689C51594BF57BC8BF /* PeriodSettingCellViewModel.swift */; };
-		5932F219339146A41F86727A91235801 /* PeriodSettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72CD84707A7E6F33F36E48361D351547 /* PeriodSettingViewController.swift */; };
 		1A358A6839EBB6819BEAD234E1C4DC65 /* PeriodSettingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC173066ED5D3A3CDD4FBE5669249FB1 /* PeriodSettingViewModel.swift */; };
 		5F3C0A6B8531A015008E4347696FD82F /* PeriodTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFF9206064745106525D2C633668E406 /* PeriodTableViewCell.swift */; };
 		F7EF9320E055D3267D1F15D35589FB17 /* PickYearViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE1211BC23B04E9A2772DAA5D13ACFC /* PickYearViewController.swift */; };
@@ -63,7 +58,6 @@
 		38A41A0484EB2647B6A23300BEBA350A /* SignUpSetting.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46CB144E4D4219EF3A2E5CEA2A19FB82 /* SignUpSetting.storyboard */; };
 		61C7BB6B4CD1078B91F132764B98DA05 /* SignUpSettingCellBindableType.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9029853C6597E3EC596A9CFC9BB88BD /* SignUpSettingCellBindableType.swift */; };
 		F633821295C4478FDE5459DFCE7D2CAD /* SignUpSettingCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75EFF45EC02E88969D7561EA20A6DBFB /* SignUpSettingCellViewModel.swift */; };
-		1D15D73439827695B6D3A98AA2CBF9F6 /* SignUpSettingCompletion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D6B904989D15B83F1CBA8E2D785324B /* SignUpSettingCompletion.swift */; };
 		83DF0EBDEE8508B4AD9B576FF6915503 /* SignUpSettingCompletionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E114D67CA2494271ABB11D76DCFB57F /* SignUpSettingCompletionViewModel.swift */; };
 		68510576E9A92B8D49082F08DEF48DB6 /* SignUpSettingScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42AC6A469340B4C875E1F540B149E4DE /* SignUpSettingScene.swift */; };
 		1CDFFC3C20BDE3DD0D37358AFD59D33B /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE50B2B5BB12BE66EFBD9DA426DBAFC /* SignUpViewController.swift */; };
@@ -97,15 +91,12 @@
 		1E429FD2698733BFF65BBCB3D7E1B161 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		A4895444E6480A8CDFD3913D59A3CAED /* BaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
 		FDE88213D0AF19A29FE1500DD206DEA6 /* BudgetSettingCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = BudgetSettingCellViewModel.swift; path = XX/initialize/ViewModel/CellViewModel/BudgetSettingCellViewModel.swift; sourceTree = SOURCE_ROOT; };
-		1045AC85E8FEA7248952EED2F6A811D5 /* BudgetSettingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BudgetSettingViewController.swift; sourceTree = "<group>"; };
 		484A87D2ED5D908FC992517FEBA762C9 /* BudgetSettingViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BudgetSettingViewModel.swift; sourceTree = "<group>"; };
 		2508380CF5CD7E6E356C6DEC13267381 /* BudgetTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = BudgetTableViewCell.swift; path = XX/initialize/View/TableViewCell/BudgetTableViewCell.swift; sourceTree = SOURCE_ROOT; };
-		623431F5F7FF128CAC257951116DDD27 /* CategoriesSettingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoriesSettingViewController.swift; sourceTree = "<group>"; };
 		B9E5DDBA6A738E5C268A6913A43F300B /* CategoriesSettingViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoriesSettingViewModel.swift; sourceTree = "<group>"; };
 		6B06779D33F3A91331AB10E1E71DF19C /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
 		880B519144692C8D3AEA24ED7878F28D /* CategorySettingCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CategorySettingCellViewModel.swift; path = XX/initialize/ViewModel/CellViewModel/CategorySettingCellViewModel.swift; sourceTree = SOURCE_ROOT; };
 		02CF0EFA887F01237D45193D24A1034C /* CategoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CategoryTableViewCell.swift; path = XX/initialize/View/TableViewCell/CategoryTableViewCell.swift; sourceTree = SOURCE_ROOT; };
-		BFBA8C0960E5EA91E9C847F9ED299C25 /* IncomeSettingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IncomeSettingViewController.swift; sourceTree = "<group>"; };
 		7D00AB9B82604B3B1782A54E6C622B9D /* IncomeSettingViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IncomeSettingViewModel.swift; sourceTree = "<group>"; };
 		B77587401D77975FA2FD7C1F98CC1FD8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2C10A12E4539A07076F20C7F6372D2BA /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
@@ -128,10 +119,8 @@
 		08E8DC1A459825C9EE4564BE1F508E11 /* MonthlyScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MonthlyScene.swift; sourceTree = "<group>"; };
 		834757FE49312AA01EA232D9554F6C71 /* MonthlyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MonthlyViewController.swift; sourceTree = "<group>"; };
 		22783BB2F8803ACD802AD66E18EEB8EA /* MonthlyViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MonthlyViewModel.swift; sourceTree = "<group>"; };
-		FE1521EC9D4005A8C5AFB07B9AD3CCD3 /* NotiSettingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotiSettingViewController.swift; sourceTree = "<group>"; };
 		DDF26EA2C8A016E85AA9551B161C77F7 /* NotiSettingViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotiSettingViewModel.swift; sourceTree = "<group>"; };
 		8195961B983041689C51594BF57BC8BF /* PeriodSettingCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PeriodSettingCellViewModel.swift; path = XX/initialize/ViewModel/CellViewModel/PeriodSettingCellViewModel.swift; sourceTree = SOURCE_ROOT; };
-		72CD84707A7E6F33F36E48361D351547 /* PeriodSettingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeriodSettingViewController.swift; sourceTree = "<group>"; };
 		EC173066ED5D3A3CDD4FBE5669249FB1 /* PeriodSettingViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeriodSettingViewModel.swift; sourceTree = "<group>"; };
 		DFF9206064745106525D2C633668E406 /* PeriodTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PeriodTableViewCell.swift; path = XX/initialize/View/TableViewCell/PeriodTableViewCell.swift; sourceTree = SOURCE_ROOT; };
 		BFE1211BC23B04E9A2772DAA5D13ACFC /* PickYearViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PickYearViewController.swift; sourceTree = "<group>"; };
@@ -146,7 +135,6 @@
 		46CB144E4D4219EF3A2E5CEA2A19FB82 /* SignUpSetting.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SignUpSetting.storyboard; sourceTree = "<group>"; };
 		E9029853C6597E3EC596A9CFC9BB88BD /* SignUpSettingCellBindableType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SignUpSettingCellBindableType.swift; path = XX/initialize/ViewModel/CellViewModel/SignUpSettingCellBindableType.swift; sourceTree = SOURCE_ROOT; };
 		75EFF45EC02E88969D7561EA20A6DBFB /* SignUpSettingCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SignUpSettingCellViewModel.swift; path = XX/initialize/ViewModel/CellViewModel/SignUpSettingCellViewModel.swift; sourceTree = SOURCE_ROOT; };
-		0D6B904989D15B83F1CBA8E2D785324B /* SignUpSettingCompletion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpSettingCompletion.swift; sourceTree = "<group>"; };
 		7E114D67CA2494271ABB11D76DCFB57F /* SignUpSettingCompletionViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpSettingCompletionViewModel.swift; sourceTree = "<group>"; };
 		42AC6A469340B4C875E1F540B149E4DE /* SignUpSettingScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpSettingScene.swift; sourceTree = "<group>"; };
 		ACE50B2B5BB12BE66EFBD9DA426DBAFC /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
@@ -388,7 +376,6 @@
 			children = (
 				1A827C8B9738CAFBF2DD68F71C975010 /* Scene */,
 				6450D0AFB126E69B3DCFDA2DF27713CF /* View */,
-				AA7AAE83AFE9CFEE7636BB447BB15E60 /* ViewController */,
 				13C9EFCDA04FEDAE5F61E03894714003 /* ViewModel */,
 				46CB144E4D4219EF3A2E5CEA2A19FB82 /* SignUpSetting.storyboard */,
 			);
@@ -434,19 +421,6 @@
 				AF99EAF8D88AF592A9B17401D5C8884F /* Main.storyboard */,
 			);
 			path = Main;
-			sourceTree = "<group>";
-		};
-		AA7AAE83AFE9CFEE7636BB447BB15E60 /* ViewController */ = {
-			isa = PBXGroup;
-			children = (
-				1045AC85E8FEA7248952EED2F6A811D5 /* BudgetSettingViewController.swift */,
-				623431F5F7FF128CAC257951116DDD27 /* CategoriesSettingViewController.swift */,
-				BFBA8C0960E5EA91E9C847F9ED299C25 /* IncomeSettingViewController.swift */,
-				FE1521EC9D4005A8C5AFB07B9AD3CCD3 /* NotiSettingViewController.swift */,
-				72CD84707A7E6F33F36E48361D351547 /* PeriodSettingViewController.swift */,
-				0D6B904989D15B83F1CBA8E2D785324B /* SignUpSettingCompletion.swift */,
-			);
-			path = ViewController;
 			sourceTree = "<group>";
 		};
 		B653F6150F03282958BB7D5AF8AA6ABF /* Cell */ = {
@@ -689,15 +663,12 @@
 				FD8F6B81BF3EDE0D7AB6D6D8124DC57F /* BaseViewController.swift in Sources */,
 				2D06B93D1FE35A15D8818E62E44714D9 /* BaseViewModel.swift in Sources */,
 				4B2C9C91E75C2568D265433E93B9A0BF /* BudgetSettingCellViewModel.swift in Sources */,
-				63237F5760F1FDA68FC8760C27F2D86D /* BudgetSettingViewController.swift in Sources */,
 				F3938F911F21B41938274A1CCA1570E1 /* BudgetSettingViewModel.swift in Sources */,
 				4A9D2BC5C8895271E7CF2E25D7AE28DF /* BudgetTableViewCell.swift in Sources */,
-				A617EC3484EE38B952516636C1DE1674 /* CategoriesSettingViewController.swift in Sources */,
 				603003EC7E38AEB84B84D392D4137F42 /* CategoriesSettingViewModel.swift in Sources */,
 				BE30794A07C69501C35002C7B4A12C56 /* Category.swift in Sources */,
 				7B3891592424EF60C327AD01CF9F9C87 /* CategorySettingCellViewModel.swift in Sources */,
 				096784B8E066D019896FF0FA39CD7A5A /* CategoryTableViewCell.swift in Sources */,
-				9BBBD9C8A11AB8BFA3D92A2BC7C8EC0A /* IncomeSettingViewController.swift in Sources */,
 				E8E2BD1636B1E003174FE1EB46AA74F9 /* IncomeSettingViewModel.swift in Sources */,
 				66B5D9CA9BE38D7BE26ED69861DB8828 /* LoginScene.swift in Sources */,
 				F20A424D6799FDDD61690CB65C807B7B /* MainCollectionViewCell.swift in Sources */,
@@ -715,10 +686,8 @@
 				58E638DC9C7CE5971118BB3E19A43D49 /* MonthlyScene.swift in Sources */,
 				0A993601A00CE3944A609815403A5469 /* MonthlyViewController.swift in Sources */,
 				712706B430FD25B3DA1FCDED455B885E /* MonthlyViewModel.swift in Sources */,
-				6B2A22E59D587BD802A2B205CEC11819 /* NotiSettingViewController.swift in Sources */,
 				E874BBE86D5AF1B4E773EFDB445C4A0E /* NotiSettingViewModel.swift in Sources */,
 				69C6FFD4259B6042514ED81A749A5620 /* PeriodSettingCellViewModel.swift in Sources */,
-				5932F219339146A41F86727A91235801 /* PeriodSettingViewController.swift in Sources */,
 				1A358A6839EBB6819BEAD234E1C4DC65 /* PeriodSettingViewModel.swift in Sources */,
 				5F3C0A6B8531A015008E4347696FD82F /* PeriodTableViewCell.swift in Sources */,
 				F7EF9320E055D3267D1F15D35589FB17 /* PickYearViewController.swift in Sources */,
@@ -730,7 +699,6 @@
 				C93FA50F0134001F268B1D39234FECA9 /* SignInViewModel.swift in Sources */,
 				61C7BB6B4CD1078B91F132764B98DA05 /* SignUpSettingCellBindableType.swift in Sources */,
 				F633821295C4478FDE5459DFCE7D2CAD /* SignUpSettingCellViewModel.swift in Sources */,
-				1D15D73439827695B6D3A98AA2CBF9F6 /* SignUpSettingCompletion.swift in Sources */,
 				83DF0EBDEE8508B4AD9B576FF6915503 /* SignUpSettingCompletionViewModel.swift in Sources */,
 				68510576E9A92B8D49082F08DEF48DB6 /* SignUpSettingScene.swift in Sources */,
 				1CDFFC3C20BDE3DD0D37358AFD59D33B /* SignUpViewController.swift in Sources */,
