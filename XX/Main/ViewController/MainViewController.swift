@@ -102,7 +102,7 @@ extension MainViewController: ViewModelBindableType {
             if let header = collectionView.dequeueReusableSupplementaryView(ofKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: self.HEADER_CELL_NAME, for: indexPath) as? MainHeaderReusableView {
                 
                 // 어떻게 하면 더 나은 방법으로 전달할수 있을가
-                header.addSpendMoveButton.rx.action = self.viewModel?.requestAddSpendMoveMoveAction()
+                header.viewModel = self.viewModel
                 
                 return header
             }

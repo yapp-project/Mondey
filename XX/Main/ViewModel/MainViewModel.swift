@@ -38,5 +38,16 @@ class MainViewModel: BaseViewModel {
             
         }
     }
+    
+    func requestMainHeaderSwipeMoveAction(_ moveCollectionViewPage: @escaping ((MainHeaderMode)-> Void),
+                                          mode: MainHeaderMode = .spend) -> CocoaAction {
+        return Action { action in
+            moveCollectionViewPage(mode) 
+            return Observable.just(action)
+        }
+    }
+    
+    
+ 
 }
 
