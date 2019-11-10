@@ -46,7 +46,6 @@ class BudgetSettingViewModel: BaseViewModel {
                 (Int($1 / 10000) - $0)
             }
             .map(decimal)
-            .map { "매달 \($0)만원 저축" }
     }
     
     func addSubViewModels(index: Int, subViewModel: BudgetSettingCellViewModel) {
