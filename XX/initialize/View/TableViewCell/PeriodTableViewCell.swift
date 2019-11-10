@@ -22,10 +22,7 @@ class PeriodTableViewCell: UITableViewCell {
     override func prepareForReuse() {
         super.prepareForReuse()
         
-//        viewModel = nil
-        dayButton.rx.isSelected.onNext(false)
-        weekButton.rx.isSelected.onNext(false)
-        monthButton.rx.isSelected.onNext(false)
+        updateButtonStatus(period: .none)
     }
 }
 
@@ -39,42 +36,38 @@ extension PeriodTableViewCell: SignUpSettingCellBindableType {
             .disposed(by: viewModel.rx.disposeBag)
         
         viewModel.category
-            .map { $0.period }
+            .map { $0.period ?? .none }
             .subscribe(onNext: updateButtonStatus)
             .disposed(by: viewModel.rx.disposeBag)
         
-        dayButton.rx.tapGesture()
-            .map { _ in
-                Category.Period.day
-                
-            }
-            .subscribe(onNext: viewModel.updatePeriod)
-            .disposed(by: viewModel.rx.disposeBag)
         
-        weekButton.rx.tapGesture()
-            .map { _ in
-                Category.Period.week
-                
-            }
-            .subscribe(onNext: viewModel.updatePeriod)
-            .disposed(by: viewModel.rx.disposeBag)
+        dayButton.rx.action = viewModel.dayOptionAction()
+        weekButton.rx.action = viewModel.weekOptionAction()
+        monthButton.rx.action = viewModel.monthOptionAction()
         
-        monthButton.rx.tapGesture()
-            .map { _ in
-                Category.Period.month
-                
-            }
-            .subscribe(onNext: viewModel.updatePeriod)
-            .disposed(by: viewModel.rx.disposeBag)
+//        dayButton.rx.tap
+//            .map { Category.Period.day }
+//            .bind(to: viewModel.periodType)
+//            .disposed(by: viewModel.rx.disposeBag)
+//        
+//        weekButton.rx.tap
+//            .map { Category.Period.week }
+//            .bind(to: viewModel.periodType)
+//            .disposed(by: viewModel.rx.disposeBag)
+//        
+//        monthButton.rx.tap
+//            .map { Category.Period.month }
+//            .bind(to: viewModel.periodType)
+//            .disposed(by: viewModel.rx.disposeBag)
     }
     
-    private func updateButtonStatus(period: Category.Period?) {
-        let day = (period == .day)
-        let week = (period == .week)
-        let month = (period == .month)
-        
-        dayButton.rx.isSelected.onNext(day)
-        weekButton.rx.isSelected.onNext(week)
-        monthButton.rx.isSelected.onNext(month)
+    private func updateButtonStatus(period: Category.Period) {
+        let day = (period == .day) ? #colorLiteral(red: 0.1327423155, green: 0.7098431587, blue: 0.6469736695, alpha: 1) : #colorLiteral(red: 0.8077718616, green: 0.8078889251, blue: 0.8116672635, alpha: 1)
+        let week = (period == .week) ? #colorLiteral(red: 0.1327423155, green: 0.7098431587, blue: 0.6469736695, alpha: 1) : #colorLiteral(red: 0.8077718616, green: 0.8078889251, blue: 0.8116672635, alpha: 1)
+        let month = (period == .month) ? #colorLiteral(red: 0.1327423155, green: 0.7098431587, blue: 0.6469736695, alpha: 1) : #colorLiteral(red: 0.8077718616, green: 0.8078889251, blue: 0.8116672635, alpha: 1)
+
+        dayButton.setTitleColor(day, for: .normal)
+        weekButton.setTitleColor(week, for: .normal)
+        monthButton .setTitleColor(month, for: .normal)
     }
 }

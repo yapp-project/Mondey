@@ -57,11 +57,19 @@ extension PeriodSettingViewController: ViewModelBindableType {
             }
             .disposed(by: rx.disposeBag)
         
+        viewModel.validSetting()
+            .do(onNext: { [unowned self] in
+                self.nextButton.backgroundColor = $0 ? UIColor(named: "tealish") : UIColor(named: "153")
+            })
+            .bind(to: nextButton.rx.isEnabled)
+            .disposed(by: rx.disposeBag)
+        
         nextButton.rx.action = viewModel.presentNotiSettingAction()
     }
     
     private func viewModel(index: Int, category: Category) -> PeriodSettingCellViewModel {
         if let viewModel = viewModel?.subViewModels[index] {
+            viewModel.category.accept(category)
             return viewModel
         }
         

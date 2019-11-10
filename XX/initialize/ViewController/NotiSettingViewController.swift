@@ -41,6 +41,7 @@ extension NotiSettingViewController: ViewModelBindableType {
     func bindViewModel() {
         guard let viewModel = viewModel else { return }
         
+        alertButton.rx.action = viewModel.updateAlertOptionAction()
         nextButton.rx.action = viewModel.presentFinishAction()
     }
 }
