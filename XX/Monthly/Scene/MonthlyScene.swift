@@ -30,25 +30,22 @@ extension MonthlyScene: SceneType {
             viewController.bind(viewModel: viewModel)
             return navigationController
         case .Mdetail(let viewModel):
-            guard let navigationController = storyboard
-                .instantiateViewController(withIdentifier: "MonthlyDetailViewController") as? UINavigationController,
-                var viewController = navigationController
-                    .viewControllers.first as? MonthlyDetailViewController
+            guard var viewController = storyboard
+                .instantiateViewController(withIdentifier: "MonthlyDetailViewController") as? MonthlyDetailViewController
                 else {
                     return UIViewController()
             }
             viewController.bind(viewModel: viewModel)
-            return navigationController
+            return viewController
         case .PickYear(let viewModel):
-            guard let navigationController = storyboard
-                .instantiateViewController(withIdentifier: "PickYearViewController") as? UINavigationController,
-                var viewController = navigationController
-                    .viewControllers.first as? PickYearViewController
+            guard var viewController = storyboard
+                .instantiateViewController(withIdentifier: "PickYearViewController") as? PickYearViewController
                 else {
                     return UIViewController()
             }
+            viewController.modalPresentationStyle = .overCurrentContext
             viewController.bind(viewModel: viewModel)
-            return navigationController
+            return viewController
         }
     }
 

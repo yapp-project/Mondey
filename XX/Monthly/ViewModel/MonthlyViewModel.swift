@@ -12,10 +12,10 @@ class MonthlyViewModel: BaseViewModel {
     
     func presentingSelectYear() -> CocoaAction {
         return CocoaAction { _ in
-            let viewModel = MonthlyViewModel(title: "월별 등급 평가",
+            let viewModel = PickYearViewModel(title: "날짜 선택",
                                              sceneCoordinator: self.sceneCoordinator,
                                              storage: self.storage)
-            let scene = MonthlyScene.Mmain(viewModel)
+            let scene = MonthlyScene.PickYear(viewModel)
             return self.sceneCoordinator.transition(to: scene,
                                                     using: .modal,
                                                     animated: true)
