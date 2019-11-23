@@ -9,6 +9,8 @@
 import UIKit
 
 class MainViewModel: BaseViewModel {
+    var removeMainCollectionViewCell: UIButton?
+    
 //    func requestSpendDetailMoveAction() -> Action<IndexPath, Void> {
     func requestSpendDetailMoveAction() -> CocoaAction {
         return Action { _ in
@@ -39,6 +41,20 @@ class MainViewModel: BaseViewModel {
         }
     }
     
+    /* MainCollectionViewCell */
+    func requestMainRemoveModeButtonAction(cellIdx: Int,
+                                           button: inout UIButton) -> CocoaAction {
+        return Action { action in
+            /*
+             
+             */
+            print("cellIdx \(cellIdx)")
+            return Observable.just(action)
+            
+        }
+    }
+    
+    /* MainHeaderReusableView */
     func requestMainHeaderSwipeMoveAction(_ moveCollectionViewPage: @escaping ((MainHeaderMode)-> Void),
                                           mode: MainHeaderMode = .spend) -> CocoaAction {
         return Action { action in
@@ -46,7 +62,7 @@ class MainViewModel: BaseViewModel {
             return Observable.just(action)
         }
     }
-    
+
     
  
 }

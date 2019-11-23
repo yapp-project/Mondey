@@ -29,6 +29,8 @@ class MainHeaderReusableView: UICollectionReusableView {
     @IBOutlet weak var spendButton: UIButton!
     @IBOutlet weak var savingButton: UIButton!
     
+    @IBOutlet weak var removeModeButton: UIButton!
+    
     // 뷰모델 너무 많아질것을 고려하여 MainViewModel 갖다놓긴 함
     var viewModel: MainViewModel? = nil{
         didSet{
@@ -73,6 +75,7 @@ extension MainHeaderReusableView: ViewModelBindableType {
         }
         spendButton.rx.action = viewModel.requestMainHeaderSwipeMoveAction(closureMoveCollectionViewChange, mode: .spend)
         savingButton.rx.action = viewModel.requestMainHeaderSwipeMoveAction(closureMoveCollectionViewChange, mode: .saving)
+//        removeModeButton.rx.action = viewModel.requestMainRemoveModeButtonAction()
     }
     
     private func bindCollectionView() {

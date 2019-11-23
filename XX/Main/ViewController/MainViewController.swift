@@ -17,7 +17,7 @@ class MainViewController: BaseViewController {
     let MAIN_CELL_WIDTH = UIScreen.main.bounds.width * 0.405
     
     var viewModel: MainViewModel?
-//    let bag = DisposeBag()
+    //    let bag = DisposeBag()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,7 +31,8 @@ class MainViewController: BaseViewController {
 
 extension MainViewController: ViewModelBindableType {
     func bindViewModel() {
-//        guard let viewModel = viewModel else { return }
+        guard let viewModel = viewModel else { return }
+ 
     }
     
     private func bindCollectionView() { 
@@ -88,6 +89,10 @@ extension MainViewController: ViewModelBindableType {
             guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: self.MAIN_CELL_NAME, for: indexPath) as? MainCollectionViewCell
                 else { return UICollectionViewCell() }
             
+            cell.cellIdx = indexPath.item
+            if let viewModel = self.viewModel {
+                cell.viewModel = viewModel
+            }
             return cell
         }
         
@@ -101,8 +106,9 @@ extension MainViewController: ViewModelBindableType {
             indexPath) -> UICollectionReusableView in
             if let header = collectionView.dequeueReusableSupplementaryView(ofKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: self.HEADER_CELL_NAME, for: indexPath) as? MainHeaderReusableView {
                 
-                // 어떻게 하면 더 나은 방법으로 전달할수 있을가
-                header.viewModel = self.viewModel
+                if let viewModel = self.viewModel {
+                    header.viewModel = viewModel
+                }
                 
                 return header
             }

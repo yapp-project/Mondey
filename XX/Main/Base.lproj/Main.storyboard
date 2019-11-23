@@ -51,7 +51,7 @@
                                                     <rect key="frame" x="0.0" y="0.0" width="153" height="25.666666666666668"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Week" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="jQH-Gj-SxP">
-                                                            <rect key="frame" x="61" y="7.3333333333333339" width="31" height="18.333333333333329"/>
+                                                            <rect key="frame" x="61.333333333333336" y="7.3333333333333339" width="30.666666666666664" height="18.333333333333329"/>
                                                             <fontDescription key="fontDescription" name="SpoqaHanSans-Regular" family="SpoqaHanSans" pointSize="12"/>
                                                             <color key="textColor" name="tealish"/>
                                                             <nil key="highlightedColor"/>
@@ -159,6 +159,13 @@
                                                         <constraint firstItem="p0t-cp-iOB" firstAttribute="height" secondItem="25I-FX-kZB" secondAttribute="height" multiplier="0.5" id="gyB-W6-bNa"/>
                                                     </constraints>
                                                 </view>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="euq-AW-Tfc">
+                                                    <rect key="frame" x="126" y="5" width="22" height="22"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" secondItem="euq-AW-Tfc" secondAttribute="height" multiplier="1:1" id="oMf-9q-G6g"/>
+                                                    </constraints>
+                                                    <state key="normal" image="main_contents_x"/>
+                                                </button>
                                             </subviews>
                                         </view>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -180,11 +187,14 @@
                                             <constraint firstItem="Qge-wz-obi" firstAttribute="top" secondItem="Euj-gd-IuJ" secondAttribute="bottom" constant="1.4210854715202004e-14" id="f82-yT-EqN"/>
                                             <constraint firstAttribute="trailing" secondItem="hDU-zZ-Pil" secondAttribute="trailing" id="hcm-Fl-JYO"/>
                                             <constraint firstAttribute="trailing" secondItem="Qge-wz-obi" secondAttribute="trailing" id="mLU-F3-Lk1"/>
+                                            <constraint firstAttribute="trailing" secondItem="euq-AW-Tfc" secondAttribute="trailing" constant="5" id="oS1-x2-CJz"/>
                                             <constraint firstAttribute="trailing" secondItem="25I-FX-kZB" secondAttribute="trailing" id="pEN-vQ-hvn"/>
+                                            <constraint firstItem="euq-AW-Tfc" firstAttribute="top" secondItem="cBu-dF-giB" secondAttribute="top" constant="5" id="wHO-Be-7Bb"/>
                                             <constraint firstItem="Qge-wz-obi" firstAttribute="leading" secondItem="cBu-dF-giB" secondAttribute="leading" id="wkj-JK-GAr"/>
                                         </constraints>
                                         <connections>
                                             <outlet property="percentBarView" destination="AJM-pN-DEZ" id="bLX-z2-FzB"/>
+                                            <outlet property="removeCellButton" destination="euq-AW-Tfc" id="vwD-2r-wnF"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
@@ -380,6 +390,7 @@
                                     <connections>
                                         <outlet property="addSpendMoveButton" destination="AHm-H2-yg5" id="1fz-8S-aIh"/>
                                         <outlet property="collectionView" destination="md5-a0-hq1" id="c6Y-ur-faV"/>
+                                        <outlet property="removeModeButton" destination="xAv-ZH-EFF" id="Rqt-xj-gAD"/>
                                         <outlet property="savingButton" destination="Mwq-7y-Nsn" id="j3o-im-7LX"/>
                                         <outlet property="spendButton" destination="dsg-ti-cYI" id="PFT-9R-GOb"/>
                                     </connections>
@@ -1562,6 +1573,7 @@
         <image name="icDelete48Px" width="48" height="48"/>
         <image name="icHighlightOff48Px" width="49" height="49"/>
         <image name="icSettings48Px" width="48" height="48"/>
+        <image name="main_contents_x" width="20" height="20"/>
         <image name="moreIcon" width="62" height="62"/>
         <namedColor name="lightGold">
             <color red="1" green="0.8784313725490196" blue="0.37254901960784315" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
