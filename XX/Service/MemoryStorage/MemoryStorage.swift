@@ -9,7 +9,9 @@
 import Foundation
 
 class MemoryStorage {
-    
+    var categories = TempData.categories
+    var expenditure = TempData.expenditure
+    var monthHistory = TempData.monthHistory
 }
 
 extension MemoryStorage: StorageType {
