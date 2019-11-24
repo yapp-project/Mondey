@@ -43,6 +43,7 @@ extension MonthlyScene: SceneType {
                 else {
                     return UIViewController()
             }
+            viewController.view.backgroundColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.4)
             viewController.modalPresentationStyle = .overCurrentContext
             viewController.bind(viewModel: viewModel)
             return viewController

@@ -12,7 +12,15 @@ class PickYearViewModel: BaseViewModel {
 
     func requestCloseButtonAction() -> CocoaAction {
         return Action { _ in
-            return self.sceneCoordinator.close(animated: true).asObservable().map { _ in }
+            return self.sceneCoordinator.close(animated: false).asObservable().map { _ in }
         }
+    }
+
+    func selectItem() {
+        
+    }
+
+    func saveSelectedYear(_ year: Int) {
+
     }
 }
