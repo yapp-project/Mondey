@@ -12,6 +12,8 @@ struct Category {
     let id: Int
     let title: String
     let subTitle: String
+    
+    var name: String
     var active: Bool
     var budget: Int
     var period: Period?
@@ -20,6 +22,8 @@ struct Category {
         self.id = initValue.id
         self.title = initValue.title
         self.subTitle = initValue.SubTitle
+        
+        self.name = initValue.title
         self.active = false
         self.budget = 0
         self.period = nil
@@ -29,6 +33,8 @@ struct Category {
         self.id = -1
         self.title = ""
         self.subTitle = ""
+        
+        self.name = ""
         self.active = false
         self.budget = 0
         self.period = nil
@@ -50,5 +56,20 @@ struct Category {
         case week
         case month
         case none
+    }
+}
+
+#warning("임시 데이터를 위한 확장 기능")
+extension Category {
+    
+    init(id: Int, budget: Int) {
+        self.id = MondeyHelper.mondeyCategoryId[id-1]
+        self.title = MondeyHelper.mondeyCategoryTitle[id-1]
+        self.subTitle = MondeyHelper.mondeyCategorySubTitle[id-1]
+        
+        self.name = MondeyHelper.mondeyCategoryTitle[id-1]
+        self.active = true
+        self.budget = budget
+        self.period = nil
     }
 }
