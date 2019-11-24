@@ -10,13 +10,13 @@ import Foundation
 
 struct TempData {
     static let categories = [
-        1: Category(id: 1, budget: 500000),
-        2: Category(id: 2, budget: 200000),
-        3: Category(id: 3, budget: 150000),
-        4: Category(id: 4, budget: 100000),
-        5: Category(id: 5, budget: 50000),
-        6: Category(id: 6, budget: 50000),
-        7: Category(id: 7, budget: 70000)
+        Category(id: 1, budget: 500000),
+        Category(id: 2, budget: 200000),
+        Category(id: 3, budget: 150000),
+        Category(id: 4, budget: 100000),
+        Category(id: 5, budget: 50000),
+        Category(id: 6, budget: 50000),
+        Category(id: 7, budget: 70000)
     ]
     static let expenditure = [
         Expenditure(id: 1, desc: "친구들과 만남", cost: 12000, date: "2019-11-01 22:35"),

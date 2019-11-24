@@ -9,9 +9,5 @@
 import Foundation
 
 class CoreDataStorage {
-    
-}
 
-extension CoreDataStorage: StorageType {
-    
 }
