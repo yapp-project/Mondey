@@ -10,10 +10,26 @@ import Foundation
 
 class MemoryStorage {
     var categories = TempData.categories
-    var expenditure = TempData.expenditure
+    var expenditures = TempData.expenditure
     var monthHistory = TempData.monthHistory
 }
 
 extension MemoryStorage: StorageType {
+    func create(expenditure: Expenditure) -> Observable<Expenditure> {
+        expenditures.append(expenditure)
+        
+        return Observable.just(expenditure)
+    }
     
+    func categoryList() -> Observable<[Category]> {
+        return Observable.just(categories)
+    }
+    
+    func history(at month: Int) -> Observable<MonthHistory?> {
+        return Observable.just(monthHistory[month])
+    }
+    
+    func expenditureList() -> Observable<[Expenditure]> {
+        return Observable.just(expenditures)
+    }
 }

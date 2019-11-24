@@ -61,7 +61,10 @@ extension BudgetSettingViewController: ViewModelBindableType {
             }
             .disposed(by: rx.disposeBag)
         
-        nextButton.rx.action = viewModel.presentPeriodAction()
+//        nextButton.rx.action = viewModel.presentPeriodAction()
+        
+        #warning("시연을 위한 기간 설정 및 알림 설정 화면 생략")
+        nextButton.rx.action = viewModel.presentFinishAction()
         
         viewModel.incomeString()
             .bind(to: budgetLabel.rx.text)
