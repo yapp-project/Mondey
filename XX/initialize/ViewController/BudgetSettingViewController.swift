@@ -68,6 +68,7 @@ extension BudgetSettingViewController: ViewModelBindableType {
             .disposed(by: rx.disposeBag)
         
         viewModel.totalBudget()
+            .map { "매달 \($0)만원 저축" }
             .bind(to: savingLabel.rx.text)
             .disposed(by: rx.disposeBag)
         

@@ -9,23 +9,33 @@
 import Foundation
 
 class PeriodSettingCellViewModel: SignUpSettingCellViewModel {
-    let periodType = BehaviorRelay<Category.Period?>(value: nil)
+    let periodType = BehaviorRelay<Category.Period>(value: .none)
     
-    override init() {
-        super.init()
-        
-        category.map { $0.period }
-            .bind(to: periodType)
-            .disposed(by: rx.disposeBag)
+    func dayOptionAction() -> CocoaAction {
+        return Action { [unowned self] action in
+            return Observable.just(action)
+                .map { Category.Period.day }
+                .map(self.updatePeriodType)
+        }
     }
     
-    func updatePeriod(_ period: Category.Period) {
-        guard let current = periodType.value else {
-            periodType.accept(period)
-            return
+    func weekOptionAction() -> CocoaAction {
+        return Action { [unowned self] action in
+            return Observable.just(action)
+                .map { Category.Period.week }
+                .map(self.updatePeriodType)
         }
-        
-        let value = (current == period) ? Category.Period.none : period
-        periodType.accept(value)
+    }
+    
+    func monthOptionAction() -> CocoaAction {
+        return Action { [unowned self] action in
+            return Observable.just(action)
+                .map { Category.Period.month }
+                .map(self.updatePeriodType)
+        }
+    }
+    
+    private func updatePeriodType(type: Category.Period) {
+        periodType.accept(type)
     }
 }

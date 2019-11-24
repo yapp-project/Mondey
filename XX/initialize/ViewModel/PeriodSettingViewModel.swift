@@ -15,13 +15,16 @@ class PeriodSettingViewModel: BaseViewModel {
     
     func addSubViewModels(index: Int, subViewModel: PeriodSettingCellViewModel) {
         subViewModel.periodType
-            .filter { $0 == nil }
             .subscribe(onNext: { [unowned self] period in
                 self.updatePeriodes(index: index, period: period)
             })
             .disposed(by: subViewModel.rx.disposeBag)
         
         subViewModels[index] = subViewModel
+    }
+    
+    func validSetting() -> Observable<Bool> {
+        return categories.map { $0.count == $0.filter({ ($0.period != nil) && ($0.period != Category.Period.none) }).count }
     }
     
     private func updatePeriodes(index: Int, period: Category.Period?) {

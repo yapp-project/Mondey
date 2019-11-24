@@ -23,6 +23,7 @@
 		BE30794A07C69501C35002C7B4A12C56 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B06779D33F3A91331AB10E1E71DF19C /* Category.swift */; };
 		7B3891592424EF60C327AD01CF9F9C87 /* CategorySettingCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 880B519144692C8D3AEA24ED7878F28D /* CategorySettingCellViewModel.swift */; };
 		096784B8E066D019896FF0FA39CD7A5A /* CategoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02CF0EFA887F01237D45193D24A1034C /* CategoryTableViewCell.swift */; };
+		3CE0EDBA9525767B14A2E8621371E6A3 /* CoreDataStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE709954C63C76F1F37370B480DC875E /* CoreDataStorage.swift */; };
 		9BBBD9C8A11AB8BFA3D92A2BC7C8EC0A /* IncomeSettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFBA8C0960E5EA91E9C847F9ED299C25 /* IncomeSettingViewController.swift */; };
 		E8E2BD1636B1E003174FE1EB46AA74F9 /* IncomeSettingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D00AB9B82604B3B1782A54E6C622B9D /* IncomeSettingViewModel.swift */; };
 		223ED72A730C213DD645FA2B9F5A799D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D701E25B9E0F2B7A4655B8CA13A21DB /* LaunchScreen.storyboard */; };
@@ -108,6 +109,7 @@
 		6B06779D33F3A91331AB10E1E71DF19C /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
 		880B519144692C8D3AEA24ED7878F28D /* CategorySettingCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CategorySettingCellViewModel.swift; path = XX/initialize/ViewModel/CellViewModel/CategorySettingCellViewModel.swift; sourceTree = SOURCE_ROOT; };
 		02CF0EFA887F01237D45193D24A1034C /* CategoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CategoryTableViewCell.swift; path = XX/initialize/View/TableViewCell/CategoryTableViewCell.swift; sourceTree = SOURCE_ROOT; };
+		AE709954C63C76F1F37370B480DC875E /* CoreDataStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStorage.swift; sourceTree = "<group>"; };
 		BFBA8C0960E5EA91E9C847F9ED299C25 /* IncomeSettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncomeSettingViewController.swift; sourceTree = "<group>"; };
 		7D00AB9B82604B3B1782A54E6C622B9D /* IncomeSettingViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IncomeSettingViewModel.swift; sourceTree = "<group>"; };
 		B77587401D77975FA2FD7C1F98CC1FD8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -372,6 +374,7 @@
 		890D7333D9BC88BFA90D07A4B5F3D485 /* CoreDataStorage */ = {
 			isa = PBXGroup;
 			children = (
+				AE709954C63C76F1F37370B480DC875E /* CoreDataStorage.swift */,
 				6A936F4821BD2FC82AAA38CB1DC2CC92 /* Mondey.xcdatamodeld */,
 			);
 			path = CoreDataStorage;
@@ -730,6 +733,7 @@
 				BE30794A07C69501C35002C7B4A12C56 /* Category.swift in Sources */,
 				7B3891592424EF60C327AD01CF9F9C87 /* CategorySettingCellViewModel.swift in Sources */,
 				096784B8E066D019896FF0FA39CD7A5A /* CategoryTableViewCell.swift in Sources */,
+				3CE0EDBA9525767B14A2E8621371E6A3 /* CoreDataStorage.swift in Sources */,
 				9BBBD9C8A11AB8BFA3D92A2BC7C8EC0A /* IncomeSettingViewController.swift in Sources */,
 				E8E2BD1636B1E003174FE1EB46AA74F9 /* IncomeSettingViewModel.swift in Sources */,
 				66B5D9CA9BE38D7BE26ED69861DB8828 /* LoginScene.swift in Sources */,
@@ -821,7 +825,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.yapp.XX1343;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yapp.XX;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "XX/XX-Bridging-Header.h";
@@ -961,7 +965,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.yapp.XX1343;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yapp.XX;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "XX/XX-Bridging-Header.h";
