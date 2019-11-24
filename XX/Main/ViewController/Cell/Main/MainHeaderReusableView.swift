@@ -75,7 +75,7 @@ extension MainHeaderReusableView: ViewModelBindableType {
         }
         spendButton.rx.action = viewModel.requestMainHeaderSwipeMoveAction(closureMoveCollectionViewChange, mode: .spend)
         savingButton.rx.action = viewModel.requestMainHeaderSwipeMoveAction(closureMoveCollectionViewChange, mode: .saving)
-//        removeModeButton.rx.action = viewModel.requestMainRemoveModeButtonAction()
+        removeModeButton.rx.action = viewModel.requestMainRemoveModeButtonAction()
     }
     
     private func bindCollectionView() {
@@ -137,6 +137,7 @@ extension MainHeaderReusableView: ViewModelBindableType {
                     else {
                         return UICollectionViewCell()
                 }
+                cell.viewModel = self.viewModel
                 
                 return cell
                 

@@ -31,7 +31,7 @@ class MainViewController: BaseViewController {
 
 extension MainViewController: ViewModelBindableType {
     func bindViewModel() {
-        guard let viewModel = viewModel else { return }
+//        guard let viewModel = viewModel else { return }
  
     }
     
@@ -60,17 +60,13 @@ extension MainViewController: ViewModelBindableType {
                 viewModel.requestSpendDetailMoveAction().execute()
             }
             .disposed(by: rx.disposeBag)
-        
-//
-//        collectionView
-//            .rx.itemSelected.bind(to: viewModel.requestSpendDetailMoveAction().inputs)
-//            // 셀쪽 이벤트 RX에 대해 알아봐야할듯 이 방법이 맞는지 모르겠음
-//            .disposed(by: rx.disposeBag)
-        
+ 
         
         collectionView
         .rx.setDelegate(self)
         .disposed(by: rx.disposeBag)
+        
+        viewModel.mainCollectionView = collectionView
         
         Observable.just(sections)
             .bind(to: collectionView.rx.items(dataSource: mainDatasource))
@@ -92,7 +88,10 @@ extension MainViewController: ViewModelBindableType {
             cell.cellIdx = indexPath.item
             if let viewModel = self.viewModel {
                 cell.viewModel = viewModel
+                
+                cell.removeCellButton.isHidden = viewModel.isMainCellRemoveMode
             }
+            
             return cell
         }
         

@@ -11,6 +11,7 @@ enum MainScene {
     case main(MainViewModel)
     case spendDetail(SpendDetailViewModel)
     case appSpend(AddSpendViewModel)
+    case choiceModal(MainViewModel)
 }
 
 extension MainScene: SceneType {
@@ -40,6 +41,14 @@ extension MainScene: SceneType {
             }
             
             viewController.bind(viewModel: viewModel)
+            return viewController
+        case .choiceModal(let viewModel):
+            guard var viewController = storyboard.instantiateViewController(withIdentifier: "ChoiceDataViewController") as? ChoiceDataViewController else {
+                return UIViewController()
+            }
+            viewController.bind(viewModel: viewModel)
+            viewController.modalPresentationStyle = .overCurrentContext
+            
             return viewController
         }
     }
