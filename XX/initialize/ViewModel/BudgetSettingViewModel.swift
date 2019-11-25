@@ -59,12 +59,27 @@ class BudgetSettingViewModel: BaseViewModel {
         subViewModels[index] = subViewModel
     }
     
-    func presentPeriodAction() -> CocoaAction {
-        return CocoaAction { [unowned self] action in
-            return Observable.just(action)
-                .withLatestFrom(self.categories)
-                .withLatestFrom(self.budgets, resultSelector: self.mergeCategoryAndBudget)
-                .flatMap(self.moveToPeriodView)
+    #warning("시연을 위한 기간 설정 및 알림 설정 화면 생략")
+//    func presentPeriodAction() -> CocoaAction {
+//        return CocoaAction { [unowned self] action in
+//            return Observable.just(action)
+//                .withLatestFrom(self.categories)
+//                .withLatestFrom(self.budgets, resultSelector: self.mergeCategoryAndBudget)
+//                .flatMap(self.moveToPeriodView)
+//        }
+//    }
+    
+    func presentFinishAction() -> CocoaAction {
+        let income = self.incomeValue.value
+        let categoryList = self.categories.value
+        
+        return CocoaAction { _ in
+            let viewModel = SignUpSettingCompletionViewModel(title: "설정완료", viewModel: self)
+            viewModel.incomeValue.accept(income)
+            viewModel.categories.accept(categoryList)
+            let scene = SignUpSettingScene.finish(viewModel)
+            
+            return self.sceneCoordinator.transition(to: scene, using: .modal, animated: true).asObservable().map { _ in }
         }
     }
     
