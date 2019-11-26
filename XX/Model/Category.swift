@@ -10,6 +10,7 @@ import Foundation
 
 struct Category {
     let id: Int
+    let tintColor: UIColor
     let title: String
     let subTitle: String
     
@@ -20,6 +21,7 @@ struct Category {
     
     init(initValue: MondeyHelper.Category) {
         self.id = initValue.id
+        self.tintColor = initValue.tintColor
         self.title = initValue.title
         self.subTitle = initValue.SubTitle
         
@@ -31,6 +33,7 @@ struct Category {
     
     init() {
         self.id = -1
+        self.tintColor = UIColor.black
         self.title = ""
         self.subTitle = ""
         
@@ -64,6 +67,7 @@ extension Category {
     
     init(id: Int, budget: Int) {
         self.id = MondeyHelper.mondeyCategoryId[id-1]
+        self.tintColor = MondeyHelper.mondeyCategoryTitleColor[id-1]
         self.title = MondeyHelper.mondeyCategoryTitle[id-1]
         self.subTitle = MondeyHelper.mondeyCategorySubTitle[id-1]
         

@@ -15,7 +15,6 @@ class MainViewController: BaseViewController {
     let MAIN_CELL_NAME = "MainCollectionViewCell"
     
     let MAIN_CELL_WIDTH = UIScreen.main.bounds.width * 0.405
-    
     var viewModel: MainViewModel?
     //    let bag = DisposeBag()
     
@@ -38,20 +37,16 @@ extension MainViewController: ViewModelBindableType {
     private func bindCollectionView() { 
         guard let viewModel = viewModel else { return }
         
-        let dummyData = ["default",
-                         "London",
-                         "Vienna",
-                         "Lisbon",
-                         "Lisbon",
-                         "Lisbon",
-                         "Lisbon",
-                         "Lisbon",
-                         "Lisbon",
-                         "Lisbon"]
+        
+        MemoryStorage.getInstance().categoryList().subscribe{
+            print("main-값에 변화가생겼음")
+        }.disposed(by: rx.disposeBag)
+        
+        let categoryArr: [Category] = MemoryStorage.getInstance().categories
         
         //뷰모델을 전달하면..?
         let sections = [
-            SectionModel<String, String>(model: "Fisrt", items: dummyData)
+            SectionModel<String, Category>(model: "Fisrt", items: categoryArr )
         ]
         
         collectionView
@@ -73,21 +68,30 @@ extension MainViewController: ViewModelBindableType {
             .disposed(by: rx.disposeBag)
     }
     
-    typealias MainSectionModel = SectionModel<String, String>
+    typealias MainSectionModel = SectionModel<String, Category>
     typealias MainCollectionViewDataSource = RxCollectionViewSectionedReloadDataSource<MainSectionModel>
     
     private var mainDatasource: MainCollectionViewDataSource {
-        let configureCell: (CollectionViewSectionedDataSource<MainSectionModel>, UICollectionView, IndexPath, String) -> UICollectionViewCell =
+        let configureCell: (CollectionViewSectionedDataSource<MainSectionModel>, UICollectionView, IndexPath, Category) -> UICollectionViewCell =
         { (datasource,
             collectionView,
             indexPath,
             element) in
             guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: self.MAIN_CELL_NAME, for: indexPath) as? MainCollectionViewCell
                 else { return UICollectionViewCell() }
+            //            print("element 조회 \(element)")
             
             cell.cellIdx = indexPath.item
             if let viewModel = self.viewModel {
                 cell.viewModel = viewModel
+                cell.category.accept(element)
+                
+                cell.filterCateogryAllValue.accept(
+                    MemoryStorage.getInstance().expenditures
+                    .filter{ $0.id == element.id }
+                    .map{ $0.cost }
+                    .reduce(0, { $0 + $1 })
+                )
                 
                 cell.removeCellButton.isHidden = viewModel.isMainCellRemoveMode
             }

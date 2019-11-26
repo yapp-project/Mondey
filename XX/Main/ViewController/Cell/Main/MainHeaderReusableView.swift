@@ -31,6 +31,10 @@ class MainHeaderReusableView: UICollectionReusableView {
     
     @IBOutlet weak var removeModeButton: UIButton!
     
+    @IBOutlet weak var useMoneyLabel: UILabel!
+    @IBOutlet weak var userBudgetLabel: UILabel!
+    
+    
     // 뷰모델 너무 많아질것을 고려하여 MainViewModel 갖다놓긴 함
     var viewModel: MainViewModel? = nil{
         didSet{
@@ -42,6 +46,7 @@ class MainHeaderReusableView: UICollectionReusableView {
     override func awakeFromNib() {
         super.awakeFromNib()
         setLayoutCollectionView()
+        setLayout()
         bindCollectionView()
     }
     
@@ -62,6 +67,10 @@ class MainHeaderReusableView: UICollectionReusableView {
         
         centeredCollectionViewFlowLayout.minimumLineSpacing = UIScreen.main.bounds.width * cellPercntSpacing
     }
+    
+    func setLayout() {
+        self.userBudgetLabel.text = String(UserDefaultManager.budget)
+    }
 }
 
 
@@ -76,7 +85,26 @@ extension MainHeaderReusableView: ViewModelBindableType {
         spendButton.rx.action = viewModel.requestMainHeaderSwipeMoveAction(closureMoveCollectionViewChange, mode: .spend)
         savingButton.rx.action = viewModel.requestMainHeaderSwipeMoveAction(closureMoveCollectionViewChange, mode: .saving)
         removeModeButton.rx.action = viewModel.requestMainRemoveModeButtonAction()
+        
+        
+        
+//        @IBOutlet weak var useMoneyLabel: UILabel!
+//        @IBOutlet weak var userBudgetLabel: UILabel!
+        
+        
+        MemoryStorage.getInstance().categoryList().subscribe{ [unowned self] (value) in
+//            print("값에 변화가 있수다 MainHeader \(value.element?.map{ $0.budget }.reduce(0, { $0 + $1 }))")
+            print("값에 변화가 있수다 MainHeader")
+//            let useMoney: Int? = value.element?.map{ $0.budget }.reduce(0, { $0 + $1 }) // 버그 : 두번째 nil로 들어옴
+//            if let useMoney = useMoney {
+//                self.useMoneyLabel.text = String(useMoney)
+//            }
+            
+        }.disposed(by: rx.disposeBag)
+        
     }
+    
+    
     
     private func bindCollectionView() {
         let dummyData = ["page - 1", "page - 2"]

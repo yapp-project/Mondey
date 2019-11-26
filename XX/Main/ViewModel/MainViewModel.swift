@@ -59,8 +59,25 @@ class MainViewModel: BaseViewModel {
              */
             
             
-            self.showAlert(title: "test",
-                      message: "정말로 지우시겠습니까?")
+//            self.showAlert(title: "test",
+//                      message: "정말로 지우시겠습니까?")
+            
+            MemoryStorage.getInstance().categoryList().subscribe{ [unowned self] (value) in
+                //            print("값에 변화가 있수다 MainHeader \(value.element?.map{ $0.budget }.reduce(0, { $0 + $1 }))")
+                
+                // 메인 뷰컨트롤러에서 구독한 값에대한 옵저버에서는 변화가 없으므로
+                // 여기서 컨트롤 해줘야할듯
+                // 같은 getINstance 일텐데.. 왜 안되는지 모르곘음
+                print("값에 변화가 있수다 MainHeader3333")
+                //            let useMoney: Int? = value.element?.map{ $0.budget }.reduce(0, { $0 + $1 }) // 버그 : 두번째 nil로 들어옴
+                //            if let useMoney = useMoney {
+                //                self.useMoneyLabel.text = String(useMoney)
+                //            }
+                
+                }.disposed(by: self.rx.disposeBag)
+            MemoryStorage.getInstance().categories.removeLast()
+            
+            
             
             return Observable.just(action)
         }
