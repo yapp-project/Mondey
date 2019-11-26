@@ -9,6 +9,10 @@
 import UIKit
 import CenteredCollectionView
 
+enum MainHeaderMode: Int {
+    case spend = 0
+    case saving = 1
+}
 
 class MainHeaderReusableView: UICollectionReusableView {
     let FIRST_CELL_NAME = "MainHeaderCollectionViewFirstCell"
@@ -22,14 +26,22 @@ class MainHeaderReusableView: UICollectionReusableView {
     @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var addSpendMoveButton: UIButton!
     
-    // 뷰모델 너무 많아질것을 고려하여 MainViewModel 갖다놓긴 했는데 어디서 이 뷰모델 값을 세팅해야할진 아직 고민 안해봄 ㅎㅎ!
-    var viewModel: MainViewModel?
+    @IBOutlet weak var spendButton: UIButton!
+    @IBOutlet weak var savingButton: UIButton!
+    
+    @IBOutlet weak var removeModeButton: UIButton!
+    
+    // 뷰모델 너무 많아질것을 고려하여 MainViewModel 갖다놓긴 함
+    var viewModel: MainViewModel? = nil{
+        didSet{
+            bindViewModel()
+        }
+    }
     let bag = DisposeBag()
     
     override func awakeFromNib() {
         super.awakeFromNib()
         setLayoutCollectionView()
-        bindViewModel()
         bindCollectionView()
     }
     
@@ -55,8 +67,15 @@ class MainHeaderReusableView: UICollectionReusableView {
 
 extension MainHeaderReusableView: ViewModelBindableType {
     func bindViewModel() {
-//        guard let viewModel = viewModel else { return }
-//        addSpendMoveButton.rx.action = viewModel.requestAddSpendMoveMoveAction()
+        guard let viewModel = viewModel else { return }
+        addSpendMoveButton.rx.action = self.viewModel?.requestAddSpendMoveMoveAction()
+        
+        let closureMoveCollectionViewChange: ((MainHeaderMode)->Void) = { [unowned self] (mode) in
+            self.moveCollectionViewPage(mode)
+        }
+        spendButton.rx.action = viewModel.requestMainHeaderSwipeMoveAction(closureMoveCollectionViewChange, mode: .spend)
+        savingButton.rx.action = viewModel.requestMainHeaderSwipeMoveAction(closureMoveCollectionViewChange, mode: .saving)
+        removeModeButton.rx.action = viewModel.requestMainRemoveModeButtonAction()
     }
     
     private func bindCollectionView() {
@@ -66,27 +85,42 @@ extension MainHeaderReusableView: ViewModelBindableType {
             SectionModel<String, String>(model: "first section", items: dummyData)
         ]
         
-               
         collectionView
-            .rx.didEndDecelerating
+            .rx
+            .didEndDecelerating
             .bind { () in
-//                print("Current centered index: \(String(describing: self.centeredCollectionViewFlowLayout.currentCenteredPage ?? nil))")
+                if let mainHeaderMode = MainHeaderMode(rawValue: self.centeredCollectionViewFlowLayout.currentCenteredPage ?? 0) {
+                    self.changeCollectionViewTitle(mainHeaderMode)
+                }
             }.disposed(by: rx.disposeBag)
         
         collectionView
-            .rx.didEndScrollingAnimation
+            .rx
+            .didEndScrollingAnimation
             .bind { () in
-//              print("Current centered index: \(String(describing: self.centeredCollectionViewFlowLayout.currentCenteredPage ?? nil))")
         }.disposed(by: rx.disposeBag)
         
         collectionView
-            .rx.itemSelected.bind { (indexPath) in
-//                print("indexPath >>> \(indexPath.item)")
+            .rx.itemSelected.bind { [unowned self] (indexPath) in
+                self.moveCollectionViewPage(MainHeaderMode(rawValue: indexPath.row) ?? .spend)
         }.disposed(by: rx.disposeBag)
         
         Observable.just(sections)
             .bind(to: collectionView.rx.items(dataSource: mainDatasource))
             .disposed(by: rx.disposeBag)
+    }
+    
+
+    func moveCollectionViewPage(_ mainHeaderMode: MainHeaderMode = .spend) {
+        self.centeredCollectionViewFlowLayout.scrollToPage(index: mainHeaderMode.rawValue, animated: true)
+        self.changeCollectionViewTitle(mainHeaderMode)
+    }
+    
+    func changeCollectionViewTitle(_ mainHeaderMode: MainHeaderMode = .spend) {
+        DispatchQueue.main.async {
+            self.spendButton.setTitleColor(mainHeaderMode == .spend ? #colorLiteral(red: 0.2, green: 0.2, blue: 0.2, alpha: 0.8470588235) : #colorLiteral(red: 0.6, green: 0.6, blue: 0.6, alpha: 0.8470588235), for:  .normal)
+            self.savingButton.setTitleColor(mainHeaderMode == .saving ? #colorLiteral(red: 0.2, green: 0.2, blue: 0.2, alpha: 0.8470588235) : #colorLiteral(red: 0.6, green: 0.6, blue: 0.6, alpha: 0.8470588235), for:  .normal)
+        }
     }
     
     typealias MainHeaderReusableSectionModel = SectionModel<String, String>
@@ -103,6 +137,7 @@ extension MainHeaderReusableView: ViewModelBindableType {
                     else {
                         return UICollectionViewCell()
                 }
+                cell.viewModel = self.viewModel
                 
                 return cell
                 

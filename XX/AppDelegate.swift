@@ -18,6 +18,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         let storage = MemoryStorage()
         let coordinator = SceneCoodinator(window: window!)
+<<<<<<< HEAD
+=======
+//        let viewModel = SignInViewModel(title: "로그인", sceneCoordinator: coordinator, storage: storage)
+//        let scene = LoginScene.signIn(viewModel)
+        let viewModel = MainViewModel(title: "메인", sceneCoordinator: coordinator, storage: storage)
+        let scene = MainScene.main(viewModel)
+>>>>>>> Main
         
         #warning("시연을 위한 로그인 화면 진입 막기")
 //        let viewModel = SignInViewModel(title: "로그인", sceneCoordinator: coordinator, storage: storage)

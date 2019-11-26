@@ -17,7 +17,7 @@ class MainViewController: BaseViewController {
     let MAIN_CELL_WIDTH = UIScreen.main.bounds.width * 0.405
     
     var viewModel: MainViewModel?
-//    let bag = DisposeBag()
+    //    let bag = DisposeBag()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,6 +32,7 @@ class MainViewController: BaseViewController {
 extension MainViewController: ViewModelBindableType {
     func bindViewModel() {
 //        guard let viewModel = viewModel else { return }
+ 
     }
     
     private func bindCollectionView() { 
@@ -59,17 +60,13 @@ extension MainViewController: ViewModelBindableType {
                 viewModel.requestSpendDetailMoveAction().execute()
             }
             .disposed(by: rx.disposeBag)
-        
-//
-//        collectionView
-//            .rx.itemSelected.bind(to: viewModel.requestSpendDetailMoveAction().inputs)
-//            // 셀쪽 이벤트 RX에 대해 알아봐야할듯 이 방법이 맞는지 모르겠음
-//            .disposed(by: rx.disposeBag)
-        
+ 
         
         collectionView
         .rx.setDelegate(self)
         .disposed(by: rx.disposeBag)
+        
+        viewModel.mainCollectionView = collectionView
         
         Observable.just(sections)
             .bind(to: collectionView.rx.items(dataSource: mainDatasource))
@@ -88,6 +85,13 @@ extension MainViewController: ViewModelBindableType {
             guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: self.MAIN_CELL_NAME, for: indexPath) as? MainCollectionViewCell
                 else { return UICollectionViewCell() }
             
+            cell.cellIdx = indexPath.item
+            if let viewModel = self.viewModel {
+                cell.viewModel = viewModel
+                
+                cell.removeCellButton.isHidden = viewModel.isMainCellRemoveMode
+            }
+            
             return cell
         }
         
@@ -101,8 +105,9 @@ extension MainViewController: ViewModelBindableType {
             indexPath) -> UICollectionReusableView in
             if let header = collectionView.dequeueReusableSupplementaryView(ofKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: self.HEADER_CELL_NAME, for: indexPath) as? MainHeaderReusableView {
                 
-                // 어떻게 하면 더 나은 방법으로 전달할수 있을가
-                header.addSpendMoveButton.rx.action = self.viewModel?.requestAddSpendMoveMoveAction()
+                if let viewModel = self.viewModel {
+                    header.viewModel = viewModel
+                }
                 
                 return header
             }
