@@ -46,6 +46,10 @@ extension NotiSettingViewController: ViewModelBindableType {
             .bind(to: alertButton.rx.isSelected)
             .disposed(by: rx.disposeBag)
         
+        timePicker.rx.date
+            .bind(to: viewModel.notiTime)
+            .disposed(by: rx.disposeBag)
+        
         alertButton.rx.action = viewModel.updateAlertOptionAction()
         nextButton.rx.action = viewModel.presentFinishAction()
     }
