@@ -25,6 +25,11 @@
 		096784B8E066D019896FF0FA39CD7A5A /* CategoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02CF0EFA887F01237D45193D24A1034C /* CategoryTableViewCell.swift */; };
 		3CE0EDBA9525767B14A2E8621371E6A3 /* CoreDataStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE709954C63C76F1F37370B480DC875E /* CoreDataStorage.swift */; };
 		F9A17F71F22C96AC514F120F2563D8EF /* Expenditure.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE9E515C5D03175E2771FE9E9D21712 /* Expenditure.swift */; };
+		6154FF1C5C74A574EBDFEC3529F5C486 /* GradeCellBindableType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E494FDCE0CB6DEEC3E54A9901BC44AF /* GradeCellBindableType.swift */; };
+		10A918CCBEBB8B0D73E8079345CFB9B7 /* GradeCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB2D142738EBC4E10C9D375CBBD74EB /* GradeCellViewModel.swift */; };
+		5082BF036B841500CF2959F35C62A424 /* GradeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9B348AD382C1E1A272CC23FDBB56AD8 /* GradeCollectionViewCell.swift */; };
+		420A472CC9DFBA095107644D4B52B8C7 /* GradeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE091B9BF7D984FAE0117331F2EC4F50 /* GradeTableViewCell.swift */; };
+		1BE4BCA54F2A156727953DF33B4A39D5 /* GraphTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A3DE21CCD91CED4FBECFD1D07ABC66B /* GraphTableViewCell.swift */; };
 		9BBBD9C8A11AB8BFA3D92A2BC7C8EC0A /* IncomeSettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFBA8C0960E5EA91E9C847F9ED299C25 /* IncomeSettingViewController.swift */; };
 		E8E2BD1636B1E003174FE1EB46AA74F9 /* IncomeSettingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D00AB9B82604B3B1782A54E6C622B9D /* IncomeSettingViewModel.swift */; };
 		223ED72A730C213DD645FA2B9F5A799D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D701E25B9E0F2B7A4655B8CA13A21DB /* LaunchScreen.storyboard */; };
@@ -33,7 +38,6 @@
 		1DA07E019DE561F5AA7F20FB7C8E2862 /* MDCellBindableType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70AB1816786FF8FC2F152145DFEA9321 /* MDCellBindableType.swift */; };
 		091EE4DAF6CB2C231BED5F47ECB67D4E /* MDListCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D24741270A1B65225714ED065B895927 /* MDListCellViewModel.swift */; };
 		21322B9D606AED748D9815711F21B4A0 /* MDListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D34C602C5110F21FCAEC91CBFCDB985A /* MDListTableViewCell.swift */; };
-		D958833CA2EE3768DC384689E218A05C /* MDSummaryCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4241A87070DCCBD7B21B4AEABD20F041 /* MDSummaryCellViewModel.swift */; };
 		02EBDD96D4B6C9D9DB4621BE55CE2A89 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF99EAF8D88AF592A9B17401D5C8884F /* Main.storyboard */; };
 		F3FA1C553CBCBBEE769BFE0616A3D99D /* MainCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13982E3E56023F3207D96856708BC53E /* MainCollectionViewCell.swift */; };
 		4A28D6B598AC748E421E0583B6BE7ED3 /* MainHeaderCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B83ED8FA2E97CAD6E2B1074F48314D5 /* MainHeaderCollectionViewCell.swift */; };
@@ -118,6 +122,11 @@
 		02CF0EFA887F01237D45193D24A1034C /* CategoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CategoryTableViewCell.swift; path = XX/initialize/View/TableViewCell/CategoryTableViewCell.swift; sourceTree = SOURCE_ROOT; };
 		AE709954C63C76F1F37370B480DC875E /* CoreDataStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStorage.swift; sourceTree = "<group>"; };
 		EBE9E515C5D03175E2771FE9E9D21712 /* Expenditure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Expenditure.swift; sourceTree = "<group>"; };
+		9E494FDCE0CB6DEEC3E54A9901BC44AF /* GradeCellBindableType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradeCellBindableType.swift; sourceTree = "<group>"; };
+		1FB2D142738EBC4E10C9D375CBBD74EB /* GradeCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradeCellViewModel.swift; sourceTree = "<group>"; };
+		B9B348AD382C1E1A272CC23FDBB56AD8 /* GradeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradeCollectionViewCell.swift; sourceTree = "<group>"; };
+		EE091B9BF7D984FAE0117331F2EC4F50 /* GradeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradeTableViewCell.swift; sourceTree = "<group>"; };
+		9A3DE21CCD91CED4FBECFD1D07ABC66B /* GraphTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphTableViewCell.swift; sourceTree = "<group>"; };
 		BFBA8C0960E5EA91E9C847F9ED299C25 /* IncomeSettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncomeSettingViewController.swift; sourceTree = "<group>"; };
 		7D00AB9B82604B3B1782A54E6C622B9D /* IncomeSettingViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IncomeSettingViewModel.swift; sourceTree = "<group>"; };
 		B77587401D77975FA2FD7C1F98CC1FD8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -126,7 +135,6 @@
 		70AB1816786FF8FC2F152145DFEA9321 /* MDCellBindableType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MDCellBindableType.swift; sourceTree = "<group>"; };
 		D24741270A1B65225714ED065B895927 /* MDListCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MDListCellViewModel.swift; sourceTree = "<group>"; };
 		D34C602C5110F21FCAEC91CBFCDB985A /* MDListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MDListTableViewCell.swift; sourceTree = "<group>"; };
-		4241A87070DCCBD7B21B4AEABD20F041 /* MDSummaryCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MDSummaryCellViewModel.swift; sourceTree = "<group>"; };
 		13982E3E56023F3207D96856708BC53E /* MainCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCollectionViewCell.swift; sourceTree = "<group>"; };
 		3B83ED8FA2E97CAD6E2B1074F48314D5 /* MainHeaderCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainHeaderCollectionViewCell.swift; sourceTree = "<group>"; };
 		18B5BE4108CCA8CF96EAD4F7168810AD /* MainHeaderCollectionViewFirstCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainHeaderCollectionViewFirstCell.xib; sourceTree = "<group>"; };
@@ -205,23 +213,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AAEFBE4751DD82F0F1C5256292F5DB00 /* CollectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				B9B348AD382C1E1A272CC23FDBB56AD8 /* GradeCollectionViewCell.swift */,
+			);
+			path = CollectionViewCell;
+			sourceTree = "<group>";
+		};
 		0FD86F6D781AFBE7B689B4DDF77566E4 /* TableViewCell */ = {
 			isa = PBXGroup;
 			children = (
+				EE091B9BF7D984FAE0117331F2EC4F50 /* GradeTableViewCell.swift */,
+				9A3DE21CCD91CED4FBECFD1D07ABC66B /* GraphTableViewCell.swift */,
 				D34C602C5110F21FCAEC91CBFCDB985A /* MDListTableViewCell.swift */,
 				C79DDE1F5D76110899286BF533D71B18 /* YearTableViewCell.swift */,
 			);
 			path = TableViewCell;
-			sourceTree = "<group>";
-		};
-		76197AED471CBA9C1FB7417E15663FF4 /* CellViewModel */ = {
-			isa = PBXGroup;
-			children = (
-				70AB1816786FF8FC2F152145DFEA9321 /* MDCellBindableType.swift */,
-				D24741270A1B65225714ED065B895927 /* MDListCellViewModel.swift */,
-				4241A87070DCCBD7B21B4AEABD20F041 /* MDSummaryCellViewModel.swift */,
-			);
-			path = CellViewModel;
 			sourceTree = "<group>";
 		};
 		11E48096121EB3429DE4C97CAD4D011F /* Scene */ = {
@@ -358,6 +366,17 @@
 				5F83A6CE5429EE16FF0B5133394310B9 /* MainModel.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		76197AED471CBA9C1FB7417E15663FF4 /* CellViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				9E494FDCE0CB6DEEC3E54A9901BC44AF /* GradeCellBindableType.swift */,
+				1FB2D142738EBC4E10C9D375CBBD74EB /* GradeCellViewModel.swift */,
+				70AB1816786FF8FC2F152145DFEA9321 /* MDCellBindableType.swift */,
+				D24741270A1B65225714ED065B895927 /* MDListCellViewModel.swift */,
+			);
+			path = CellViewModel;
 			sourceTree = "<group>";
 		};
 		769D1F8BC37B115CED4383BA1F1F0E0E /* MemoryStorage */ = {
@@ -547,9 +566,9 @@
 		CD6272C20BF505D4C0A903BACA5B00DF /* View */ = {
 			isa = PBXGroup;
 			children = (
+				AAEFBE4751DD82F0F1C5256292F5DB00 /* CollectionViewCell */,
 				0FD86F6D781AFBE7B689B4DDF77566E4 /* TableViewCell */,
 				380C37CCF6055811C851AD44AD882A6E /* Monthly.storyboard */,
-				DF0887A9D51B40622ADB73A3F16A86C5 /* YearTableViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -773,13 +792,17 @@
 				096784B8E066D019896FF0FA39CD7A5A /* CategoryTableViewCell.swift in Sources */,
 				3CE0EDBA9525767B14A2E8621371E6A3 /* CoreDataStorage.swift in Sources */,
 				F9A17F71F22C96AC514F120F2563D8EF /* Expenditure.swift in Sources */,
+				6154FF1C5C74A574EBDFEC3529F5C486 /* GradeCellBindableType.swift in Sources */,
+				10A918CCBEBB8B0D73E8079345CFB9B7 /* GradeCellViewModel.swift in Sources */,
+				5082BF036B841500CF2959F35C62A424 /* GradeCollectionViewCell.swift in Sources */,
+				420A472CC9DFBA095107644D4B52B8C7 /* GradeTableViewCell.swift in Sources */,
+				1BE4BCA54F2A156727953DF33B4A39D5 /* GraphTableViewCell.swift in Sources */,
 				9BBBD9C8A11AB8BFA3D92A2BC7C8EC0A /* IncomeSettingViewController.swift in Sources */,
 				E8E2BD1636B1E003174FE1EB46AA74F9 /* IncomeSettingViewModel.swift in Sources */,
 				66B5D9CA9BE38D7BE26ED69861DB8828 /* LoginScene.swift in Sources */,
 				1DA07E019DE561F5AA7F20FB7C8E2862 /* MDCellBindableType.swift in Sources */,
 				091EE4DAF6CB2C231BED5F47ECB67D4E /* MDListCellViewModel.swift in Sources */,
 				21322B9D606AED748D9815711F21B4A0 /* MDListTableViewCell.swift in Sources */,
-				D958833CA2EE3768DC384689E218A05C /* MDSummaryCellViewModel.swift in Sources */,
 				F3FA1C553CBCBBEE769BFE0616A3D99D /* MainCollectionViewCell.swift in Sources */,
 				4A28D6B598AC748E421E0583B6BE7ED3 /* MainHeaderCollectionViewCell.swift in Sources */,
 				4879A3262B77D21DE295E560E9B57A1F /* MainHeaderReusableView.swift in Sources */,

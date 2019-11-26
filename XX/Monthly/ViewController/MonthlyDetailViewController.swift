@@ -84,3 +84,4 @@ extension MonthlyDetailViewController: ViewModelBindableType {
 //            .disposed(by: rx.disposeBag)
 //    }
 //}
+
