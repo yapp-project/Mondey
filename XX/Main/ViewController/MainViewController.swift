@@ -16,7 +16,9 @@ class MainViewController: BaseViewController {
     
     let MAIN_CELL_WIDTH = UIScreen.main.bounds.width * 0.405
     var viewModel: MainViewModel?
-    //    let bag = DisposeBag()
+    
+    var reloadCollectionViewClosure: (() -> Void)?
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,42 +33,31 @@ class MainViewController: BaseViewController {
 extension MainViewController: ViewModelBindableType {
     func bindViewModel() {
 //        guard let viewModel = viewModel else { return }
- 
     }
     
     private func bindCollectionView() { 
         guard let viewModel = viewModel else { return }
         
-        
-        MemoryStorage.getInstance().categoryList().subscribe{
-            print("main-값에 변화가생겼음")
-        }.disposed(by: rx.disposeBag)
-        
-        let categoryArr: [Category] = MemoryStorage.getInstance().categories
-        
-        //뷰모델을 전달하면..?
-        let sections = [
-            SectionModel<String, Category>(model: "Fisrt", items: categoryArr )
-        ]
+        viewModel.sectionListSubject.asObserver()
+        .bind(to: collectionView.rx.items(dataSource: mainDatasource)).disposed(by: rx.disposeBag)
+ 
         
         collectionView
             .rx.itemSelected.bind { (indexPath) in
                 // 셀쪽 이벤트 RX에 대해 알아봐야할듯 이 방법이 맞는지 모르겠음
-                viewModel.requestSpendDetailMoveAction().execute()
+                if viewModel.isMainCellRemoveMode.value {
+                    viewModel.requestSpendDetailMoveAction().execute()
+                }
             }
             .disposed(by: rx.disposeBag)
- 
         
         collectionView
-        .rx.setDelegate(self)
-        .disposed(by: rx.disposeBag)
-        
-        viewModel.mainCollectionView = collectionView
-        
-        Observable.just(sections)
-            .bind(to: collectionView.rx.items(dataSource: mainDatasource))
+            .rx.setDelegate(self)
             .disposed(by: rx.disposeBag)
+        
     }
+    
+
     
     typealias MainSectionModel = SectionModel<String, Category>
     typealias MainCollectionViewDataSource = RxCollectionViewSectionedReloadDataSource<MainSectionModel>
@@ -87,13 +78,19 @@ extension MainViewController: ViewModelBindableType {
                 cell.category.accept(element)
                 
                 cell.filterCateogryAllValue.accept(
-                    MemoryStorage.getInstance().expenditures
+                    MemoryStorage.shared.expenditures
                     .filter{ $0.id == element.id }
                     .map{ $0.cost }
                     .reduce(0, { $0 + $1 })
                 )
                 
-                cell.removeCellButton.isHidden = viewModel.isMainCellRemoveMode
+                viewModel
+                    .isMainCellRemoveMode
+                    .subscribe
+                    { (value) in
+                        cell.removeCellButton.rx.isHidden.on(value)
+                    }
+                    .disposed(by: self.rx.disposeBag)
             }
             
             return cell

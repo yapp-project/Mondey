@@ -11,17 +11,7 @@ import Foundation
 class MemoryStorage {
     
     // 싱글톤 객체
-    static private var memoryStorage: MemoryStorage? = nil
-    
-    static func getInstance() -> MemoryStorage {
-        
-        if self.memoryStorage == nil {
-            self.memoryStorage = MemoryStorage()
-        }
-        
-        return self.memoryStorage! 
-    }
-    
+    static let shared = MemoryStorage()
     
     var categories = TempData.categories
     var expenditures = TempData.expenditure

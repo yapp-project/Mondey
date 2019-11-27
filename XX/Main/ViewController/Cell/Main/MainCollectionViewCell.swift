@@ -58,7 +58,8 @@ class MainCollectionViewCell: UICollectionViewCell {
 extension MainCollectionViewCell: ViewModelBindableType {
     func bindViewModel() {
         guard let viewModel = viewModel else { return }
-        removeCellButton.rx.action = viewModel.requestMainCellRemoveModeButtonAction(cellIdx: cellIdx ?? 0,
+        removeCellButton.rx.action = viewModel.requestMainCellRemoveModeButtonAction(title: self.mainCellCategoryLabel.text ?? "-",
+                                                                                     cellIdx: cellIdx ?? 0,
                                                                                      button: &removeCellButton)
         
         category.subscribe { [unowned self] value in

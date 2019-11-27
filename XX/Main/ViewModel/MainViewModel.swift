@@ -10,8 +10,24 @@ import UIKit
 
 class MainViewModel: BaseViewModel {
     let category = BehaviorRelay<Category>(value: .init())
+    var reloadCollectionViewClosure: (() -> Void)?  // 메인 컬렉션뷰리로드
+    let sectionListSubject = BehaviorSubject(value: [SectionModel(model: "First section", items: MemoryStorage.shared.categories)])
+     
+    func removeItem(at idx: Int) {
+        guard var sections = try? sectionListSubject.value() else { return }
+        
+        var currentSection = sections[0] // 100% 하나는 있기떄문
+        currentSection.items.remove(at: idx)
+        sections[0] = currentSection
+        
+        
+        
+        let category = MemoryStorage.shared.categories.remove(at: idx)
     
-//    func requestSpendDetailMoveAction() -> Action<IndexPath, Void> {
+        MemoryStorage.shared.expenditures = MemoryStorage.shared.expenditures.filter{ $0.id != category.id }
+        sectionListSubject.onNext(sections)
+    }
+    
     func requestSpendDetailMoveAction() -> CocoaAction {
         return Action { _ in
             let viewModel = SpendDetailViewModel(title: "지출디테일", sceneCoordinator: self.sceneCoordinator, storage: self.storage)
@@ -43,39 +59,47 @@ class MainViewModel: BaseViewModel {
     
     // MARK: MainCollectionViewCell
     var mainCollectionView: UICollectionView? = nil
-    var isMainCellRemoveMode: Bool = true {
-        didSet {
-            mainCollectionView?.reloadData()
-        }
-    }
+    var isMainCellRemoveMode = BehaviorRelay<Bool>(value: true)
     
-    func requestMainCellRemoveModeButtonAction(cellIdx: Int,
-                                           button: inout UIButton) -> CocoaAction {
+    func requestMainCellRemoveModeButtonAction(title: String,
+                                               cellIdx: Int,
+                                               button: inout UIButton) -> CocoaAction {
         return Action { action in
-            /*
-                1. 여기서 지출 내역 데이터 삭제하기
-                2. showAlart에 title 부여
-                3. alert에 액션 부여
-             */
+            
+//
+//            self.showAlert(title: title,
+//                           message: "정말로 지우시겠습니까?")
+            
+            UIAlertController
+                .alert(title: title,
+                       message: "정말로 지우시겠습니까?",
+                       style: .alert)
+                .action(title: "확인", style: .default) { _ in
+                    self.removeItem(at: cellIdx)
+                }
+                .action(title: "취소", style: .default) { _ in }
+                .present(to: MondeyHelper.getTopViewController() )
             
             
-//            self.showAlert(title: "test",
-//                      message: "정말로 지우시겠습니까?")
             
-            MemoryStorage.getInstance().categoryList().subscribe{ [unowned self] (value) in
-                //            print("값에 변화가 있수다 MainHeader \(value.element?.map{ $0.budget }.reduce(0, { $0 + $1 }))")
+            MemoryStorage.shared.categoryList().subscribe{ [unowned self] (value) in
+                if let value = value.element {
+                    print("값에 변화가 있수다 MainHeader3333 \(value.count)")
+                    
+                    //            print("값에 변화가 있수다 MainHeader \(value.element?.map{ $0.budget }.reduce(0, { $0 + $1 }))")
+                    
+                    //            let useMoney: Int? = value.element?.map{ $0.budget }.reduce(0, { $0 + $1 }) // 버그 : 두번째 nil로 들어옴
+                    //            if let useMoney = useMoney {
+                    //                self.useMoneyLabel.text = String(useMoney)
+                    //            }
+                    
+                    
+                    
+                    // 값변화시 나의 소비평가  갱신
+                }
+
                 
-                // 메인 뷰컨트롤러에서 구독한 값에대한 옵저버에서는 변화가 없으므로
-                // 여기서 컨트롤 해줘야할듯
-                // 같은 getINstance 일텐데.. 왜 안되는지 모르곘음
-                print("값에 변화가 있수다 MainHeader3333")
-                //            let useMoney: Int? = value.element?.map{ $0.budget }.reduce(0, { $0 + $1 }) // 버그 : 두번째 nil로 들어옴
-                //            if let useMoney = useMoney {
-                //                self.useMoneyLabel.text = String(useMoney)
-                //            }
-                
-                }.disposed(by: self.rx.disposeBag)
-            MemoryStorage.getInstance().categories.removeLast()
+                }.disposed(by: self.rx.disposeBag) 
             
             
             
@@ -93,8 +117,8 @@ class MainViewModel: BaseViewModel {
     
     // MARK: MainHeaderReusableView
     func requestMainRemoveModeButtonAction() -> CocoaAction {
-        return Action { action in
-            self.isMainCellRemoveMode = !self.isMainCellRemoveMode
+        return Action { [unowned self] action in 
+            self.isMainCellRemoveMode.accept(!self.isMainCellRemoveMode.value)
             return Observable.just(action)
         }
     }

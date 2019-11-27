@@ -92,13 +92,16 @@ extension MainHeaderReusableView: ViewModelBindableType {
 //        @IBOutlet weak var userBudgetLabel: UILabel!
         
         
-        MemoryStorage.getInstance().categoryList().subscribe{ [unowned self] (value) in
-//            print("값에 변화가 있수다 MainHeader \(value.element?.map{ $0.budget }.reduce(0, { $0 + $1 }))")
-            print("값에 변화가 있수다 MainHeader")
-//            let useMoney: Int? = value.element?.map{ $0.budget }.reduce(0, { $0 + $1 }) // 버그 : 두번째 nil로 들어옴
-//            if let useMoney = useMoney {
-//                self.useMoneyLabel.text = String(useMoney)
-//            }
+        MemoryStorage.shared.categoryList().subscribe{ [unowned self] (value) in
+            //            print("값에 변화가 있수다 MainHeader \(value.element?.map{ $0.budget }.reduce(0, { $0 + $1 }))")
+            
+            if value.element != nil {
+                print("값에 변화가 있수다 MainHeader \(value.element?.count)")
+                //            let useMoney: Int? = value.element?.map{ $0.budget }.reduce(0, { $0 + $1 }) // 버그 : 두번째 nil로 들어옴
+                //            if let useMoney = useMoney {
+                //                self.useMoneyLabel.text = String(useMoney)
+                //            }
+            }
             
         }.disposed(by: rx.disposeBag)
         
