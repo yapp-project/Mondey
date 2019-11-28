@@ -32,7 +32,11 @@ class MondeyHelper: NSObject {
     ]
     
     static let mondeyCategory =
-        mondeyCategoryId.map { Category(id: $0, title: mondeyCategoryTitle[$0 - 1], SubTitle: mondeyCategorySubTitle[$0 - 1]) }
+        mondeyCategoryId
+            .map {
+                Category(id: $0, title: mondeyCategoryTitle[$0 - 1], SubTitle: mondeyCategorySubTitle[$0 - 1])
+                
+    }
     
     struct Category {
         let id: Int
