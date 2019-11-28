@@ -29,6 +29,7 @@ class GradeCollectionViewCell: UICollectionViewCell {
 extension GradeCollectionViewCell: GradeCellBindableType {
     func bindViewModel() {
         guard let viewModel = viewModel else { return }
+        
 
     }
 
@@ -37,3 +38,14 @@ extension GradeCollectionViewCell: GradeCellBindableType {
         monthLabel.text = "3월"
     }
 }
+
+//guard let viewModel = viewModel else { return }
+//signInButton.rx.action = viewModel.presentSignInAction()
+//singUpButton.rx.action = viewModel.presentSignUpAction()
+//
+//emailTextField.rx.text.orEmpty
+//    .bind(to: viewModel.emailTextRelay)
+//    .disposed(by: rx.disposeBag)
+//passwordTextField.rx.text.orEmpty
+//    .bind(to: viewModel.passwordTextRelauy)
+//    .disposed(by: rx.disposeBag)

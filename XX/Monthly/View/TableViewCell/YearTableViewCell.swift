@@ -9,6 +9,7 @@
 import UIKit
 
 class YearTableViewCell: UITableViewCell {
+    
     @IBOutlet weak var yearLabel: UILabel!
     @IBOutlet weak var checkImageView: UIImageView!
 
@@ -16,10 +17,4 @@ class YearTableViewCell: UITableViewCell {
         super.awakeFromNib()
 
     }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-    }
-
 }
