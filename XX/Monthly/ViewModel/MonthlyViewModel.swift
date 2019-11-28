@@ -23,5 +23,9 @@ class MonthlyViewModel: BaseViewModel {
                 .asObservable().map { _ in }
         }
     }
+
+    func calculateGrade() {
+        
+    }
     
 }
