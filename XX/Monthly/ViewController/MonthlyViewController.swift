@@ -10,11 +10,9 @@ import UIKit
 
 class MonthlyViewController: BaseViewController {
 
-    
-    
+    @IBOutlet weak var monthlyTableView: UITableView!
 
-
-//    static let reuseIdentifier = "GradeCollectionViewCell"
+    //    static let reuseIdentifier = "GradeCollectionViewCell"
     let MAIN_CELL_WIDTH = UIScreen.main.bounds.width * 0.405
 
     var viewModel: MonthlyViewModel?
@@ -40,13 +38,13 @@ extension MonthlyViewController: ViewModelBindableType {
         let dummy = ["A", "B", "C"]
         let sections = [SectionModel<String, String>(model: "1", items: dummy)]
 
-//        gradeCollectionView.rx.itemSelected.bind { (indexPath) in
-//            //            viewModel.req
-//            }.disposed(by: rx.disposeBag)
-//
-//        gradeCollectionView
-//            .rx.setDelegate(self)
-//            .disposed(by: rx.disposeBag)
+        //        gradeCollectionView.rx.itemSelected.bind { (indexPath) in
+        //            //            viewModel.req
+        //            }.disposed(by: rx.disposeBag)
+        //
+        //        gradeCollectionView
+        //            .rx.setDelegate(self)
+        //            .disposed(by: rx.disposeBag)
 
         //        Observable.just(sections)
         //        .bind(to: gradeCollectionView.rx.items(dataSource: mainDataSource))
@@ -66,15 +64,68 @@ extension MonthlyViewController: ViewModelBindableType {
 
 }
 
-extension MonthlyViewController: UICollectionViewDelegateFlowLayout {
+//extension MonthlyViewController: UICollectionViewDelegateFlowLayout {
+//
+//    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+//        return CGSize(width: MAIN_CELL_WIDTH,
+//                      height: MAIN_CELL_WIDTH)
+//    }
+//
+//    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
+//        let padding = (UIScreen.main.bounds.width - (MAIN_CELL_WIDTH * 2)) / 4 + 10
+//        return UIEdgeInsets(top: 0, left: padding, bottom: 0, right: padding)
+//    }
+//}
 
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: MAIN_CELL_WIDTH,
-                      height: MAIN_CELL_WIDTH)
+extension MonthlyViewController: UITableViewDataSource {
+
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 2
     }
 
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
-        let padding = (UIScreen.main.bounds.width - (MAIN_CELL_WIDTH * 2)) / 4 + 10
-        return UIEdgeInsets(top: 0, left: padding, bottom: 0, right: padding)
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 1
+    }
+
+    func tableView(_ tableView: UITableView,
+                   cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+
+        switch indexPath.section {
+        case 0:
+            guard let gradeCell = tableView
+                .dequeueReusableCell(withIdentifier: "GradeTableViewCell",
+                                     for: indexPath) as? GradeTableViewCell
+                else { return UITableViewCell() }
+
+            return gradeCell
+
+        case 1:
+            guard let graphCell = tableView
+                .dequeueReusableCell(withIdentifier: "GraphTableViewCell",
+                                     for: indexPath) as? GraphTableViewCell
+                else { return UITableViewCell() }
+
+            graphCell.setProperties()
+
+            return graphCell
+
+        default:
+            return UITableViewCell()
+        }
+
+    }
+
+    
+}
+
+extension MonthlyViewController: UITableViewDelegate {
+
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+
+        if indexPath.section == 0 {
+            return 540
+        } else {
+            return 230
+        }
     }
 }

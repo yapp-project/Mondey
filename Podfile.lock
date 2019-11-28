@@ -3,6 +3,9 @@ PODS:
     - RxCocoa (~> 5.0)
     - RxSwift (~> 5.0)
   - CenteredCollectionView (2.2.1)
+  - Charts (3.4.0):
+    - Charts/Core (= 3.4.0)
+  - Charts/Core (3.4.0)
   - Differentiator (4.0.1)
   - "NSObject+Rx (5.0.2)":
     - RxSwift (~> 5.0)
@@ -27,6 +30,7 @@ PODS:
 DEPENDENCIES:
   - Action
   - CenteredCollectionView
+  - Charts
   - "NSObject+Rx"
   - RxCocoa (~> 5)
   - RxCoreData
@@ -39,6 +43,7 @@ SPEC REPOS:
   trunk:
     - Action
     - CenteredCollectionView
+    - Charts
     - Differentiator
     - "NSObject+Rx"
     - RxCocoa
@@ -52,6 +57,7 @@ SPEC REPOS:
 SPEC CHECKSUMS:
   Action: 0d14986aad0f1330aa27ce65d0cdeaacbb63d91c
   CenteredCollectionView: ba6e45fb7774627890621d73c8dd7dbd33391da9
+  Charts: 74c9f256eaf0460c0c416522d1cf8c634ea6b286
   Differentiator: 886080237d9f87f322641dedbc5be257061b0602
   "NSObject+Rx": 2eb2cf51fd1c554118449a7fbc36e4cd620b9e94
   RxCocoa: e741b9749968e8a143e2b787f1dfbff2b63d0a5c
@@ -62,6 +68,6 @@ SPEC CHECKSUMS:
   RxSwift: e2dc62b366a3adf6a0be44ba9f405efd4c94e0c4
   SwiftKeychainWrapper: 6fc49fbf7d4a6b0772917acb0e53a1639f6078d6
 
-PODFILE CHECKSUM: c9c0a25f57014fc080ea9aecb03b9f09d54bf362
+PODFILE CHECKSUM: 9d037902ebf6f6011143d431099a00eb400c54c7
 
 COCOAPODS: 1.8.4

@@ -9,20 +9,30 @@
 import UIKit
 
 class GradeTableViewCell: UITableViewCell {
-
+    
     @IBOutlet weak var yearButton: UIButton!
     @IBOutlet weak var gradeCollectionView: UICollectionView!
 
-    let gradeData = [1: "A", 1: "A", 1: "C", 1: "A", 1: "A",
-                     1: "A", 1: "A", 1: "B", 1: "A", 1: "A"]
+    let gradeData = ["B", "A", "C", "A", "C",
+                     "B", "D", "B", "A", "A"]
+    var viewModel: MonthlyViewModel?
 
     override func awakeFromNib() {
         super.awakeFromNib()
 
         gradeCollectionView.dataSource = self
+        bindViewModel()
     }
+    
+    
+}
 
-
+extension GradeTableViewCell: ViewModelBindableType {
+    
+    func bindViewModel() {
+        guard let viewModel = viewModel else { return }
+        yearButton.rx.action = viewModel.presentingSelectYear()
+    }
 }
 
 extension GradeTableViewCell: UICollectionViewDataSource {
@@ -30,17 +40,18 @@ extension GradeTableViewCell: UICollectionViewDataSource {
                         numberOfItemsInSection section: Int) -> Int {
         return 10
     }
-
+    
     func collectionView(_ collectionView: UICollectionView,
                         cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         guard let cell = collectionView
-            .dequeueReusableCell(withReuseIdentifier: "gradeCollectionViewCell",
+            .dequeueReusableCell(withReuseIdentifier: "GradeCollectionViewCell",
                                  for: indexPath) as? GradeCollectionViewCell
             else { return UICollectionViewCell() }
 
-        cell.setProperties(gradeData)
-
+        let grade = gradeData[indexPath.row]
+        cell.setProperties(month: indexPath.row, grade: grade)
+        
         return cell
     }
-
+    
 }

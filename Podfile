@@ -11,4 +11,5 @@ target 'XX' do
     pod 'RxGesture'
     pod 'SwiftKeychainWrapper'
     pod 'CenteredCollectionView'
+    pod 'Charts'
 end
