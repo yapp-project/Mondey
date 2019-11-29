@@ -34,7 +34,7 @@
                                     <view contentMode="scaleToFill" horizontalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="mgh-D4-tUs" userLabel="Where View">
                                         <rect key="frame" x="0.0" y="0.0" width="169.5" height="19.5"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" text="어디서" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GIt-VI-rW5">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" text="어떻게" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GIt-VI-rW5">
                                                 <rect key="frame" x="0.0" y="0.0" width="36" height="19.5"/>
                                                 <fontDescription key="fontDescription" name="SpoqaHanSans-Regular" family="SpoqaHanSans" pointSize="13"/>
                                                 <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
@@ -79,7 +79,7 @@
                                     <view contentMode="scaleToFill" horizontalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="yee-b9-6aW" userLabel="How View">
                                         <rect key="frame" x="0.0" y="37.5" width="169.5" height="19.5"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" text="어떻게" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0FB-c0-C9o">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" text="어디서" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0FB-c0-C9o">
                                                 <rect key="frame" x="0.0" y="0.0" width="41" height="19.5"/>
                                                 <fontDescription key="fontDescription" name="SpoqaHanSans-Regular" family="SpoqaHanSans" pointSize="13"/>
                                                 <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
@@ -147,7 +147,7 @@
                                                     <constraint firstAttribute="bottom" secondItem="2Wo-qQ-gas" secondAttribute="bottom" id="zwq-G6-rVP"/>
                                                 </constraints>
                                             </view>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" text="어디서" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Bk-4G-0Tf">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" text="얼마를" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Bk-4G-0Tf">
                                                 <rect key="frame" x="0.0" y="0.0" width="41" height="19.5"/>
                                                 <fontDescription key="fontDescription" name="SpoqaHanSans-Regular" family="SpoqaHanSans" pointSize="13"/>
                                                 <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
@@ -189,13 +189,20 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FmG-oL-3pc">
+                                <rect key="frame" x="0.0" y="0.0" width="46" height="150"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" name="tealish"/>
                         <constraints>
                             <constraint firstItem="2hr-qB-ZFg" firstAttribute="centerY" secondItem="kn1-hc-J4v" secondAttribute="centerY" id="CML-wt-gPK"/>
                             <constraint firstAttribute="trailing" secondItem="2hr-qB-ZFg" secondAttribute="trailing" constant="5" id="DUf-u4-BkP"/>
+                            <constraint firstAttribute="bottom" secondItem="FmG-oL-3pc" secondAttribute="bottom" id="E8r-z0-PVX"/>
+                            <constraint firstItem="FmG-oL-3pc" firstAttribute="leading" secondItem="kn1-hc-J4v" secondAttribute="leading" id="EIX-tJ-mo9"/>
                             <constraint firstItem="2hr-qB-ZFg" firstAttribute="centerX" secondItem="kn1-hc-J4v" secondAttribute="centerX" id="MkX-ZN-hkU"/>
+                            <constraint firstAttribute="trailing" secondItem="FmG-oL-3pc" secondAttribute="trailing" id="W1U-h5-QwW"/>
                             <constraint firstItem="2hr-qB-ZFg" firstAttribute="leading" secondItem="kn1-hc-J4v" secondAttribute="leading" constant="5" id="aPj-GG-5OG"/>
+                            <constraint firstItem="FmG-oL-3pc" firstAttribute="top" secondItem="kn1-hc-J4v" secondAttribute="top" id="ehg-Gw-aQc"/>
                         </constraints>
                     </view>
                 </subviews>
@@ -213,6 +220,9 @@
             </constraints>
             <viewLayoutGuide key="safeArea" id="c3m-8K-5RN"/>
             <size key="customSize" width="272" height="150"/>
+            <connections>
+                <outlet property="okButton" destination="FmG-oL-3pc" id="Igc-gi-2nN"/>
+            </connections>
             <point key="canvasLocation" x="-10.144927536231885" y="37.5"/>
         </collectionViewCell>
     </objects>

@@ -15,12 +15,14 @@ class MainViewController: BaseViewController {
     let MAIN_CELL_NAME = "MainCollectionViewCell"
     
     let MAIN_CELL_WIDTH = UIScreen.main.bounds.width * 0.405
-    
     var viewModel: MainViewModel?
-//    let bag = DisposeBag()
+    
+    var reloadCollectionViewClosure: (() -> Void)?
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        bindViewModel()
         bindCollectionView()
     }
     
@@ -31,62 +33,88 @@ class MainViewController: BaseViewController {
 
 extension MainViewController: ViewModelBindableType {
     func bindViewModel() {
-//        guard let viewModel = viewModel else { return }
+        guard let viewModel = viewModel else { return }
+        
+        MondeyHelper.shared.mondeyMainAddHelper = {
+            (categoryIdx, idx, name, money) -> Void in
+            
+            var category = Category()
+            
+            category.id              = idx
+            category.catTintColor    = MondeyHelper.mondeyCategoryTitleColor[categoryIdx-1]
+            category.name            = name
+            category.active          = true
+            category.budget          = money
+            category.period          = nil
+            
+            
+            viewModel.addItem(category: category)
+        }
+        
+        MondeyHelper.shared.mondeyMainRemoveHelper = {
+            (idx) -> Void in
+            viewModel.removeItem(at: idx)
+        }
     }
     
     private func bindCollectionView() { 
         guard let viewModel = viewModel else { return }
         
-        let dummyData = ["default",
-                         "London",
-                         "Vienna",
-                         "Lisbon",
-                         "Lisbon",
-                         "Lisbon",
-                         "Lisbon",
-                         "Lisbon",
-                         "Lisbon",
-                         "Lisbon"]
-        
-        //뷰모델을 전달하면..?
-        let sections = [
-            SectionModel<String, String>(model: "Fisrt", items: dummyData)
-        ]
-        
+        viewModel.sectionListSubject.asObserver()
+        .bind(to: collectionView.rx.items(dataSource: mainDatasource)).disposed(by: rx.disposeBag)
+  
         collectionView
             .rx.itemSelected.bind { (indexPath) in
                 // 셀쪽 이벤트 RX에 대해 알아봐야할듯 이 방법이 맞는지 모르겠음
-                viewModel.requestSpendDetailMoveAction().execute()
+                if viewModel.isMainCellRemoveMode.value {
+                    viewModel.requestSpendDetailMoveAction().execute()
+                }
             }
             .disposed(by: rx.disposeBag)
         
-//
-//        collectionView
-//            .rx.itemSelected.bind(to: viewModel.requestSpendDetailMoveAction().inputs)
-//            // 셀쪽 이벤트 RX에 대해 알아봐야할듯 이 방법이 맞는지 모르겠음
-//            .disposed(by: rx.disposeBag)
-        
-        
         collectionView
-        .rx.setDelegate(self)
-        .disposed(by: rx.disposeBag)
-        
-        Observable.just(sections)
-            .bind(to: collectionView.rx.items(dataSource: mainDatasource))
+            .rx.setDelegate(self)
             .disposed(by: rx.disposeBag)
+        
+        
+        
     }
     
-    typealias MainSectionModel = SectionModel<String, String>
+
+    
+    typealias MainSectionModel = SectionModel<String, Category>
     typealias MainCollectionViewDataSource = RxCollectionViewSectionedReloadDataSource<MainSectionModel>
     
     private var mainDatasource: MainCollectionViewDataSource {
-        let configureCell: (CollectionViewSectionedDataSource<MainSectionModel>, UICollectionView, IndexPath, String) -> UICollectionViewCell =
+        let configureCell: (CollectionViewSectionedDataSource<MainSectionModel>, UICollectionView, IndexPath, Category) -> UICollectionViewCell =
         { (datasource,
             collectionView,
             indexPath,
             element) in
             guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: self.MAIN_CELL_NAME, for: indexPath) as? MainCollectionViewCell
                 else { return UICollectionViewCell() }
+            //            print("element 조회 \(element)")
+            
+            cell.cellIdx = indexPath.item
+            if let viewModel = self.viewModel {
+                cell.viewModel = viewModel
+                cell.category.accept(element)
+                
+                cell.filterCateogryAllValue.accept(
+                    MemoryStorage.shared.expenditures
+                    .filter{ $0.id == element.id }
+                    .map{ $0.cost }
+                    .reduce(0, { $0 + $1 })
+                )
+                
+                viewModel
+                    .isMainCellRemoveMode
+                    .subscribe
+                    { (value) in
+                        cell.removeCellButton.rx.isHidden.on(value)
+                    }
+                    .disposed(by: self.rx.disposeBag)
+            }
             
             return cell
         }
@@ -101,8 +129,9 @@ extension MainViewController: ViewModelBindableType {
             indexPath) -> UICollectionReusableView in
             if let header = collectionView.dequeueReusableSupplementaryView(ofKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: self.HEADER_CELL_NAME, for: indexPath) as? MainHeaderReusableView {
                 
-                // 어떻게 하면 더 나은 방법으로 전달할수 있을가
-                header.addSpendMoveButton.rx.action = self.viewModel?.requestAddSpendMoveMoveAction()
+                if let viewModel = self.viewModel {
+                    header.viewModel = viewModel
+                }
                 
                 return header
             }

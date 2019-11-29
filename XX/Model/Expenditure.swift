@@ -7,16 +7,14 @@
 //
 
 import Foundation
+//import RealmSwift
+//import RxRealm
 
 struct Expenditure {
     let id: Int
     let desc: String
     let cost: Int
     let date: Date
-}
-
-extension Expenditure {
-    
     
     init(id: Int, desc: String, cost: Int, date: String) {
         let formatter = DateFormatter()

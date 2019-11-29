@@ -40,9 +40,9 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="9VH-Yk-tQb">
-                                        <rect key="frame" x="37" y="64.5" width="100" height="43"/>
+                                        <rect key="frame" x="72" y="64.5" width="30" height="43"/>
                                         <subviews>
-                                            <view contentMode="scaleToFill" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" translatesAutoresizingMaskIntoConstraints="NO" id="gsv-mZ-DxN">
+                                            <view hidden="YES" contentMode="scaleToFill" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" translatesAutoresizingMaskIntoConstraints="NO" id="gsv-mZ-DxN">
                                                 <rect key="frame" x="0.0" y="0.0" width="20" height="43"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" text="C" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Muy-rO-E4W">
@@ -71,16 +71,16 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" translatesAutoresizingMaskIntoConstraints="NO" id="PwL-6E-FcS">
-                                                <rect key="frame" x="40" y="0.0" width="20" height="43"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="30" height="43"/>
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" text="B" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9gi-dX-cYL">
-                                                        <rect key="frame" x="0.0" y="0.0" width="20" height="30"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" text="A" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9gi-dX-cYL">
+                                                        <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
                                                         <fontDescription key="fontDescription" name="SpoqaHanSans-Bold" family="SpoqaHanSans" pointSize="20"/>
                                                         <color key="textColor" name="tealish"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" text="5월" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qHa-tZ-7uS">
-                                                        <rect key="frame" x="0.0" y="25" width="20" height="18"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" text="11월" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qHa-tZ-7uS">
+                                                        <rect key="frame" x="0.0" y="25" width="30" height="18"/>
                                                         <fontDescription key="fontDescription" name="SpoqaHanSans-Regular" family="SpoqaHanSans" pointSize="12"/>
                                                         <color key="textColor" name="tealish"/>
                                                         <nil key="highlightedColor"/>
@@ -92,14 +92,14 @@
                                                     <constraint firstItem="9gi-dX-cYL" firstAttribute="top" secondItem="PwL-6E-FcS" secondAttribute="top" id="Lxh-Kx-pAg"/>
                                                     <constraint firstItem="9gi-dX-cYL" firstAttribute="leading" secondItem="PwL-6E-FcS" secondAttribute="leading" id="MkZ-XT-FuQ"/>
                                                     <constraint firstItem="qHa-tZ-7uS" firstAttribute="leading" secondItem="PwL-6E-FcS" secondAttribute="leading" id="Ovp-W1-Qrp"/>
-                                                    <constraint firstAttribute="width" constant="20" id="Qp4-pd-5NY"/>
+                                                    <constraint firstAttribute="width" constant="30" id="Qp4-pd-5NY"/>
                                                     <constraint firstItem="qHa-tZ-7uS" firstAttribute="top" secondItem="9gi-dX-cYL" secondAttribute="bottom" constant="-5" id="Wgs-kf-8UD"/>
                                                     <constraint firstAttribute="trailing" secondItem="9gi-dX-cYL" secondAttribute="trailing" id="lI6-SN-PeC"/>
                                                     <constraint firstAttribute="bottom" secondItem="qHa-tZ-7uS" secondAttribute="bottom" id="wrX-Hk-CbE"/>
                                                 </constraints>
                                             </view>
-                                            <view contentMode="scaleToFill" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" translatesAutoresizingMaskIntoConstraints="NO" id="XKD-Gs-oEf">
-                                                <rect key="frame" x="80" y="0.0" width="20" height="43"/>
+                                            <view hidden="YES" contentMode="scaleToFill" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" translatesAutoresizingMaskIntoConstraints="NO" id="XKD-Gs-oEf">
+                                                <rect key="frame" x="0.0" y="0.0" width="20" height="43"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" text="A" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s8d-LB-Sar">
                                                         <rect key="frame" x="0.0" y="0.0" width="20" height="30"/>
@@ -155,8 +155,8 @@
                                             <constraint firstAttribute="width" secondItem="ELT-1E-JNe" secondAttribute="height" multiplier="1:1" id="SSU-m9-ZoO"/>
                                         </constraints>
                                     </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="6월" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DPK-lf-5eO">
-                                        <rect key="frame" x="55" y="86.5" width="20" height="19.5"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="11월" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DPK-lf-5eO">
+                                        <rect key="frame" x="51" y="86.5" width="27.5" height="19.5"/>
                                         <fontDescription key="fontDescription" name="SpoqaHanSans-Regular" family="SpoqaHanSans" pointSize="13"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>

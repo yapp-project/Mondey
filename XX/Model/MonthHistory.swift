@@ -7,8 +7,15 @@
 //
 
 import Foundation
+//import RealmSwift
+//import RxRealm
 
 struct MonthHistory {
     let budget: Int
     let mount: Int
+    
+    init(budget: Int, mount: Int) {
+        self.budget = budget
+        self.mount = mount
+    }
 }

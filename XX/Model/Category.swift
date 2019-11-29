@@ -7,10 +7,13 @@
 //
 
 import Foundation
+//import RealmSwift
+//import RxRealm
 
 struct Category {
-    let id: Int
-    
+    var id: Int
+    var catTintColor: UIColor
+
     var name: String
     var active: Bool
     var budget: Int
@@ -18,6 +21,7 @@ struct Category {
     
     init(initValue: MondeyHelper.Category) {
         self.id = initValue.id
+        self.catTintColor = initValue.catTintColor
         
         self.name = initValue.title
         self.active = false
@@ -27,13 +31,25 @@ struct Category {
     
     init() {
         self.id = -1
-
+        self.catTintColor = MondeyHelper.mondeyCategoryTitleColor.first!
+        
         self.name = ""
         self.active = false
         self.budget = 0
         self.period = nil
     }
     
+    #warning("임시 데이터를 위한 확장 기능")
+    init(id: Int, budget: Int) {
+        self.id = MondeyHelper.mondeyCategoryId[id-1]
+        self.catTintColor = MondeyHelper.mondeyCategoryTitleColor[id-1]
+        
+        self.name = MondeyHelper.mondeyCategoryTitle[id-1]
+        self.active = true
+        self.budget = budget
+        self.period = nil
+    }
+
     var budgetString: String {
         let formatter = NumberFormatter()
         formatter.numberStyle = .decimal
@@ -61,17 +77,5 @@ struct Category {
         guard 1...7 ~= id else { return "" }
         return MondeyHelper.mondeyCategorySubTitle[id-1]
     }
-}
-
-#warning("임시 데이터를 위한 확장 기능")
-extension Category {
     
-    init(id: Int, budget: Int) {
-        self.id = MondeyHelper.mondeyCategoryId[id-1]
-
-        self.name = MondeyHelper.mondeyCategoryTitle[id-1]
-        self.active = true
-        self.budget = budget
-        self.period = nil
-    }
 }
