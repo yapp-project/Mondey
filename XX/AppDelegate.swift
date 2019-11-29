@@ -16,7 +16,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
-        let storage = MemoryStorage()
+        let storage = RealmStorage()
         let coordinator = SceneCoodinator(window: window!)
         
         #warning("시연을 위한 로그인 화면 진입 막기")

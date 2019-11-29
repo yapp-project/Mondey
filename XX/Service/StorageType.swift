@@ -9,6 +9,7 @@
 import Foundation
 
 protocol StorageType {
+    func update(categories: [Category])
     func create(expenditure: Expenditure) -> Observable<Expenditure>
     func categoryList() -> Observable<[Category]>
     func history(at month: Int) -> Observable<MonthHistory?>

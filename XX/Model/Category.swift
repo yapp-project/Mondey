@@ -7,8 +7,10 @@
 //
 
 import Foundation
+import RealmSwift
+import RxRealm
 
-struct Category {
+class Category: Object {
     let id: Int
     
     var name: String
@@ -25,13 +27,18 @@ struct Category {
         self.period = nil
     }
     
-    init() {
-        self.id = -1
-
-        self.name = ""
-        self.active = false
-        self.budget = 0
+    #warning("임시 데이터를 위한 확장 기능")
+    init(id: Int, budget: Int) {
+        self.id = MondeyHelper.mondeyCategoryId[id-1]
+        
+        self.name = MondeyHelper.mondeyCategoryTitle[id-1]
+        self.active = true
+        self.budget = budget
         self.period = nil
+    }
+    
+    required init() {
+        fatalError("init() has not been implemented")
     }
     
     var budgetString: String {
@@ -41,7 +48,7 @@ struct Category {
         return formatter.string(from: budget as NSNumber) ?? "0"
     }
     
-    mutating func update(budget: Int) {
+    func update(budget: Int) {
         self.budget = budget
     }
     
@@ -60,18 +67,5 @@ struct Category {
     var subTitle: String {
         guard 1...7 ~= id else { return "" }
         return MondeyHelper.mondeyCategorySubTitle[id-1]
-    }
-}
-
-#warning("임시 데이터를 위한 확장 기능")
-extension Category {
-    
-    init(id: Int, budget: Int) {
-        self.id = MondeyHelper.mondeyCategoryId[id-1]
-
-        self.name = MondeyHelper.mondeyCategoryTitle[id-1]
-        self.active = true
-        self.budget = budget
-        self.period = nil
     }
 }

@@ -7,16 +7,14 @@
 //
 
 import Foundation
+import RealmSwift
+import RxRealm
 
-struct Expenditure {
+class Expenditure: Object {
     let id: Int
     let desc: String
     let cost: Int
     let date: Date
-}
-
-extension Expenditure {
-    
     
     init(id: Int, desc: String, cost: Int, date: String) {
         let formatter = DateFormatter()
@@ -26,5 +24,9 @@ extension Expenditure {
         self.desc = desc
         self.cost = cost
         self.date = formatter.date(from: date) ?? Date()
+    }
+    
+    required init() {
+        fatalError("init() has not been implemented")
     }
 }
