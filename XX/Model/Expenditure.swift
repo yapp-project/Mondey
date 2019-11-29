@@ -11,22 +11,22 @@ import RealmSwift
 import RxRealm
 
 class Expenditure: Object {
-    let id: Int
-    let desc: String
-    let cost: Int
-    let date: Date
+    var id: Int = -1
+    var desc: String = ""
+    var cost: Int = -1
+    var date: Date = Date()
     
-    init(id: Int, desc: String, cost: Int, date: String) {
+    static func create(id: Int, desc: String, cost: Int, date: String) -> Expenditure {
+        let expend = Expenditure()
+        
         let formatter = DateFormatter()
         formatter.dateFormat = "yyyy-MM-dd HH:mm"
         
-        self.id = id
-        self.desc = desc
-        self.cost = cost
-        self.date = formatter.date(from: date) ?? Date()
-    }
-    
-    required init() {
-        fatalError("init() has not been implemented")
+        expend.id = id
+        expend.desc = desc
+        expend.cost = cost
+        expend.date = formatter.date(from: date) ?? Date()
+        
+        return expend
     }
 }

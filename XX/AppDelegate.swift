@@ -16,7 +16,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
-        let storage = RealmStorage()
+        let storage = MemoryStorage()
         let coordinator = SceneCoodinator(window: window!)
         
         #warning("시연을 위한 로그인 화면 진입 막기")
@@ -32,7 +32,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             let scene = SignUpSettingScene.income(viewModel)
             coordinator.transition(to: scene, using: .root, animated: false)
         }
-        
         
         
         return true

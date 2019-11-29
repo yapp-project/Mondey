@@ -11,7 +11,7 @@ import Foundation
 class MemoryStorage {
     var categories = TempData.categories
     var expenditures = TempData.expenditure
-    var monthHistory = TempData.monthHistory
+    var monthHistory = TempData.totalMonthHistory()
 }
 
 extension MemoryStorage: StorageType {

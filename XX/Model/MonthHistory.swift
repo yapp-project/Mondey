@@ -11,15 +11,14 @@ import RealmSwift
 import RxRealm
 
 class MonthHistory: Object {
-    let budget: Int
-    let mount: Int
+    var budget: Int = -1
+    var mount: Int = -1
     
-    init(budget: Int, mount: Int) {
-        self.budget = budget
-        self.mount = mount
-    }
-    
-    required init() {
-        fatalError("init() has not been implemented")
+    static func create(budget: Int, mount: Int) -> MonthHistory {
+        let history = MonthHistory()
+        history.budget = budget
+        history.mount = mount
+        
+        return history
     }
 }

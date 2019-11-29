@@ -11,7 +11,7 @@ import Foundation
 class CategoriesSetting: BaseViewModel {
     let incomeValue = BehaviorRelay(value: 0)
     let categories = BehaviorRelay(value: MondeyHelper.mondeyCategory.map {
-        Category(initValue: $0)
+        Category.create(initValue: $0)
     })
     
     func incomeString() -> Observable<String> {

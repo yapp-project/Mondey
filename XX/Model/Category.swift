@@ -11,34 +11,34 @@ import RealmSwift
 import RxRealm
 
 class Category: Object {
-    let id: Int
+    var id: Int = -1
     
-    var name: String
-    var active: Bool
-    var budget: Int
+    var name: String = ""
+    var active: Bool = false
+    var budget: Int = -1
     var period: Period?
     
-    init(initValue: MondeyHelper.Category) {
-        self.id = initValue.id
+    static func create(initValue: MondeyHelper.Category) -> Category {
+        let category = Category()
+        category.id = initValue.id
+        category.name = initValue.title
+        category.active = false
+        category.budget = 0
+        category.period = nil
         
-        self.name = initValue.title
-        self.active = false
-        self.budget = 0
-        self.period = nil
+        return category
     }
     
     #warning("임시 데이터를 위한 확장 기능")
-    init(id: Int, budget: Int) {
-        self.id = MondeyHelper.mondeyCategoryId[id-1]
+    static func create(id: Int, budget: Int) -> Category {
+        let category = Category()
+        category.id = MondeyHelper.mondeyCategoryId[id-1]
+        category.name = MondeyHelper.mondeyCategoryTitle[id-1]
+        category.active = true
+        category.budget = budget
+        category.period = nil
         
-        self.name = MondeyHelper.mondeyCategoryTitle[id-1]
-        self.active = true
-        self.budget = budget
-        self.period = nil
-    }
-    
-    required init() {
-        fatalError("init() has not been implemented")
+        return category
     }
     
     var budgetString: String {
