@@ -17,18 +17,25 @@ enum MonthlyScene {
 extension MonthlyScene: SceneType {
     func instantiate(from storyboard: String) -> UIViewController {
         let storyboard = UIStoryboard(name: storyboard, bundle: nil)
-
+        
         switch self {
         case .Mmain(let viewModel):
-            guard let navigationController = storyboard
-                .instantiateViewController(withIdentifier: "MonthlyViewController") as? UINavigationController,
-                var viewController = navigationController
-                    .viewControllers.first as? MonthlyViewController
+            guard var viewController = storyboard
+                .instantiateViewController(withIdentifier: "MonthlyViewController") as? MonthlyViewController
                 else {
                     return UIViewController()
             }
             viewController.bind(viewModel: viewModel)
-            return navigationController
+            return viewController
+            //            guard let navigationController = storyboard
+            //                .instantiateViewController(withIdentifier: "MonthlyViewController") as? UINavigationController,
+            //                var viewController = navigationController
+            //                    .viewControllers.first as? MonthlyViewController
+            //                else {
+            //                    return UIViewController()
+            //            }
+            //            viewController.bind(viewModel: viewModel)
+        //            return viewController
         case .Mdetail(let viewModel):
             guard var viewController = storyboard
                 .instantiateViewController(withIdentifier: "MonthlyDetailViewController") as? MonthlyDetailViewController
@@ -37,6 +44,7 @@ extension MonthlyScene: SceneType {
             }
             viewController.bind(viewModel: viewModel)
             return viewController
+            
         case .PickYear(let viewModel):
             guard var viewController = storyboard
                 .instantiateViewController(withIdentifier: "PickYearViewController") as? PickYearViewController
@@ -49,7 +57,7 @@ extension MonthlyScene: SceneType {
             return viewController
         }
     }
-
+    
     func instantiate() -> UIViewController {
         return instantiate(from: "Monthly")
     }

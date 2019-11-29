@@ -166,5 +166,20 @@ class MainViewModel: BaseViewModel {
             return self.sceneCoordinator.close(animated: false).asObservable().map { _ in }
         }
     }
-}
 
+    func presentingMonthly() -> CocoaAction {
+        return Action { _ in
+            let viewModel = MonthlyViewModel(title: "월별 등급 평가",
+                                             sceneCoordinator: self.sceneCoordinator,
+                                             storage: self.storage)
+
+            let scene = MonthlyScene.Mmain(viewModel)
+            return self.sceneCoordinator
+                .transition(to: scene,
+                            using: .push,
+                            animated: true)
+                .asObservable().map { _ in }
+        }
+    }
+
+}
