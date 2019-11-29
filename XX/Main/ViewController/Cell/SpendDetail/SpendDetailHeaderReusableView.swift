@@ -12,6 +12,12 @@ class SpendDetailHeaderReusableView: UICollectionReusableView {
     @IBOutlet weak var backButton: UIButton!
     @IBOutlet weak var infoView: UIView!
     
+    var viewModel: SpendDetailViewModel? {
+        didSet{
+            bindViewModel()
+        }
+    } 
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         
@@ -23,9 +29,17 @@ class SpendDetailHeaderReusableView: UICollectionReusableView {
         infoView.layer.shadowOffset = CGSize(width: 1, height: 1)
         infoView.layer.shadowOpacity = 5
         infoView.layer.masksToBounds = false
+        
+        
+        bindViewModel()
     }
-    
-    
-    
+}
+
+
+extension SpendDetailHeaderReusableView: ViewModelBindableType {
+    func bindViewModel() {
+        guard let viewModel = viewModel else { return }
+        backButton.rx.action = viewModel.requestBackButtonAction()
+    }
     
 }

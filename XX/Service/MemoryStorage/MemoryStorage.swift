@@ -9,6 +9,10 @@
 import Foundation
 
 class MemoryStorage {
+    
+    // 싱글톤 객체
+    static let shared = MemoryStorage()
+    
     var categories = TempData.categories
     var expenditures = TempData.expenditure
     var monthHistory = TempData.monthHistory

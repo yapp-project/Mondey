@@ -10,8 +10,11 @@ import Foundation
 import RealmSwift
 import RxRealm
 
-class Category: Object {
-    let id: Int
+struct Category {
+    var id: Int
+    var tintColor: UIColor
+    var title: String
+    var subTitle: String 
     
     var name: String
     var active: Bool
@@ -20,6 +23,9 @@ class Category: Object {
     
     init(initValue: MondeyHelper.Category) {
         self.id = initValue.id
+        self.tintColor = initValue.tintColor
+        self.title = initValue.title
+        self.subTitle = initValue.SubTitle 
         
         self.name = initValue.title
         self.active = false

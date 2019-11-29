@@ -32,7 +32,7 @@ class SpendDetailViewController: BaseViewController {
 extension SpendDetailViewController: ViewModelBindableType {
     func bindViewModel() {
         guard let viewModel = viewModel else { return }
-        //        backButton.rx.action = viewModel.requestBackButtonAction()
+//        backButton.rx.action = viewModel.requestBackButtonAction()
     }
     
     private func bindCollectionView() {
@@ -86,6 +86,7 @@ extension SpendDetailViewController: ViewModelBindableType {
                 // 어떻게 하면 더 나은 방법으로 전달할수 있을가
                 //                header.addSpendMoveButton.rx.action = self.viewModel?.requestAddSpendMoveMoveAction()
 
+                header.viewModel = self.viewModel
                 return header
             }
 
