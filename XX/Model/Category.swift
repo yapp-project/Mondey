@@ -9,10 +9,10 @@
 import Foundation
 
 struct Category {
-    let id: Int
-    let tintColor: UIColor
-    let title: String
-    let subTitle: String
+    var id: Int
+    var tintColor: UIColor
+    var title: String
+    var subTitle: String
     
     var name: String
     var active: Bool

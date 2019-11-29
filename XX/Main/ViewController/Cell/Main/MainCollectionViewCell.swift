@@ -63,8 +63,12 @@ extension MainCollectionViewCell: ViewModelBindableType {
                                                                                      button: &removeCellButton)
         
         category.subscribe { [unowned self] value in
-            DispatchQueue.main.async{
-                self.mainCellCategoryLabel.text = value.element?.title
+            DispatchQueue.main.async{ 
+                if value.element?.name == "" {
+                    self.mainCellCategoryLabel.text = value.element?.title
+                } else {
+                    self.mainCellCategoryLabel.text = value.element?.name
+                }
                 //                self.mainCellUseMoneyLabel.text = self.category.map{"\($0.budget)"}
                 self.mainCellAllMoneyLabel.text = "/\(value.element?.budget ?? 0)"
                 

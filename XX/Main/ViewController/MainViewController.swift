@@ -22,6 +22,7 @@ class MainViewController: BaseViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        bindViewModel()
         bindCollectionView()
     }
     
@@ -32,7 +33,30 @@ class MainViewController: BaseViewController {
 
 extension MainViewController: ViewModelBindableType {
     func bindViewModel() {
-//        guard let viewModel = viewModel else { return }
+        guard let viewModel = viewModel else { return }
+        
+        MondeyHelper.shared.mondeyMainAddHelper = {
+            (categoryIdx, idx, name, money) -> Void in
+            
+            var category = Category()
+            
+            category.id              = idx
+            category.tintColor       = MondeyHelper.mondeyCategoryTitleColor[categoryIdx-1]
+            category.title           = ""
+            category.subTitle        = ""
+            category.name            = name
+            category.active          = true
+            category.budget          = money
+            category.period          = nil
+            
+            
+            viewModel.addItem(category: category)
+        }
+        
+        MondeyHelper.shared.mondeyMainRemoveHelper = {
+            (idx) -> Void in
+            viewModel.removeItem(at: idx)
+        }
     }
     
     private func bindCollectionView() { 
@@ -40,8 +64,7 @@ extension MainViewController: ViewModelBindableType {
         
         viewModel.sectionListSubject.asObserver()
         .bind(to: collectionView.rx.items(dataSource: mainDatasource)).disposed(by: rx.disposeBag)
- 
-        
+  
         collectionView
             .rx.itemSelected.bind { (indexPath) in
                 // 셀쪽 이벤트 RX에 대해 알아봐야할듯 이 방법이 맞는지 모르겠음
@@ -54,6 +77,8 @@ extension MainViewController: ViewModelBindableType {
         collectionView
             .rx.setDelegate(self)
             .disposed(by: rx.disposeBag)
+        
+        
         
     }
     

@@ -28,6 +28,18 @@ class MainViewModel: BaseViewModel {
         sectionListSubject.onNext(sections)
     }
     
+    func addItem(category: Category) {
+        guard var sections = try? sectionListSubject.value() else { return }
+        
+        var currentSection = sections[0] // 100% 하나는 있기떄문
+        currentSection.items.append(category)
+        sections[0] = currentSection
+        
+        MemoryStorage.shared.categories.append(category)
+        
+        sectionListSubject.onNext(sections)
+    }
+    
     func requestSpendDetailMoveAction() -> CocoaAction {
         return Action { _ in
             let viewModel = SpendDetailViewModel(title: "지출디테일", sceneCoordinator: self.sceneCoordinator, storage: self.storage)

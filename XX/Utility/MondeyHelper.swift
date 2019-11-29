@@ -9,6 +9,12 @@
 import UIKit
 
 class MondeyHelper: NSObject {
+    // 싱글톤 객체
+    static let shared = MondeyHelper()
+    
+    var mondeyMainAddHelper: ((Int, Int, String, Int)->(Void))? = nil
+    var mondeyMainRemoveHelper: ((Int)->(Void))? = nil
+    
     static let mondeyCategoryId = [1, 2, 3, 4, 5, 6, 7]
     
     static let mondeyCategoryTitle = [
