@@ -42,8 +42,6 @@ extension MainViewController: ViewModelBindableType {
             
             category.id              = idx
             category.tintColor       = MondeyHelper.mondeyCategoryTitleColor[categoryIdx-1]
-            category.title           = ""
-            category.subTitle        = ""
             category.name            = name
             category.active          = true
             category.budget          = money

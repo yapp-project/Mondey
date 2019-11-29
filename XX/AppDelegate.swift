@@ -16,7 +16,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
-        let storage = RealmStorage()
+        let storage = MemoryStorage()
         let coordinator = SceneCoodinator(window: window!)
  
 //        let viewModel = SignInViewModel(title: "로그인", sceneCoordinator: coordinator, storage: storage)

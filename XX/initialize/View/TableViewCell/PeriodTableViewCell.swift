@@ -31,9 +31,9 @@ extension PeriodTableViewCell: SignUpSettingCellBindableType {
         guard let viewModel = viewModel else { return }
         
         viewModel.category
-            .map { $0.title }
-            .bind(to: titleLabel.rx.text)
-            .disposed(by: viewModel.rx.disposeBag)
+//            .map { $0.title }
+//            .bind(to: titleLabel.rx.text)
+//            .disposed(by: viewModel.rx.disposeBag)
         
         viewModel.category
             .map { $0.period ?? .none }

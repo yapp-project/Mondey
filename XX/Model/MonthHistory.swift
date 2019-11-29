@@ -10,16 +10,12 @@ import Foundation
 import RealmSwift
 import RxRealm
 
-class MonthHistory: Object {
+struct MonthHistory {
     let budget: Int
     let mount: Int
     
     init(budget: Int, mount: Int) {
         self.budget = budget
         self.mount = mount
-    }
-    
-    required init() {
-        fatalError("init() has not been implemented")
     }
 }
