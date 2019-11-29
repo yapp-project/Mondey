@@ -6,6 +6,11 @@ PODS:
   - Differentiator (4.0.1)
   - "NSObject+Rx (5.0.2)":
     - RxSwift (~> 5.0)
+  - Realm (4.1.1):
+    - Realm/Headers (= 4.1.1)
+  - Realm/Headers (4.1.1)
+  - RealmSwift (4.1.1):
+    - Realm (= 4.1.1)
   - RxCocoa (5.0.1):
     - RxRelay (~> 5)
     - RxSwift (~> 5)
@@ -19,6 +24,9 @@ PODS:
   - RxGesture (3.0.1):
     - RxCocoa (~> 5.0)
     - RxSwift (~> 5.0)
+  - RxRealm (2.0.0):
+    - RealmSwift (~> 4.0)
+    - RxSwift (~> 5.0)
   - RxRelay (5.0.1):
     - RxSwift (~> 5)
   - RxSwift (5.0.1)
@@ -28,10 +36,13 @@ DEPENDENCIES:
   - Action
   - CenteredCollectionView
   - "NSObject+Rx"
+  - Realm
+  - RealmSwift
   - RxCocoa (~> 5)
   - RxCoreData
   - RxDataSources
   - RxGesture
+  - RxRealm
   - RxSwift (~> 5)
   - SwiftKeychainWrapper
 
@@ -41,10 +52,13 @@ SPEC REPOS:
     - CenteredCollectionView
     - Differentiator
     - "NSObject+Rx"
+    - Realm
+    - RealmSwift
     - RxCocoa
     - RxCoreData
     - RxDataSources
     - RxGesture
+    - RxRealm
     - RxRelay
     - RxSwift
     - SwiftKeychainWrapper
@@ -54,14 +68,17 @@ SPEC CHECKSUMS:
   CenteredCollectionView: ba6e45fb7774627890621d73c8dd7dbd33391da9
   Differentiator: 886080237d9f87f322641dedbc5be257061b0602
   "NSObject+Rx": 2eb2cf51fd1c554118449a7fbc36e4cd620b9e94
+  Realm: 25f0a8244cbb1c2271c922963ea8666fc2d8104d
+  RealmSwift: 9e2657b33764f80e4a4dffd6d440e24715782052
   RxCocoa: e741b9749968e8a143e2b787f1dfbff2b63d0a5c
   RxCoreData: 1ed5f83e80facccc90fc054eb7f39a44177de56a
   RxDataSources: efee07fa4de48477eca0a4611e6d11e2da9c1114
   RxGesture: a3f8dd6adf078110ed5e1c9c30d09d705a09852e
+  RxRealm: 900f5c7e6f0a2d6527b56eaf7283f3035ec1e8ba
   RxRelay: 89d54507f4fd4d969e6ec1d4bd7f3673640b4640
   RxSwift: e2dc62b366a3adf6a0be44ba9f405efd4c94e0c4
   SwiftKeychainWrapper: 6fc49fbf7d4a6b0772917acb0e53a1639f6078d6
 
-PODFILE CHECKSUM: c9c0a25f57014fc080ea9aecb03b9f09d54bf362
+PODFILE CHECKSUM: 4558f5be024bcd362e4d4703cc2cad86ae0824fc
 
 COCOAPODS: 1.8.4

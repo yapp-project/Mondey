@@ -248,14 +248,6 @@
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
-		33AC119F4D7172E4645977CE3E67C73A /* RealmStorage */ = {
-			isa = PBXGroup;
-			children = (
-				80710A174265042A8F7C7C4227BD6A0E /* RealmStorage.swift */,
-			);
-			path = RealmStorage;
-			sourceTree = "<group>";
-		};
 		1A827C8B9738CAFBF2DD68F71C975010 /* Scene */ = {
 			isa = PBXGroup;
 			children = (
@@ -281,6 +273,14 @@
 				336B4C704D5B00AA7C5BDDE2D6642C43 /* SpendDetailViewModel.swift */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		33AC119F4D7172E4645977CE3E67C73A /* RealmStorage */ = {
+			isa = PBXGroup;
+			children = (
+				80710A174265042A8F7C7C4227BD6A0E /* RealmStorage.swift */,
+			);
+			path = RealmStorage;
 			sourceTree = "<group>";
 		};
 		34D10EDB22341A504BB31C02C260E71C /* ViewController */ = {
@@ -899,14 +899,14 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = R78643UTJ5;
+				DEVELOPMENT_TEAM = 79JAW5V2W8;
 				INFOPLIST_FILE = XX/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.yapp.XX;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yapp.XX1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "XX/XX-Bridging-Header.h";
@@ -1040,14 +1040,14 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = R78643UTJ5;
+				DEVELOPMENT_TEAM = 79JAW5V2W8;
 				INFOPLIST_FILE = XX/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.yapp.XX;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yapp.XX1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "XX/XX-Bridging-Header.h";

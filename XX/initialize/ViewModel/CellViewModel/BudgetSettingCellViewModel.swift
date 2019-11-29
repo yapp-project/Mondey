@@ -22,7 +22,7 @@ class BudgetSettingCellViewModel: SignUpSettingCellViewModel {
     }
     
     func updateCategory(budget: Int) {
-        var category = self.category.value
+        let category = self.category.value
         category.budget = budget
         self.category.accept(category)
     }

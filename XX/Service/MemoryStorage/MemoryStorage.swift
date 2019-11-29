@@ -15,6 +15,10 @@ class MemoryStorage {
 }
 
 extension MemoryStorage: StorageType {
+    func update(categories: [Category]) {
+        self.categories = categories
+    }
+    
     func create(expenditure: Expenditure) -> Observable<Expenditure> {
         expenditures.append(expenditure)
         
