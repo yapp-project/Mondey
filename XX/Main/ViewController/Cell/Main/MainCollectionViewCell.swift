@@ -28,6 +28,8 @@ class MainCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var mainCellPercentNumLabel: UILabel!
     @IBOutlet weak var mainCellPercentBarWidth: NSLayoutConstraint!
     
+    @IBOutlet weak var moveDetailButton: UIButton!
+    
     var viewModel: MainViewModel? = nil{
         didSet{
             bindViewModel()
@@ -61,6 +63,9 @@ extension MainCollectionViewCell: ViewModelBindableType {
         removeCellButton.rx.action = viewModel.requestMainCellRemoveModeButtonAction(title: self.mainCellCategoryLabel.text ?? "-",
                                                                                      cellIdx: cellIdx ?? 0,
                                                                                      button: &removeCellButton)
+        
+        moveDetailButton.rx.action = viewModel.requestSpendDetailMoveAction(cellValue: category)
+        
         
         category.subscribe { [unowned self] value in
             DispatchQueue.main.async{ 

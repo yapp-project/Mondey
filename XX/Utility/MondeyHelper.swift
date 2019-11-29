@@ -15,6 +15,8 @@ class MondeyHelper: NSObject {
     var mondeyMainAddHelper: ((Int, Int, String, Int)->(Void))? = nil
     var mondeyMainRemoveHelper: ((Int)->(Void))? = nil
     
+    var mondeyMainHeaderClean: (()->())? = nil
+
     static let mondeyCategoryId = [1, 2, 3, 4, 5, 6, 7]
     
     static let mondeyCategoryTitle = [

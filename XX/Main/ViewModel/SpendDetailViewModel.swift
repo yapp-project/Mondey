@@ -9,6 +9,8 @@
 import UIKit
 
 class SpendDetailViewModel: BaseViewModel {
+    var spendDetailCategory = BehaviorRelay<Category>(value: .init())
+    
     func requestBackButtonAction() -> CocoaAction {
         return Action { _ in
             return self.sceneCoordinator.close(animated: true).asObservable().map { _ in }
