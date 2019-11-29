@@ -13,6 +13,8 @@ class ChoiceDataViewController: BaseViewController {
     @IBOutlet weak var closeButton: UIButton!
     @IBOutlet weak var okButton: UIButton!
     
+    @IBOutlet weak var datePicker: UIDatePicker!
+    
     var viewModel: MainViewModel?
     
     override func viewDidLoad() {
@@ -30,6 +32,10 @@ extension ChoiceDataViewController: ViewModelBindableType{
     func bindViewModel() {
         guard let viewModel = viewModel else { return }
         closeButton.rx.action = viewModel.requestBackButtonAction()
-//        closeButton.rx.action = viewModel.requestBackButtonAction()
+        okButton.rx.action = viewModel.requestAppendSobiButtonAction(selectedDate: datePicker.date)
+        
+        
+        print("datePicker \(datePicker.date)")
     }
+    
 }

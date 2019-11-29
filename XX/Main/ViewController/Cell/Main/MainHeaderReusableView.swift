@@ -71,6 +71,7 @@ class MainHeaderReusableView: UICollectionReusableView {
     func setLayout() {
         self.userBudgetLabel.text = String(UserDefaultManager.budget)
     }
+    
 }
 
 
