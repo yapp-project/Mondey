@@ -1278,22 +1278,22 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7lt-pK-bri">
-                                                    <rect key="frame" x="26.333333333333343" y="29.666666666666668" width="322.33333333333326" height="41.333333333333329"/>
+                                                    <rect key="frame" x="26.333333333333343" y="34.333333333333343" width="322.33333333333326" height="36.666666666666657"/>
                                                     <subviews>
                                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="dIb-ro-EZf">
-                                                            <rect key="frame" x="0.0" y="0.0" width="322.33333333333331" height="41.333333333333336"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="322.33333333333331" height="36.666666666666664"/>
                                                             <subviews>
                                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HZq-04-Hic">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="322.33333333333331" height="21"/>
+                                                                    <rect key="frame" x="0.0" y="0.0" width="322.33333333333331" height="16.333333333333332"/>
                                                                     <subviews>
                                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="12:30" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pTR-aP-lwi">
-                                                                            <rect key="frame" x="0.0" y="0.0" width="42.666666666666664" height="21"/>
+                                                                            <rect key="frame" x="0.0" y="0.0" width="42.666666666666664" height="16.333333333333332"/>
                                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                             <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="0.87" colorSpace="calibratedRGB"/>
                                                                             <nil key="highlightedColor"/>
                                                                         </label>
                                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" text="- 3,000" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qPd-cD-jxK">
-                                                                            <rect key="frame" x="276" y="0.0" width="46.333333333333314" height="21"/>
+                                                                            <rect key="frame" x="277.66666666666669" y="0.0" width="44.666666666666686" height="16.333333333333332"/>
                                                                             <fontDescription key="fontDescription" name="SpoqaHanSans-Bold" family="SpoqaHanSans" pointSize="14"/>
                                                                             <color key="textColor" name="tealish"/>
                                                                             <nil key="highlightedColor"/>
@@ -1310,7 +1310,7 @@
                                                                     </constraints>
                                                                 </view>
                                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zFN-lc-42p">
-                                                                    <rect key="frame" x="0.0" y="21" width="322.33333333333331" height="20.333333333333329"/>
+                                                                    <rect key="frame" x="0.0" y="16.333333333333329" width="322.33333333333331" height="20.333333333333329"/>
                                                                     <subviews>
                                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" text="편의점에서 점심" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t52-6j-l9r">
                                                                             <rect key="frame" x="0.0" y="0.0" width="107.66666666666667" height="20.333333333333332"/>
@@ -1319,7 +1319,7 @@
                                                                             <nil key="highlightedColor"/>
                                                                         </label>
                                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1000" verticalHuggingPriority="251" text="340,000" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rri-D8-SGv">
-                                                                            <rect key="frame" x="277" y="0.0" width="45.333333333333314" height="20.333333333333332"/>
+                                                                            <rect key="frame" x="278.66666666666669" y="0.0" width="43.666666666666686" height="20.333333333333332"/>
                                                                             <fontDescription key="fontDescription" name="SpoqaHanSans-Regular" family="SpoqaHanSans" pointSize="12"/>
                                                                             <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="0.87" colorSpace="custom" customColorSpace="sRGB"/>
                                                                             <nil key="highlightedColor"/>

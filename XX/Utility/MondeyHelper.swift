@@ -49,13 +49,13 @@ class MondeyHelper: NSObject {
     
 
     static let mondeyCategory = mondeyCategoryId.map { Category(id: $0,
-                                        tintColor: mondeyCategoryTitleColor[$0 - 1],
+                                        catTintColor: mondeyCategoryTitleColor[$0 - 1],
                                         title: mondeyCategoryTitle[$0 - 1],
                                         SubTitle: mondeyCategorySubTitle[$0 - 1]) }
     
     struct Category {
         let id: Int
-        let tintColor: UIColor
+        let catTintColor: UIColor
         let title: String
         let SubTitle: String
     }
