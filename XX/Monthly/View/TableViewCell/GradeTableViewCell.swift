@@ -8,23 +8,35 @@
 
 import UIKit
 
+protocol GradeCellDelegate: class {
+    func moveMonthlyDetailView(month: Int, grade: String)
+    func movePickYearView()
+}
+
 class GradeTableViewCell: UITableViewCell {
     
-    @IBOutlet weak var yearButton: UIButton!
-    @IBOutlet weak var gradeCollectionView: UICollectionView!
+    @IBOutlet private weak var yearButton: UIButton!
+    @IBOutlet private weak var gradeCollectionView: UICollectionView!
 
-    let gradeData = ["B", "A", "C", "A", "C",
-                     "B", "D", "B", "A", "A"]
+    let gradeData = ["A", "A", "C", "A", "C", "B",
+                     "D", "B", "A", "A", "B", "Q"]
     var viewModel: MonthlyViewModel?
+    weak var delegate: GradeCellDelegate?
 
     override func awakeFromNib() {
         super.awakeFromNib()
 
         gradeCollectionView.dataSource = self
-        bindViewModel()
+        gradeCollectionView.delegate = self
+
+        //        bindViewModel()
     }
     
-    
+    @IBAction func presentPickYear(_ sender: Any) {
+        delegate?.movePickYearView()
+    }
+
+
 }
 
 extension GradeTableViewCell: ViewModelBindableType {
@@ -32,13 +44,17 @@ extension GradeTableViewCell: ViewModelBindableType {
     func bindViewModel() {
         guard let viewModel = viewModel else { return }
         yearButton.rx.action = viewModel.presentingSelectYear()
+        gradeCollectionView.rx.itemSelected.bind { (IndexPath) in
+            viewModel.presentingDetail().execute()
+            }.disposed(by: rx.disposeBag)
     }
 }
+
 
 extension GradeTableViewCell: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView,
                         numberOfItemsInSection section: Int) -> Int {
-        return 10
+        return gradeData.count
     }
     
     func collectionView(_ collectionView: UICollectionView,
@@ -50,8 +66,22 @@ extension GradeTableViewCell: UICollectionViewDataSource {
 
         let grade = gradeData[indexPath.row]
         cell.setProperties(month: indexPath.row, grade: grade)
-        
+
         return cell
     }
     
+}
+
+// MARK: - UICollectionViewDelegate
+
+extension GradeTableViewCell: UICollectionViewDelegate {
+
+    func collectionView(_ collectionView: UICollectionView,
+                        didSelectItemAt indexPath: IndexPath) {
+
+//        guard let gradeCell = collectionView
+//            .cellForItem(at: indexPath) as? GradeCollectionViewCell
+//            else { return }
+        delegate?.moveMonthlyDetailView(month: indexPath.item + 1, grade: gradeData[indexPath.item])
+    }
 }

@@ -13,8 +13,8 @@ class MonthlyViewModel: BaseViewModel {
     func presentingSelectYear() -> CocoaAction {
         return CocoaAction { _ in
             let viewModel = PickYearViewModel(title: "날짜 선택",
-                                             sceneCoordinator: self.sceneCoordinator,
-                                             storage: self.storage)
+                                              sceneCoordinator: self.sceneCoordinator,
+                                              storage: self.storage)
             
             let scene = MonthlyScene.PickYear(viewModel)
             return self.sceneCoordinator.transition(to: scene,
@@ -24,8 +24,24 @@ class MonthlyViewModel: BaseViewModel {
         }
     }
 
+    func presentingDetail() -> CocoaAction {
+        return CocoaAction { _ in
+            let viewModel = MonthlyDetailViewModel(title: "월 소비 평가",
+                                                   sceneCoordinator: self.sceneCoordinator,
+                                                   storage: self.storage)
+
+            let scene = MonthlyScene.Mdetail(viewModel)
+            return self.sceneCoordinator
+                .transition(to: scene,
+                            using: .push,
+                            animated: true)
+                .asObservable().map { _ in }
+        }
+    }
+
     func calculateGrade() {
         
     }
     
 }
+

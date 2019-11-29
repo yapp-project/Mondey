@@ -10,7 +10,8 @@ import UIKit
 
 class MonthlyViewController: BaseViewController {
 
-    @IBOutlet weak var monthlyTableView: UITableView!
+    @IBOutlet private weak var monthlyTableView: UITableView!
+    @IBOutlet weak var naviItem: UINavigationItem!
 
     //    static let reuseIdentifier = "GradeCollectionViewCell"
     let MAIN_CELL_WIDTH = UIScreen.main.bounds.width * 0.405
@@ -19,8 +20,36 @@ class MonthlyViewController: BaseViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        bindViewModel()
+        //        bindViewModel()
         //        bindCollectionView()
+        setNaviBar()
+    }
+
+    private func setNaviBar() {
+        let attributes = [NSAttributedString.Key.font: UIFont(name: "SpoqaHanSans-Regular", size: 15)!]
+        naviItem.titleView?.tintColor = UIColor(named: "51")
+        UINavigationBar.appearance().titleTextAttributes = attributes
+        naviItem.title = "월별 등급 평가"
+    }
+
+    private func pushMonthlyDetail(month: Int, grade: String) {
+        let storyboard = UIStoryboard(name: "Monthly",
+                                      bundle: nil)
+        guard let viewController = storyboard
+            .instantiateViewController(withIdentifier: "MonthlyDetailViewController") as? MonthlyDetailViewController
+            else { return }
+        viewController.month = month
+        viewController.grade = grade
+
+        self.navigationController?.pushViewController(viewController,
+                                                      animated: true)
+    }
+
+    private func pushPickYearView() {
+        let storyboard = UIStoryboard(name: "Monthly", bundle: nil)
+        let viewController = storyboard.instantiateViewController(withIdentifier: "PickYearViewController")
+        viewController.modalPresentationStyle = .overCurrentContext
+        self.navigationController?.present(viewController, animated: false)
     }
     
 }
@@ -29,7 +58,8 @@ extension MonthlyViewController: ViewModelBindableType {
 
     func bindViewModel() {
         guard let viewModel = viewModel else { return }
-//        yearButton.rx.action = viewModel.presentingSelectYear()
+        //        yearButton.rx.action = viewModel.presentingSelectYear()
+
     }
 
     private func bindCollectionView() {
@@ -96,7 +126,8 @@ extension MonthlyViewController: UITableViewDataSource {
                 .dequeueReusableCell(withIdentifier: "GradeTableViewCell",
                                      for: indexPath) as? GradeTableViewCell
                 else { return UITableViewCell() }
-
+            gradeCell.delegate = self
+            
             return gradeCell
 
         case 1:
@@ -111,11 +142,9 @@ extension MonthlyViewController: UITableViewDataSource {
 
         default:
             return UITableViewCell()
+
         }
-
     }
-
-    
 }
 
 extension MonthlyViewController: UITableViewDelegate {
@@ -128,4 +157,18 @@ extension MonthlyViewController: UITableViewDelegate {
             return 230
         }
     }
+}
+
+// MARK: - CuratedCellDelegate
+
+extension MonthlyViewController: GradeCellDelegate {
+
+    func moveMonthlyDetailView(month: Int, grade: String) {
+        pushMonthlyDetail(month: month, grade: grade)
+    }
+
+    func movePickYearView() {
+        pushPickYearView()
+    }
+
 }

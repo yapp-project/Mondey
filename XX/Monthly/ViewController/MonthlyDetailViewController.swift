@@ -10,30 +10,39 @@ import UIKit
 
 class MonthlyDetailViewController: BaseViewController {
 
-    @IBOutlet weak var tableView: UITableView!
-    @IBOutlet weak var monthLabel: UILabel!
-    @IBOutlet weak var gradeImageView: UIImageView!
-    @IBOutlet weak var priceLabel: UILabel!
-    @IBOutlet weak var leftButton: UIButton!
-    @IBOutlet weak var rightButton: UIButton!
-    @IBOutlet weak var usedLabel: UILabel!
-    @IBOutlet weak var budgetLabel: UILabel!
+    @IBOutlet private weak var tableView: UITableView!
+    @IBOutlet private weak var monthLabel: UILabel!
+    @IBOutlet private weak var gradeImageView: UIImageView!
+    @IBOutlet private weak var priceLabel: UILabel!
+    @IBOutlet private weak var leftButton: UIButton!
+    @IBOutlet private weak var rightButton: UIButton!
+    @IBOutlet private weak var usedLabel: UILabel!
+    @IBOutlet private weak var budgetLabel: UILabel!
 
     var viewModel: MonthlyDetailViewModel?
+    var month: Int?
+    var grade: String?
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-//        setTableView()
-
+        navigationItem.title = "월 소비 평가"
+        setLabel()
     }
-    
-}
 
-extension MonthlyViewController {
-    private func setTableView() {
-//        tableView.keyboardDismissMode = .onDrag
-//        tableView.alwaysBounceVertical = false
+    @IBAction func showPreviousMonth(_ sender: Any) {
+        tableView.reloadData()
+    }
+
+    @IBAction func showNextMonth(_ sender: Any) {
+        tableView.reloadData()
+    }
+
+    func setLabel() {
+        monthLabel.text = "\(month ?? 1)월"
+        gradeImageView.image = UIImage(named: "grade\(grade ?? "Q")")
+        priceLabel.text = "30,000원"
+        usedLabel.text = "10,000"
+        budgetLabel.text = "/ 300,000"
     }
 
 }
@@ -48,40 +57,34 @@ extension MonthlyDetailViewController: ViewModelBindableType {
     }
 }
 
+extension MonthlyDetailViewController: UITableViewDataSource {
 
-//
-//extension CategoriesSettingViewController: ViewModelBindableType {
-//    func bindViewModel() {
-//        guard let viewModel = viewModel else { return }
-//
-//        viewModel.categories
-//            .bind(to: tableView.rx.items(cellIdentifier: CategoryTableViewCell.reuseIdentifier))
-//            { row, category, cell in
-//                guard var cell = cell as? CategoryTableViewCell else { return }
-//
-//                let viewModel = CategorySettingCellViewModel()
-//                viewModel.category.accept(category)
-//                cell.bind(viewModel: viewModel)
-//            }
-//            .disposed(by: rx.disposeBag)
-//
-//        tableView.rx.itemSelected
-//            .map { $0.row }
-//            .subscribe(onNext: viewModel.selectItem)
-//            .disposed(by: rx.disposeBag)
-//
-//        nextButton.rx.action = viewModel.presentBudgetAction()
-//
-//        viewModel.incomeString()
-//            .bind(to: budgetLabel.rx.text)
-//            .disposed(by: rx.disposeBag)
-//
-//        viewModel.validSetting()
-//            .do(onNext: { [unowned self] in
-//                self.nextButton.backgroundColor = $0 ? UIColor(named: "tealish") : UIColor(named: "153")
-//            })
-//            .bind(to: nextButton.rx.isEnabled)
-//            .disposed(by: rx.disposeBag)
-//    }
-//}
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
+    }
 
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 5
+    }
+
+    func tableView(_ tableView: UITableView,
+                   cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+
+        guard let listCell = tableView
+            .dequeueReusableCell(withIdentifier: "MDListTableViewCell",
+                                 for: indexPath) as? MDListTableViewCell
+            else { return UITableViewCell() }
+
+        return listCell
+
+    }
+}
+
+extension MonthlyDetailViewController: UITableViewDelegate {
+
+    func tableView(_ tableView: UITableView,
+                   heightForRowAt indexPath: IndexPath) -> CGFloat {
+
+        return 86
+    }
+}

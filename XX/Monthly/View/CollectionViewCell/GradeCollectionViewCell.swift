@@ -12,7 +12,7 @@ class GradeCollectionViewCell: UICollectionViewCell {
 
     static let reuseIdentifier = "gradeCollectionViewCell"
 
-    @IBOutlet private weak var gradeImageView: UIImageView!
+    @IBOutlet weak var gradeImageView: UIImageView!
     @IBOutlet private weak var monthLabel: UILabel!
 
     var viewModel: GradeCellViewModel?
