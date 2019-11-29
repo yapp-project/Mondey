@@ -358,7 +358,7 @@
                                             <rect key="frame" x="27.333333333333343" y="45" width="320.33333333333326" height="183"/>
                                             <subviews>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9uB-5G-Oug">
-                                                    <rect key="frame" x="0.0" y="76.666666666666671" width="36" height="28"/>
+                                                    <rect key="frame" x="0.0" y="76.666666666666671" width="37.666666666666664" height="28"/>
                                                     <state key="normal" image="left"/>
                                                     <connections>
                                                         <action selector="showPreviousMonth:" destination="R5b-RH-5L5" eventType="touchUpInside" id="60l-AQ-7Rh"/>
@@ -371,10 +371,10 @@
                                                         <action selector="showNextMonth:" destination="R5b-RH-5L5" eventType="touchUpInside" id="Wce-kq-tAQ"/>
                                                     </connections>
                                                 </button>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gradeDotB" translatesAutoresizingMaskIntoConstraints="NO" id="5QB-dL-rFc">
-                                                    <rect key="frame" x="63.999999999999993" y="68.333333333333343" width="73.333333333333314" height="73.333333333333343"/>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gradeD" translatesAutoresizingMaskIntoConstraints="NO" id="5QB-dL-rFc">
+                                                    <rect key="frame" x="65.666666666666657" y="68.333333333333314" width="71.666666666666657" height="91.666666666666686"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="width" secondItem="5QB-dL-rFc" secondAttribute="height" multiplier="1:1" id="aqa-qN-Jmp"/>
+                                                        <constraint firstAttribute="width" secondItem="5QB-dL-rFc" secondAttribute="height" multiplier="68:87" id="aqa-qN-Jmp"/>
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="7월" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fW4-13-ZFv">
@@ -384,7 +384,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="3pQ-I7-ZTl">
-                                                    <rect key="frame" x="160.33333333333331" y="74.666666666666671" width="101.66666666666669" height="46.666666666666671"/>
+                                                    <rect key="frame" x="160.33333333333331" y="84.333333333333343" width="101.66666666666669" height="46.666666666666657"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="초과 금액" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vPy-th-9JN">
                                                             <rect key="frame" x="0.0" y="0.0" width="101.66666666666667" height="22.333333333333332"/>
@@ -393,7 +393,7 @@
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <stackView opaque="NO" contentMode="scaleToFill" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="hNB-4R-owM">
-                                                            <rect key="frame" x="0.0" y="24.333333333333329" width="101.66666666666667" height="22.333333333333329"/>
+                                                            <rect key="frame" x="0.0" y="24.333333333333314" width="101.66666666666667" height="22.333333333333329"/>
                                                             <subviews>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="380,000원" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Go-AP-9kz">
                                                                     <rect key="frame" x="0.0" y="0.0" width="71" height="22.333333333333332"/>
@@ -420,7 +420,7 @@
                                                 <constraint firstItem="3pQ-I7-ZTl" firstAttribute="leading" secondItem="5QB-dL-rFc" secondAttribute="trailing" priority="750" constant="23" id="Pij-Uo-ERW"/>
                                                 <constraint firstItem="fW4-13-ZFv" firstAttribute="centerX" secondItem="qwh-Dn-npk" secondAttribute="centerX" id="UQk-US-kYw"/>
                                                 <constraint firstItem="9uB-5G-Oug" firstAttribute="centerY" secondItem="qwh-Dn-npk" secondAttribute="centerY" multiplier="0.99" id="W3L-39-W9K"/>
-                                                <constraint firstItem="5QB-dL-rFc" firstAttribute="height" secondItem="qwh-Dn-npk" secondAttribute="height" multiplier="0.4" id="Xkw-Vz-PSj"/>
+                                                <constraint firstItem="5QB-dL-rFc" firstAttribute="height" secondItem="qwh-Dn-npk" secondAttribute="height" multiplier="0.5" id="Xkw-Vz-PSj"/>
                                                 <constraint firstItem="FvA-4s-60Q" firstAttribute="leading" secondItem="3pQ-I7-ZTl" secondAttribute="trailing" constant="28" id="ci1-oZ-EBi"/>
                                                 <constraint firstItem="hNB-4R-owM" firstAttribute="centerY" secondItem="5QB-dL-rFc" secondAttribute="centerY" multiplier="1.05" id="rKD-lo-O44"/>
                                                 <constraint firstItem="3pQ-I7-ZTl" firstAttribute="leading" secondItem="fW4-13-ZFv" secondAttribute="centerX" id="rYI-3d-hIn"/>
@@ -707,7 +707,6 @@
         <image name="gradeB" width="45" height="45"/>
         <image name="gradeC" width="44" height="45"/>
         <image name="gradeD" width="45" height="45"/>
-        <image name="gradeDotB" width="67" height="67"/>
         <image name="icCulture" width="19" height="20"/>
         <image name="left" width="28" height="28"/>
         <image name="right" width="28" height="28"/>

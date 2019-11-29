@@ -39,11 +39,14 @@ class MonthlyViewController: BaseViewController {
         guard let viewController = storyboard
             .instantiateViewController(withIdentifier: "MonthlyDetailViewController") as? MonthlyDetailViewController
             else { return }
-        viewController.month = month
-        viewController.grade = grade
+        if month != 12 {
+            viewController.month = month
+            viewController.grade = grade
+            
+            self.navigationController?.pushViewController(viewController,
+                                                          animated: true)
+        }
         
-        self.navigationController?.pushViewController(viewController,
-                                                      animated: true)
     }
     
     private func pushPickYearView() {

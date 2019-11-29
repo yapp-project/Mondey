@@ -22,14 +22,19 @@ class MonthlyDetailViewController: BaseViewController {
     var viewModel: MonthlyDetailViewModel?
     var month: Int?
     var grade: String?
-    let gradeData = ["A", "A", "C", "A", "C", "B",
-                     "D", "B", "A", "A", "B", "Q"]
-
+    let gradeData = ["DotAA", "DotAA", "C", "DotAA", "C", "DotB",
+                     "D", "DotB", "DotAA", "DotAA", "DotB", "Q"]
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationItem.title = "월 소비 평가"
         self.navigationController?.interactivePopGestureRecognizer?.delegate = nil
         setLabel()
+        if month == 1 {
+            leftButton.isHidden = true
+        }
+        if month == 11 {
+            rightButton.isHidden = true
+        }
     }
 
     @IBAction func showPreviousMonth(_ sender: Any) {
@@ -75,11 +80,13 @@ class MonthlyDetailViewController: BaseViewController {
     }
 
     func setLabel() {
-        monthLabel.text = "\(month ?? 1)월"
-        gradeImageView.image = UIImage(named: "grade\(grade ?? "Q")")
-        priceLabel.text = "30,000원"
-        usedLabel.text = "10,000"
-        budgetLabel.text = "/ 300,000"
+        if let num = month {
+            monthLabel.text = "\(num)월"
+            gradeImageView.image = UIImage(named: "grade\(gradeData[num - 1])")
+            priceLabel.text = "30,000원"
+            usedLabel.text = "10,000"
+            budgetLabel.text = "/ 300,000"
+        }
     }
 
 }
