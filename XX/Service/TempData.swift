@@ -68,4 +68,14 @@ struct TempData {
         9: MonthHistory(budget: 1500000, mount: 1000000),
         10: MonthHistory(budget: 2000000, mount: 1700000)
     ]
+    
+    static func totalMonthHistory() -> [Int : MonthHistory] {
+        let budget = TempData.categories.reduce(into: 0, { $0 += $1.budget })
+        let mount = TempData.expenditure.reduce(into: 0, { $0 += $1.cost })
+        
+        var history = TempData.monthHistory
+        history[11] = MonthHistory(budget: budget, mount: mount)
+        
+        return history
+    }
 }
