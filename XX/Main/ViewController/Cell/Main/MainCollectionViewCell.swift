@@ -72,8 +72,10 @@ extension MainCollectionViewCell: ViewModelBindableType {
                 //                self.mainCellUseMoneyLabel.text = self.category.map{"\($0.budget)"}
                 self.mainCellAllMoneyLabel.text = "/\(value.element?.budget ?? 0)"
                 
-                self.percentRealBarView.backgroundColor = value.element?.tintColor
-                self.mainCellPercentNumLabel.textColor = value.element?.tintColor
+                print("value.element?.catTintColor \(String(describing: value.element?.catTintColor))")
+                
+                self.percentRealBarView.backgroundColor = value.element?.catTintColor
+                self.mainCellPercentNumLabel.textColor = value.element?.catTintColor
                 
             }}
             .disposed(by: rx.disposeBag)
