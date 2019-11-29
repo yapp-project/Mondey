@@ -10,6 +10,9 @@ import UIKit
 class MainViewController: BaseViewController {
  
     @IBOutlet weak var collectionView: UICollectionView!
+    @IBOutlet var pickerBackView: UIView!
+    @IBOutlet weak var pickerView: UIPickerView!
+    @IBOutlet weak var pickerDoneButton: UIButton!
     
     let HEADER_CELL_NAME = "MainHeaderCell"
     let MAIN_CELL_NAME = "MainCollectionViewCell"
@@ -24,11 +27,14 @@ class MainViewController: BaseViewController {
         super.viewDidLoad()
         bindViewModel()
         bindCollectionView()
+        bindPickerView()
     }
     
     override func viewWillAppear(_ animated: Bool) {
         self.navigationController?.setNavigationBarHidden(true, animated: true)
     }
+    
+  
 }
 
 extension MainViewController: ViewModelBindableType {
@@ -55,7 +61,11 @@ extension MainViewController: ViewModelBindableType {
             (idx) -> Void in
             viewModel.removeItem(at: idx)
         }
+        
+        
+        pickerDoneButton.rx.action = viewModel.requestPickerDoneButton()
     }
+    
     
     private func bindCollectionView() { 
         guard let viewModel = viewModel else { return }
@@ -75,12 +85,7 @@ extension MainViewController: ViewModelBindableType {
         collectionView
             .rx.setDelegate(self)
             .disposed(by: rx.disposeBag)
-        
-        
-        
     }
-    
-
     
     typealias MainSectionModel = SectionModel<String, Category>
     typealias MainCollectionViewDataSource = RxCollectionViewSectionedReloadDataSource<MainSectionModel>
@@ -143,6 +148,32 @@ extension MainViewController: ViewModelBindableType {
         
     }
     
+    func bindPickerView() {
+        guard let viewModel = viewModel else { return }
+        
+        pickerBackView.frame = CGRect.init(x: 0,
+                                           y: UIScreen.main.bounds.height - pickerBackView.frame.height,
+                                           width: UIScreen.main.bounds.width,
+                                           height: pickerBackView.frame.height)
+        self.view.addSubview(pickerBackView)
+        
+        viewModel.categoryArray.asObservable()
+            .bind(to: pickerView.rx.itemTitles) { (row, element) in 
+                return element.title == "" ? element.name : element.title
+            }.disposed(by: rx.disposeBag)
+        
+        pickerView.rx.itemSelected.subscribe(onNext: { (row, element) in
+//            print("element \(row)")
+            print("element \(viewModel.categoryArray.value[row])")
+            viewModel.selectedMainPicker.accept(viewModel.categoryArray.value[row])
+            
+        }).disposed(by: rx.disposeBag)
+        
+        viewModel.isHiddenMainPickerView.asObservable().bind(to: self.pickerBackView.rx.isHidden)
+        .disposed(by: rx.disposeBag)
+        
+        
+    }
     
     
 }
