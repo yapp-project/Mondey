@@ -67,7 +67,9 @@
 		5F3C0A6B8531A015008E4347696FD82F /* PeriodTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFF9206064745106525D2C633668E406 /* PeriodTableViewCell.swift */; };
 		F7EF9320E055D3267D1F15D35589FB17 /* PickYearViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE1211BC23B04E9A2772DAA5D13ACFC /* PickYearViewController.swift */; };
 		6627483763586FE1F6DE6D8B478AB3BB /* PickYearViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0414AE8FCCAD778E57EF5D9958854EF1 /* PickYearViewModel.swift */; };
+		C97DB5B6B3A026A1D03E48F914E7DFA1 /* PieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07593C609F8A197434B3E6845BCF0C6E /* PieView.swift */; };
 		F31E39548A08F8027258082E2C7E8616 /* RealmStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80710A174265042A8F7C7C4227BD6A0E /* RealmStorage.swift */; };
+		C785AD9A17284B1C80186ACDE867A950 /* RoundShadowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47A820CA9DDE9F4EC295965DB9F3E96D /* RoundShadowView.swift */; };
 		38F6746B5DA8080758A3441EC5B09630 /* SceneCoodinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A51E23BF7FDD3AECA55D43968CBEB36C /* SceneCoodinator.swift */; };
 		92B44D897CC121E71478E3D924BBB9AE /* SceneCoordinatorType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3181263BA19227365FB8377CDDB482E0 /* SceneCoordinatorType.swift */; };
 		FA30A9E53799F716A3121C7AF8609155 /* SceneType.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD096E46260FC30E734B2AF8E9CF0643 /* SceneType.swift */; };
@@ -165,9 +167,11 @@
 		DFF9206064745106525D2C633668E406 /* PeriodTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PeriodTableViewCell.swift; path = XX/initialize/View/TableViewCell/PeriodTableViewCell.swift; sourceTree = SOURCE_ROOT; };
 		BFE1211BC23B04E9A2772DAA5D13ACFC /* PickYearViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PickYearViewController.swift; sourceTree = "<group>"; };
 		0414AE8FCCAD778E57EF5D9958854EF1 /* PickYearViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PickYearViewModel.swift; sourceTree = "<group>"; };
+		07593C609F8A197434B3E6845BCF0C6E /* PieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PieView.swift; sourceTree = "<group>"; };
 		8111B9F16409983644EC2227CCB0B909 /* Pods-XX.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XX.debug.xcconfig"; path = "Target Support Files/Pods-XX/Pods-XX.debug.xcconfig"; sourceTree = "<group>"; };
 		D98E658C15E41927F106017B130EE3B3 /* Pods-XX.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XX.release.xcconfig"; path = "Target Support Files/Pods-XX/Pods-XX.release.xcconfig"; sourceTree = "<group>"; };
 		80710A174265042A8F7C7C4227BD6A0E /* RealmStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmStorage.swift; sourceTree = "<group>"; };
+		47A820CA9DDE9F4EC295965DB9F3E96D /* RoundShadowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundShadowView.swift; sourceTree = "<group>"; };
 		A51E23BF7FDD3AECA55D43968CBEB36C /* SceneCoodinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneCoodinator.swift; sourceTree = "<group>"; };
 		3181263BA19227365FB8377CDDB482E0 /* SceneCoordinatorType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneCoordinatorType.swift; sourceTree = "<group>"; };
 		CD096E46260FC30E734B2AF8E9CF0643 /* SceneType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneType.swift; sourceTree = "<group>"; };
@@ -581,6 +585,8 @@
 				AAEFBE4751DD82F0F1C5256292F5DB00 /* CollectionViewCell */,
 				0FD86F6D781AFBE7B689B4DDF77566E4 /* TableViewCell */,
 				380C37CCF6055811C851AD44AD882A6E /* Monthly.storyboard */,
+				07593C609F8A197434B3E6845BCF0C6E /* PieView.swift */,
+				47A820CA9DDE9F4EC295965DB9F3E96D /* RoundShadowView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -842,7 +848,9 @@
 				5F3C0A6B8531A015008E4347696FD82F /* PeriodTableViewCell.swift in Sources */,
 				F7EF9320E055D3267D1F15D35589FB17 /* PickYearViewController.swift in Sources */,
 				6627483763586FE1F6DE6D8B478AB3BB /* PickYearViewModel.swift in Sources */,
+				C97DB5B6B3A026A1D03E48F914E7DFA1 /* PieView.swift in Sources */,
 				F31E39548A08F8027258082E2C7E8616 /* RealmStorage.swift in Sources */,
+				C785AD9A17284B1C80186ACDE867A950 /* RoundShadowView.swift in Sources */,
 				38F6746B5DA8080758A3441EC5B09630 /* SceneCoodinator.swift in Sources */,
 				92B44D897CC121E71478E3D924BBB9AE /* SceneCoordinatorType.swift in Sources */,
 				FA30A9E53799F716A3121C7AF8609155 /* SceneType.swift in Sources */,

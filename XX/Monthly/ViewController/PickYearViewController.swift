@@ -10,8 +10,8 @@ import UIKit
 
 class PickYearViewController: BaseViewController {
 
-    @IBOutlet weak var yearTableView: UITableView!
-    @IBOutlet weak var closeButton: UIButton!
+    @IBOutlet private weak var yearTableView: UITableView!
+    @IBOutlet private weak var closeButton: UIButton!
 
     var viewModel: PickYearViewModel?
 
@@ -24,6 +24,9 @@ class PickYearViewController: BaseViewController {
         self.yearTableView.rowHeight = 50
 
         setTableView()
+    }
+    @IBAction func closeView(_ sender: Any) {
+        self.dismiss(animated: false, completion: nil)
     }
 
     private func setTableView() {
@@ -47,5 +50,13 @@ extension PickYearViewController: ViewModelBindableType {
 //            .map { $0.row }
 //            .subscribe(viewModel.selectItem)
 //            .disposed(by: rx.disposeBag)
+    }
+}
+
+extension PickYearViewController: UITableViewDelegate {
+    func tableView(_ tableView: UITableView,
+                   didSelectRowAt indexPath: IndexPath) {
+
+        self.dismiss(animated: false, completion: nil)
     }
 }

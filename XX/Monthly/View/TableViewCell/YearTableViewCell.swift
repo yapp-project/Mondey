@@ -11,7 +11,7 @@ import UIKit
 class YearTableViewCell: UITableViewCell {
     
     @IBOutlet weak var yearLabel: UILabel!
-    @IBOutlet weak var checkImageView: UIImageView!
+    @IBOutlet private weak var checkImageView: UIImageView!
 
     override func awakeFromNib() {
         super.awakeFromNib()

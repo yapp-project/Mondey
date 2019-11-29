@@ -3,6 +3,9 @@ PODS:
     - RxCocoa (~> 5.0)
     - RxSwift (~> 5.0)
   - CenteredCollectionView (2.2.1)
+  - Charts (3.4.0):
+    - Charts/Core (= 3.4.0)
+  - Charts/Core (3.4.0)
   - Differentiator (4.0.1)
   - "NSObject+Rx (5.0.2)":
     - RxSwift (~> 5.0)
@@ -35,6 +38,7 @@ PODS:
 DEPENDENCIES:
   - Action
   - CenteredCollectionView
+  - Charts
   - "NSObject+Rx"
   - Realm
   - RealmSwift
@@ -50,6 +54,7 @@ SPEC REPOS:
   trunk:
     - Action
     - CenteredCollectionView
+    - Charts
     - Differentiator
     - "NSObject+Rx"
     - Realm
@@ -66,6 +71,7 @@ SPEC REPOS:
 SPEC CHECKSUMS:
   Action: 0d14986aad0f1330aa27ce65d0cdeaacbb63d91c
   CenteredCollectionView: ba6e45fb7774627890621d73c8dd7dbd33391da9
+  Charts: 74c9f256eaf0460c0c416522d1cf8c634ea6b286
   Differentiator: 886080237d9f87f322641dedbc5be257061b0602
   "NSObject+Rx": 2eb2cf51fd1c554118449a7fbc36e4cd620b9e94
   Realm: 25f0a8244cbb1c2271c922963ea8666fc2d8104d
