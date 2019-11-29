@@ -10,6 +10,9 @@ import UIKit
 class MainViewController: BaseViewController {
  
     @IBOutlet weak var collectionView: UICollectionView!
+    @IBOutlet var pickerBackView: UIView!
+    @IBOutlet weak var pickerView: UIPickerView!
+    @IBOutlet weak var pickerDoneButton: UIButton!
     
     let HEADER_CELL_NAME = "MainHeaderCell"
     let MAIN_CELL_NAME = "MainCollectionViewCell"
@@ -24,11 +27,14 @@ class MainViewController: BaseViewController {
         super.viewDidLoad()
         bindViewModel()
         bindCollectionView()
+        bindPickerView()
     }
     
     override func viewWillAppear(_ animated: Bool) {
         self.navigationController?.setNavigationBarHidden(true, animated: true)
     }
+    
+  
 }
 
 extension MainViewController: ViewModelBindableType {
@@ -55,22 +61,18 @@ extension MainViewController: ViewModelBindableType {
             (idx) -> Void in
             viewModel.removeItem(at: idx)
         }
+        
+        
+        pickerDoneButton.rx.action = viewModel.requestPickerDoneButton()
     }
+    
     
     private func bindCollectionView() { 
         guard let viewModel = viewModel else { return }
         
         viewModel.sectionListSubject.asObserver()
         .bind(to: collectionView.rx.items(dataSource: mainDatasource)).disposed(by: rx.disposeBag)
-  
-        collectionView
-            .rx.itemSelected.bind { (indexPath) in
-                // 셀쪽 이벤트 RX에 대해 알아봐야할듯 이 방법이 맞는지 모르겠음
-                if viewModel.isMainCellRemoveMode.value {
-                    viewModel.requestSpendDetailMoveAction().execute()
-                }
-            }
-            .disposed(by: rx.disposeBag)
+
         
         collectionView
             .rx.setDelegate(self)
@@ -78,9 +80,16 @@ extension MainViewController: ViewModelBindableType {
         
         
         
+        collectionView
+            .rx.itemSelected.bind { (indexPath) in
+                // 셀쪽 이벤트 RX에 대해 알아봐야할듯 이 방법이 맞는지 모르겠음 -> 현재 동작하지않음 Cell안애 이벤트 넣어서 동작
+//                if viewModel.isMainCellRemoveMode.value {
+//                    viewModel.requestSpendDetailMoveAction(cellValue: <#BehaviorRelay<Category>#>).execute()
+//                }
+            }
+            .disposed(by: rx.disposeBag)
+        
     }
-    
-
     
     typealias MainSectionModel = SectionModel<String, Category>
     typealias MainCollectionViewDataSource = RxCollectionViewSectionedReloadDataSource<MainSectionModel>
@@ -112,6 +121,9 @@ extension MainViewController: ViewModelBindableType {
                     .subscribe
                     { (value) in
                         cell.removeCellButton.rx.isHidden.on(value)
+                        
+                        let reverseValue = Event.next( !(value.element!) )
+                        cell.moveDetailButton.rx.isHidden.on(reverseValue)
                     }
                     .disposed(by: self.rx.disposeBag)
             }
@@ -143,6 +155,32 @@ extension MainViewController: ViewModelBindableType {
         
     }
     
+    func bindPickerView() {
+        guard let viewModel = viewModel else { return }
+        
+        pickerBackView.frame = CGRect.init(x: 0,
+                                           y: UIScreen.main.bounds.height - pickerBackView.frame.height,
+                                           width: UIScreen.main.bounds.width,
+                                           height: pickerBackView.frame.height)
+        self.view.addSubview(pickerBackView)
+        
+        viewModel.categoryArray.asObservable()
+            .bind(to: pickerView.rx.itemTitles) { (row, element) in 
+                return element.title == "" ? element.name : element.title
+            }.disposed(by: rx.disposeBag)
+        
+        pickerView.rx.itemSelected.subscribe(onNext: { (row, element) in
+//            print("element \(row)")
+            print("element \(viewModel.categoryArray.value[row])")
+            viewModel.selectedMainPicker.accept(viewModel.categoryArray.value[row])
+            
+        }).disposed(by: rx.disposeBag)
+        
+        viewModel.isHiddenMainPickerView.asObservable().bind(to: self.pickerBackView.rx.isHidden)
+        .disposed(by: rx.disposeBag)
+        
+        
+    }
     
     
 }

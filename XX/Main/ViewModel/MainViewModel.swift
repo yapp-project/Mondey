@@ -69,7 +69,7 @@ class MainViewModel: BaseViewModel {
 
     func requestSpendDetailMoveAction(cellValue: BehaviorRelay<Category>) -> CocoaAction {
         return Action { _ in
-            var viewModel = SpendDetailViewModel(title: "지출디테일", sceneCoordinator: self.sceneCoordinator, storage: self.storage)
+            let viewModel = SpendDetailViewModel(title: "지출디테일", sceneCoordinator: self.sceneCoordinator, storage: self.storage)
             viewModel.spendDetailCategory = cellValue
             let scene = MainScene.spendDetail(viewModel)
 
@@ -146,7 +146,7 @@ class MainViewModel: BaseViewModel {
             return Observable.just(action)
         }
     }
-    
+
     private func showAlert(title: String,
                            message: String) -> Observable<Void> {
         sceneCoordinator.showWarning(title: title, message: message)
