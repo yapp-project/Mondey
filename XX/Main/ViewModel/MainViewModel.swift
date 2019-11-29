@@ -67,9 +67,10 @@ class MainViewModel: BaseViewModel {
         }
     }
     
-    func requestSpendDetailMoveAction() -> CocoaAction {
+    func requestSpendDetailMoveAction(cellValue: BehaviorRelay<Category>) -> CocoaAction {
         return Action { _ in
-            let viewModel = SpendDetailViewModel(title: "지출디테일", sceneCoordinator: self.sceneCoordinator, storage: self.storage)
+            var viewModel = SpendDetailViewModel(title: "지출디테일", sceneCoordinator: self.sceneCoordinator, storage: self.storage)
+            viewModel.spendDetailCategory = cellValue
             let scene = MainScene.spendDetail(viewModel)
             
             return self

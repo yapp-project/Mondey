@@ -11,6 +11,7 @@ import UIKit
 class SpendDetailViewController: BaseViewController {
     
     @IBOutlet weak var collectionView: UICollectionView!
+     
     
     let SPEND_DETAIL_HEADER_CELL = "SpendDetailHeaderReusableView"
     
@@ -20,6 +21,7 @@ class SpendDetailViewController: BaseViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        bindViewModel()
         bindCollectionView()
     }
     
@@ -32,6 +34,7 @@ class SpendDetailViewController: BaseViewController {
 extension SpendDetailViewController: ViewModelBindableType {
     func bindViewModel() {
         guard let viewModel = viewModel else { return }
+        print("viewModel \(viewModel.spendDetailCategory.value)")
 //        backButton.rx.action = viewModel.requestBackButtonAction()
     }
     

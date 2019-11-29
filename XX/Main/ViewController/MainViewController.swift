@@ -72,19 +72,23 @@ extension MainViewController: ViewModelBindableType {
         
         viewModel.sectionListSubject.asObserver()
         .bind(to: collectionView.rx.items(dataSource: mainDatasource)).disposed(by: rx.disposeBag)
-  
-        collectionView
-            .rx.itemSelected.bind { (indexPath) in
-                // 셀쪽 이벤트 RX에 대해 알아봐야할듯 이 방법이 맞는지 모르겠음
-                if viewModel.isMainCellRemoveMode.value {
-                    viewModel.requestSpendDetailMoveAction().execute()
-                }
-            }
-            .disposed(by: rx.disposeBag)
+
         
         collectionView
             .rx.setDelegate(self)
             .disposed(by: rx.disposeBag)
+        
+        
+        
+        collectionView
+            .rx.itemSelected.bind { (indexPath) in
+                // 셀쪽 이벤트 RX에 대해 알아봐야할듯 이 방법이 맞는지 모르겠음 -> 현재 동작하지않음 Cell안애 이벤트 넣어서 동작
+//                if viewModel.isMainCellRemoveMode.value {
+//                    viewModel.requestSpendDetailMoveAction(cellValue: <#BehaviorRelay<Category>#>).execute()
+//                }
+            }
+            .disposed(by: rx.disposeBag)
+        
     }
     
     typealias MainSectionModel = SectionModel<String, Category>
@@ -117,6 +121,9 @@ extension MainViewController: ViewModelBindableType {
                     .subscribe
                     { (value) in
                         cell.removeCellButton.rx.isHidden.on(value)
+                        
+                        let reverseValue = Event.next( !(value.element!) )
+                        cell.moveDetailButton.rx.isHidden.on(reverseValue)
                     }
                     .disposed(by: self.rx.disposeBag)
             }
