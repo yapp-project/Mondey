@@ -59,7 +59,13 @@ class MainHeaderReusableView: UICollectionReusableView {
         
         centeredCollectionViewFlowLayout = (collectionView.collectionViewLayout as! CenteredCollectionViewFlowLayout)
         collectionView.decelerationRate = UIScrollView.DecelerationRate.fast
-        
+
+        collectionView.rx.itemSelected.bind { [unowned self] (indexPath) in
+            if indexPath.item == 1 {
+                self.viewModel?.presentingMonthly().execute()
+            }
+            }.disposed(by: rx.disposeBag)
+
         centeredCollectionViewFlowLayout.itemSize = CGSize(
             width: UIScreen.main.bounds.width * cellPercentWidth,
             height: 158 // fix value
@@ -86,11 +92,10 @@ extension MainHeaderReusableView: ViewModelBindableType {
         spendButton.rx.action = viewModel.requestMainHeaderSwipeMoveAction(closureMoveCollectionViewChange, mode: .spend)
         savingButton.rx.action = viewModel.requestMainHeaderSwipeMoveAction(closureMoveCollectionViewChange, mode: .saving)
         removeModeButton.rx.action = viewModel.requestMainRemoveModeButtonAction()
-        
-        
-        
-//        @IBOutlet weak var useMoneyLabel: UILabel!
-//        @IBOutlet weak var userBudgetLabel: UILabel!
+
+
+        //        @IBOutlet weak var useMoneyLabel: UILabel!
+        //        @IBOutlet weak var userBudgetLabel: UILabel!
         
         
         MemoryStorage.shared.categoryList().subscribe{ [unowned self] (value) in
@@ -104,7 +109,7 @@ extension MainHeaderReusableView: ViewModelBindableType {
                 //            }
             }
             
-        }.disposed(by: rx.disposeBag)
+            }.disposed(by: rx.disposeBag)
         
     }
     
@@ -130,12 +135,12 @@ extension MainHeaderReusableView: ViewModelBindableType {
             .rx
             .didEndScrollingAnimation
             .bind { () in
-        }.disposed(by: rx.disposeBag)
+            }.disposed(by: rx.disposeBag)
         
         collectionView
             .rx.itemSelected.bind { [unowned self] (indexPath) in
                 self.moveCollectionViewPage(MainHeaderMode(rawValue: indexPath.row) ?? .spend)
-        }.disposed(by: rx.disposeBag)
+            }.disposed(by: rx.disposeBag)
         
         Observable.just(sections)
             .bind(to: collectionView.rx.items(dataSource: mainDatasource))

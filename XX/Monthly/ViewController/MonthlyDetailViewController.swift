@@ -22,27 +22,71 @@ class MonthlyDetailViewController: BaseViewController {
     var viewModel: MonthlyDetailViewModel?
     var month: Int?
     var grade: String?
-    
+    let gradeData = ["DotAA", "DotAA", "C", "DotAA", "C", "DotB",
+                     "D", "DotB", "DotAA", "DotAA", "DotB", "Q"]
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationItem.title = "월 소비 평가"
+        self.navigationController?.interactivePopGestureRecognizer?.delegate = nil
         setLabel()
+        if month == 1 {
+            leftButton.isHidden = true
+        }
+        if month == 11 {
+            rightButton.isHidden = true
+        }
     }
 
     @IBAction func showPreviousMonth(_ sender: Any) {
-        tableView.reloadData()
+        if var num = month {
+            if num >= 2 {
+                num -= 1
+                month = num
+                monthLabel.text = "\(num)월"
+                gradeImageView.image = UIImage(named: "grade\(gradeData[num - 1])")
+                priceLabel.text = "30,000원"
+                usedLabel.text = "10,000"
+                budgetLabel.text = "/ 300,000"
+                tableView.reloadData()
+            }
+            if num == 1 {
+                leftButton.isHidden = true
+            } else {
+                leftButton.isHidden = false
+                rightButton.isHidden = false
+            }
+        }
     }
 
     @IBAction func showNextMonth(_ sender: Any) {
-        tableView.reloadData()
+        if var num = month {
+            if num <= 10 {
+                num += 1
+                month = num
+                monthLabel.text = "\(num)월"
+                gradeImageView.image = UIImage(named: "grade\(gradeData[num - 1])")
+                priceLabel.text = "30,000원"
+                usedLabel.text = "10,000"
+                budgetLabel.text = "/ 300,000"
+                tableView.reloadData()
+            }
+            if num == 11 {
+                rightButton.isHidden = true
+            } else {
+                leftButton.isHidden = false
+                rightButton.isHidden = false
+            }
+        }
     }
 
     func setLabel() {
-        monthLabel.text = "\(month ?? 1)월"
-        gradeImageView.image = UIImage(named: "grade\(grade ?? "Q")")
-        priceLabel.text = "30,000원"
-        usedLabel.text = "10,000"
-        budgetLabel.text = "/ 300,000"
+        if let num = month {
+            monthLabel.text = "\(num)월"
+            gradeImageView.image = UIImage(named: "grade\(gradeData[num - 1])")
+            priceLabel.text = "30,000원"
+            usedLabel.text = "10,000"
+            budgetLabel.text = "/ 300,000"
+        }
     }
 
 }

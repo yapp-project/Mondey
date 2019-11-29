@@ -22,16 +22,16 @@
         </array>
     </customFonts>
     <scenes>
-        <!--Monthly View Controller-->
+        <!--월별 등급 평가-->
         <scene sceneID="dlV-9F-pg3">
             <objects>
-                <viewController useStoryboardIdentifierAsRestorationIdentifier="YES" id="SZf-OH-ZMU" customClass="MonthlyViewController" customModule="XX" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MonthlyViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="SZf-OH-ZMU" customClass="MonthlyViewController" customModule="XX" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="v63-u7-8la">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="aHU-FM-m4k">
-                                <rect key="frame" x="0.0" y="88" width="375" height="724"/>
+                                <rect key="frame" x="0.0" y="44" width="375" height="768"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="GradeTableViewCell" rowHeight="360" id="mmF-UA-6Rg" customClass="GradeTableViewCell" customModule="XX" customModuleProvider="target">
@@ -173,7 +173,7 @@
                                                                         <constraint firstAttribute="width" constant="22" id="F7b-Mg-sqa"/>
                                                                     </constraints>
                                                                 </imageView>
-                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4번" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xeE-z2-pmb">
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5번" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xeE-z2-pmb">
                                                                     <rect key="frame" x="53.333333333333343" y="3" width="17" height="16.333333333333332"/>
                                                                     <fontDescription key="fontDescription" name="SpoqaHanSans-Regular" family="SpoqaHanSans" pointSize="11"/>
                                                                     <color key="textColor" name="51"/>
@@ -329,17 +329,17 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="LnD-2C-hfs"/>
                     </view>
-                    <navigationItem key="navigationItem" id="Shx-7F-ACs"/>
+                    <navigationItem key="navigationItem" title="월별 등급 평가" id="gUC-U8-gkq"/>
                     <connections>
                         <outlet property="monthlyTableView" destination="aHU-FM-m4k" id="WUC-WA-yIR"/>
-                        <outlet property="naviItem" destination="Shx-7F-ACs" id="EY4-u3-DC2"/>
+                        <outlet property="naviItem" destination="gUC-U8-gkq" id="2wM-Px-mho"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5BT-Ar-2B8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="910" y="13"/>
         </scene>
-        <!--Monthly Detail View Controller-->
+        <!--Title-->
         <scene sceneID="DAb-cD-Upo">
             <objects>
                 <viewController storyboardIdentifier="MonthlyDetailViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="R5b-RH-5L5" customClass="MonthlyDetailViewController" customModule="XX" customModuleProvider="target" sceneMemberID="viewController">
@@ -358,7 +358,7 @@
                                             <rect key="frame" x="27.333333333333343" y="45" width="320.33333333333326" height="183"/>
                                             <subviews>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9uB-5G-Oug">
-                                                    <rect key="frame" x="0.0" y="76.666666666666671" width="36" height="28"/>
+                                                    <rect key="frame" x="0.0" y="76.666666666666671" width="37.666666666666664" height="28"/>
                                                     <state key="normal" image="left"/>
                                                     <connections>
                                                         <action selector="showPreviousMonth:" destination="R5b-RH-5L5" eventType="touchUpInside" id="60l-AQ-7Rh"/>
@@ -371,10 +371,10 @@
                                                         <action selector="showNextMonth:" destination="R5b-RH-5L5" eventType="touchUpInside" id="Wce-kq-tAQ"/>
                                                     </connections>
                                                 </button>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gradeDotB" translatesAutoresizingMaskIntoConstraints="NO" id="5QB-dL-rFc">
-                                                    <rect key="frame" x="63.999999999999993" y="68.333333333333343" width="73.333333333333314" height="73.333333333333343"/>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gradeD" translatesAutoresizingMaskIntoConstraints="NO" id="5QB-dL-rFc">
+                                                    <rect key="frame" x="65.666666666666657" y="68.333333333333314" width="71.666666666666657" height="91.666666666666686"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="width" secondItem="5QB-dL-rFc" secondAttribute="height" multiplier="1:1" id="aqa-qN-Jmp"/>
+                                                        <constraint firstAttribute="width" secondItem="5QB-dL-rFc" secondAttribute="height" multiplier="68:87" id="aqa-qN-Jmp"/>
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="7월" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fW4-13-ZFv">
@@ -384,7 +384,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="3pQ-I7-ZTl">
-                                                    <rect key="frame" x="160.33333333333331" y="74.666666666666671" width="101.66666666666669" height="46.666666666666671"/>
+                                                    <rect key="frame" x="160.33333333333331" y="84.333333333333343" width="101.66666666666669" height="46.666666666666657"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="초과 금액" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vPy-th-9JN">
                                                             <rect key="frame" x="0.0" y="0.0" width="101.66666666666667" height="22.333333333333332"/>
@@ -393,7 +393,7 @@
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <stackView opaque="NO" contentMode="scaleToFill" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="hNB-4R-owM">
-                                                            <rect key="frame" x="0.0" y="24.333333333333329" width="101.66666666666667" height="22.333333333333329"/>
+                                                            <rect key="frame" x="0.0" y="24.333333333333314" width="101.66666666666667" height="22.333333333333329"/>
                                                             <subviews>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="380,000원" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Go-AP-9kz">
                                                                     <rect key="frame" x="0.0" y="0.0" width="71" height="22.333333333333332"/>
@@ -420,7 +420,7 @@
                                                 <constraint firstItem="3pQ-I7-ZTl" firstAttribute="leading" secondItem="5QB-dL-rFc" secondAttribute="trailing" priority="750" constant="23" id="Pij-Uo-ERW"/>
                                                 <constraint firstItem="fW4-13-ZFv" firstAttribute="centerX" secondItem="qwh-Dn-npk" secondAttribute="centerX" id="UQk-US-kYw"/>
                                                 <constraint firstItem="9uB-5G-Oug" firstAttribute="centerY" secondItem="qwh-Dn-npk" secondAttribute="centerY" multiplier="0.99" id="W3L-39-W9K"/>
-                                                <constraint firstItem="5QB-dL-rFc" firstAttribute="height" secondItem="qwh-Dn-npk" secondAttribute="height" multiplier="0.4" id="Xkw-Vz-PSj"/>
+                                                <constraint firstItem="5QB-dL-rFc" firstAttribute="height" secondItem="qwh-Dn-npk" secondAttribute="height" multiplier="0.5" id="Xkw-Vz-PSj"/>
                                                 <constraint firstItem="FvA-4s-60Q" firstAttribute="leading" secondItem="3pQ-I7-ZTl" secondAttribute="trailing" constant="28" id="ci1-oZ-EBi"/>
                                                 <constraint firstItem="hNB-4R-owM" firstAttribute="centerY" secondItem="5QB-dL-rFc" secondAttribute="centerY" multiplier="1.05" id="rKD-lo-O44"/>
                                                 <constraint firstItem="3pQ-I7-ZTl" firstAttribute="leading" secondItem="fW4-13-ZFv" secondAttribute="centerX" id="rYI-3d-hIn"/>
@@ -492,7 +492,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="De9-Ch-ATd">
-                                                    <rect key="frame" x="30" y="84.666666666666671" width="315" height="1"/>
+                                                    <rect key="frame" x="30" y="85" width="315" height="1"/>
                                                     <color key="backgroundColor" red="0.88235294117647056" green="0.88235294117647056" blue="0.88235294117647056" alpha="1" colorSpace="calibratedRGB"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="1" id="pxW-L7-W0D"/>
@@ -559,6 +559,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="wiP-os-DNh"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Title" id="AmA-fP-sLB"/>
                     <connections>
                         <outlet property="budgetLabel" destination="m5v-E7-DhI" id="2Fe-tU-xig"/>
                         <outlet property="gradeImageView" destination="5QB-dL-rFc" id="AL2-kO-mJt"/>
@@ -615,13 +616,13 @@
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2019년" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S21-P3-SNg">
-                                                            <rect key="frame" x="159.33333333333334" y="12.000000000000002" width="56.666666666666657" height="25.666666666666671"/>
+                                                            <rect key="frame" x="159.33333333333334" y="12.333333333333334" width="56.666666666666657" height="25.666666666666664"/>
                                                             <fontDescription key="fontDescription" name="SpoqaHanSans-Regular" family="SpoqaHanSans" pointSize="17"/>
                                                             <color key="textColor" name="51"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="checkmarkTealish" translatesAutoresizingMaskIntoConstraints="NO" id="5Ft-aq-Zg9">
-                                                            <rect key="frame" x="228" y="17" width="16" height="16"/>
+                                                            <rect key="frame" x="228" y="19.666666666666668" width="14" height="11"/>
                                                         </imageView>
                                                     </subviews>
                                                     <constraints>
@@ -685,16 +686,13 @@
         <!--Base Navigation Controller-->
         <scene sceneID="zxd-EV-8O7">
             <objects>
-                <navigationController storyboardIdentifier="MonthlyViewController" automaticallyAdjustsScrollViewInsets="NO" id="vRI-UU-W2r" customClass="BaseNavigationController" customModule="XX" customModuleProvider="target" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="vRI-UU-W2r" customClass="BaseNavigationController" customModule="XX" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="dk2-4P-c04">
                         <rect key="frame" x="0.0" y="44" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="SZf-OH-ZMU" kind="relationship" relationship="rootViewController" id="tCU-E9-V2b"/>
-                    </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xf0-jz-nXg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -709,7 +707,6 @@
         <image name="gradeB" width="45" height="45"/>
         <image name="gradeC" width="44" height="45"/>
         <image name="gradeD" width="45" height="45"/>
-        <image name="gradeDotB" width="67" height="67"/>
         <image name="icCulture" width="19" height="20"/>
         <image name="left" width="28" height="28"/>
         <image name="right" width="28" height="28"/>
