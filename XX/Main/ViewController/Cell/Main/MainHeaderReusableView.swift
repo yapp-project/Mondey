@@ -60,12 +60,6 @@ class MainHeaderReusableView: UICollectionReusableView {
         centeredCollectionViewFlowLayout = (collectionView.collectionViewLayout as! CenteredCollectionViewFlowLayout)
         collectionView.decelerationRate = UIScrollView.DecelerationRate.fast
 
-        collectionView.rx.itemSelected.bind { [unowned self] (indexPath) in
-            if indexPath.item == 1 {
-                self.viewModel?.presentingMonthly().execute()
-            }
-            }.disposed(by: rx.disposeBag)
-
         centeredCollectionViewFlowLayout.itemSize = CGSize(
             width: UIScreen.main.bounds.width * cellPercentWidth,
             height: 158 // fix value
@@ -185,13 +179,23 @@ extension MainHeaderReusableView: ViewModelBindableType {
                     else {
                         return UICollectionViewCell()
                 }
-                
+
+                cell.rx.tapGesture()
+                    .when(.recognized)
+                    .materialize()
+                    .filter { $0.error == nil }
+                    .dematerialize()
+                    .subscribe(onNext: { [unowned self] _ in
+                        self.viewModel?.presentingMonthly().execute()
+                    })
+                    .disposed(by: self.rx.disposeBag)
+
                 return cell
             }
         }
-        
+
         let datasource = MainHeaderCollectionViewDataSource.init(configureCell: configureCell)
-        
+
         return datasource
     }
 }
