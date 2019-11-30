@@ -9,5 +9,8 @@
 import UIKit
 
 class SpendDetailCell: UICollectionViewCell {
+    @IBOutlet weak var cellDate: UILabel!
+    @IBOutlet weak var cellDesc: UILabel!
+    @IBOutlet weak var cellCost: UILabel!
     
 }
