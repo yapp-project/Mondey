@@ -16,7 +16,9 @@ class GradeCollectionViewCell: UICollectionViewCell {
     @IBOutlet private weak var monthLabel: UILabel!
 
     var viewModel: GradeCellViewModel?
-
+    let gradeData = ["A", "A", "C", "A", "C", "B",
+                     "D", "B", "A", "B", "A", "Q"]
+    
     override func prepareForReuse() {
         super.prepareForReuse()
 
@@ -24,11 +26,12 @@ class GradeCollectionViewCell: UICollectionViewCell {
         gradeImageView.image = nil
         monthLabel.text = nil
     }
+
 }
 
 extension GradeCollectionViewCell: GradeCellBindableType {
     func bindViewModel() {
-//        guard let viewModel = viewModel else { return }
+        //        guard let viewModel = viewModel else { return }
 
     }
 

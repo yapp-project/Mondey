@@ -8,7 +8,7 @@
 
 import UIKit
 
-class MonthlyViewController: BaseViewController {
+class MonthlyViewController: UIViewController {
     
     @IBOutlet private weak var monthlyTableView: UITableView!
     @IBOutlet weak var naviItem: UINavigationItem!
@@ -20,21 +20,25 @@ class MonthlyViewController: BaseViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        //        bindViewModel()
+                bindViewModel()
         //        bindCollectionView()
         //        setNaviBar()
         navigationItem.title = "월별 등급 평가"
     }
+
+    override func viewWillAppear(_ animated: Bool) {
+        self.navigationController?.setNavigationBarHidden(false, animated: true)
+    }
     
-    //    private func setNaviBar() {
-    //        let attributes = [NSAttributedString.Key.font: UIFont(name: "SpoqaHanSans-Regular", size: 15)!]
-    //        naviItem.titleView?.tintColor = UIColor(named: "51")
-    //        UINavigationBar.appearance().titleTextAttributes = attributes
-    //        naviItem.title = "월별 등급 평가"
-    //        navigationController?.navigationBar.backgroundColor = .clear
-    //        self.navigationController?.interactivePopGestureRecognizer?.delegate = nil
-    //
-    //    }
+    private func setNaviBar() {
+        let attributes = [NSAttributedString.Key.font: UIFont(name: "SpoqaHanSans-Regular", size: 15)!]
+        naviItem.titleView?.tintColor = UIColor(named: "51")
+        UINavigationBar.appearance().titleTextAttributes = attributes
+        naviItem.title = "월별 등급 평가"
+        navigationController?.navigationBar.backgroundColor = .clear
+        self.navigationController?.interactivePopGestureRecognizer?.delegate = nil
+
+    }
 
     private func pushMonthlyDetail(month: Int, grade: String) {
         let storyboard = UIStoryboard(name: "Monthly",
@@ -61,17 +65,17 @@ class MonthlyViewController: BaseViewController {
 extension MonthlyViewController: ViewModelBindableType {
     
     func bindViewModel() {
-        guard let viewModel = viewModel else { return }
+//        guard let viewModel = viewModel else { return }
         //        yearButton.rx.action = viewModel.presentingSelectYear()
         
     }
     
     private func bindCollectionView() {
-        guard let viewModel = viewModel else { return }
-        
-        let dummy = ["A", "B", "C"]
-        let sections = [SectionModel<String, String>(model: "1", items: dummy)]
-        
+//        guard let viewModel = viewModel else { return }
+//
+//        let dummy = ["A", "B", "C"]
+//        let sections = [SectionModel<String, String>(model: "1", items: dummy)]
+
         //        gradeCollectionView.rx.itemSelected.bind { (indexPath) in
         //            //            viewModel.req
         //            }.disposed(by: rx.disposeBag)
@@ -131,6 +135,7 @@ extension MonthlyViewController: UITableViewDataSource {
                 .dequeueReusableCell(withIdentifier: "GradeTableViewCell",
                                      for: indexPath) as? GradeTableViewCell
                 else { return UITableViewCell() }
+
             gradeCell.delegate = self
             
             return gradeCell
