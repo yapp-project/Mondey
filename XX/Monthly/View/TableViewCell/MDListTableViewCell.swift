@@ -29,11 +29,13 @@ class MDListTableViewCell: UITableViewCell {
         budgetLabel.text = nil
     }
 
+    let price = [30000, 20000, 50500, 23000, 60000, 10000, 3000, 10300, 70000, 30000, 20200]
     func setProperties(num: Int, category: String, budget: Int) {
+        let randNum = arc4random_uniform(10)
         iconImageView.image = UIImage(named: "ic\(num + 1)")
         titleLabel.text = category
-        usedLabel.text = "30,000"
-        budgetLabel.text = "\(budget)"
+        usedLabel.text = "\(price[Int(randNum)])원"
+        budgetLabel.text = "/ \(budget) 원"
     }
 }
 

@@ -52,6 +52,7 @@ class SpendDetailDateSelectedPopupView: BaseViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+         
         bindViewModel()
         setLayout()
     }
@@ -68,7 +69,6 @@ extension SpendDetailDateSelectedPopupView: ViewModelBindableType{
         
         datePicker.rx.date.bind(to: viewModel.selectedDate )
             .disposed(by: rx.disposeBag)
-        
         okButton.rx.action = viewModel.requestAppendSobiButtonAction()
         
     }
