@@ -69,7 +69,7 @@ class MainHeaderReusableView: UICollectionReusableView {
     }
     
     func setLayout() {
-        self.userBudgetLabel.text = String(UserDefaultManager.budget)
+        //self.userBudgetLabel.text = String(UserDefaultManager.budget)
     }
     
 }
@@ -97,10 +97,23 @@ extension MainHeaderReusableView: ViewModelBindableType {
             
             if value.element != nil {
                 print("값에 변화가 있수다 MainHeader \(value.element?.count)")
-                //            let useMoney: Int? = value.element?.map{ $0.budget }.reduce(0, { $0 + $1 }) // 버그 : 두번째 nil로 들어옴
-                //            if let useMoney = useMoney {
-                //                self.useMoneyLabel.text = String(useMoney)
-                //            }
+                            let useMoney: Int? = value.element?.map{ $0.budget }.reduce(0, { $0 + $1 }) // 버그 : 두번째 nil로 들어옴
+                            if let useMoney = useMoney {
+                                self.userBudgetLabel.text = String(useMoney)
+                            }
+            }
+            
+            }.disposed(by: rx.disposeBag)
+        
+        MemoryStorage.shared.expenditureList().subscribe{ [unowned self] (value) in
+            //            print("값에 변화가 있수다 MainHeader \(value.element?.map{ $0.budget }.reduce(0, { $0 + $1 }))")
+            
+            if value.element != nil {
+                print("값에 변화가 있수다 MainHeader \(value.element?.count)")
+                            let useMoney: Int? = value.element?.map{ $0.cost }.reduce(0, { $0 + $1 }) // 버그 : 두번째 nil로 들어옴
+                            if let useMoney = useMoney {
+                                self.useMoneyLabel.text = String(useMoney)
+                            }
             }
             
             }.disposed(by: rx.disposeBag)
