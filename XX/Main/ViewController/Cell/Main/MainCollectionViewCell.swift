@@ -48,8 +48,10 @@ class MainCollectionViewCell: UICollectionViewCell {
             let percent: Double = Double(self.filterCateogryAllValue.value) / Double(self.category.value.budget)
             
 //            print("왜 ㅠㅠ\(self.filterCateogryAllValue.value) \(self.category.value.budget) \(percent) ")
-            
-            let percentResult = Int(floor(percent * 100))
+            print(self.filterCateogryAllValue.value)
+            print(self.category.value.budget)
+            print(percent)
+            let percentResult = Int(percent * 100)
             self.mainCellPercentNumLabel.text = "\(100 < percentResult ? 100 : percentResult)%"
             
             self.mainCellPercentBarWidth.constant = (self.PERCENT_BAR_BASE_WIDTH * CGFloat(percent))

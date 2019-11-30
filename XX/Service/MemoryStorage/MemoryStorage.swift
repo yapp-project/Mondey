@@ -13,9 +13,9 @@ class MemoryStorage {
     // 싱글톤 객체
     static let shared = MemoryStorage()
     
-    var categories = TempData.categories
-    var expenditures = TempData.expenditure
-    var monthHistory = TempData.totalMonthHistory()
+    var categories: [Category] = TempData.categories
+    var expenditures: [Expenditure] = TempData.expenditure
+    var monthHistory: [Int : MonthHistory] = TempData.totalMonthHistory()
 }
 
 extension MemoryStorage: StorageType {

@@ -17,8 +17,12 @@ class SignUpSettingCompletionViewModel: BaseViewModel {
         let categoryList = self.categories.value
         
         return CocoaAction { _ in
+            guard let storage = self.storage as? MemoryStorage else { return .empty() }
             UserDefaultManager.budget = income
-            self.storage.update(categories: categoryList)
+            storage.categories = categoryList
+            storage.expenditures = []
+            storage.monthHistory = [:]
+//            self.storage.update(categories: categoryList)
             let viewModel = MainViewModel(title: "메인", viewModel: self)
             let scene = MainScene.main(viewModel)
 

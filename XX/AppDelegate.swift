@@ -16,7 +16,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
-        let storage = MemoryStorage()
+        let storage = MemoryStorage.shared
         let coordinator = SceneCoodinator(window: window!)
  
 //        let viewModel = MainViewModel(title: "메인", sceneCoordinator: coordinator, storage: storage)
