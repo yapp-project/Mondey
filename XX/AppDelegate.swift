@@ -19,8 +19,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let storage = MemoryStorage()
         let coordinator = SceneCoodinator(window: window!)
  
-//        let viewModel = SignInViewModel(title: "로그인", sceneCoordinator: coordinator, storage: storage)
-//        let scene = LoginScene.signIn(viewModel)
 //        let viewModel = MainViewModel(title: "메인", sceneCoordinator: coordinator, storage: storage)
 //        let scene = MainScene.main(viewModel)
         
@@ -33,8 +31,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             let scene = MainScene.main(viewModel)
             coordinator.transition(to: scene, using: .root, animated: false)
         } else {
-            let viewModel = IncomeSettingViewModel(title: "수입입력", sceneCoordinator: coordinator, storage: storage)
-            let scene = SignUpSettingScene.income(viewModel)
+            let viewModel = SignInViewModel(title: "로그인", sceneCoordinator: coordinator, storage: storage)
+            let scene = LoginScene.signIn(viewModel)
+
+//            let viewModel = IncomeSettingViewModel(title: "수입입력", sceneCoordinator: coordinator, storage: storage)
+//            let scene = SignUpSettingScene.income(viewModel)
             coordinator.transition(to: scene, using: .root, animated: false)
         }
         
