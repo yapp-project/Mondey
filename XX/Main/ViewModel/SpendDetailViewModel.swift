@@ -10,12 +10,15 @@ import UIKit
 
 class SpendDetailViewModel: BaseViewModel {
     var spendDetailCategory = BehaviorRelay<Category>(value: .init())
+    
+    let sectionListSubject = BehaviorSubject(value: [SectionModel(model: "First section", items: [Expenditure].init())]) // spendDetailCategory 세팅 이후에 세팅되어야하
+    
     var selectedDate        = BehaviorRelay<Date>(value: Date())
     var selectedString      = BehaviorRelay<String>(value: MondeyHelper.nowDate())
     
     func requestBackButtonAction() -> CocoaAction {
         return Action { _ in
-            return self.sceneCoordinator.close(animated: true).asObservable().map { _ in }
+            return self.sceneCoordinator.close(animated: false).asObservable().map { _ in }
         }
     }
     
