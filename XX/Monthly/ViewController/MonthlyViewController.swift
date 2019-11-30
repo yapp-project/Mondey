@@ -14,25 +14,28 @@ class MonthlyViewController: BaseViewController {
     @IBOutlet weak var naviItem: UINavigationItem!
     
     //    static let reuseIdentifier = "GradeCollectionViewCell"
-    let MAIN_CELL_WIDTH = UIScreen.main.bounds.width * 0.405
-    
+    //    let MAIN_CELL_WIDTH = UIScreen.main.bounds.width * 0.405
+
     var viewModel: MonthlyViewModel?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         //        bindViewModel()
         //        bindCollectionView()
-        setNaviBar()
+        //        setNaviBar()
+        navigationItem.title = "월별 등급 평가"
     }
     
-    private func setNaviBar() {
-        let attributes = [NSAttributedString.Key.font: UIFont(name: "SpoqaHanSans-Regular", size: 15)!]
-        naviItem.titleView?.tintColor = UIColor(named: "51")
-        UINavigationBar.appearance().titleTextAttributes = attributes
-        naviItem.title = "월별 등급 평가"
-        self.navigationController?.interactivePopGestureRecognizer?.delegate = nil
-    }
-    
+    //    private func setNaviBar() {
+    //        let attributes = [NSAttributedString.Key.font: UIFont(name: "SpoqaHanSans-Regular", size: 15)!]
+    //        naviItem.titleView?.tintColor = UIColor(named: "51")
+    //        UINavigationBar.appearance().titleTextAttributes = attributes
+    //        naviItem.title = "월별 등급 평가"
+    //        navigationController?.navigationBar.backgroundColor = .clear
+    //        self.navigationController?.interactivePopGestureRecognizer?.delegate = nil
+    //
+    //    }
+
     private func pushMonthlyDetail(month: Int, grade: String) {
         let storyboard = UIStoryboard(name: "Monthly",
                                       bundle: nil)
@@ -42,11 +45,8 @@ class MonthlyViewController: BaseViewController {
         if month != 12 {
             viewController.month = month
             viewController.grade = grade
-            
-            self.navigationController?.pushViewController(viewController,
-                                                          animated: true)
+            self.navigationController?.pushViewController(viewController, animated: true)
         }
-        
     }
     
     private func pushPickYearView() {
@@ -117,7 +117,8 @@ extension MonthlyViewController: UITableViewDataSource {
         return 2
     }
     
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    func tableView(_ tableView: UITableView,
+                   numberOfRowsInSection section: Int) -> Int {
         return 1
     }
     
@@ -140,8 +141,8 @@ extension MonthlyViewController: UITableViewDataSource {
                                      for: indexPath) as? GraphTableViewCell
                 else { return UITableViewCell() }
             
-            graphCell.setProperties()
-            
+            //            graphCell.setProperties()
+
             return graphCell
             
         default:

@@ -66,7 +66,8 @@ struct TempData {
         7: MonthHistory(budget: 400000, mount: 800000),
         8: MonthHistory(budget: 900000, mount: 2000000),
         9: MonthHistory(budget: 1500000, mount: 1000000),
-        10: MonthHistory(budget: 2000000, mount: 1700000)
+        10: MonthHistory(budget: 2000000, mount: 1700000),
+        11: MonthHistory(budget: 2000000, mount: 1500000)
     ]
     
     static func totalMonthHistory() -> [Int : MonthHistory] {
