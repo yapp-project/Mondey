@@ -1483,8 +1483,8 @@
                                                         <color key="titleColor" red="0.13333333333333333" green="0.70980392156862748" blue="0.6470588235294118" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     </state>
                                                 </button>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="group26" translatesAutoresizingMaskIntoConstraints="NO" id="kjG-ow-blD">
-                                                    <rect key="frame" x="272" y="-33" width="103.00000000000003" height="134"/>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="category1" translatesAutoresizingMaskIntoConstraints="NO" id="kjG-ow-blD">
+                                                    <rect key="frame" x="272" y="0.0" width="103.00000000000003" height="103.00000000000003"/>
                                                 </imageView>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RUO-by-VP9" userLabel="Title View">
                                                     <rect key="frame" x="164.66666666666666" y="46" width="46" height="37"/>
@@ -1511,8 +1511,8 @@
                                                     <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" misplaced="YES" text="/50,000" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="FyB-Iu-ytI">
-                                                    <rect key="frame" x="161" y="127.66666666666663" width="53" height="22.333333333333343"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" text="/50,000" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="FyB-Iu-ytI">
+                                                    <rect key="frame" x="161" y="129.66666666666666" width="53" height="22.333333333333343"/>
                                                     <fontDescription key="fontDescription" name="SpoqaHanSans-Light" family="SpoqaHanSans" pointSize="15"/>
                                                     <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
@@ -1530,14 +1530,16 @@
                                                             <rect key="frame" x="85.666666666666686" y="18" width="204" height="12"/>
                                                             <subviews>
                                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="r2N-O1-4Se" userLabel="Percent Num">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="102" height="12"/>
+                                                                    <rect key="frame" x="0.0" y="0.0" width="10" height="12"/>
                                                                     <color key="backgroundColor" name="lightGold"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="width" constant="10" id="uis-ck-gr4"/>
+                                                                    </constraints>
                                                                 </view>
                                                             </subviews>
                                                             <color key="backgroundColor" red="0.91764705879999997" green="0.91764705879999997" blue="0.91764705879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="12" id="3gl-dX-Y6w"/>
-                                                                <constraint firstItem="r2N-O1-4Se" firstAttribute="width" secondItem="MWT-eg-CRi" secondAttribute="width" multiplier="0.5" id="Mos-Xw-lGk"/>
                                                                 <constraint firstAttribute="bottom" secondItem="r2N-O1-4Se" secondAttribute="bottom" id="qhf-54-2HA"/>
                                                                 <constraint firstItem="r2N-O1-4Se" firstAttribute="top" secondItem="MWT-eg-CRi" secondAttribute="top" id="yNI-qC-SPC"/>
                                                                 <constraint firstItem="r2N-O1-4Se" firstAttribute="leading" secondItem="MWT-eg-CRi" secondAttribute="leading" id="yVO-08-f2b"/>
@@ -1568,7 +1570,7 @@
                                             </subviews>
                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <constraints>
-                                                <constraint firstItem="kjG-ow-blD" firstAttribute="top" secondItem="vIV-l8-dxq" secondAttribute="top" constant="-33" id="8QE-YN-Co5"/>
+                                                <constraint firstItem="kjG-ow-blD" firstAttribute="top" secondItem="vIV-l8-dxq" secondAttribute="top" id="8QE-YN-Co5"/>
                                                 <constraint firstAttribute="trailing" secondItem="kjG-ow-blD" secondAttribute="trailing" id="D1Q-sZ-Hr8"/>
                                                 <constraint firstItem="FyB-Iu-ytI" firstAttribute="top" secondItem="qG6-7H-Lkp" secondAttribute="bottom" id="Dh2-Dz-hi8"/>
                                                 <constraint firstItem="SuP-XJ-bgL" firstAttribute="top" secondItem="vIV-l8-dxq" secondAttribute="top" constant="46" id="Duv-iX-ZYV"/>
@@ -1599,7 +1601,15 @@
                                     </constraints>
                                     <connections>
                                         <outlet property="backButton" destination="Plg-Xy-9xa" id="8s6-ZC-rky"/>
+                                        <outlet property="detailAllMoneyLabel" destination="FyB-Iu-ytI" id="WaC-kc-Bpn"/>
+                                        <outlet property="detailTitleLabel" destination="SuP-XJ-bgL" id="X5C-9g-LYT"/>
+                                        <outlet property="detailUseMoneyLabel" destination="qG6-7H-Lkp" id="aD0-mP-xSG"/>
                                         <outlet property="infoView" destination="vIV-l8-dxq" id="bPa-Cg-Mwj"/>
+                                        <outlet property="percentBar" destination="MWT-eg-CRi" id="Rjq-fz-S71"/>
+                                        <outlet property="percentBarWidth" destination="uis-ck-gr4" id="8Sz-a9-a1K"/>
+                                        <outlet property="percentNumLabel" destination="oie-Ap-dFc" id="K9c-wN-xFP"/>
+                                        <outlet property="percentRealBarView" destination="r2N-O1-4Se" id="gy5-Dq-8JN"/>
+                                        <outlet property="topHeaderImageView" destination="kjG-ow-blD" id="cuF-45-Eg9"/>
                                     </connections>
                                 </collectionReusableView>
                             </collectionView>
@@ -1641,9 +1651,9 @@
     </scenes>
     <resources>
         <image name="backButton" width="44" height="44"/>
+        <image name="category1" width="103" height="103"/>
         <image name="close" width="11" height="11"/>
         <image name="down" width="25" height="25"/>
-        <image name="group26" width="103" height="134"/>
         <image name="icDelete48Px" width="48" height="48"/>
         <image name="icHighlightOff48Px" width="49" height="49"/>
         <image name="icSettings48Px" width="48" height="48"/>

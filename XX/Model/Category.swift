@@ -11,7 +11,8 @@ import Foundation
 //import RxRealm
 
 struct Category {
-    var id: Int
+    var id: Int         // 카테고리 유니크 아이디
+    var divId: Int     // 카테고리 종류 Id
     var catTintColor: UIColor
 
     var name: String
@@ -21,6 +22,7 @@ struct Category {
     
     init(initValue: MondeyHelper.Category) {
         self.id = initValue.id
+        self.divId = initValue.divId
         self.catTintColor = initValue.catTintColor
         
         self.name = initValue.title
@@ -31,6 +33,7 @@ struct Category {
     
     init() {
         self.id = -1
+        self.divId = -1
         self.catTintColor = MondeyHelper.mondeyCategoryTitleColor.first!
         
         self.name = ""
@@ -42,6 +45,7 @@ struct Category {
     #warning("임시 데이터를 위한 확장 기능")
     init(id: Int, budget: Int) {
         self.id = MondeyHelper.mondeyCategoryId[id-1]
+        self.divId =  MondeyHelper.mondeyCategoryId[id-1]
         self.catTintColor = MondeyHelper.mondeyCategoryTitleColor[id-1]
         
         self.name = MondeyHelper.mondeyCategoryTitle[id-1]
