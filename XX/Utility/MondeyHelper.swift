@@ -77,7 +77,15 @@ class MondeyHelper: NSObject {
         
         return UIViewController.init()
     }
+
     
+    
+    
+    static func nowDate() -> String {
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "MM월 dd일"
+        return dateFormatter.string(from: Date())
+    }
 }
 
 

@@ -12,6 +12,7 @@ enum MainScene {
     case spendDetail(SpendDetailViewModel)
     case appSpend(AddSpendViewModel)
     case choiceModal(MainViewModel)
+    case spendChoiceModal(SpendDetailViewModel)
 }
 
 extension MainScene: SceneType {
@@ -50,10 +51,20 @@ extension MainScene: SceneType {
             viewController.modalPresentationStyle = .overCurrentContext
             
             return viewController
+        case .spendChoiceModal(let viewModel):
+            guard var viewController = storyboard.instantiateViewController(withIdentifier: "SpendDetailDateSelectedPopupView") as? SpendDetailDateSelectedPopupView else {
+                return UIViewController()
+            }
+            viewController.bind(viewModel: viewModel)
+            viewController.modalPresentationStyle = .overCurrentContext
+            
+            return viewController
         }
+        
     }
     
     func instantiate() -> UIViewController {
         return instantiate(from: "Main")
     }
 }
+

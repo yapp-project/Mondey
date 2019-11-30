@@ -23,6 +23,11 @@ class SpendDetailHeaderReusableView: UICollectionReusableView {
     @IBOutlet weak var detailUseMoneyLabel: UILabel!
     @IBOutlet weak var detailAllMoneyLabel: UILabel!
     
+    @IBOutlet weak var dateSelectedButton: UIButton!
+    
+    
+    @IBOutlet weak var dateStringTitle: UIButton!
+    
     let PERCENT_BAR_BASE_WIDTH = UIScreen.main.bounds.width * 0.544
     
     
@@ -81,6 +86,10 @@ extension SpendDetailHeaderReusableView: ViewModelBindableType {
             
             
         }.disposed(by: rx.disposeBag)
+        dateSelectedButton.rx.action = viewModel.requestDatePickerAction()
+         
+        viewModel.selectedString.bind(to: dateStringTitle.rx.title())
+        .disposed(by: rx.disposeBag)
     }
     
     func setPercentBar(usePrice: Double,

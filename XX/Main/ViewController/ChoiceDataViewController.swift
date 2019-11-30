@@ -39,3 +39,38 @@ extension ChoiceDataViewController: ViewModelBindableType{
     }
     
 }
+
+/// ㅠㅠ설계 잘못해서 따로 한번더 만듬..
+class SpendDetailDateSelectedPopupView: BaseViewController {
+    @IBOutlet weak var backView: UIView!
+    @IBOutlet weak var closeButton: UIButton!
+    @IBOutlet weak var okButton: UIButton!
+    
+    @IBOutlet weak var datePicker: UIDatePicker!
+    
+    var viewModel: SpendDetailViewModel?
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        bindViewModel()
+        setLayout()
+    }
+    
+    func setLayout() {
+        self.backView.setCorner(cornerRadius: 10)
+    }
+}
+
+extension SpendDetailDateSelectedPopupView: ViewModelBindableType{
+    func bindViewModel() {
+        guard let viewModel = viewModel else { return }
+        closeButton.rx.action = viewModel.requestBackButtonAction()
+        
+        datePicker.rx.date.bind(to: viewModel.selectedDate )
+            .disposed(by: rx.disposeBag)
+        
+        okButton.rx.action = viewModel.requestAppendSobiButtonAction()
+        
+    }
+    
+}

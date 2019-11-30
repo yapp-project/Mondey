@@ -10,8 +10,7 @@ import UIKit
 
 class SpendDetailViewController: BaseViewController {
     
-    @IBOutlet weak var collectionView: UICollectionView!
-     
+    @IBOutlet weak var collectionView: UICollectionView! 
     
     let SPEND_DETAIL_HEADER_CELL = "SpendDetailHeaderReusableView"
     
