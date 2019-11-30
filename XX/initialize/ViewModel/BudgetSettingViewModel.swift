@@ -101,7 +101,7 @@ class BudgetSettingViewModel: BaseViewModel {
         var list = categories
         for budget in budgets.enumerated() {
             guard budget.0 < list.count else { break }
-            list[budget.0].budget = budget.1
+            list[budget.0].budget = budget.1 * 10000
         }
         
         return list
