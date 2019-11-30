@@ -97,10 +97,10 @@ extension MainHeaderReusableView: ViewModelBindableType {
             
             if value.element != nil {
                 print("값에 변화가 있수다 MainHeader \(value.element?.count)")
-                //            let useMoney: Int? = value.element?.map{ $0.budget }.reduce(0, { $0 + $1 }) // 버그 : 두번째 nil로 들어옴
-                //            if let useMoney = useMoney {
-                //                self.useMoneyLabel.text = String(useMoney)
-                //            }
+                            let useMoney: Int? = value.element?.map{ $0.budget }.reduce(0, { $0 + $1 }) // 버그 : 두번째 nil로 들어옴
+                            if let useMoney = useMoney {
+                                self.useMoneyLabel.text = String(useMoney)
+                            }
             }
             
             }.disposed(by: rx.disposeBag)
