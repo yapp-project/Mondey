@@ -19,7 +19,7 @@ class GradeTableViewCell: UITableViewCell {
     @IBOutlet private weak var gradeCollectionView: UICollectionView!
 
     let gradeData = ["A", "A", "C", "A", "C", "B",
-                     "D", "B", "A", "A", "B", "Q"]
+                     "D", "B", "A", "B", "A", "Q"]
     var viewModel: MonthlyViewModel?
     weak var delegate: GradeCellDelegate?
 
@@ -29,7 +29,7 @@ class GradeTableViewCell: UITableViewCell {
         gradeCollectionView.dataSource = self
         gradeCollectionView.delegate = self
 
-        bindViewModel()
+//        bindViewModel()
     }
     
     @IBAction func presentPickYear(_ sender: Any) {
@@ -43,9 +43,16 @@ extension GradeTableViewCell: ViewModelBindableType {
     func bindViewModel() {
         guard let viewModel = viewModel else { return }
         //        yearButton.rx.action = viewModel.presentingSelectYear()
-        gradeCollectionView.rx.itemSelected.bind { (IndexPath) in
-            viewModel.presentingDetail().execute()
-            }.disposed(by: rx.disposeBag)
+//        gradeCollectionView
+//            .rx.itemSelected.bind { (IndexPath) in
+//            viewModel.presentingDetail()
+//            }.disposed(by: rx.disposeBag)
+
+        gradeCollectionView.rx.itemSelected
+            .subscribe(onNext: { _ in
+                viewModel.presentingDetail()
+            })
+            .disposed(by: rx.disposeBag)
     }
 }
 
@@ -61,8 +68,8 @@ extension GradeTableViewCell: UICollectionViewDataSource {
         guard let cell = collectionView
             .dequeueReusableCell(withReuseIdentifier: "GradeCollectionViewCell", for: indexPath) as? GradeCollectionViewCell
             else { return UICollectionViewCell() }
-
-        let grade = gradeData[indexPath.row]
+        
+        let grade = gradeData[indexPath.item]
         cell.setProperties(month: indexPath.item, grade: grade)
 
         return cell

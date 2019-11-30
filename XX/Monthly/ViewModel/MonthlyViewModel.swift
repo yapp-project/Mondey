@@ -24,19 +24,31 @@ class MonthlyViewModel: BaseViewModel {
         }
     }
 
-    func presentingDetail() -> CocoaAction {
-        return CocoaAction { _ in
-            let viewModel = MonthlyDetailViewModel(title: "월 소비 평가",
-                                                   sceneCoordinator: self.sceneCoordinator,
-                                                   storage: self.storage)
+//    func presentingDetail() -> CocoaAction {
+//        return Action { _ in
+//            let viewModel = MonthlyDetailViewModel(title: "월 소비 평가",
+//                                                   sceneCoordinator: self.sceneCoordinator,
+//                                                   storage: self.storage)
+//
+//            let scene = MonthlyScene.Mdetail(viewModel)
+//            return self.sceneCoordinator
+//                .transition(to: scene,
+//                            using: .push,
+//                            animated: true)
+//                .asObservable().map { _ in }
+//        }
+//    }
 
-            let scene = MonthlyScene.Mdetail(viewModel)
-            return self.sceneCoordinator
-                .transition(to: scene,
-                            using: .push,
-                            animated: true)
-                .asObservable().map { _ in }
-        }
+    func presentingDetail() {
+        let viewModel = MonthlyDetailViewModel(title: "월 소비 평가",
+                                               sceneCoordinator: self.sceneCoordinator,
+                                               storage: self.storage)
+
+        let scene = MonthlyScene.Mdetail(viewModel)
+        self.sceneCoordinator
+            .transition(to: scene,
+                        using: .push,
+                        animated: true)
     }
 
     func calculateGrade() {
