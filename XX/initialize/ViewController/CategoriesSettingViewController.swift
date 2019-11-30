@@ -8,7 +8,7 @@
 
 import UIKit
 
-class CategoriesSettingViewController: BaseViewController {
+class CategoriesSettingViewController: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var budgetLabel: UILabel!
