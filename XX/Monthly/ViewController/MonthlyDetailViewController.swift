@@ -24,6 +24,9 @@ class MonthlyDetailViewController: BaseViewController {
     var grade: String?
     let gradeData = ["DotAA", "DotAA", "C", "DotAA", "C", "DotB",
                      "D", "DotB", "DotAA", "DotAA", "DotB", "Q"]
+    let categoriesBudget = [500000, 200000, 150000,
+                      100000, 50000, 50000, 70000]
+
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationItem.title = "월 소비 평가"
@@ -44,9 +47,7 @@ class MonthlyDetailViewController: BaseViewController {
                 month = num
                 monthLabel.text = "\(num)월"
                 gradeImageView.image = UIImage(named: "grade\(gradeData[num - 1])")
-                priceLabel.text = "30,000원"
-                usedLabel.text = "10,000"
-                budgetLabel.text = "/ 300,000"
+                setMoneyLabel(month: num)
                 tableView.reloadData()
             }
             if num == 1 {
@@ -65,9 +66,7 @@ class MonthlyDetailViewController: BaseViewController {
                 month = num
                 monthLabel.text = "\(num)월"
                 gradeImageView.image = UIImage(named: "grade\(gradeData[num - 1])")
-                priceLabel.text = "30,000원"
-                usedLabel.text = "10,000"
-                budgetLabel.text = "/ 300,000"
+                setMoneyLabel(month: num)
                 tableView.reloadData()
             }
             if num == 11 {
@@ -79,14 +78,31 @@ class MonthlyDetailViewController: BaseViewController {
         }
     }
 
-    func setLabel() {
+    private func setLabel() {
         if let num = month {
             monthLabel.text = "\(num)월"
             gradeImageView.image = UIImage(named: "grade\(gradeData[num - 1])")
-            priceLabel.text = "30,000원"
-            usedLabel.text = "10,000"
-            budgetLabel.text = "/ 300,000"
+            setMoneyLabel(month: num)
         }
+    }
+
+    private func calculateMount(month: Int) -> [Int] {
+        let budget = TempData.monthHistory[month]?.budget ?? 0
+        let mount = TempData.monthHistory[month]?.mount ?? 0
+
+        let result = mount - budget
+        if result < 0 {
+            return [0, mount, budget]
+        } else {
+            return [result, mount, budget]
+        }
+    }
+
+    private func setMoneyLabel(month: Int) {
+        let result = calculateMount(month: month)
+        priceLabel.text = "\(result[0])원"
+        usedLabel.text = "\(result[1])"
+        budgetLabel.text = "/ \(result[2])"
     }
 
 }
@@ -94,10 +110,10 @@ class MonthlyDetailViewController: BaseViewController {
 extension MonthlyDetailViewController: ViewModelBindableType {
     
     func bindViewModel() {
-        guard let viewModel = viewModel else { return }
-
-        leftButton.rx.action = viewModel.showPreviousMonthAction()
-        rightButton.rx.action = viewModel.showNextMonthAction()
+//        guard let viewModel = viewModel else { return }
+//
+//        leftButton.rx.action = viewModel.showPreviousMonthAction()
+//        rightButton.rx.action = viewModel.showNextMonthAction()
     }
 }
 
@@ -108,7 +124,7 @@ extension MonthlyDetailViewController: UITableViewDataSource {
     }
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 5
+        return MondeyHelper.mondeyCategoryTitle.count
     }
 
     func tableView(_ tableView: UITableView,
@@ -119,6 +135,13 @@ extension MonthlyDetailViewController: UITableViewDataSource {
                                  for: indexPath) as? MDListTableViewCell
             else { return UITableViewCell() }
 
+        let title = MondeyHelper.mondeyCategoryTitle[indexPath.row]
+        let budget = categoriesBudget[indexPath.row]
+        
+        listCell.setProperties(num: indexPath.row,
+                               category: title,
+                               budget: budget)
+        
         return listCell
 
     }

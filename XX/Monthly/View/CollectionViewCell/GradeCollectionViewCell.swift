@@ -28,7 +28,7 @@ class GradeCollectionViewCell: UICollectionViewCell {
 
 extension GradeCollectionViewCell: GradeCellBindableType {
     func bindViewModel() {
-        guard let viewModel = viewModel else { return }
+//        guard let viewModel = viewModel else { return }
 
     }
 

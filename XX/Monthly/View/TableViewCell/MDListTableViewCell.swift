@@ -28,6 +28,13 @@ class MDListTableViewCell: UITableViewCell {
         usedLabel.text = nil
         budgetLabel.text = nil
     }
+
+    func setProperties(num: Int, category: String, budget: Int) {
+        iconImageView.image = UIImage(named: "ic\(num + 1)")
+        titleLabel.text = category
+        usedLabel.text = "30,000"
+        budgetLabel.text = "\(budget)"
+    }
 }
 
 extension MDListTableViewCell: MDCellBindableType {
