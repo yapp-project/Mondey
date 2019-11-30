@@ -76,24 +76,6 @@ class BudgetSettingViewModel: BaseViewModel {
                 .withLatestFrom(self.budgets, resultSelector: self.mergeCategoryAndBudget)
                 .flatMap(self.moveToNotiView)
         }
-//        let income = self.incomeValue.value
-//        let categoryList = self.categories.value
-//
-//        return CocoaAction { _ in
-////            let viewModel = SignUpSettingCompletionViewModel(title: "설정완료", viewModel: self)
-////            viewModel.incomeValue.accept(income)
-////            viewModel.categories.accept(categoryList)
-////            let scene = SignUpSettingScene.finish(viewModel)
-////
-////            return self.sceneCoordinator.transition(to: scene, using: .modal, animated: true).asObservable().map { _ in }
-//
-//            let viewModel = NotiSettingViewModel(title: "알림설정", viewModel: self)
-//            viewModel.incomeValue.accept(income)
-//            viewModel.categories.accept(categoryList)
-//            let scene = SignUpSettingScene.notiSetting(viewModel)
-//
-//            return self.sceneCoordinator.transition(to: scene, using: .push, animated: true).asObservable().map { _ in }
-//        }
     }
     
     private func moveToPeriodView(categories: [Category]) -> Observable<Void> {
