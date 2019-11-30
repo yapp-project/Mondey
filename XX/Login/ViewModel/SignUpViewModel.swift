@@ -12,6 +12,8 @@ class SignUpViewModel: BaseViewModel {
     let emailTextRelay = BehaviorRelay(value: "")
     let passwordTextRelay = BehaviorRelay(value: "")
     let checkPasswordTextRelay = BehaviorRelay(value: "")
+    
+    let showIndicator = BehaviorRelay(value: false)
 
     func isPasswordValid() -> Observable<Bool> {
         return Observable.combineLatest(passwordTextRelay, checkPasswordTextRelay, resultSelector: checkPassword)
@@ -60,10 +62,15 @@ class SignUpViewModel: BaseViewModel {
     }
     
     private func requestSignUp() -> Observable<Void> {
-        let viewModel = IncomeSettingViewModel(title: "수입입력", sceneCoordinator: self.sceneCoordinator, storage: self.storage)
-        let scene = SignUpSettingScene.income(viewModel)
+        self.showIndicator.accept(true)
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+            self.showIndicator.accept(false)
+            let viewModel = IncomeSettingViewModel(title: "수입입력", sceneCoordinator: self.sceneCoordinator, storage: self.storage)
+            let scene = SignUpSettingScene.income(viewModel)
+            
+            self.sceneCoordinator.transition(to: scene, using: .root, animated: true)
+        }
         
-        sceneCoordinator.transition(to: scene, using: .root, animated: true)
         return Observable.empty()
     }
 }

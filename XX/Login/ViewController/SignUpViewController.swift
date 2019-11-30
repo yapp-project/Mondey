@@ -15,12 +15,14 @@ class SignUpViewController: BaseViewController {
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var checkPasswordTextField: UITextField!
+    @IBOutlet weak var indicator: UIActivityIndicatorView!
     
     var viewModel: SignUpViewModel?
     override func viewDidLoad() {
         super.viewDidLoad()
         
         setButton()
+        indicator.layer.cornerRadius = 35
     }
 }
 
@@ -36,6 +38,18 @@ extension SignUpViewController: ViewModelBindableType {
             .disposed(by: rx.disposeBag)
         checkPasswordTextField.rx.text.orEmpty
             .bind(to: viewModel.checkPasswordTextRelay)
+            .disposed(by: rx.disposeBag)
+        
+        viewModel.showIndicator
+            .subscribe(onNext: { bool in
+                if bool {
+                    self.indicator.startAnimating()
+                } else {
+                    self.indicator.stopAnimating()
+                }
+                
+                
+            })
             .disposed(by: rx.disposeBag)
         
         viewModel.isPasswordValid()
